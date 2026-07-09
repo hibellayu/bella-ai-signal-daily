@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella's AI Signal Daily</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260709c">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#top" aria-label="Bella's AI Signal Daily 首頁">
+        <span class="brand__mark">AI</span>
+        <span>
+          <strong>Bella's AI Signal</strong>
+          <small>Daily brief for marketing decisions</small>
+        </span>
+      </a>
+
+      <form class="date-picker" aria-label="日報日期篩選">
+        <label>
+          <span>年</span>
+          <select id="yearSelect"></select>
+        </label>
+        <label>
+          <span>月</span>
+          <select id="monthSelect"></select>
+        </label>
+        <label>
+          <span>日</span>
+          <select id="daySelect"></select>
+        </label>
+      </form>
+    </div>
+  </header>
+
+  <main id="top" class="shell">
+    <aside class="panel digest-meta" aria-label="日報資訊">
+      <p class="eyebrow">Today's Signal</p>
+      <h1 id="digestTitle">載入中...</h1>
+      <p id="digestSummary" class="digest-meta__summary">正在讀取 Bella 的 AI 日報資料。</p>
+
+      <dl class="meta-grid">
+        <div>
+          <dt>日報日期</dt>
+          <dd id="reportDate">--</dd>
+        </div>
+        <div>
+          <dt>資料日期</dt>
+          <dd id="coverageDate">--</dd>
+        </div>
+        <div>
+          <dt>生成時間</dt>
+          <dd id="generatedAt">--</dd>
+        </div>
+        <div>
+          <dt>收錄上限</dt>
+          <dd>10-14 則訊號</dd>
+        </div>
+      </dl>
+
+      <div class="signal-policy">
+        <h2>收錄優先順序</h2>
+        <ol id="priorityList"></ol>
+      </div>
+
+      <nav class="section-nav" aria-label="區塊導覽">
+        <a href="#major-events">大事件</a>
+        <a href="#tool-updates">工具更新</a>
+        <a href="#trends">值得追蹤的趨勢</a>
+        <a href="#applications">應用切角彙整</a>
+      </nav>
+    </aside>
+
+    <section class="content" aria-live="polite">
+      <div id="statusMessage" class="status" hidden></div>
+      <div id="digestContent"></div>
+    </section>
+  </main>
+
+  <template id="sectionTemplate">
+    <section class="digest-section">
+      <div class="section-heading">
+        <p class="section-heading__count"></p>
+        <h2></h2>
+        <p></p>
+      </div>
+      <div class="item-list"></div>
+    </section>
+  </template>
+
+  <template id="itemTemplate">
+    <article class="signal-card">
+      <div class="signal-card__head">
+        <div>
+          <div class="source-line"></div>
+          <h3></h3>
+        </div>
+        <span class="score-badge"></span>
+      </div>
+      <p class="summary"></p>
+      <div class="analysis"></div>
+      <div class="tag-row"></div>
+      <div class="framework">
+        <section>
+          <h4><span>What</span>這件事是什麼</h4>
+          <p class="what"></p>
+        </section>
+        <section>
+          <h4><span>So What</span>然後呢</h4>
+          <p class="so-what"></p>
+        </section>
+        <section>
+          <h4><span>Now What</span>這週做什麼</h4>
+          <p class="now-what"></p>
+        </section>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js?v=20260709c"></script>
+</body>
+</html>

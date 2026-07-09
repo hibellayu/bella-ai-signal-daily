@@ -1,0 +1,19 @@
+{
+  "latest": "2026-07-09",
+  "digests": [
+    {
+      "reportDate": "2026-07-09",
+      "coverageDate": "2026-07-08",
+      "title": "Bella's AI Signal｜2026/07/09",
+      "summary": "示範日報：用 Bella 的數位行銷視角整理 AI 趨勢、工具更新與可執行應用切角。",
+      "path": "data/digests/2026-07-09.json"
+    },
+    {
+      "reportDate": "2026-07-08",
+      "coverageDate": "2026-07-07",
+      "title": "Bella's AI Signal｜2026/07/08",
+      "summary": "示範空窗測試資料：用來驗證日期篩選與回查體驗。",
+      "path": "data/digests/2026-07-08.json"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "reportDate": "2026-07-08",
+  "coverageDate": "2026-07-07",
+  "generatedAt": "2026-07-08T07:00:00+08:00",
+  "headline": "示範日報資料",
+  "summary": "這份資料用來驗證日期篩選；正式串接後會替換為當日 AI 趨勢內容。",
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期。",
+  "trackedEntities": ["OpenAI", "Google", "Meta", "Anthropic", "Perplexity", "Adobe", "Canva", "Midjourney", "Suno"],
+  "scoringPolicy": {
+    "priority": ["產業重大性", "數位行銷影響", "內容 / 搜尋 / 社群 / 媒體廣告影響", "工具可用性"]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "當天最值得先理解的 AI 產業訊號。",
+      "items": []
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "與行銷工作流直接相關的產品與功能變化。",
+      "items": []
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "由多則訊號整理出的中期觀察。",
+      "items": []
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "把 AI 趨勢轉成品牌、內容、社群與廣告可測的方向。",
+      "items": []
+    }
+  ]
+}
