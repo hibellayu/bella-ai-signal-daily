@@ -204,14 +204,14 @@ a {
 
 .meta-grid dt {
   color: var(--deep-muted);
-  font-size: 10px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
 .meta-grid dd {
   margin: 0;
   color: var(--deep-text);
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -224,7 +224,7 @@ a {
 .signal-policy h2 {
   margin: 0 0 8px;
   color: var(--deep-text);
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -233,7 +233,7 @@ a {
   margin: 0;
   padding-left: 20px;
   color: var(--deep-muted);
-  font-size: 10px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -248,7 +248,7 @@ a {
   border-bottom: 1px solid rgba(196, 154, 108, 0.18);
   color: var(--deep-text);
   text-decoration: none;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -493,7 +493,7 @@ a {
 }
 
 .application-bullets strong {
-  color: var(--main);
+  color: var(--headline-red);
   font-size: 13px;
   line-height: 1.5;
 }
@@ -566,6 +566,14 @@ a {
 
   .section-nav {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .meta-grid dt,
+  .meta-grid dd,
+  .signal-policy h2,
+  .signal-policy ol,
+  .section-nav a {
+    font-size: 18px;
   }
 
   .signal-card h3 {
