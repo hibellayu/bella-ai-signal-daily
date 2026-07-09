@@ -43,7 +43,7 @@ def build_digest(report_date: str, coverage_date: str, generated_at: str) -> dic
         "coverageDate": coverage_date,
         "generatedAt": generated_at,
         "headline": "今日 AI 日報待補內容",
-        "summary": "自動化流程已建立。下一階段會接上新聞來源收集、篩選評分與 Bella 視角解讀。",
+        "summary": "自動化流程已建立。下一階段會接上新聞來源收集、篩選評分，並整理成給行銷人與品牌決策者使用的趨勢解讀。",
         "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
         "trackedEntities": ["OpenAI", "Google", "Meta", "Anthropic", "Perplexity", "Adobe", "Canva", "Midjourney", "Suno"],
         "scoringPolicy": {
