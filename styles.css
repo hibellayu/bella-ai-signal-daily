@@ -1,15 +1,22 @@
 :root {
-  --bg: #f6f1ea;
-  --paper: #fffdf9;
-  --paper-deep: #f0e7dc;
-  --ink: #2b2723;
-  --muted: #6f6257;
-  --line: #d8cbbe;
+  --bg: #252321;
+  --surface-dark: #312c27;
+  --surface-darker: #1f1d1b;
+  --paper: #f5efe6;
+  --paper-deep: #e9ded0;
+  --paper-soft: #fbf7f0;
+  --ink: #2a2521;
+  --muted: #6d5f53;
+  --deep-text: #f5efe6;
+  --deep-muted: #b8aa9a;
+  --line: #51483f;
+  --paper-line: #d6c6b5;
   --main: #3a332d;
-  --brown: #7a5c45;
-  --copper: #b08a63;
-  --soft-copper: #ead8c2;
-  --shadow: 0 18px 42px rgba(58, 51, 45, 0.08);
+  --brown: #8a684e;
+  --copper: #c49a6c;
+  --accent-line: #a77b55;
+  --tag-bg: #efe1d0;
+  --shadow: 0 18px 48px rgba(0, 0, 0, 0.22);
 }
 
 * {
@@ -24,12 +31,12 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    linear-gradient(180deg, rgba(255, 253, 249, 0.82), rgba(246, 241, 234, 0) 360px),
+    linear-gradient(180deg, rgba(58, 51, 45, 0.74), rgba(37, 35, 33, 0) 380px),
     var(--bg);
-  color: var(--ink);
+  color: var(--deep-text);
   font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 10px;
+  line-height: 1.75;
 }
 
 a {
@@ -40,8 +47,8 @@ a {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid var(--line);
-  background: rgba(255, 253, 249, 0.94);
+  border-bottom: 1px solid rgba(196, 154, 108, 0.22);
+  background: rgba(31, 29, 27, 0.92);
   backdrop-filter: blur(18px);
 }
 
@@ -59,7 +66,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 14px;
-  color: var(--main);
+  color: var(--deep-text);
   text-decoration: none;
   min-width: 280px;
 }
@@ -70,10 +77,10 @@ a {
   display: grid;
   place-items: center;
   border-radius: 6px;
-  background: var(--main);
-  color: var(--paper);
+  background: var(--copper);
+  color: var(--surface-darker);
   font-family: "Noto Serif TC", serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0;
 }
@@ -81,7 +88,7 @@ a {
 .brand strong {
   display: block;
   font-family: "Noto Serif TC", serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: 0;
@@ -89,8 +96,8 @@ a {
 
 .brand small {
   display: block;
-  color: var(--muted);
-  font-size: 12px;
+  color: var(--deep-muted);
+  font-size: 10px;
   line-height: 1.4;
 }
 
@@ -100,28 +107,28 @@ a {
   justify-content: flex-end;
   gap: 10px;
   padding: 10px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(196, 154, 108, 0.24);
   border-radius: 8px;
-  background: rgba(246, 241, 234, 0.76);
+  background: rgba(49, 44, 39, 0.86);
 }
 
 .date-picker label {
   display: grid;
   gap: 4px;
-  color: var(--muted);
-  font-size: 12px;
+  color: var(--deep-muted);
+  font-size: 10px;
   line-height: 1.4;
 }
 
 .date-picker select {
   min-width: 88px;
   height: 38px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(196, 154, 108, 0.28);
   border-radius: 6px;
   background: var(--paper);
-  color: var(--main);
+  color: var(--ink);
   font: inherit;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.4;
   padding: 0 32px 0 10px;
 }
@@ -136,8 +143,8 @@ a {
 }
 
 .panel {
-  background: rgba(255, 253, 249, 0.72);
-  border: 1px solid var(--line);
+  background: rgba(49, 44, 39, 0.88);
+  border: 1px solid rgba(196, 154, 108, 0.18);
   border-radius: 8px;
 }
 
@@ -149,8 +156,8 @@ a {
 
 .eyebrow {
   margin: 0 0 10px;
-  color: var(--brown);
-  font-size: 12px;
+  color: var(--copper);
+  font-size: 10px;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.08em;
@@ -159,9 +166,9 @@ a {
 
 .digest-meta h1 {
   margin: 0;
-  color: var(--main);
+  color: var(--deep-text);
   font-family: "Noto Serif TC", serif;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: 0;
@@ -169,8 +176,8 @@ a {
 
 .digest-meta__summary {
   margin: 16px 0 0;
-  color: var(--muted);
-  font-size: 16px;
+  color: var(--deep-muted);
+  font-size: 12px;
   line-height: 1.8;
 }
 
@@ -187,7 +194,7 @@ a {
   gap: 10px;
   align-items: baseline;
   padding: 10px 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(196, 154, 108, 0.18);
 }
 
 .meta-grid div:last-child {
@@ -195,28 +202,28 @@ a {
 }
 
 .meta-grid dt {
-  color: var(--muted);
-  font-size: 12px;
+  color: var(--deep-muted);
+  font-size: 10px;
   line-height: 1.4;
 }
 
 .meta-grid dd {
   margin: 0;
-  color: var(--main);
-  font-size: 14px;
+  color: var(--deep-text);
+  font-size: 10px;
   font-weight: 700;
   line-height: 1.5;
 }
 
 .signal-policy {
   padding-top: 18px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(196, 154, 108, 0.18);
 }
 
 .signal-policy h2 {
   margin: 0 0 8px;
-  color: var(--main);
-  font-size: 14px;
+  color: var(--deep-text);
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -224,8 +231,8 @@ a {
 .signal-policy ol {
   margin: 0;
   padding-left: 20px;
-  color: var(--muted);
-  font-size: 13px;
+  color: var(--deep-muted);
+  font-size: 10px;
   line-height: 1.7;
 }
 
@@ -237,16 +244,16 @@ a {
 
 .section-nav a {
   padding: 8px 0;
-  border-bottom: 1px solid var(--line);
-  color: var(--main);
+  border-bottom: 1px solid rgba(196, 154, 108, 0.18);
+  color: var(--deep-text);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 1.5;
 }
 
 .section-nav a:hover {
-  color: var(--brown);
+  color: var(--copper);
 }
 
 .content {
@@ -255,11 +262,11 @@ a {
 
 .status {
   padding: 22px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--paper-line);
   border-radius: 8px;
   background: var(--paper);
   color: var(--muted);
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .digest-section {
@@ -269,13 +276,13 @@ a {
 .section-heading {
   margin-bottom: 18px;
   padding-bottom: 14px;
-  border-bottom: 2px solid var(--main);
+  border-bottom: 1px solid rgba(196, 154, 108, 0.5);
 }
 
 .section-heading__count {
   margin: 0 0 6px;
-  color: var(--brown);
-  font-size: 12px;
+  color: var(--copper);
+  font-size: 10px;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.08em;
@@ -283,9 +290,9 @@ a {
 
 .section-heading h2 {
   margin: 0;
-  color: var(--main);
+  color: var(--deep-text);
   font-family: "Noto Serif TC", serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: 0;
@@ -293,8 +300,8 @@ a {
 
 .section-heading p:not(.section-heading__count) {
   margin: 8px 0 0;
-  color: var(--muted);
-  font-size: 15px;
+  color: var(--deep-muted);
+  font-size: 12px;
   line-height: 1.7;
 }
 
@@ -305,9 +312,9 @@ a {
 
 .signal-card {
   padding: 26px 28px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--paper-line);
   border-radius: 8px;
-  background: rgba(255, 253, 249, 0.96);
+  background: var(--paper);
   box-shadow: var(--shadow);
 }
 
@@ -321,7 +328,7 @@ a {
 .source-line {
   margin: 0 0 8px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 10px;
   line-height: 1.5;
 }
 
@@ -345,7 +352,7 @@ a {
   margin: 0;
   color: var(--main);
   font-family: "Noto Serif TC", serif;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.35;
   letter-spacing: 0;
@@ -355,10 +362,10 @@ a {
   min-width: 52px;
   padding: 5px 9px;
   border-radius: 999px;
-  background: var(--soft-copper);
+  background: var(--tag-bg);
   color: var(--brown);
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -366,7 +373,7 @@ a {
 .summary {
   margin: 16px 0 0;
   color: var(--ink);
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 1.8;
 }
@@ -380,7 +387,7 @@ a {
 .analysis p {
   margin: 0;
   color: #403832;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.8;
 }
 
@@ -395,9 +402,9 @@ a {
   padding: 4px 8px;
   border: 1px solid rgba(122, 92, 69, 0.18);
   border-radius: 999px;
-  background: #f7eee5;
+  background: var(--tag-bg);
   color: var(--brown);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 1.4;
 }
@@ -407,7 +414,7 @@ a {
   grid-template-columns: 1fr;
   gap: 0;
   margin-top: 20px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--paper-line);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -417,8 +424,8 @@ a {
   grid-template-columns: 118px minmax(0, 1fr);
   gap: 18px;
   padding: 15px 18px;
-  border-bottom: 1px solid var(--line);
-  background: #fbf5ec;
+  border-bottom: 1px solid var(--paper-line);
+  background: var(--paper-deep);
 }
 
 .framework section:last-child {
@@ -428,7 +435,7 @@ a {
 .framework h4 {
   margin: 0;
   color: var(--brown);
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.45;
 }
@@ -436,7 +443,7 @@ a {
 .framework h4 span {
   display: block;
   color: var(--main);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -444,17 +451,17 @@ a {
 .framework p {
   margin: 0;
   color: #3f3731;
-  font-size: 15px;
+  font-size: 10px;
   line-height: 1.7;
 }
 
 .empty-section {
   padding: 18px;
-  border: 1px dashed var(--line);
+  border: 1px dashed rgba(196, 154, 108, 0.36);
   border-radius: 8px;
-  color: var(--muted);
-  background: rgba(255, 253, 249, 0.62);
-  font-size: 15px;
+  color: var(--deep-muted);
+  background: rgba(49, 44, 39, 0.72);
+  font-size: 12px;
 }
 
 .application-list {
@@ -465,9 +472,9 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  border: 1px solid var(--line);
+  border: 1px solid var(--paper-line);
   border-radius: 8px;
-  background: rgba(255, 253, 249, 0.96);
+  background: var(--paper);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -477,7 +484,7 @@ a {
   grid-template-columns: 148px minmax(0, 1fr);
   gap: 18px;
   padding: 17px 20px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--paper-line);
 }
 
 .application-bullets li:last-child {
@@ -486,19 +493,19 @@ a {
 
 .application-bullets strong {
   color: var(--main);
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
 .application-bullets span {
   color: #3f3731;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.8;
 }
 
 @media (max-width: 900px) {
   body {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .topbar__inner {
@@ -541,15 +548,15 @@ a {
   }
 
   .digest-meta h1 {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .digest-meta__summary {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .section-heading h2 {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .section-nav {
@@ -557,12 +564,12 @@ a {
   }
 
   .signal-card h3 {
-    font-size: 19px;
+    font-size: 14px;
   }
 
   .summary,
   .analysis p {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .framework section {
@@ -571,7 +578,7 @@ a {
   }
 
   .framework p {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .application-bullets li {
@@ -580,7 +587,7 @@ a {
   }
 
   .application-bullets span {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
@@ -594,12 +601,12 @@ a {
   }
 
   .date-picker label {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .date-picker select {
     height: 38px;
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 8px;
   }
 
