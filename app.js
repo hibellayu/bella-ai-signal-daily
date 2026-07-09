@@ -160,7 +160,7 @@ function renderSection(section) {
   const node = els.sectionTemplate.content.cloneNode(true);
   const wrapper = node.querySelector(".digest-section");
   wrapper.id = section.id;
-  node.querySelector(".section-heading__count").textContent = `${section.items?.length || 0} 則訊號`;
+  node.querySelector(".section-heading__count").textContent = `${section.items?.length || 0} 則資訊`;
   node.querySelector("h2").textContent = section.title;
   node.querySelector(".section-heading p:not(.section-heading__count)").textContent = section.description;
 

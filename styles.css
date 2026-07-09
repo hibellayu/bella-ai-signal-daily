@@ -328,7 +328,7 @@ a {
 .source-line {
   margin: 0 0 8px;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -373,7 +373,7 @@ a {
 .summary {
   margin: 16px 0 0;
   color: var(--ink);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 1.8;
 }
@@ -387,7 +387,7 @@ a {
 .analysis p {
   margin: 0;
   color: #403832;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.8;
 }
 
@@ -435,7 +435,7 @@ a {
 .framework h4 {
   margin: 0;
   color: var(--brown);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 1.45;
 }
@@ -451,7 +451,7 @@ a {
 .framework p {
   margin: 0;
   color: #3f3731;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.7;
 }
 
@@ -493,7 +493,7 @@ a {
 
 .application-bullets strong {
   color: var(--main);
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
