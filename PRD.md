@@ -130,7 +130,7 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 
 ## 版本資訊
 
-- Footer 顯示：`© 2026 Bella Yu. All rights reserved. 本站由 Codex 協作開發｜v0.3.1｜更新日期 2026/07/10`。
+- Footer 顯示：`© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.3.2｜版本日期 2026/07/10`。
 - Header 不顯示版本資訊，讓品牌與日期篩選保持乾淨。
 - 版本規則詳見 `VERSIONING.md`。
 
