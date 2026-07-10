@@ -29,6 +29,7 @@ http://localhost:4173
 - `data/digests/YYYY-MM-DD.json`：每日完整內容。
 - `config/sources.json`：自動化新聞來源、追蹤公司與 AI 關鍵字設定。
 - `VERSIONING.md`：版本號、大改版、中改版、小改版規則。
+- `CHANGELOG.md`：版本記錄與修改內容回溯。
 
 ## 自動更新
 
