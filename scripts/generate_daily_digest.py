@@ -32,6 +32,10 @@ def main() -> None:
     if report_date == now.date():
         generated_at = now.isoformat(timespec="seconds")
     digest = build_digest(report_date.isoformat(), coverage_date.isoformat(), generated_at)
+    if not has_digest_content(digest):
+        print(f"No digest items generated for {report_date.isoformat()}; skip publishing empty digest.")
+        return
+
     digest_path = DIGEST_DIR / f"{report_date.isoformat()}.json"
     write_json(digest_path, digest)
     update_manifest(report_date.isoformat(), coverage_date.isoformat(), digest)
@@ -78,6 +82,10 @@ def update_manifest(report_date: str, coverage_date: str, digest: dict) -> None:
     manifest["latest"] = existing[0]["reportDate"]
     manifest["digests"] = existing
     write_json(MANIFEST_PATH, manifest)
+
+
+def has_digest_content(digest: dict) -> bool:
+    return any(section.get("items") for section in digest.get("sections", []))
 
 
 def write_json(path: Path, data: dict) -> None:
