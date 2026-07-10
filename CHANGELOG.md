@@ -33,7 +33,7 @@
 
 ### 對應 commit
 
-- 待提交
+- `769fb29 Add static daily pages for SEO`
 
 ## v0.4.0｜2026-07-10
 
