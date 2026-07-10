@@ -27,7 +27,7 @@
 
 ### 對應 commit
 
-- `debb1cf Add score explanation dialog and rename brand`
+- `ec225d1 Add score explanation dialog and rename brand`
 
 ## v0.3.2｜2026-07-10
 
