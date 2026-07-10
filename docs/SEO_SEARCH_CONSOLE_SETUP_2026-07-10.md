@@ -43,22 +43,30 @@
 - 已執行：要求建立索引
 - 結果：已將網址加入優先檢索佇列
 
+## 每日靜態頁索引要求
+
+v0.5.0 新增每日靜態 HTML 頁後，已針對最新日報送出索引要求。
+
+- 審查網址：`https://hibellayu.github.io/bella-ai-signal-daily/daily/2026-07-10/`
+- 初始狀態：網址不在 Google 服務中
+- 系統說明：Google 尚未辨識此網址，未編入索引
+- 已執行：要求建立索引
+- 結果：已將網址加入優先檢索佇列
+
 ## 後續追蹤
 
 建議追蹤時間點：
 
 - 2026-07-11：確認 Sitemap 狀態是否從 `無法擷取` 變成 `成功`
-- 2026-07-11 至 2026-07-17：用 URL inspection 確認首頁是否已被 Google 檢索
+- 2026-07-11 至 2026-07-17：用 URL inspection 確認首頁與 `/daily/2026-07-10/` 是否已被 Google 檢索
 - 2026-07-17 後：開始觀察 Search Console 的曝光、點擊、查詢字詞與網頁索引狀態
 
 ## 風險與下一步
 
-目前網站主要由 `app.js` 讀取 JSON 後渲染內容。Google 可以處理部分 JavaScript，但若目標是提升 SEO 與 AI 搜尋引用機率，下一階段仍建議產生每日靜態 HTML 頁。
+v0.5.0 已新增每日靜態 HTML 頁，解決主要內容只靠 `app.js` 讀 JSON 渲染的 SEO 風險。後續重點會轉向 Search Console 觀察、每日頁持續產生，以及是否需要更多內部連結與內容聚合頁。
 
 建議下一階段：
 
-- 版本：`v0.5.0`
-- 功能：每日靜態 HTML 頁
-- 形式：`/daily/2026-07-10/`
-- 每日頁需包含獨立 title、description、canonical、Article schema
-- `sitemap.xml` 需自動收錄每日頁
+- 版本：`v0.6.0`
+- 功能：SEO 內容索引增強
+- 可能方向：日報列表頁、主題標籤頁、內部連結、Search Console 成效追蹤摘要
