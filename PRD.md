@@ -117,6 +117,23 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - 預留 GitHub Actions 每日 7 點更新流程。
 - 預留資料結構給後續新聞抓取與 AI 生成流程。
 
+## 自動化生成規格
+
+- GitHub Actions 每天 UTC 23:00 執行，對應台北時間 07:00。
+- `config/sources.json` 管理新聞來源、追蹤公司與 AI 關鍵字。
+- 產生器流程：抓取來源 feed → 依日期與 AI 相關性過濾 → 初步評分排序 → OpenAI API 產文 → JSON 品質檢查 → 寫入日報與 manifest。
+- 必須設定 GitHub Secret：`OPENAI_API_KEY`。
+- 可選設定 GitHub Variable：`OPENAI_MODEL`。
+- 若沒有 API key、候選新聞不足、產文失敗、JSON 結構不符或內容太薄，不可更新 `manifest.latest`。
+- `manifest.latest` 只能指向通過品質檢查的日報。
+- `數位時代` 與 `AI 郵報` 若沒有穩定公開 feed，可暫時停用，不可讓失效來源造成整體產生日報失敗；後續改以搜尋 API 或確認來源後啟用。
+
+## 版本資訊
+
+- Header 顯示：`本站由 Codex 協作開發｜v0.3.0｜更新日期 2026/07/10`。
+- Footer 顯示：`© 2026 Bella Yu. All rights reserved. 本站由 Codex 協作開發。`
+- 版本規則詳見 `VERSIONING.md`。
+
 ## 視覺規格
 
 配色：

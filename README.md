@@ -27,7 +27,25 @@ http://localhost:4173
 
 - `data/digests/manifest.json`：日報清單。
 - `data/digests/YYYY-MM-DD.json`：每日完整內容。
+- `config/sources.json`：自動化新聞來源、追蹤公司與 AI 關鍵字設定。
+- `VERSIONING.md`：版本號、大改版、中改版、小改版規則。
 
 ## 自動更新
 
-`.github/workflows/daily-digest.yml` 預設每天 UTC 23:00 執行，對應台北時間 07:00。第一版腳本會產生日報資料骨架，後續可接 RSS、搜尋 API 或 AI 生成流程。
+`.github/workflows/daily-digest.yml` 預設每天 UTC 23:00 執行，對應台北時間 07:00。流程會抓取來源 feed、篩選 AI 相關新聞、用 OpenAI API 生成日報 JSON，再提交到 GitHub Pages。
+
+需要在 GitHub repository secrets 設定：
+
+```text
+OPENAI_API_KEY
+```
+
+可選擇在 GitHub repository variables 設定：
+
+```text
+OPENAI_MODEL
+```
+
+若沒有候選新聞、沒有 `OPENAI_API_KEY` 或 AI 產文未通過品質檢查，流程會停止並保留上一份有效日報，不會發布空日報。
+
+目前 `數位時代` 與 `AI 郵報` 尚未啟用自動抓取：`數位時代` 公開 RSS 於 2026-07-10 測試回傳 404，`AI 郵報` 尚未設定穩定公開來源。後續可改用搜尋 API 或確認穩定 feed 後重新啟用。

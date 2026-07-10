@@ -1,0 +1,101 @@
+{
+  "sources": [
+    {
+      "name": "iThome",
+      "region": "taiwan",
+      "url": "https://www.ithome.com.tw/rss",
+      "enabled": true
+    },
+    {
+      "name": "科技新報",
+      "region": "taiwan",
+      "url": "https://technews.tw/feed/",
+      "enabled": true
+    },
+    {
+      "name": "數位時代",
+      "region": "taiwan",
+      "url": "https://www.bnext.com.tw/rss",
+      "enabled": false,
+      "note": "2026-07-10 checked: public RSS URL returns 404. Re-enable when stable feed or search API is available."
+    },
+    {
+      "name": "AI 郵報",
+      "region": "taiwan",
+      "url": "",
+      "enabled": false,
+      "note": "No stable public RSS configured yet. Re-enable with confirmed source URL."
+    },
+    {
+      "name": "INSIDE",
+      "region": "taiwan",
+      "url": "https://www.inside.com.tw/feed/rss",
+      "enabled": true
+    },
+    {
+      "name": "TechCrunch",
+      "region": "international",
+      "url": "https://techcrunch.com/feed/",
+      "enabled": true
+    },
+    {
+      "name": "VentureBeat",
+      "region": "international",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "enabled": true
+    },
+    {
+      "name": "Wired",
+      "region": "international",
+      "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+      "enabled": true
+    },
+    {
+      "name": "The Verge",
+      "region": "international",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "enabled": true
+    },
+    {
+      "name": "MIT Technology Review",
+      "region": "international",
+      "url": "https://www.technologyreview.com/feed/",
+      "enabled": true
+    }
+  ],
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno"
+  ],
+  "aiKeywords": [
+    "AI",
+    "artificial intelligence",
+    "生成式",
+    "人工智慧",
+    "ChatGPT",
+    "Gemini",
+    "Claude",
+    "Copilot",
+    "LLM",
+    "模型",
+    "agent",
+    "代理",
+    "搜尋",
+    "廣告",
+    "內容",
+    "社群",
+    "行銷",
+    "SEO",
+    "AEO",
+    "素材",
+    "影音",
+    "語音"
+  ]
+}

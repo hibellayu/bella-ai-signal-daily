@@ -102,6 +102,14 @@ a {
   line-height: 1.4;
 }
 
+.build-meta {
+  margin: 0 auto 0 0;
+  color: var(--deep-muted);
+  font-size: 10px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
 .date-picker {
   display: flex;
   align-items: end;
@@ -504,6 +512,20 @@ a {
   line-height: 1.8;
 }
 
+.site-footer {
+  width: min(1160px, calc(100% - 40px));
+  margin: -38px auto 34px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(196, 154, 108, 0.22);
+  color: var(--deep-muted);
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   body {
     font-size: 15px;
@@ -527,6 +549,12 @@ a {
   }
 
   .brand small {
+    font-size: 12px;
+  }
+
+  .build-meta {
+    margin: 0;
+    white-space: normal;
     font-size: 12px;
   }
 
@@ -617,6 +645,12 @@ a {
 
   .application-bullets strong {
     font-size: 15px;
+  }
+
+  .site-footer {
+    width: min(100% - 28px, 1160px);
+    margin: -28px auto 28px;
+    font-size: 12px;
   }
 }
 
