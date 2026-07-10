@@ -33,8 +33,9 @@ http://localhost:4173
 - `robots.txt`：搜尋引擎索引規則。
 - `sitemap.xml`：搜尋引擎提交用 sitemap。
 - `llms.txt`：給 AI 搜尋與研究工具讀取的網站定位、內容結構與引用說明。
+- `daily/index.html`：日報列表頁，提供所有有效日報的回查入口。
 - `daily/YYYY-MM-DD/index.html`：每日靜態 HTML 頁，提供搜尋引擎與 AI 搜尋工具直接讀取。
-- `scripts/static_site.py`：由日報 JSON 產生每日靜態頁與 sitemap。
+- `scripts/static_site.py`：由日報 JSON 產生日報列表頁、每日靜態頁與 sitemap。
 
 ## 自動更新
 
@@ -57,6 +58,7 @@ OPENAI_MODEL
 產生有效日報後，流程會同步重建：
 
 - `daily/YYYY-MM-DD/index.html`
+- `daily/index.html`
 - `sitemap.xml`
 
 目前 `數位時代` 與 `AI 郵報` 尚未啟用自動抓取：`數位時代` 公開 RSS 於 2026-07-10 測試回傳 404，`AI 郵報` 尚未設定穩定公開來源。後續可改用搜尋 API 或確認穩定 feed 後重新啟用。
@@ -67,6 +69,7 @@ OPENAI_MODEL
 - GA4 Measurement ID：`G-8CQ9L4MXNL`
 - SEO 基礎設定：title、description、canonical、Open Graph、Twitter Card、structured data。
 - AI 搜尋引用輔助：`llms.txt`。
+- 日報列表頁：`/daily/`。
 - 每日靜態頁：`/daily/YYYY-MM-DD/`。
 - 目前 GA4 會先收集網站到訪、頁面瀏覽、捲動與外連點擊等資料。若要在前台顯示每日到訪人數，下一階段需串接 GA4 Data API，並透過 GitHub Actions 產生公開 JSON。
 

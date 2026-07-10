@@ -2,6 +2,37 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.6.0｜2026-07-10
+
+版本類型：中改版
+
+### 修改原因
+
+每日靜態頁已上線，但還需要一個穩定的內容索引入口，讓讀者、Google 與 AI 搜尋工具能從列表頁發現所有有效日報，形成更完整的內部連結結構。
+
+### 修改內容
+
+- 新增日報列表頁：`/daily/`。
+- 列表頁顯示所有有效日報的日期、主標、摘要與區塊數量。
+- 列表頁加入 CollectionPage structured data。
+- 首頁 Header 新增「日報列表」連結。
+- 每日靜態頁 Header 新增「日報列表」與「互動版日報」導覽。
+- `sitemap.xml` 新增 `/daily/` 條目。
+- Footer 版本升為 `v0.6.0`。
+- 更新 README、PRD 與 VERSIONING。
+
+### 驗證
+
+- `python3 scripts/static_site.py`
+- `python3 -m py_compile scripts/static_site.py scripts/generate_daily_digest.py`
+- `/daily/index.html` structured data JSON 可解析。
+- `sitemap.xml` XML 可解析，且包含 `/daily/`、`/daily/2026-07-10/`、`/daily/2026-07-09/`。
+- 空日報 `2026-07-08` 未進入列表與 sitemap。
+
+### 對應 commit
+
+- 待提交
+
 ## v0.5.0｜2026-07-10
 
 版本類型：中改版

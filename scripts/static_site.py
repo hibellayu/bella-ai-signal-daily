@@ -19,7 +19,7 @@ SITEMAP_PATH = ROOT / "sitemap.xml"
 SITE_URL = "https://hibellayu.github.io/bella-ai-signal-daily/"
 SITE_NAME = "Bella's AI 趨勢日報"
 SITE_SUBTITLE = "Daily brief for marketing decisions"
-VERSION = "v0.5.0"
+VERSION = "v0.6.0"
 VERSION_DATE = "2026/07/10"
 ASSET_VERSION = "20260710f"
 
@@ -38,6 +38,7 @@ def build_static_site(root: Path = ROOT) -> None:
     for digest in digests:
         write_daily_page(root, digest)
 
+    write_daily_index(root, digests)
     write_sitemap(root, digests)
     print(f"Built {len(digests)} static daily pages.")
 
@@ -64,6 +65,85 @@ def write_daily_page(root: Path, digest: dict[str, Any]) -> None:
     out_dir = root / "daily" / report_date
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(render_daily_page(digest), encoding="utf-8")
+
+
+def write_daily_index(root: Path, digests: list[dict[str, Any]]) -> None:
+    out_dir = root / "daily"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "index.html").write_text(render_daily_index(digests), encoding="utf-8")
+
+
+def render_daily_index(digests: list[dict[str, Any]]) -> str:
+    title = f"{SITE_NAME}｜日報列表"
+    description = "依日期整理 Bella's AI 趨勢日報，收錄 AI 產業趨勢、工具更新與行銷應用切角，方便搜尋引擎、AI 搜尋工具與讀者回查每日內容。"
+    canonical = f"{SITE_URL}daily/"
+    json_ld = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": title,
+        "description": description,
+        "url": canonical,
+        "inLanguage": "zh-Hant-TW",
+        "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": SITE_URL},
+        "mainEntity": [
+            {
+                "@type": "Article",
+                "headline": digest.get("headline") or SITE_NAME,
+                "url": f"{SITE_URL}daily/{digest['reportDate']}/",
+                "datePublished": digest.get("generatedAt"),
+            }
+            for digest in digests
+        ],
+    }
+    return f"""<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content="{escape(description)}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{canonical}">
+  <meta property="og:site_name" content="{SITE_NAME}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{escape(description)}">
+  <meta property="og:url" content="{canonical}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{title}">
+  <meta name="twitter:description" content="{escape(description)}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v={ASSET_VERSION}">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CQ9L4MXNL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag("js", new Date());
+    gtag("config", "G-8CQ9L4MXNL");
+  </script>
+  <script type="application/ld+json">
+{escape_json_ld(json_ld)}
+  </script>
+</head>
+<body>
+  {render_header("../", "./")}
+  <main id="top" class="archive-shell">
+    <section class="archive-hero">
+      <p class="eyebrow">Daily Archive</p>
+      <h1>AI 趨勢日報列表</h1>
+      <p>{escape(description)}</p>
+    </section>
+    <section class="archive-list" aria-label="日報列表">
+{render_archive_cards(digests)}
+    </section>
+  </main>
+  {render_footer()}
+</body>
+</html>
+"""
 
 
 def render_daily_page(digest: dict[str, Any]) -> str:
@@ -121,7 +201,7 @@ def render_daily_page(digest: dict[str, Any]) -> str:
   </script>
 </head>
 <body>
-  {render_header()}
+  {render_header("../../", "../")}
   <main id="top" class="shell static-shell">
     {render_meta_panel(digest)}
     <section class="content">
@@ -134,17 +214,20 @@ def render_daily_page(digest: dict[str, Any]) -> str:
 """
 
 
-def render_header() -> str:
+def render_header(home_href: str, archive_href: str) -> str:
     return f"""<header class="topbar">
     <div class="topbar__inner">
-      <a class="brand" href="../../" aria-label="{SITE_NAME} 首頁">
+      <a class="brand" href="{home_href}" aria-label="{SITE_NAME} 首頁">
         <span class="brand__mark">AI</span>
         <span>
           <strong>{SITE_NAME}</strong>
           <small>{SITE_SUBTITLE}</small>
         </span>
       </a>
-      <a class="static-home-link" href="../../">回到互動版日報</a>
+      <nav class="static-links" aria-label="靜態頁導覽">
+        <a class="static-home-link" href="{archive_href}">日報列表</a>
+        <a class="static-home-link" href="{home_href}">互動版日報</a>
+      </nav>
     </div>
   </header>"""
 
@@ -275,6 +358,29 @@ def render_applications(items: list[dict[str, Any]]) -> str:
           </ul>"""
 
 
+def render_archive_cards(digests: list[dict[str, Any]]) -> str:
+    if not digests:
+        return """      <div class="empty-section">目前還沒有可收錄的日報。</div>"""
+    cards = []
+    for digest in digests:
+        report_date = digest["reportDate"]
+        tags = []
+        for section in digest.get("sections", []):
+            if section.get("items"):
+                tags.append(f'{escape(section.get("title", ""))} {len(section["items"])}')
+        cards.append(
+            f"""      <article class="archive-card">
+        <a href="./{escape_attr(report_date)}/">
+          <span>{format_display_date(report_date)}</span>
+          <h2>{escape(digest.get("headline", SITE_NAME))}</h2>
+          <p>{escape(digest.get("summary", ""))}</p>
+          <div class="tag-row">{''.join(f'<span class="tag">{tag}</span>' for tag in tags)}</div>
+        </a>
+      </article>"""
+        )
+    return "\n".join(cards)
+
+
 def render_footer() -> str:
     return f"""<footer class="site-footer">
     <p>© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 {VERSION}｜版本日期 {VERSION_DATE}</p>
@@ -288,6 +394,12 @@ def write_sitemap(root: Path, digests: list[dict[str, Any]]) -> None:
             "lastmod": today_from_digests(digests),
             "changefreq": "daily",
             "priority": "1.0",
+        },
+        {
+            "loc": f"{SITE_URL}daily/",
+            "lastmod": today_from_digests(digests),
+            "changefreq": "daily",
+            "priority": "0.9",
         }
     ]
     for digest in digests:

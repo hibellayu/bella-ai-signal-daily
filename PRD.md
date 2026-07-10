@@ -130,7 +130,7 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 
 ## 版本資訊
 
-- Footer 顯示：`© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.5.0｜版本日期 2026/07/10`。
+- Footer 顯示：`© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.6.0｜版本日期 2026/07/10`。
 - Header 不顯示版本資訊，讓品牌與日期篩選保持乾淨。
 - Header 品牌主標顯示：`Bella's AI 趨勢日報`。
 - Header 英文副標顯示：`Daily brief for marketing decisions`，桌機與手機皆顯示。
@@ -155,6 +155,7 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - 每日靜態頁需包含獨立 title、description、canonical、Open Graph、Twitter Card、GA4 tag 與 Article structured data。
 - `sitemap.xml` 需自動收錄首頁與所有有效每日頁。
 - 每日自動產生流程在寫入 JSON 與 manifest 後，需同步重建靜態頁與 sitemap。
+- 需產生日報列表頁：`/daily/`，列出所有有效每日頁，並提供內部連結。
 
 ## 視覺規格
 
