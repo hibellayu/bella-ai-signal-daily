@@ -32,7 +32,7 @@
 
 ### 對應 commit
 
-- `73e2395 Add GA4 and SEO discovery foundation`
+- `8ef4e0d Add GA4 and SEO discovery foundation`
 
 ## v0.3.3｜2026-07-10
 
