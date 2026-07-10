@@ -32,6 +32,11 @@
 
 - `Add copyright and source risk controls`
 
+### 後續調整
+
+- 依使用者要求，重新將 2026/07/09 日報納入靜態頁、日報列表與 sitemap。
+- 2026/07/08 空示範資料仍維持 `isDemo` / `noindex`，不進入 SEO 靜態頁。
+
 ## v0.6.0｜2026-07-10
 
 版本類型：中改版
