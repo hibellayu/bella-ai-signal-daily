@@ -1,0 +1,58 @@
+{
+  "reportDate": "2026-07-10",
+  "coverageDate": "2026-07-09",
+  "generatedAt": "2026-07-10T08:05:44+08:00",
+  "headline": "今日 AI 日報待補內容",
+  "summary": "自動化流程已建立。下一階段會接上新聞來源收集、篩選評分，並整理成給行銷人與品牌決策者使用的趨勢解讀。",
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    }
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "當天最值得先理解的 AI 產業訊號。",
+      "items": []
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "與行銷工作流直接相關的產品與功能變化。",
+      "items": []
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "由多則訊號整理出的中期觀察。",
+      "items": []
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "品牌、內容、社群與廣告可測的方向。",
+      "items": []
+    }
+  ]
+}

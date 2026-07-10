@@ -1,6 +1,13 @@
 {
-  "latest": "2026-07-09",
+  "latest": "2026-07-10",
   "digests": [
+    {
+      "reportDate": "2026-07-10",
+      "coverageDate": "2026-07-09",
+      "title": "Bella's AI Signal｜2026/07/10",
+      "summary": "自動化流程已建立。下一階段會接上新聞來源收集、篩選評分，並整理成給行銷人與品牌決策者使用的趨勢解讀。",
+      "path": "data/digests/2026-07-10.json"
+    },
     {
       "reportDate": "2026-07-09",
       "coverageDate": "2026-07-08",
