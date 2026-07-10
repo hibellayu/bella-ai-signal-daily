@@ -2,6 +2,8 @@
   "reportDate": "2026-07-08",
   "coverageDate": "2026-07-07",
   "generatedAt": "2026-07-08T07:00:00+08:00",
+  "isDemo": true,
+  "noindex": true,
   "headline": "示範日報資料",
   "summary": "這份資料用來驗證日期篩選；正式串接後會替換為當日 AI 趨勢內容。",
   "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期。",

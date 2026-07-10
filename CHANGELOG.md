@@ -2,6 +2,36 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.7.0｜2026-07-10
+
+版本類型：中改版
+
+### 修改原因
+
+網站已開始做 SEO 與 AI 搜尋引用，需要補上資料來源與內容使用風險控管，避免日報摘要或示範資料被搜尋引擎視為正式新聞內容，也降低內容過度接近來源表達的風險。
+
+### 修改內容
+
+- 來源摘要送入模型前改為短截取，上限為 220 字元。
+- 產文 prompt 新增版權風險控管規則：不得複製來源文章句子、不得翻譯來源段落、必須以行銷策略觀點重新撰寫。
+- 新增 `docs/COPYRIGHT_RISK_POLICY.md`，記錄來源引用、摘要、示範資料、SEO 收錄與下架修正流程。
+- Footer 新增內容使用聲明，說明本站是趨勢整理、評論與行銷應用解讀，新聞來源與原文著作權屬各原媒體與作者所有。
+- 將 2026/07/08 與 2026/07/09 示範日報標記為 `isDemo: true`、`noindex: true`。
+- 靜態頁產生器排除 `isDemo` 與 `noindex` 日報，讓示範資料不進入 `/daily/` 列表、每日靜態頁與 sitemap。
+- Footer 版本升為 `v0.7.0`。
+- 更新 README、PRD、VERSIONING 與 `llms.txt`。
+
+### 驗證
+
+- `python3 scripts/static_site.py`
+- `python3 -m py_compile scripts/static_site.py scripts/generate_daily_digest.py`
+- `sitemap.xml` XML 可解析，且只包含首頁、`/daily/` 與正式日報 `/daily/2026-07-10/`。
+- `/daily/2026-07-09/` 已不再產生，示範日報不進 SEO 靜態頁。
+
+### 對應 commit
+
+- `Add copyright and source risk controls`
+
 ## v0.6.0｜2026-07-10
 
 版本類型：中改版

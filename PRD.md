@@ -25,6 +25,7 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - 每則重點用 What / So What / Now What 結構解讀。
 - 每則重點需顯示來源媒體名稱，媒體名稱本身直接連到原文；不能只寫來源連結、示範來源或單一查看來源按鈕。
 - 內容需有觀點闡述，不只短摘要；每則至少說清楚對行銷工作的含義與判斷。
+- 內容需避免取代原文閱讀，不複製來源文章句子、不翻譯來源段落。
 - 應用切角彙整以條列方式呈現，方便快速掃讀。
 - 語氣與視角以行銷策略者的工作判斷為主，不媒體腔，不只複述新聞。
 
@@ -126,11 +127,14 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - 可選設定 GitHub Variable：`OPENAI_MODEL`。
 - 若沒有 API key、候選新聞不足、產文失敗、JSON 結構不符或內容太薄，不可更新 `manifest.latest`。
 - `manifest.latest` 只能指向通過品質檢查的日報。
+- 來源摘要只作為模型判斷材料，RSS / Atom 摘要截取上限為 220 字元。
+- 產文必須以事件事實與行銷策略觀點重寫，不可複製或翻譯來源段落。
 - `數位時代` 與 `AI 郵報` 若沒有穩定公開 feed，可暫時停用，不可讓失效來源造成整體產生日報失敗；後續改以搜尋 API 或確認來源後啟用。
 
 ## 版本資訊
 
-- Footer 顯示：`© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.6.0｜版本日期 2026/07/10`。
+- Footer 顯示內容使用聲明：`本站內容為 AI 趨勢整理、評論與行銷應用解讀；新聞來源與原文著作權屬各原媒體與作者所有。若需完整內容，請閱讀原文。`
+- Footer 顯示版本資訊：`© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.7.0｜版本日期 2026/07/10`。
 - Header 不顯示版本資訊，讓品牌與日期篩選保持乾淨。
 - Header 品牌主標顯示：`Bella's AI 趨勢日報`。
 - Header 英文副標顯示：`Daily brief for marketing decisions`，桌機與手機皆顯示。
@@ -152,6 +156,7 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - 每份有效日報需產生獨立靜態頁：`/daily/YYYY-MM-DD/`。
 - 靜態頁內容需直接存在 HTML 中，不依賴前端 JavaScript 讀 JSON 才能看到主要文字。
 - 空日報或示範空資料不可進入 sitemap，避免形成薄內容。
+- 標記 `isDemo: true` 或 `noindex: true` 的日報不可產生每日靜態頁、不可進入 `/daily/` 列表與 sitemap。
 - 每日靜態頁需包含獨立 title、description、canonical、Open Graph、Twitter Card、GA4 tag 與 Article structured data。
 - `sitemap.xml` 需自動收錄首頁與所有有效每日頁。
 - 每日自動產生流程在寫入 JSON 與 manifest 後，需同步重建靜態頁與 sitemap。

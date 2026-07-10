@@ -30,6 +30,7 @@ http://localhost:4173
 - `config/sources.json`：自動化新聞來源、追蹤公司與 AI 關鍵字設定。
 - `VERSIONING.md`：版本號、大改版、中改版、小改版規則。
 - `CHANGELOG.md`：版本記錄與修改內容回溯。
+- `docs/COPYRIGHT_RISK_POLICY.md`：版權、來源引用、示範資料與 SEO 收錄風險控管規則。
 - `robots.txt`：搜尋引擎索引規則。
 - `sitemap.xml`：搜尋引擎提交用 sitemap。
 - `llms.txt`：給 AI 搜尋與研究工具讀取的網站定位、內容結構與引用說明。
@@ -55,6 +56,8 @@ OPENAI_MODEL
 
 若沒有候選新聞、沒有 `OPENAI_API_KEY` 或 AI 產文未通過品質檢查，流程會停止並保留上一份有效日報，不會發布空日報。
 
+生成內容遵循來源風險控管：RSS / Atom 摘要只截取短片段供判斷，產文不可複製或翻譯來源段落，並以行銷策略觀點重新撰寫。示範日報與標記 `noindex` 的資料不會進入每日靜態頁與 sitemap。
+
 產生有效日報後，流程會同步重建：
 
 - `daily/YYYY-MM-DD/index.html`
@@ -71,6 +74,7 @@ OPENAI_MODEL
 - AI 搜尋引用輔助：`llms.txt`。
 - 日報列表頁：`/daily/`。
 - 每日靜態頁：`/daily/YYYY-MM-DD/`。
+- 內容使用聲明：本站內容為 AI 趨勢整理、評論與行銷應用解讀；新聞來源與原文著作權屬各原媒體與作者所有。若需完整內容，請閱讀原文。
 - 目前 GA4 會先收集網站到訪、頁面瀏覽、捲動與外連點擊等資料。若要在前台顯示每日到訪人數，下一階段需串接 GA4 Data API，並透過 GitHub Actions 產生公開 JSON。
 
 手動重建靜態頁：

@@ -19,9 +19,10 @@ SITEMAP_PATH = ROOT / "sitemap.xml"
 SITE_URL = "https://hibellayu.github.io/bella-ai-signal-daily/"
 SITE_NAME = "Bella's AI 趨勢日報"
 SITE_SUBTITLE = "Daily brief for marketing decisions"
-VERSION = "v0.6.0"
+VERSION = "v0.7.0"
 VERSION_DATE = "2026/07/10"
-ASSET_VERSION = "20260710f"
+ASSET_VERSION = "20260710g"
+CONTENT_NOTICE = "本站內容為 AI 趨勢整理、評論與行銷應用解讀；新聞來源與原文著作權屬各原媒體與作者所有。若需完整內容，請閱讀原文。"
 
 
 def main() -> None:
@@ -53,7 +54,7 @@ def load_publishable_digests(root: Path) -> list[dict[str, Any]]:
         if not digest_path.exists():
             continue
         digest = json.loads(digest_path.read_text(encoding="utf-8"))
-        if has_digest_content(digest):
+        if is_publishable_digest(digest):
             digests.append(digest)
 
     digests.sort(key=lambda item: item["reportDate"], reverse=True)
@@ -383,6 +384,7 @@ def render_archive_cards(digests: list[dict[str, Any]]) -> str:
 
 def render_footer() -> str:
     return f"""<footer class="site-footer">
+    <p>{CONTENT_NOTICE}</p>
     <p>© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 {VERSION}｜版本日期 {VERSION_DATE}</p>
   </footer>"""
 
@@ -433,6 +435,10 @@ def write_sitemap(root: Path, digests: list[dict[str, Any]]) -> None:
 
 def has_digest_content(digest: dict[str, Any]) -> bool:
     return any(section.get("items") for section in digest.get("sections", []))
+
+
+def is_publishable_digest(digest: dict[str, Any]) -> bool:
+    return has_digest_content(digest) and not digest.get("isDemo") and not digest.get("noindex")
 
 
 def today_from_digests(digests: list[dict[str, Any]]) -> str:

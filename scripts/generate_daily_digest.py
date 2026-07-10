@@ -31,6 +31,7 @@ TAIPEI = timezone(timedelta(hours=8))
 SOURCE_POLICY = "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。"
 PRIORITY = ["產業重大性", "數位行銷影響", "內容 / 搜尋 / 社群 / 媒體廣告影響", "工具可用性"]
 SECTION_IDS = ["major-events", "tool-updates", "trends", "applications"]
+SOURCE_EXCERPT_LIMIT = 220
 
 
 @dataclass
@@ -181,7 +182,7 @@ def parse_rss_item(node: ET.Element, source: dict[str, Any]) -> dict[str, str]:
     return {
         "title": title,
         "url": url,
-        "summary": summary[:420],
+        "summary": truncate_source_summary(summary),
         "published_date": parse_source_date(published_raw, source["region"]),
     }
 
@@ -199,7 +200,7 @@ def parse_atom_entry(node: ET.Element, source: dict[str, Any]) -> dict[str, str]
     return {
         "title": title,
         "url": clean_text(url),
-        "summary": summary[:420],
+        "summary": truncate_source_summary(summary),
         "published_date": parse_source_date(published_raw, source["region"]),
     }
 
@@ -237,6 +238,10 @@ def clean_text(value: str) -> str:
     value = re.sub(r"<[^>]+>", " ", value or "")
     value = html.unescape(value)
     return re.sub(r"\s+", " ", value).strip()
+
+
+def truncate_source_summary(value: str) -> str:
+    return clean_text(value)[:SOURCE_EXCERPT_LIMIT]
 
 
 def score_article(entry: dict[str, str], keywords: list[str], tracked: list[str]) -> tuple[int, list[str]]:
@@ -331,6 +336,10 @@ def build_generation_prompt(
         - 讀者是行銷人、品牌決策者、數位行銷、內容行銷、社群與媒體廣告工作者。
         - 不要寫給 Bella 個人，不要使用「Bella 的工作視角」。
         - 內容要有觀點，不只複述新聞。
+        - 只使用候選新聞中的事件事實、媒體名稱、發布日期與原文 URL 作為判斷依據。
+        - 不得複製來源文章句子，不得翻譯來源段落，不得用接近原文的連續句型改寫。
+        - 每則 summary 只提供脈絡，不要取代原文細節；analysis、what、soWhat、nowWhat 必須用新的行銷策略觀點重寫。
+        - 如果來源資訊不足以確認事件，請降低收錄優先，不要用推測補成事實。
         - Now What 中文標題前台會顯示為「具體行動」，內容請用原子習慣邏輯：小、具體、低負擔、可開始，不要寫「這週」或「本週」。
         - 每則 item 的 sources 必須使用候選新聞中的原文 URL，不可改成媒體首頁。
         - 優先順序：產業重大性 > 數位行銷影響 > 內容 / 搜尋 / 社群 / 媒體廣告影響 > 工具可用性。

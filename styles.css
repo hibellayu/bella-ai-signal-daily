@@ -733,6 +733,10 @@ a {
   margin: 0;
 }
 
+.site-footer p + p {
+  margin-top: 6px;
+}
+
 @media (max-width: 900px) {
   body {
     font-size: 15px;

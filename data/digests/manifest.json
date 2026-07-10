@@ -13,14 +13,18 @@
       "coverageDate": "2026-07-08",
       "title": "Bella's AI 趨勢日報｜2026/07/09",
       "summary": "本日報示範 AI 趨勢如何被轉譯成行銷策略判斷，整理成給行銷人與品牌決策者使用的趨勢解讀。",
-      "path": "data/digests/2026-07-09.json"
+      "path": "data/digests/2026-07-09.json",
+      "isDemo": true,
+      "noindex": true
     },
     {
       "reportDate": "2026-07-08",
       "coverageDate": "2026-07-07",
       "title": "Bella's AI 趨勢日報｜2026/07/08",
       "summary": "示範空窗測試資料：用來驗證日期篩選與回查體驗。",
-      "path": "data/digests/2026-07-08.json"
+      "path": "data/digests/2026-07-08.json",
+      "isDemo": true,
+      "noindex": true
     }
   ]
 }
