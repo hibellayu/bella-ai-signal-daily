@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hibellayu.github.io/bella-ai-signal-daily/sitemap.xml

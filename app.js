@@ -141,7 +141,7 @@ function updateControls(reportDate) {
 }
 
 function renderDigest(digest) {
-  els.digestTitle.textContent = digest.headline || `Bella's AI Signal｜${formatDisplayDate(digest.reportDate)}`;
+  els.digestTitle.textContent = digest.headline || `Bella's AI 趨勢日報｜${formatDisplayDate(digest.reportDate)}`;
   els.digestSummary.textContent = digest.summary || "";
   els.reportDate.textContent = formatDisplayDate(digest.reportDate);
   els.coverageDate.textContent = formatDisplayDate(digest.coverageDate);

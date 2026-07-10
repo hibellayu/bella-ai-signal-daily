@@ -2,6 +2,38 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.4.0｜2026-07-10
+
+版本類型：中改版
+
+### 修改原因
+
+開始讓網站具備被搜尋、被 AI 搜尋理解與被 GA4 量測的基礎條件。這次新增的能力會影響網站曝光、資料分析與後續內容成長判斷，因此升為中改版。
+
+### 修改內容
+
+- 在 GA4 個人帳戶 `夏日時光` 下建立 `Bella's AI 趨勢日報` GA4 資源。
+- 建立 Web stream：`https://hibellayu.github.io/bella-ai-signal-daily/`。
+- 導入 GA4 Measurement ID：`G-8CQ9L4MXNL`。
+- 補上 SEO head：title、description、robots、canonical、Open Graph、Twitter Card。
+- 新增 WebSite structured data，協助搜尋引擎理解網站定位。
+- 新增 `robots.txt`，允許搜尋引擎索引並指向 sitemap。
+- 新增 `sitemap.xml`，先收錄首頁。
+- 新增 `llms.txt`，說明網站定位、內容結構、評分邏輯與引用建議。
+- Footer 版本升為 `v0.4.0`。
+- 更新 README、PRD 與 VERSIONING 版本說明。
+
+### 驗證
+
+- GA4 Web stream 已建立，Measurement ID 為 `G-8CQ9L4MXNL`。
+- `index.html` 已包含 GA4 tag 與 SEO metadata。
+- `robots.txt`、`sitemap.xml`、`llms.txt` 已建立。
+- 下一階段需等待 GitHub Pages 部署後，以正式網址確認 head、GA4 tag 與新檔案可被讀取。
+
+### 對應 commit
+
+- `73e2395 Add GA4 and SEO discovery foundation`
+
 ## v0.3.3｜2026-07-10
 
 版本類型：小改版

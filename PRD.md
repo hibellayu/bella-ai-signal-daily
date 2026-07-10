@@ -130,12 +130,22 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 
 ## 版本資訊
 
-- Footer 顯示：`© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.3.3｜版本日期 2026/07/10`。
+- Footer 顯示：`© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.4.0｜版本日期 2026/07/10`。
 - Header 不顯示版本資訊，讓品牌與日期篩選保持乾淨。
 - Header 品牌主標顯示：`Bella's AI 趨勢日報`。
 - Header 英文副標顯示：`Daily brief for marketing decisions`，桌機與手機皆顯示。
 - 每則新聞分數旁顯示 `i` icon，點擊開啟分數說明彈窗，內容包含評分規則與該則新聞各項分數加總。
 - 版本規則詳見 `VERSIONING.md`。
+
+## 搜尋與分析規格
+
+- 網站需允許搜尋引擎索引首頁。
+- `index.html` 需提供 title、description、canonical、Open Graph、Twitter Card 與 WebSite structured data。
+- `robots.txt` 需允許索引，並指向 `sitemap.xml`。
+- `sitemap.xml` 至少收錄首頁；下一階段若產生每日靜態頁，需同步收錄每日頁 URL。
+- `llms.txt` 用於說明本站定位、內容結構、收錄與評分邏輯，方便 AI 搜尋或研究工具理解引用範圍。
+- GA4 Measurement ID：`G-8CQ9L4MXNL`。
+- GA4 目前作為每日到訪與內容互動的資料來源；前台顯示每日到訪人數需待下一階段串接 GA4 Data API 後再做。
 
 ## 視覺規格
 
