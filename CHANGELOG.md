@@ -31,7 +31,7 @@
 
 ### 對應 commit
 
-- 待提交
+- `338f1c6 Add daily archive page for SEO`
 
 ## v0.5.0｜2026-07-10
 
