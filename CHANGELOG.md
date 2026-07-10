@@ -2,6 +2,33 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.3.3｜2026-07-10
+
+版本類型：小改版
+
+### 修改原因
+
+需要讓讀者理解每則新聞分數的來源，同時將品牌主標改成更直覺的中文定位，降低 `Signal` 一詞造成的理解成本。
+
+### 修改內容
+
+- Header 品牌主標改為 `Bella's AI 趨勢日報`。
+- 英文副標維持 `Daily brief for marketing decisions`，並在手機版顯示。
+- 桌機版品牌主標字級加大一級。
+- 每則新聞分數旁新增 `i` icon。
+- 點擊 `i` icon 會開啟分數說明彈窗，包含評分規則與該則新聞各項分數加總。
+- Footer 版本升為 `v0.3.3`。
+
+### 驗證
+
+- Header 顯示 `Bella's AI 趨勢日報`。
+- 手機版不再隱藏英文副標。
+- 分數旁顯示 `i` icon，點擊可看到該則新聞分數拆解與總分公式。
+
+### 對應 commit
+
+- `debb1cf Add score explanation dialog and rename brand`
+
 ## v0.3.2｜2026-07-10
 
 版本類型：小改版
@@ -23,7 +50,7 @@ Footer 原本使用「更新日期」，容易和日報日期、資料日期或�
 
 ### 對應 commit
 
-- 待本次提交後補上。
+- `ce74ba6 Clarify footer version date`
 
 ## v0.3.1｜2026-07-10
 
@@ -47,7 +74,7 @@ Header 中間的版本資訊在電腦版閱讀體驗上干擾品牌與日期篩�
 
 ### 對應 commit
 
-- 待本次提交後補上。
+- `c88c2b0 Move version metadata to footer`
 
 ## v0.3.0｜2026-07-10
 

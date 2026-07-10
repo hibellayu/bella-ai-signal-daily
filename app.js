@@ -18,12 +18,16 @@ const els = {
   status: document.querySelector("#statusMessage"),
   content: document.querySelector("#digestContent"),
   sectionTemplate: document.querySelector("#sectionTemplate"),
-  itemTemplate: document.querySelector("#itemTemplate")
+  itemTemplate: document.querySelector("#itemTemplate"),
+  scoreDialog: document.querySelector("#scoreDialog"),
+  scoreDialogBody: document.querySelector("#scoreDialogBody"),
+  scoreDialogClose: document.querySelector(".score-dialog__close")
 };
 
 init();
 
 async function init() {
+  setupScoreDialog();
   try {
     const response = await fetch(manifestPath);
     if (!response.ok) throw new Error("manifest not found");
@@ -187,7 +191,7 @@ function renderItem(item) {
   const node = els.itemTemplate.content.cloneNode(true);
   renderSources(node.querySelector(".source-line"), item);
   node.querySelector("h3").textContent = item.title;
-  node.querySelector(".score-badge").textContent = `${item.score?.total ?? "-"} 分`;
+  renderScoreBadge(node.querySelector(".score-badge"), item);
   node.querySelector(".summary").textContent = item.summary;
   renderParagraphs(node.querySelector(".analysis"), item.analysis || []);
   node.querySelector(".what").textContent = item.what;
@@ -203,6 +207,70 @@ function renderItem(item) {
   }));
 
   return node;
+}
+
+function renderScoreBadge(container, item) {
+  const scoreText = document.createElement("span");
+  scoreText.textContent = `${item.score?.total ?? "-"} 分`;
+
+  const infoButton = document.createElement("button");
+  infoButton.type = "button";
+  infoButton.className = "score-info";
+  infoButton.textContent = "i";
+  infoButton.setAttribute("aria-label", `查看「${item.title}」分數說明`);
+  infoButton.addEventListener("click", () => openScoreDialog(item));
+
+  container.replaceChildren(scoreText, infoButton);
+}
+
+function setupScoreDialog() {
+  els.scoreDialogClose?.addEventListener("click", () => els.scoreDialog?.close());
+  els.scoreDialog?.addEventListener("click", (event) => {
+    if (event.target === els.scoreDialog) {
+      els.scoreDialog.close();
+    }
+  });
+}
+
+function openScoreDialog(item) {
+  if (!els.scoreDialog || !els.scoreDialogBody) return;
+
+  const score = item.score || {};
+  const fields = [
+    ["產業重大性", score.industryImpact ?? 0, "0-5"],
+    ["數位行銷影響", score.digitalMarketingImpact ?? 0, "0-5"],
+    ["內容 / 搜尋 / 社群 / 媒體廣告影響", score.contentSearchSocialAdsImpact ?? 0, "0-5"],
+    ["工具可用性", score.toolUsability ?? 0, "0-5"],
+    ["指定追蹤公司 / 工具相關性", score.trackedEntityRelevance ?? 0, "0-3"]
+  ];
+  const calculatedTotal = fields.reduce((sum, [, value]) => sum + Number(value || 0), 0);
+  const total = score.total ?? calculatedTotal;
+
+  const title = document.createElement("p");
+  title.className = "score-dialog__item";
+  title.textContent = item.title;
+
+  const intro = document.createElement("p");
+  intro.textContent = "每則資訊依 5 個面向評分，排序優先看產業重大性，再看數位行銷影響。";
+
+  const list = document.createElement("dl");
+  list.className = "score-breakdown";
+  fields.forEach(([label, value, range]) => {
+    const row = document.createElement("div");
+    const dt = document.createElement("dt");
+    const dd = document.createElement("dd");
+    dt.textContent = `${label}（${range}）`;
+    dd.textContent = `${value} 分`;
+    row.append(dt, dd);
+    list.append(row);
+  });
+
+  const formula = document.createElement("p");
+  formula.className = "score-formula";
+  formula.textContent = `${fields.map(([, value]) => value).join(" + ")} = ${total} 分`;
+
+  els.scoreDialogBody.replaceChildren(title, intro, list, formula);
+  els.scoreDialog.showModal();
 }
 
 function renderSources(container, item) {
