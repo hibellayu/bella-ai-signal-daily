@@ -19,6 +19,8 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from static_site import build_static_site
+
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config" / "sources.json"
@@ -93,6 +95,7 @@ def main() -> None:
     digest_path = DIGEST_DIR / f"{report_date.isoformat()}.json"
     write_json(digest_path, digest)
     update_manifest(report_date.isoformat(), coverage_date.isoformat(), digest)
+    build_static_site(ROOT)
     print(f"Published digest: {digest_path.relative_to(ROOT)}")
 
 
@@ -408,7 +411,7 @@ def update_manifest(report_date: str, coverage_date: str, digest: dict[str, Any]
     entry = {
         "reportDate": report_date,
         "coverageDate": coverage_date,
-        "title": f"Bella's AI Signal｜{report_date.replace('-', '/')}",
+        "title": f"Bella's AI 趨勢日報｜{report_date.replace('-', '/')}",
         "summary": digest["summary"],
         "path": f"data/digests/{report_date}.json",
     }

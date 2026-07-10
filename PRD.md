@@ -130,7 +130,7 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 
 ## 版本資訊
 
-- Footer 顯示：`© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.4.0｜版本日期 2026/07/10`。
+- Footer 顯示：`© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.5.0｜版本日期 2026/07/10`。
 - Header 不顯示版本資訊，讓品牌與日期篩選保持乾淨。
 - Header 品牌主標顯示：`Bella's AI 趨勢日報`。
 - Header 英文副標顯示：`Daily brief for marketing decisions`，桌機與手機皆顯示。
@@ -146,6 +146,15 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - `llms.txt` 用於說明本站定位、內容結構、收錄與評分邏輯，方便 AI 搜尋或研究工具理解引用範圍。
 - GA4 Measurement ID：`G-8CQ9L4MXNL`。
 - GA4 目前作為每日到訪與內容互動的資料來源；前台顯示每日到訪人數需待下一階段串接 GA4 Data API 後再做。
+
+## 每日靜態頁規格
+
+- 每份有效日報需產生獨立靜態頁：`/daily/YYYY-MM-DD/`。
+- 靜態頁內容需直接存在 HTML 中，不依賴前端 JavaScript 讀 JSON 才能看到主要文字。
+- 空日報或示範空資料不可進入 sitemap，避免形成薄內容。
+- 每日靜態頁需包含獨立 title、description、canonical、Open Graph、Twitter Card、GA4 tag 與 Article structured data。
+- `sitemap.xml` 需自動收錄首頁與所有有效每日頁。
+- 每日自動產生流程在寫入 JSON 與 manifest 後，需同步重建靜態頁與 sitemap。
 
 ## 視覺規格
 

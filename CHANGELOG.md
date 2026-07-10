@@ -2,6 +2,39 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.5.0｜2026-07-10
+
+版本類型：中改版
+
+### 修改原因
+
+網站已完成 GA4 與 Search Console 基礎設定，但日報主要內容仍由前端 JavaScript 讀取 JSON 後渲染。為了提升 Google 收錄與 AI 搜尋引用機率，需要讓每份日報都有可直接讀取的靜態 HTML 頁。
+
+### 修改內容
+
+- 新增 `scripts/static_site.py`，由日報 JSON 產生每日靜態頁。
+- 產生每日頁路徑：`/daily/YYYY-MM-DD/`。
+- 每日頁包含完整日報內容、來源連結、評分、What / So What / Now What 與應用切角。
+- 每日頁加入獨立 title、description、canonical、Open Graph、Twitter Card、GA4 tag 與 Article structured data。
+- `sitemap.xml` 改為由腳本產生，收錄首頁與有效每日頁。
+- 空日報不產生靜態頁、不進 sitemap，避免形成薄內容。
+- 自動化日報產生器在成功寫入 JSON 與 manifest 後，會同步重建靜態頁與 sitemap。
+- Footer 版本升為 `v0.5.0`。
+- manifest title 由 `Bella's AI Signal` 改為 `Bella's AI 趨勢日報`。
+
+### 驗證
+
+- `python3 scripts/static_site.py`
+- `python3 -m py_compile scripts/static_site.py scripts/generate_daily_digest.py`
+- 每日頁 structured data JSON 可解析。
+- `sitemap.xml` XML 可解析。
+- 產生 `daily/2026-07-10/index.html` 與 `daily/2026-07-09/index.html`。
+- 空日報 `2026-07-08` 未進入 sitemap。
+
+### 對應 commit
+
+- 待提交
+
 ## v0.4.0｜2026-07-10
 
 版本類型：中改版

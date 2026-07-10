@@ -134,6 +134,21 @@ a {
   padding: 0 32px 0 10px;
 }
 
+.static-home-link {
+  padding: 8px 12px;
+  border: 1px solid rgba(196, 154, 108, 0.28);
+  border-radius: 6px;
+  color: var(--deep-text);
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.static-home-link:hover {
+  border-color: var(--copper);
+  color: var(--copper);
+}
+
 .shell {
   width: min(1160px, calc(100% - 40px));
   margin: 36px auto 72px;
@@ -666,6 +681,10 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
+  }
+
+  .static-home-link {
+    width: fit-content;
   }
 
   .date-picker select {
