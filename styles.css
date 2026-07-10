@@ -102,14 +102,6 @@ a {
   line-height: 1.4;
 }
 
-.build-meta {
-  margin: 0 auto 0 0;
-  color: var(--deep-muted);
-  font-size: 10px;
-  line-height: 1.5;
-  white-space: nowrap;
-}
-
 .date-picker {
   display: flex;
   align-items: end;
@@ -549,12 +541,6 @@ a {
   }
 
   .brand small {
-    font-size: 12px;
-  }
-
-  .build-meta {
-    margin: 0;
-    white-space: normal;
     font-size: 12px;
   }
 
