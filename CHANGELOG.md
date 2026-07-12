@@ -2,6 +2,34 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.7.1｜2026-07-12
+
+版本類型：小改版
+
+### 修改原因
+
+2026/07/11 與 2026/07/12 的 GitHub Actions 排程皆有執行，但因 repository 未設定 `OPENAI_API_KEY`，產生器跳過發布後仍回傳成功，造成 workflow 顯示綠燈、正式站卻停在 7/10。此外，自動提交範圍只包含日報 JSON，沒有涵蓋每日靜態頁、日報列表與 sitemap。
+
+### 修改內容
+
+- 排程由台北時間 07:00 提前至 06:30 啟動，預留 GitHub Actions 延遲與 Pages 部署時間。
+- Workflow 新增 `OPENAI_API_KEY` 前置檢查；未設定時直接失敗並顯示明確錯誤。
+- 產生器遇到 API Key 缺失、候選內容不足或空日報時改為非零退出，不再顯示假成功。
+- 自動提交範圍擴大為日報 JSON、每日靜態頁、日報列表與 `sitemap.xml`。
+- Footer 版本升為 `v0.7.1`，版本日期更新為 2026/07/12。
+- 更新 README、PRD 與 VERSIONING。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- 無 `OPENAI_API_KEY` 執行產生器時，流程以非零狀態結束且不修改日報資料。
+- `python3 scripts/static_site.py` 可重建每日靜態頁、日報列表與 sitemap。
+- Workflow YAML 可解析，且提交範圍包含 `data/digests/*.json`、`daily` 與 `sitemap.xml`。
+
+### 對應 commit
+
+- `Fix daily digest automation failures`
+
 ## v0.7.0｜2026-07-10
 
 版本類型：中改版

@@ -3,8 +3,8 @@ name: Daily AI Signal
 on:
   workflow_dispatch:
   schedule:
-    # 07:00 Asia/Taipei = 23:00 UTC
-    - cron: "0 23 * * *"
+    # Start at 06:30 Asia/Taipei so GitHub scheduling delays do not push publication past 07:00.
+    - cron: "30 22 * * *"
 
 permissions:
   contents: write
@@ -21,6 +21,15 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Validate generation credentials
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::OPENAI_API_KEY GitHub Secret is not configured."
+            exit 1
+          fi
+
       - name: Generate digest
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -31,4 +40,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: generate daily AI signal"
-          file_pattern: data/digests/*.json
+          file_pattern: "data/digests/*.json daily sitemap.xml"

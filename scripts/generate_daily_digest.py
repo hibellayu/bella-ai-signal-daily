@@ -70,13 +70,11 @@ def main() -> None:
         return
 
     if len(selected) < 5:
-        print(f"Only {len(selected)} candidates found; skip publishing to avoid thin digest.")
-        return
+        raise RuntimeError(f"Only {len(selected)} candidates found; digest was not published to avoid thin content.")
 
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
-        print("OPENAI_API_KEY is not set; skip publishing digest.")
-        return
+        raise RuntimeError("OPENAI_API_KEY is not set; digest cannot be generated.")
 
     digest = generate_digest_with_openai(
         api_key=api_key,
@@ -90,8 +88,7 @@ def main() -> None:
     validate_digest(digest)
 
     if not has_digest_content(digest):
-        print(f"No digest items generated for {report_date.isoformat()}; skip publishing empty digest.")
-        return
+        raise RuntimeError(f"No digest items generated for {report_date.isoformat()}; empty digest was not published.")
 
     digest_path = DIGEST_DIR / f"{report_date.isoformat()}.json"
     write_json(digest_path, digest)

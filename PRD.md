@@ -134,7 +134,7 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 ## 版本資訊
 
 - Footer 顯示內容使用聲明：`本站內容為 AI 趨勢整理、評論與行銷應用解讀；新聞來源與原文著作權屬各原媒體與作者所有。若需完整內容，請閱讀原文。`
-- Footer 顯示版本資訊：`© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.7.0｜版本日期 2026/07/10`。
+- Footer 顯示版本資訊：`© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.7.1｜版本日期 2026/07/12`。
 - Header 不顯示版本資訊，讓品牌與日期篩選保持乾淨。
 - Header 品牌主標顯示：`Bella's AI 趨勢日報`。
 - Header 英文副標顯示：`Daily brief for marketing decisions`，桌機與手機皆顯示。
