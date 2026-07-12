@@ -289,6 +289,7 @@ def generate_digest_with_openai(
     payload = {
         "model": model,
         "temperature": 0.4,
+        "max_tokens": 16000,
         "response_format": {"type": "json_object"},
         "messages": [
             {
@@ -422,6 +423,12 @@ def build_generation_prompt(
         applications item 欄位：
         - title: 只能是品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程之一
         - summary: 80-180 字，跨新聞統整變化、策略判斷與具體應用
+
+        合格深度示例（只學習推理層次與行動顆粒度，不可沿用事件內容）：
+        - What：「AI 瀏覽器的競爭從『另開新入口』轉向『嵌入既有入口』。品牌接觸點會從搜尋結果與網站頁面，延伸到 AI 幫使用者瀏覽、摘要與代辦的過程。」
+        - So What：「行銷團隊不能只問使用者會不會點進網站，還要問 AI 代理在瀏覽時會如何判斷品牌是否值得推薦。若產品資訊、FAQ、價格、比較、評測與信任證據不清楚，品牌可能在 AI 幫使用者做第一輪篩選時就被排除。」
+        - Now What：「先選 1 個最重要的產品頁，問 AI 一句：『請比較這個產品和主要競品，告訴我差異。』把 AI 沒講清楚或講錯的地方記成 3 個待補欄位，例如價格、規格、適用情境。先補其中 1 欄即可。」
+        - 應用切角：「品牌策略｜把 AI 入口視為品牌信任入口。未來品牌不只被人搜尋，也會被 AI 代理閱讀、摘要、比較與推薦，因此品牌主張、產品證據、FAQ、評測與第三方引用要被整理成 AI 容易理解的信任系統。」
 
         候選新聞 JSON：
         {json.dumps(article_payload, ensure_ascii=False, indent=2)}
