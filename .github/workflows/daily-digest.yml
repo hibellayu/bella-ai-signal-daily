@@ -39,6 +39,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+          OPENAI_REWRITE_MODEL: ${{ vars.OPENAI_REWRITE_MODEL || 'gpt-4.1' }}
         run: |
           if [ -n "${{ inputs.report_date }}" ]; then
             python scripts/generate_daily_digest.py --report-date "${{ inputs.report_date }}"

@@ -81,10 +81,14 @@ def main() -> None:
 
     digest: dict[str, Any] | None = None
     quality_feedback = ""
+    primary_model = os.environ.get("OPENAI_MODEL", "gpt-4.1-mini")
+    rewrite_model = os.environ.get("OPENAI_REWRITE_MODEL", "gpt-4.1")
     for attempt in range(1, MAX_GENERATION_ATTEMPTS + 1):
+        attempt_model = primary_model if attempt == 1 else rewrite_model
+        print(f"Generation attempt {attempt} using {attempt_model}.")
         digest = generate_digest_with_openai(
             api_key=api_key,
-            model=os.environ.get("OPENAI_MODEL", "gpt-4.1-mini"),
+            model=attempt_model,
             report_date=report_date.isoformat(),
             coverage_date=coverage_date.isoformat(),
             generated_at=generated_at,
