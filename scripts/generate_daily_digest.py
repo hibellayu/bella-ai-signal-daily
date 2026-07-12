@@ -382,7 +382,8 @@ def build_generation_prompt(
         - What「事件本質」不是縮短新聞標題；要說明改變前後的差異，以及這個變化對行銷工作的意義。
         - So What「影響判讀」要說明誰會受影響、行為或競爭規則如何改變、品牌若不調整會失去什麼，不可只寫「影響品牌信任」。
         - Now What 中文標題前台會顯示為「具體行動」。內容使用原子習慣邏輯，必須包含：1 個明確起點、具體數量、實際動作、可看見的產出或完成標準。不要設定「這週、本週、幾天內、幾週內、幾個月內」等期限，也不要只寫「檢視、評估、探索、嘗試」。
-        - 應用切角不是逐則新聞的另一版摘要。必須跨新聞歸納共同變化，從品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程中選 4 至 6 個不重複面向。
+        - 應用切角不是逐則新聞的另一版摘要。必須跨新聞歸納共同變化，並固定產出品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程六個面向，不可省略。
+        - 即使當天沒有直接對應某個面向的新聞，也要從當日 AI 趨勢推論該面向的行銷應用變化，不可把社群應用、媒體廣告或團隊流程併入數位行銷。
         - 每個應用切角 title 只能使用上述六個面向名稱；summary 必須包含「趨勢造成什麼變化、策略上應如何重新判斷、可從哪個具體應用開始」。
         - 同一篇來源文章不可在同一區塊重複湊數；trends 可以引用大事件或工具更新的來源做跨事件歸納，但必須產生新的中期判斷。
         - 每則 item 的 sources 必須使用候選新聞中的原文 URL，不可改成媒體首頁。
@@ -405,7 +406,7 @@ def build_generation_prompt(
             {{"id": "major-events", "title": "大事件", "description": "...", "items": [3 至 4 則]}},
             {{"id": "tool-updates", "title": "工具更新", "description": "...", "items": [2 至 4 則]}},
             {{"id": "trends", "title": "值得追蹤的趨勢", "description": "...", "items": [1 至 3 則]}},
-            {{"id": "applications", "title": "應用切角彙整", "description": "...", "items": [4 至 6 則]}}
+            {{"id": "applications", "title": "應用切角彙整", "description": "...", "items": [固定 6 則]}}
           ]
         }}
 
@@ -422,7 +423,7 @@ def build_generation_prompt(
 
         applications item 欄位：
         - title: 只能是品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程之一
-        - summary: 80-180 字，跨新聞統整變化、策略判斷與具體應用
+        - summary: 80-180 字，跨新聞統整變化、策略判斷與具體應用；不可只複述單則新聞
 
         合格深度示例（只學習推理層次與行動顆粒度，不可沿用事件內容）：
         - What：「AI 瀏覽器的競爭從『另開新入口』轉向『嵌入既有入口』。品牌接觸點會從搜尋結果與網站頁面，延伸到 AI 幫使用者瀏覽、摘要與代辦的過程。」
@@ -457,6 +458,10 @@ def validate_digest(digest: dict[str, Any]) -> None:
             app_titles = [item.get("title", "") for item in items]
             if len(set(app_titles)) != len(app_titles):
                 issues.append("應用切角標題不可重複")
+            if set(app_titles) != APPLICATION_TITLES:
+                missing = sorted(APPLICATION_TITLES - set(app_titles))
+                extra = sorted(set(app_titles) - APPLICATION_TITLES)
+                issues.append(f"應用切角必須固定六大面向，缺少 {missing}，多出 {extra}")
             for item in items:
                 title = item.get("title", "")
                 summary = item.get("summary", "")
@@ -498,7 +503,7 @@ def validate_digest(digest: dict[str, Any]) -> None:
                     issues.append(f"同一區塊重複收錄來源文章：{url}")
                 if url:
                     section_source_urls.add(url)
-    if non_app_items < 5 or app_items < 4:
+    if non_app_items < 5 or app_items != 6:
         issues.append(f"內容數量不足：新聞 {non_app_items} 則、應用切角 {app_items} 則")
     if issues:
         raise ValueError("；".join(issues))
