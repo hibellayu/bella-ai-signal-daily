@@ -2,6 +2,36 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.10.0｜2026-07-12
+
+版本類型：中改版
+
+### 修改原因
+
+網站已具備基本 sitemap、robots、GA4 與靜態日報頁，但根首頁仍以 JavaScript 載入內容，搜尋摘要容易抓到「載入中」與空狀態文字；同時缺少 favicon 與社群分享預覽圖，連結分享時品牌識別不足。為了讓網站更容易被搜尋引擎與 AI 搜尋工具理解，需要把最新日報內容預先輸出在首頁，並補齊分享與結構化資料。
+
+### 修改內容
+
+- `scripts/static_site.py` 新增根首頁產生流程，首頁會預渲染最新一日日報內容，JavaScript 仍保留日期篩選互動。
+- 每日靜態頁、日報列表與首頁新增 `meta keywords`、`og:image`、`twitter:image` 與 `summary_large_image`。
+- Article / WebSite / CollectionPage JSON-LD 新增 `image`、`keywords` 與更明確的 `about` 主題資料。
+- 每日 description 自動壓縮，避免搜尋結果摘要過長。
+- 新增品牌 favicon：`assets/favicon.svg`、`assets/favicon-32.png`、`assets/apple-touch-icon.png`、`assets/icon-512.png`。
+- 新增社群分享預覽圖：`assets/og-image.png`，尺寸為 1200 x 630。
+- Footer 版本升為 `v0.10.0`，靜態資源版本升為 `20260712a`。
+
+### 驗證
+
+- `python3 -m py_compile scripts/static_site.py`
+- `python3 scripts/static_site.py`
+- 確認首頁、日報列表與 2026/07/12 日報頁皆有 favicon、OG image、Twitter image、keywords 與 JSON-LD image。
+- 確認首頁 HTML 不再包含「載入中」作為初始內容。
+- 確認圖片尺寸：favicon 32 x 32、apple touch icon 180 x 180、OG image 1200 x 630。
+
+### 對應 commit
+
+- `Add SEO preview assets`
+
 ## v0.9.1｜2026-07-12
 
 版本類型：小改版

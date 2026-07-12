@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bella's AI 趨勢日報">
+  <rect width="64" height="64" rx="14" fill="#2b2520"/>
+  <rect x="7" y="7" width="50" height="50" rx="10" fill="#c99c6b"/>
+  <path d="M18 43l8.6-22h5.2l8.5 22h-5.6l-1.7-4.9h-7.9L23.4 43H18zm8.5-9.1h5.1l-2.5-7.5h-.1l-2.5 7.5z" fill="#2b2520"/>
+  <path d="M43.4 43V21h5.2v22h-5.2z" fill="#2b2520"/>
+  <circle cx="49.5" cy="17" r="3.1" fill="#8f2f2b"/>
+</svg>

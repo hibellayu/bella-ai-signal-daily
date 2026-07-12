@@ -19,10 +19,12 @@ SITEMAP_PATH = ROOT / "sitemap.xml"
 SITE_URL = "https://hibellayu.github.io/bella-ai-signal-daily/"
 SITE_NAME = "Bella's AI 趨勢日報"
 SITE_SUBTITLE = "Daily brief for marketing decisions"
-VERSION = "v0.9.1"
+VERSION = "v0.10.0"
 VERSION_DATE = "2026/07/12"
-ASSET_VERSION = "20260710g"
+ASSET_VERSION = "20260712a"
 CONTENT_NOTICE = "本站內容為 AI 趨勢整理、評論與行銷應用解讀；新聞來源與原文著作權屬各原媒體與作者所有。若需完整內容，請閱讀原文。"
+SOCIAL_IMAGE_URL = f"{SITE_URL}assets/og-image.png"
+SOCIAL_IMAGE_ALT = "Bella's AI 趨勢日報品牌預覽圖"
 
 
 def main() -> None:
@@ -35,6 +37,9 @@ def build_static_site(root: Path = ROOT) -> None:
     if daily_dir.exists():
         shutil.rmtree(daily_dir)
     daily_dir.mkdir(parents=True, exist_ok=True)
+
+    if digests:
+        write_home_page(root, digests[0])
 
     for digest in digests:
         write_daily_page(root, digest)
@@ -61,6 +66,10 @@ def load_publishable_digests(root: Path) -> list[dict[str, Any]]:
     return digests
 
 
+def write_home_page(root: Path, latest_digest: dict[str, Any]) -> None:
+    (root / "index.html").write_text(render_home_page(latest_digest), encoding="utf-8")
+
+
 def write_daily_page(root: Path, digest: dict[str, Any]) -> None:
     report_date = digest["reportDate"]
     out_dir = root / "daily" / report_date
@@ -76,8 +85,9 @@ def write_daily_index(root: Path, digests: list[dict[str, Any]]) -> None:
 
 def render_daily_index(digests: list[dict[str, Any]]) -> str:
     title = f"{SITE_NAME}｜日報列表"
-    description = "依日期整理 Bella's AI 趨勢日報，收錄 AI 產業趨勢、工具更新與行銷應用切角，方便搜尋引擎、AI 搜尋工具與讀者回查每日內容。"
+    description = build_meta_description("依日期整理 Bella's AI 趨勢日報，收錄 AI 產業趨勢、工具更新與行銷應用切角，方便搜尋引擎、AI 搜尋工具與讀者回查每日內容。")
     canonical = f"{SITE_URL}daily/"
+    keywords = base_keywords()
     json_ld = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
@@ -85,6 +95,8 @@ def render_daily_index(digests: list[dict[str, Any]]) -> str:
         "description": description,
         "url": canonical,
         "inLanguage": "zh-Hant-TW",
+        "image": SOCIAL_IMAGE_URL,
+        "keywords": ", ".join(keywords),
         "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": SITE_URL},
         "mainEntity": [
             {
@@ -103,17 +115,21 @@ def render_daily_index(digests: list[dict[str, Any]]) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content="{escape(description)}">
+  <meta name="keywords" content="{escape(', '.join(keywords))}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="{canonical}">
+{render_icon_links("../")}
   <meta property="og:site_name" content="{SITE_NAME}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{escape(description)}">
   <meta property="og:url" content="{canonical}">
-  <meta name="twitter:card" content="summary">
+{render_social_image_meta()}
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{escape(description)}">
+  <meta name="twitter:image" content="{SOCIAL_IMAGE_URL}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
@@ -147,11 +163,163 @@ def render_daily_index(digests: list[dict[str, Any]]) -> str:
 """
 
 
+def render_home_page(latest_digest: dict[str, Any]) -> str:
+    title = f"{SITE_NAME}｜AI 趨勢、工具更新與行銷應用"
+    description = build_meta_description(
+        "Bella's AI 趨勢日報每日整理 AI 產業趨勢、工具更新與行銷應用切角，協助行銷人與品牌決策者快速理解資訊、判斷影響並找到可落地的行動。"
+    )
+    canonical = SITE_URL
+    keywords = digest_keywords(latest_digest)
+    json_ld = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": SITE_NAME,
+        "alternateName": "Bella's AI Signal Daily",
+        "url": canonical,
+        "inLanguage": "zh-Hant-TW",
+        "description": description,
+        "image": SOCIAL_IMAGE_URL,
+        "keywords": ", ".join(keywords),
+        "publisher": {"@type": "Person", "name": "Bella Yu"},
+        "mainEntity": {
+            "@type": "Article",
+            "headline": latest_digest.get("headline") or SITE_NAME,
+            "url": f"{SITE_URL}daily/{latest_digest['reportDate']}/",
+            "datePublished": latest_digest.get("generatedAt"),
+        },
+    }
+    priority = latest_digest.get("scoringPolicy", {}).get("priority", [])
+    section_nav = "\n".join(
+        f'        <a href="#{escape_attr(section["id"])}">{escape(section.get("title", ""))}</a>'
+        for section in latest_digest.get("sections", [])
+        if section.get("items")
+    )
+
+    return f"""<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content="{escape(description)}">
+  <meta name="keywords" content="{escape(', '.join(keywords))}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{canonical}">
+{render_icon_links("")}
+  <meta property="og:site_name" content="{SITE_NAME}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{escape(description)}">
+  <meta property="og:url" content="{canonical}">
+{render_social_image_meta()}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{title}">
+  <meta name="twitter:description" content="{escape(description)}">
+  <meta name="twitter:image" content="{SOCIAL_IMAGE_URL}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v={ASSET_VERSION}">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CQ9L4MXNL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag("js", new Date());
+    gtag("config", "G-8CQ9L4MXNL");
+  </script>
+  <script type="application/ld+json">
+{escape_json_ld(json_ld)}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#top" aria-label="{SITE_NAME} 首頁">
+        <span class="brand__mark">AI</span>
+        <span>
+          <strong>{SITE_NAME}</strong>
+          <small>{SITE_SUBTITLE}</small>
+        </span>
+      </a>
+
+      <div class="topbar__tools">
+        <a class="static-home-link" href="daily/">日報列表</a>
+        <form class="date-picker" aria-label="日報日期篩選">
+          <label>
+            <span>年</span>
+            <select id="yearSelect"></select>
+          </label>
+          <label>
+            <span>月</span>
+            <select id="monthSelect"></select>
+          </label>
+          <label>
+            <span>日</span>
+            <select id="daySelect"></select>
+          </label>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="shell">
+    <aside class="panel digest-meta" aria-label="日報資訊">
+      <p class="eyebrow">Today's Signal</p>
+      <h1 id="digestTitle">{escape(latest_digest.get("headline", SITE_NAME))}</h1>
+      <p id="digestSummary" class="digest-meta__summary">{escape(latest_digest.get("summary", ""))}</p>
+
+      <dl class="meta-grid">
+        <div>
+          <dt>日報日期</dt>
+          <dd id="reportDate">{format_display_date(latest_digest.get("reportDate"))}</dd>
+        </div>
+        <div>
+          <dt>資料日期</dt>
+          <dd id="coverageDate">{format_display_date(latest_digest.get("coverageDate"))}</dd>
+        </div>
+        <div>
+          <dt>生成時間</dt>
+          <dd id="generatedAt">{format_generated_at(latest_digest.get("generatedAt"))}</dd>
+        </div>
+        <div>
+          <dt>收錄上限</dt>
+          <dd>10-14 則資訊</dd>
+        </div>
+      </dl>
+
+      <div class="signal-policy">
+        <h2>收錄優先順序</h2>
+        <ol id="priorityList">{''.join(f'<li>{escape(item)}</li>' for item in priority)}</ol>
+      </div>
+
+      <nav class="section-nav" aria-label="區塊導覽">
+{section_nav}
+      </nav>
+    </aside>
+
+    <section class="content" aria-live="polite">
+      <div id="statusMessage" class="status" hidden></div>
+      <div id="digestContent">
+{render_sections(latest_digest)}
+      </div>
+    </section>
+  </main>
+
+  {render_footer()}
+{render_dynamic_templates()}
+  <script src="app.js?v={ASSET_VERSION}"></script>
+</body>
+</html>
+"""
+
+
 def render_daily_page(digest: dict[str, Any]) -> str:
     report_date = digest["reportDate"]
     title = f"{escape(digest.get('headline') or SITE_NAME)}｜{format_display_date(report_date)}"
-    description = digest.get("summary") or "AI 趨勢、工具更新與行銷應用日報。"
+    description = build_meta_description(digest.get("summary") or "AI 趨勢、工具更新與行銷應用日報。")
     canonical = f"{SITE_URL}daily/{report_date}/"
+    keywords = digest_keywords(digest)
     json_ld = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -162,10 +330,12 @@ def render_daily_page(digest: dict[str, Any]) -> str:
         "inLanguage": "zh-Hant-TW",
         "url": canonical,
         "mainEntityOfPage": canonical,
+        "image": SOCIAL_IMAGE_URL,
+        "keywords": ", ".join(keywords),
         "author": {"@type": "Person", "name": "Bella Yu"},
         "publisher": {"@type": "Person", "name": "Bella Yu"},
         "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": SITE_URL},
-        "about": digest.get("trackedEntities", []),
+        "about": [{"@type": "Thing", "name": keyword} for keyword in keywords[:12]],
     }
 
     return f"""<!DOCTYPE html>
@@ -175,17 +345,21 @@ def render_daily_page(digest: dict[str, Any]) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content="{escape(description)}">
+  <meta name="keywords" content="{escape(', '.join(keywords))}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="{canonical}">
+{render_icon_links("../../")}
   <meta property="og:site_name" content="{SITE_NAME}">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{escape(description)}">
   <meta property="og:url" content="{canonical}">
-  <meta name="twitter:card" content="summary">
+{render_social_image_meta()}
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{escape(description)}">
+  <meta name="twitter:image" content="{SOCIAL_IMAGE_URL}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
@@ -382,6 +556,71 @@ def render_archive_cards(digests: list[dict[str, Any]]) -> str:
     return "\n".join(cards)
 
 
+def render_dynamic_templates() -> str:
+    return """  <dialog id="scoreDialog" class="score-dialog" aria-labelledby="scoreDialogTitle">
+    <div class="score-dialog__panel">
+      <button class="score-dialog__close" type="button" aria-label="關閉分數說明">×</button>
+      <h2 id="scoreDialogTitle">分數怎麼來</h2>
+      <div id="scoreDialogBody"></div>
+    </div>
+  </dialog>
+
+  <template id="sectionTemplate">
+    <section class="digest-section">
+      <div class="section-heading">
+        <p class="section-heading__count"></p>
+        <h2></h2>
+        <p></p>
+      </div>
+      <div class="item-list"></div>
+    </section>
+  </template>
+
+  <template id="itemTemplate">
+    <article class="signal-card">
+      <div class="signal-card__head">
+        <div>
+          <div class="source-line"></div>
+          <h3></h3>
+        </div>
+        <span class="score-badge"></span>
+      </div>
+      <p class="summary"></p>
+      <div class="analysis"></div>
+      <div class="tag-row"></div>
+      <div class="framework">
+        <section>
+          <h4><span>What</span>事件本質</h4>
+          <p class="what"></p>
+        </section>
+        <section>
+          <h4><span>So What</span>影響判讀</h4>
+          <p class="so-what"></p>
+        </section>
+        <section>
+          <h4><span>Now What</span>具體行動</h4>
+          <p class="now-what"></p>
+        </section>
+      </div>
+    </article>
+  </template>
+"""
+
+
+def render_icon_links(prefix: str) -> str:
+    return f"""  <link rel="icon" type="image/svg+xml" href="{prefix}assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="{prefix}assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{prefix}assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#2b2520">"""
+
+
+def render_social_image_meta() -> str:
+    return f"""  <meta property="og:image" content="{SOCIAL_IMAGE_URL}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{SOCIAL_IMAGE_ALT}">"""
+
+
 def render_footer() -> str:
     return f"""<footer class="site-footer">
     <p>{CONTENT_NOTICE}</p>
@@ -464,6 +703,52 @@ def format_generated_at(value: str | None) -> str:
     except ValueError:
         return value
     return parsed.strftime("%Y/%m/%d %H:%M")
+
+
+def build_meta_description(value: str, limit: int = 118) -> str:
+    normalized = " ".join(str(value).split())
+    if len(normalized) <= limit:
+        return normalized
+    return normalized[: limit - 1].rstrip(" ，。、；：") + "…"
+
+
+def base_keywords() -> list[str]:
+    return [
+        "AI 趨勢",
+        "AI 日報",
+        "AI 趨勢日報",
+        "數位行銷",
+        "品牌策略",
+        "內容行銷",
+        "社群應用",
+        "媒體廣告",
+        "AI 搜尋",
+        "行銷策略",
+        "AI 工具",
+        "生成式 AI",
+    ]
+
+
+def digest_keywords(digest: dict[str, Any]) -> list[str]:
+    keywords: list[str] = []
+    for keyword in base_keywords():
+        add_unique(keywords, keyword)
+    for entity in digest.get("trackedEntities", []):
+        add_unique(keywords, entity)
+    for section in digest.get("sections", []):
+        add_unique(keywords, section.get("title", ""))
+        for item in section.get("items", []):
+            for tag in item.get("tags", []):
+                add_unique(keywords, tag)
+            for source in item.get("sources", []):
+                add_unique(keywords, source.get("name", ""))
+    return keywords[:28]
+
+
+def add_unique(items: list[str], value: Any) -> None:
+    text = str(value).strip()
+    if text and text not in items:
+        items.append(text)
 
 
 def escape(value: Any) -> str:
