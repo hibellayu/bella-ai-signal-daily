@@ -40,7 +40,9 @@ http://localhost:4173
 
 ## 自動更新
 
-`.github/workflows/daily-digest.yml` 預設每天 UTC 23:00 執行，對應台北時間 07:00。流程會抓取來源 feed、篩選 AI 相關新聞、用 OpenAI API 生成日報 JSON，再提交到 GitHub Pages。
+`.github/workflows/daily-digest.yml` 預設每天 UTC 22:30 執行，對應台北時間 06:30，為 GitHub 排程與 Pages 部署預留緩衝。流程會抓取來源 feed、篩選 AI 相關新聞、用 OpenAI API 生成日報 JSON，再提交到 GitHub Pages。
+
+需要回補特定日期時，可在 GitHub Actions 手動執行 `Daily AI Signal`，並於 `report_date` 輸入 `YYYY-MM-DD`。未填日期時，流程會產生當日日報。
 
 需要在 GitHub repository secrets 設定：
 

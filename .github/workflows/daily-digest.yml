@@ -2,6 +2,11 @@ name: Daily AI Signal
 
 on:
   workflow_dispatch:
+    inputs:
+      report_date:
+        description: "Report date in YYYY-MM-DD (optional)"
+        required: false
+        type: string
   schedule:
     # Start at 06:30 Asia/Taipei so GitHub scheduling delays do not push publication past 07:00.
     - cron: "30 22 * * *"
@@ -34,7 +39,12 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
-        run: python scripts/generate_daily_digest.py
+        run: |
+          if [ -n "${{ inputs.report_date }}" ]; then
+            python scripts/generate_daily_digest.py --report-date "${{ inputs.report_date }}"
+          else
+            python scripts/generate_daily_digest.py
+          fi
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
