@@ -1,6 +1,13 @@
 {
-  "latest": "2026-07-12",
+  "latest": "2026-07-13",
   "digests": [
+    {
+      "reportDate": "2026-07-13",
+      "coverageDate": "2026-07-12",
+      "title": "Bella's AI 趨勢日報｜2026/07/13",
+      "summary": "本日焦點聚集於語音 AI 體驗、社群詐騙防護、產業機密訴訟與生成式內容爭議。OpenAI 推出 GPT‑Live 強化語音互動，Meta 面臨社群詐騙壓力，蘋果提告 OpenAI 商業間諜，遊戲產業對生成式 AI 態度分歧。品牌與行銷團隊需重新審視 AI 應用的信任、入口與內容規則，並落實具體的防護與資訊透明策略。",
+      "path": "data/digests/2026-07-13.json"
+    },
     {
       "reportDate": "2026-07-12",
       "coverageDate": "2026-07-11",
