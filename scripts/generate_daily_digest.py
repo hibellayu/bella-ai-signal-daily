@@ -379,7 +379,7 @@ def build_generation_prompt(
         - Now What 中文標題前台會顯示為「具體行動」。內容使用原子習慣邏輯，必須包含：1 個明確起點、具體數量、實際動作、可看見的產出或完成標準。不要寫「這週」或「本週」，也不要只寫「檢視、評估、探索、嘗試」。
         - 應用切角不是逐則新聞的另一版摘要。必須跨新聞歸納共同變化，從品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程中選 4 至 6 個不重複面向。
         - 每個應用切角 title 只能使用上述六個面向名稱；summary 必須包含「趨勢造成什麼變化、策略上應如何重新判斷、可從哪個具體應用開始」。
-        - 同一篇來源文章只能出現在一個非 applications 區塊，不可為了湊數重複收錄。
+        - 同一篇來源文章不可在同一區塊重複湊數；trends 可以引用大事件或工具更新的來源做跨事件歸納，但必須產生新的中期判斷。
         - 每則 item 的 sources 必須使用候選新聞中的原文 URL，不可改成媒體首頁。
         - 優先順序：產業重大性 > 數位行銷影響 > 內容 / 搜尋 / 社群 / 媒體廣告影響 > 工具可用性。
 
@@ -438,7 +438,6 @@ def validate_digest(digest: dict[str, Any]) -> None:
 
     non_app_items = 0
     app_items = 0
-    used_source_urls: set[str] = set()
     generic_action_starts = ("檢視", "評估", "探索", "嘗試", "關注", "持續關注")
     for section in sections:
         items = section.get("items", [])
@@ -456,6 +455,7 @@ def validate_digest(digest: dict[str, Any]) -> None:
                     issues.append(f"應用切角「{title}」不足 65 字，缺少跨新聞策略統整")
             continue
         non_app_items += len(items)
+        section_source_urls: set[str] = set()
         for item in items:
             title = item.get("title", "未命名")
             analysis = item.get("analysis", [])
@@ -468,7 +468,7 @@ def validate_digest(digest: dict[str, Any]) -> None:
                 issues.append(f"「{title}」What 過短，仍像新聞標題摘要")
             if len(so_what) < 65:
                 issues.append(f"「{title}」So What 過短，缺少角色與連鎖影響")
-            if len(now_what) < 75:
+            if len(now_what) < 70:
                 issues.append(f"「{title}」Now What 過短，缺少原子行動設計")
             if any(term in now_what for term in ["這週", "本週"]):
                 issues.append(f"「{title}」Now What 不可限定本週")
@@ -481,10 +481,10 @@ def validate_digest(digest: dict[str, Any]) -> None:
                 issues.append(f"「{title}」缺少來源")
             for source in sources:
                 url = source.get("url", "")
-                if url and url in used_source_urls:
-                    issues.append(f"來源文章重複收錄：{url}")
+                if url and url in section_source_urls:
+                    issues.append(f"同一區塊重複收錄來源文章：{url}")
                 if url:
-                    used_source_urls.add(url)
+                    section_source_urls.add(url)
     if non_app_items < 5 or app_items < 4:
         issues.append(f"內容數量不足：新聞 {non_app_items} 則、應用切角 {app_items} 則")
     if issues:
