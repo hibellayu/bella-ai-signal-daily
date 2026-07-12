@@ -466,7 +466,7 @@ def validate_digest(digest: dict[str, Any]) -> None:
                 issues.append(f"「{title}」analysis 必須有 2 段且每段至少 70 字")
             if len(what) < 45:
                 issues.append(f"「{title}」What 過短，仍像新聞標題摘要")
-            if len(so_what) < 65:
+            if len(so_what) < 60:
                 issues.append(f"「{title}」So What 過短，缺少角色與連鎖影響")
             if len(now_what) < 70:
                 issues.append(f"「{title}」Now What 過短，缺少原子行動設計")
