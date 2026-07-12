@@ -1,6 +1,13 @@
 {
-  "latest": "2026-07-11",
+  "latest": "2026-07-12",
   "digests": [
+    {
+      "reportDate": "2026-07-12",
+      "coverageDate": "2026-07-11",
+      "title": "Bella's AI 趨勢日報｜2026/07/12",
+      "summary": "本報告聚焦OpenAI安全主管離職及其對企業策略的影響，Meta推出Muse Spark模型更新並積極推廣API，此外，OpenAI加深家庭用戶布局與蘋果對OpenAI的訴訟案件也成為本日重要議題。這些事件反映AI產業在安全、產品多元化及法律風險管理上的挑戰與機會，對數位行銷與品牌策略具有深遠啟示。",
+      "path": "data/digests/2026-07-12.json"
+    },
     {
       "reportDate": "2026-07-11",
       "coverageDate": "2026-07-10",
