@@ -381,7 +381,7 @@ def build_generation_prompt(
         - analysis 必須完成兩層推論：第一段指出事件背後的平台、商業模式、使用入口或競爭規則變化；第二段轉譯成品牌、消費者與行銷團隊的決策影響。
         - What「事件本質」不是縮短新聞標題；要說明改變前後的差異，以及這個變化對行銷工作的意義。
         - So What「影響判讀」要說明誰會受影響、行為或競爭規則如何改變、品牌若不調整會失去什麼，不可只寫「影響品牌信任」。
-        - Now What 中文標題前台會顯示為「具體行動」。內容使用原子習慣邏輯，必須包含：1 個明確起點、具體數量、實際動作、可看見的產出或完成標準。不要寫「這週」或「本週」，也不要只寫「檢視、評估、探索、嘗試」。
+        - Now What 中文標題前台會顯示為「具體行動」。內容使用原子習慣邏輯，必須包含：1 個明確起點、具體數量、實際動作、可看見的產出或完成標準。不要設定「這週、本週、幾天內、幾週內、幾個月內」等期限，也不要只寫「檢視、評估、探索、嘗試」。
         - 應用切角不是逐則新聞的另一版摘要。必須跨新聞歸納共同變化，從品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程中選 4 至 6 個不重複面向。
         - 每個應用切角 title 只能使用上述六個面向名稱；summary 必須包含「趨勢造成什麼變化、策略上應如何重新判斷、可從哪個具體應用開始」。
         - 同一篇來源文章不可在同一區塊重複湊數；trends 可以引用大事件或工具更新的來源做跨事件歸納，但必須產生新的中期判斷。
@@ -483,6 +483,8 @@ def validate_digest(digest: dict[str, Any]) -> None:
                 issues.append(f"「{title}」Now What 過短，缺少原子行動設計")
             if any(term in now_what for term in ["這週", "本週"]):
                 issues.append(f"「{title}」Now What 不可限定本週")
+            if re.search(r"\d+\s*(?:天|週|周|個月|月)內", now_what):
+                issues.append(f"「{title}」Now What 不可設定任意完成期限")
             if now_what.startswith(generic_action_starts) and not re.search(r"\d", now_what):
                 issues.append(f"「{title}」Now What 只有泛泛動詞，缺少數量與完成標準")
             if not re.search(r"\d", now_what):
