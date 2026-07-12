@@ -34,6 +34,7 @@ SECTION_IDS = ["major-events", "tool-updates", "trends", "applications"]
 APPLICATION_TITLES = {"品牌策略", "數位行銷", "內容行銷", "社群應用", "媒體廣告", "團隊流程"}
 SOURCE_EXCERPT_LIMIT = 220
 MAX_GENERATION_ATTEMPTS = 2
+OPENAI_TIMEOUT_SECONDS = 240
 
 
 @dataclass
@@ -313,7 +314,7 @@ def generate_digest_with_openai(
         method="POST",
     )
     try:
-        with urllib.request.urlopen(request, timeout=90) as response:
+        with urllib.request.urlopen(request, timeout=OPENAI_TIMEOUT_SECONDS) as response:
             result = json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as exc:
         detail = exc.read().decode("utf-8", errors="replace")
