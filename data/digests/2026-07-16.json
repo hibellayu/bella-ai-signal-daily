@@ -1,0 +1,446 @@
+{
+  "reportDate": "2026-07-16",
+  "coverageDate": "2026-07-15",
+  "generatedAt": "2026-07-16T07:26:01+08:00",
+  "headline": "AGI 監管、代理型 AI、生成式搜尋與多模態工具重塑行銷競爭規則",
+  "summary": "AI 產業進入關鍵轉折，監管標準、代理型 AI 部署、多模態模型與生成式搜尋平台同步推進。品牌與行銷團隊需重新審視內容策略、廣告投放與流程設計，因應平台規則與消費者行為的結構性變化。",
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    }
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "聚焦 AI 產業規則、平台政策與重大商業模式轉變，影響品牌決策與行銷生態的結構性事件。",
+      "items": [
+        {
+          "title": "Google DeepMind 執行長呼籲成立 AI 標準機構，強制審查尖端模型",
+          "summary": "Google DeepMind 執行長公開呼籲建立獨立 AI 標準機構，要求未來尖端 AI 模型在發布前必須經過強制審查。此舉不僅反映 AGI 發展時程加速，也預示產業規則將由平台自律轉向外部強制監管，影響 AI 商業化與產品上市節奏。",
+          "analysis": [
+            "這一倡議代表 AI 平台與模型供應商將面臨更嚴格的外部審查與標準制定壓力，平台主導權不再僅限於技術創新與自我規範，而是必須接受第三方或政府機構的合規檢驗。這將改變模型上市流程，延長產品推廣時程，並提高合規成本，促使企業在設計與部署尖端 AI 產品時需考慮更多法律與倫理風險。",
+            "對品牌與行銷主管而言，AI 工具與平台的供應速度將受監管節奏影響，行銷團隊在導入新模型或功能時，需更密切追蹤合規要求與審查進度。消費者對 AI 產品的信任門檻提升，品牌若無法證明其 AI 解決方案通過標準審查，將在市場競爭中處於劣勢。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-15",
+              "url": "https://www.inside.com.tw/article/41831-deepmind-hassabis-frontier-ai-standards-body"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 1,
+            "trackedEntityRelevance": 5,
+            "total": 18
+          },
+          "tags": [
+            "AGI",
+            "監管",
+            "Google",
+            "標準機構",
+            "產業規則"
+          ],
+          "what": "AI 產業從平台自律轉向外部強制監管，尖端模型發布需經第三方標準機構審查。這將延長新模型上市時程，品牌導入 AI 工具的速度與合規要求同步提升，行銷策略需納入監管變數。",
+          "soWhat": "AI 工具供應商、品牌主與行銷團隊都將受影響。若未能及時因應審查規則，產品上市與行銷活動將被延誤，甚至因合規瑕疵而喪失市場信任。競爭規則從搶先導入轉為誰能率先取得合規認證，品牌若忽略此變化，將在 AI 行銷競賽中落後。",
+          "nowWhat": "選出 1 個已規劃導入 AI 的行銷專案，列出 3 項與 AI 模型相關的合規或審查需求（如數據來源、倫理風險、第三方認證）。針對其中 1 項，整理現有證據並補充缺口，完成 1 份合規檢查清單。"
+        },
+        {
+          "title": "PR Newswire 推出 AI 傳播平台 Amplify，聚焦生成式搜尋優化",
+          "summary": "PR Newswire 在台灣發表 Amplify 平台，整合內容企劃、創作、發布與分析，主打協助品牌優化內容以提升在 AI 生成式搜尋中的曝光與引用率。這反映行銷入口正從傳統搜尋轉向生成式 AI 答案，內容策略與分發方式需全面調整。",
+          "analysis": [
+            "Amplify 平台將內容優化、分發與成效分析整合，並聚焦於生成式 AI 搜尋場景下的能見度提升，顯示行銷工具正快速適應新型搜尋入口。平台競爭不再僅限於 SEO 或媒體曝光，而是誰能讓品牌內容被 AI 更有效地引用、摘要與推薦，內容結構與標註規則成為新競爭焦點。",
+            "品牌與行銷團隊需重新設計內容格式與標註方式，確保資訊能被 AI 搜尋系統準確抓取與呈現。若僅依賴傳統 SEO 或新聞稿發布，將難以在生成式答案中取得主導地位。內容行銷策略必須納入 AI 可讀性與引用性，否則將在新一輪曝光競爭中被邊緣化。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-15",
+              "url": "https://www.inside.com.tw/article/41825-pr-newswire-amplify-ai-search-visibility"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 3,
+            "total": 19
+          },
+          "tags": [
+            "生成式搜尋",
+            "內容優化",
+            "AI 行銷",
+            "Amplify",
+            "品牌曝光"
+          ],
+          "what": "AI 生成式搜尋成為新內容分發入口，品牌內容需優化為 AI 易於抓取、摘要與推薦的格式。這使內容行銷策略從傳統 SEO 轉向強調 AI 可讀性與引用性，分發與成效衡量方式同步變革。",
+          "soWhat": "內容團隊、品牌主與公關部門將受最大影響。若內容未針對生成式搜尋優化，品牌在 AI 答案中的曝光機會將大幅降低，失去新一代搜尋流量。競爭對手若搶先調整內容結構，將搶佔 AI 推薦與引用的主導權。",
+          "nowWhat": "選定 1 篇近期品牌新聞稿，針對標題、摘要、FAQ 與產品資訊 4 個欄位，逐一檢查是否便於 AI 摘要與引用。完成 2 項內容結構調整，並以 Amplify 或類似工具測試可見度變化。"
+        },
+        {
+          "title": "Anthropic 與 AWS 推動代理型 AI 進入企業核心流程",
+          "summary": "Anthropic 與 AWS 分別強調代理型 AI（Agentic AI）已進入企業核心應用階段。Anthropic 投入工程師協作、AWS 宣布 2026 為代理型 AI 元年，推動企業流程、資安與客戶互動全面交棒給智能代理，標誌企業數位轉型進入新階段。",
+          "analysis": [
+            "平台競爭焦點從單一模型供應轉向智能代理的部署與整合能力，Anthropic、AWS 皆強調企業需將代理型 AI 融入核心業務流程。這意味企業不再僅是採用 AI 工具，而是讓 AI 代理主導決策、協作與資安等關鍵任務，平台服務模式從工具供應轉為深度嵌入式協作。",
+            "行銷與數位轉型主管需重新評估流程設計與團隊分工，考慮哪些任務可由 AI 代理主導，並確保資訊安全與合規。若僅將 AI 當作輔助工具，將無法享受流程自動化與決策加速的紅利，也難以因應競爭對手全面代理化帶來的效率與創新壓力。"
+          ],
+          "sources": [
+            {
+              "name": "VentureBeat",
+              "publishedDate": "2026-07-15",
+              "url": "https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents"
+            },
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-15",
+              "url": "https://www.inside.com.tw/article/41829-aws-summit-taipei-2026-agentic-ai"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 5,
+            "total": 20
+          },
+          "tags": [
+            "代理型 AI",
+            "企業轉型",
+            "流程自動化",
+            "Anthropic",
+            "AWS"
+          ],
+          "what": "企業 AI 部署從工具導入升級為智能代理主導核心流程。這使得行銷、協作、資安等環節可由 AI 代理自動處理，企業需重新設計流程與分工，並確保代理決策的安全與合規。",
+          "soWhat": "企業決策者、流程設計師與資安團隊都需調整角色。若未能將 AI 代理納入核心流程設計，將落後於競爭對手的自動化與創新速度。流程與權責分配將隨代理型 AI 普及而重構，組織必須及早規劃轉型路徑。",
+          "nowWhat": "挑選 1 條現行行銷自動化流程，列出 3 個可由 AI 代理接手的具體任務（如素材審核、廣告預算分配、客戶回應）。選定其中 1 項，設計代理決策規則並在沙盒環境測試 1 次完整流程。"
+        },
+        {
+          "title": "Apple Maps 廣告政策限制家庭服務業者，與 Google 差異明顯",
+          "summary": "Apple 公布 Maps 廣告政策，明確禁止水電、鎖匠等家庭服務業者投放廣告，與 Google Maps 的開放策略形成對比。這將改變在地商家廣告投放的入口選擇與競爭規則，品牌需重新評估平台分配與預算策略。",
+          "analysis": [
+            "Apple Maps 廣告政策收緊，限制特定產業類別投放，強化平台內容品質與用戶安全定位。與 Google Maps 的廣告開放形成明顯分野，平台之間的廣告規則與流量來源將出現結構性分流，廣告主需根據產業屬性選擇適合的投放入口。",
+            "在地服務品牌與廣告代理商必須針對不同平台的政策差異，調整廣告預算與曝光策略。若僅依賴單一平台，將因政策變動而失去部分流量來源。多平台分散投放與內容調整，成為維持在地曝光的必要策略。"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-15",
+              "url": "https://techcrunch.com/2026/07/15/apple-quietly-reveals-how-its-maps-ads-will-differ-from-googles/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 15
+          },
+          "tags": [
+            "廣告政策",
+            "Apple Maps",
+            "Google Maps",
+            "在地服務",
+            "平台分流"
+          ],
+          "what": "Apple Maps 廣告政策針對家庭服務業者設限，與 Google Maps 的開放策略產生明顯分流。廣告主需根據產業屬性調整平台選擇與預算分配，避免因單一平台政策變動而流失流量。",
+          "soWhat": "家庭服務業者、在地品牌與廣告代理商將首當其衝。若未能及時調整平台策略，將失去 Apple 用戶流量，競爭對手若搶先布局 Google Maps 或其他入口，將搶佔在地搜尋主導權。平台政策差異將加劇廣告投放分流與預算競爭。",
+          "nowWhat": "盤點現有在地廣告投放平台，針對 Apple Maps、Google Maps 各列出 2 項政策差異。選定 1 個家庭服務產品，將原有 Apple Maps 預算移轉至 Google Maps，並追蹤 1 週曝光與轉換成效。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "涵蓋生成式 AI、多模態模型、硬體與安全工具等最新技術動態，影響行銷流程與內容創作的工具生態。",
+      "items": [
+        {
+          "title": "OpenAI 推出專為代理型 AI 設計的硬體與安全模型 GPT-Red",
+          "summary": "OpenAI 發布專用於 Codex 的硬體鍵盤與安全強化模型 GPT-Red，前者聚焦於提升 AI 代理在程式開發流程的部署效率，後者則用於測試與強化模型對網路攻擊的防禦力。這標誌 AI 工具正從純軟體服務延伸至硬體與資安場景。",
+          "analysis": [
+            "OpenAI 進一步將 AI 代理型應用落地到專用硬體，並以 GPT-Red 模型強化系統安全性，顯示平台競爭已從雲端軟體延伸至端點硬體與資安防護。這不僅提升部署效率，也讓 AI 工具在企業環境下的應用範圍更廣，安全性與可控性同步提升。",
+            "行銷與 IT 團隊需關注 AI 工具的端點部署與資安風險，未來不僅要評估軟體服務，也要納入硬體整合與安全模型的選型標準。品牌若忽視 AI 工具的安全性與部署彈性，將難以通過企業採購與合規審查，影響行銷自動化與資料應用的落地速度。"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-15",
+              "url": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/"
+            },
+            {
+              "name": "MIT Technology Review",
+              "publishedDate": "2026-07-15",
+              "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 5,
+            "total": 19
+          },
+          "tags": [
+            "OpenAI",
+            "代理型 AI",
+            "硬體",
+            "資安",
+            "GPT-Red"
+          ],
+          "what": "AI 工具從雲端軟體延伸至專用硬體與資安強化模型，部署方式與安全標準同步升級。行銷與 IT 團隊需同步考慮硬體整合與資安防護，否則將受限於企業採購與合規門檻。",
+          "soWhat": "IT、行銷與資安人員都需調整選型與部署流程。若忽略 AI 工具的硬體整合與安全測試，將無法通過企業級應用的合規審查，影響自動化、資料應用與行銷創新速度。競爭對手若搶先導入安全強化工具，將取得流程效率與信任優勢。",
+          "nowWhat": "選定 1 個現有 AI 工具或自動化流程，檢查其端點硬體需求與資安設定，列出 2 項安全強化措施（如 MFA、模型防護）。針對其中 1 項，導入測試版安全模型並記錄部署成效。"
+        },
+        {
+          "title": "Thinking Machines Lab 發布 9750 億參數多模態開源模型 Inkling",
+          "summary": "Thinking Machines Lab 推出 Inkling，多模態開源模型具備 9750 億參數，能理解影音內容。此舉擴大了品牌與內容團隊可用的 AI 工具選擇，並為多模態行銷與內容創作帶來新可能。",
+          "analysis": [
+            "多模態模型 Inkling 以龐大參數量與影音理解能力切入市場，挑戰現有主流平台。開源策略降低企業導入門檻，促進內容創作與行銷自動化場景多元化。平台競爭從單一語言模型轉向多模態理解與開源生態圈建構。",
+            "內容行銷與品牌策略可藉由多模態模型開發影音摘要、跨語言內容與互動式素材，提升內容多元性與觸及率。若只依賴單一語言或封閉平台，將錯失多模態內容帶來的新流量與互動機會。"
+          ],
+          "sources": [
+            {
+              "name": "Wired",
+              "publishedDate": "2026-07-15",
+              "url": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 5,
+            "trackedEntityRelevance": 3,
+            "total": 18
+          },
+          "tags": [
+            "多模態",
+            "開源模型",
+            "影音理解",
+            "內容行銷",
+            "Inkling"
+          ],
+          "what": "多模態開源模型具備影音理解能力，降低企業導入門檻，內容行銷與素材製作可跨足影音、語音與互動式應用，突破傳統文字為主的限制。",
+          "soWhat": "內容團隊、品牌主與創作者可利用多模態模型開發影音摘要、跨語言內容與互動素材，提升內容多元性與觸及率。若僅依賴單一語言模型，將錯過多模態內容帶來的新流量與互動機會。",
+          "nowWhat": "選定 1 支品牌影片，利用 Inkling 或同類多模態模型產出 2 種不同格式的摘要（如文字、語音）。將其中 1 種摘要用於內容分發，觀察互動數據變化。"
+        },
+        {
+          "title": "Suno AI 音樂生成器資料來源爭議引發版權關注",
+          "summary": "Suno AI 音樂生成器被揭露以爬蟲方式抓取 YouTube、Deezer 等平台數百萬首歌曲與歌詞作為訓練資料，版權爭議浮上檯面。此事件凸顯生成式內容工具的資料來源透明度與合規問題，對品牌內容創作與授權策略產生新挑戰。",
+          "analysis": [
+            "Suno 事件顯示生成式內容平台在資料蒐集與訓練階段面臨嚴峻的版權與合規壓力。平台競爭不僅在模型能力，還需比拼資料來源的合法性與透明度，否則將面臨法律風險與公關危機，影響商業合作與用戶信任。",
+            "品牌、內容團隊與代理商需重新檢視 AI 工具的資料來源與授權狀態。若內容生成工具涉及未授權資料，品牌將面臨侵權風險與信譽損失。選擇資料來源透明、合規的工具，成為內容策略的必要條件。"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-15",
+              "url": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/"
+            },
+            {
+              "name": "The Verge",
+              "publishedDate": "2026-07-15",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 4,
+            "total": 16
+          },
+          "tags": [
+            "Suno",
+            "生成式音樂",
+            "版權",
+            "資料來源",
+            "合規"
+          ],
+          "what": "生成式音樂工具因資料來源不透明引發版權爭議，品牌與內容團隊需評估 AI 工具的資料合法性，否則將面臨侵權與信譽風險，內容授權與選型標準同步升級。",
+          "soWhat": "內容創作者、品牌主與代理商若未檢查 AI 工具的資料來源，將暴露於法律與公關風險。選擇合規、資料來源透明的工具，成為維護品牌信譽與內容安全的必要策略。",
+          "nowWhat": "盤點現有 2 款 AI 內容生成工具，查閱其資料來源與授權政策。針對 1 款工具，整理 1 份資料來源合規清單，並標註潛在風險欄位。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "跨平台監管、內容分發入口、代理型 AI 與多模態生成等中期變化，影響未來行銷策略與消費者行為。",
+      "items": [
+        {
+          "title": "AGI 監管與安全成為產業共識，影響 AI 商業化節奏",
+          "summary": "Google DeepMind、OpenAI 等主流平台均強調 AGI 監管與模型安全，產業共識從加速創新轉向強調合規與審查。這將直接影響 AI 工具的商業化速度與品牌導入時程，行銷團隊需將合規納入策略規劃。",
+          "analysis": [
+            "AI 產業主導者逐步接受外部監管與強制審查，平台競爭規則從搶先創新轉向合規與安全。模型發布、工具上線與功能擴展都需經過更嚴格的審查流程，產業節奏將受監管進度牽動，平台之間的合規能力成為新競爭力。",
+            "品牌、行銷與 IT 團隊需同步調整導入 AI 工具的規劃節奏，將合規審查納入專案時程與風險評估。若忽略監管變數，將面臨產品延誤、合約風險與市場信任流失。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-15",
+              "url": "https://www.inside.com.tw/article/41831-deepmind-hassabis-frontier-ai-standards-body"
+            },
+            {
+              "name": "MIT Technology Review",
+              "publishedDate": "2026-07-15",
+              "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 5,
+            "total": 19
+          },
+          "tags": [
+            "AGI",
+            "監管",
+            "模型安全",
+            "合規",
+            "產業節奏"
+          ],
+          "what": "AI 產業競爭規則由創新速度轉向合規與安全，產品上市與工具導入需納入審查流程，行銷與專案規劃同步受影響。",
+          "soWhat": "品牌、行銷與 IT 團隊若未將監管納入專案規劃，將面臨產品延誤與市場信任流失。競爭對手若搶先取得合規認證，將率先進入新市場與消費者心智。",
+          "nowWhat": "針對 1 個 AI 工具導入專案，新增 2 項合規審查檢查點，並於專案時程表標註審查預計完成階段。完成 1 份合規審查紀錄，並彙整相關證據以備查驗。"
+        },
+        {
+          "title": "代理型 AI 成為企業數位轉型關鍵，改寫客戶互動與流程設計",
+          "summary": "Anthropic、AWS 等平台推動代理型 AI 進入企業核心流程，企業客戶互動、協作與資安管理模式同步重構。行銷與流程設計需重新規劃 AI 代理的角色與權限，確保自動化與安全並行。",
+          "analysis": [
+            "代理型 AI 從單點應用升級為流程主導者，平台服務模式轉為深度嵌入式協作。企業不僅導入工具，而是讓 AI 代理主導決策、協作與安全，流程設計與權責分配出現結構性變化。這種轉變要求平台不僅提供工具，更要能與企業內部系統深度整合，並支援多角色協作與自動化。",
+            "行銷、客戶服務與資安團隊需重新規劃流程分工與自動化範圍。若未能及時調整，將落後於全面代理化的競爭對手，失去效率、創新與安全的三重優勢。品牌主與決策者需主動評估哪些流程可交由 AI 代理，並建立監控與回饋機制，確保自動化與合規並行。"
+          ],
+          "sources": [
+            {
+              "name": "VentureBeat",
+              "publishedDate": "2026-07-15",
+              "url": "https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents"
+            },
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-15",
+              "url": "https://www.inside.com.tw/article/41829-aws-summit-taipei-2026-agentic-ai"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 5,
+            "total": 20
+          },
+          "tags": [
+            "代理型 AI",
+            "企業轉型",
+            "流程設計",
+            "自動化",
+            "協作"
+          ],
+          "what": "企業流程設計從工具導入升級為 AI 代理主導，客戶互動、協作與資安管理同步重構，行銷與服務流程需重新規劃 AI 代理角色與權限，並建立監控與回饋機制。",
+          "soWhat": "行銷、客戶服務、資安團隊與決策者需協作調整流程分工與自動化範圍。若未及時調整，將落後於全面代理化的競爭對手，失去效率、創新與安全優勢。流程重構也將影響組織權責分配與內部培訓需求。",
+          "nowWhat": "選定 1 條客戶互動流程，設計 2 種 AI 代理參與模式（如自動回覆、預測客訴分流），並於內部會議討論其自動化與安全影響。針對其中 1 種模式，建立 1 份流程監控與回饋紀錄表，並彙整測試數據。"
+        },
+        {
+          "title": "生成式搜尋與多模態 AI 工具加速內容行銷革新",
+          "summary": "生成式搜尋平台與多模態開源模型同步推進，內容優化與分發策略需從 SEO 轉向 AI 可讀性與多元格式。品牌需結合影音、語音與互動內容，才能在新入口搶佔流量與消費者心智。",
+          "analysis": [
+            "內容分發入口由傳統搜尋轉向生成式 AI 答案，多模態模型則讓內容創作突破文字限制，涵蓋影音、語音與互動格式。平台競爭規則轉為誰能產出 AI 易於抓取、摘要與推薦的多元內容，內容結構與標註成為新焦點。品牌與內容團隊需同步調整內容格式、標註與分發策略，否則將在新一代搜尋與內容入口中被邊緣化。",
+            "競爭對手若搶先布局多模態內容與生成式搜尋優化，將率先搶佔流量與消費者心智。內容團隊需建立多格式內容產製流程，並定期測試在生成式搜尋平台的曝光與互動成效，否則將失去新流量來源與互動機會。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-15",
+              "url": "https://www.inside.com.tw/article/41825-pr-newswire-amplify-ai-search-visibility"
+            },
+            {
+              "name": "Wired",
+              "publishedDate": "2026-07-15",
+              "url": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 4,
+            "total": 22
+          },
+          "tags": [
+            "生成式搜尋",
+            "多模態 AI",
+            "內容行銷",
+            "影音內容",
+            "SEO"
+          ],
+          "what": "內容分發入口由 SEO 轉向生成式 AI，內容格式需涵蓋影音、語音與互動，並強調 AI 可讀性與摘要性，品牌內容策略同步升級。",
+          "soWhat": "內容團隊與品牌主若未調整內容格式與分發策略，將在新一代搜尋入口中失去曝光與流量。競爭對手若搶先布局多模態內容，將搶佔消費者心智與互動主導權。",
+          "nowWhat": "選定 1 篇品牌內容，新增 1 種多模態格式（如影音摘要或語音解說），並於生成式搜尋平台測試其可見度與互動成效。彙整 2 項互動數據，作為後續內容優化依據。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "從品牌策略到團隊流程，統整今日 AI 產業變化對行銷應用六大面向的具體啟示，每則聚焦一項核心策略與可執行起點。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI 監管與標準機構逐步成形，品牌信任不再僅靠自我聲明，而需取得第三方合規與安全認證。品牌策略應將合規審查納入產品與服務設計，優先整理 AI 工具與內容的合規證據，並主動公開安全與資料來源，從單一產品起步，逐步建立 AI 信任體系。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "生成式搜尋與多模態內容成為新流量入口，數位行銷策略需從 SEO 轉向 AI 可讀性與多格式分發。建議從現有內容中挑選 1-2 篇，優化標題、摘要與 FAQ 結構，並嘗試加入影音或語音摘要，測試在生成式搜尋平台的曝光與互動表現。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "多模態 AI 工具與內容來源合規成為內容行銷新門檻。內容團隊應優先盤點現有 AI 工具的資料來源與授權狀態，針對高風險工具補充合規清單，並逐步導入影音、語音等多模態內容，強化內容多元性與品牌安全。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "AI 生成內容與多模態工具將社群互動從文字推向影音、語音與互動式素材。社群團隊可從 1 支熱門貼文或影片起步，加入 AI 生成的語音摘要或多語種字幕，觀察互動率與分享數據，逐步建立多模態社群內容標準。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "平台廣告政策分流加劇，特定產業（如家庭服務）需根據 Apple、Google 等平台規則調整投放策略。建議廣告主盤點現有平台政策，針對預算與產業屬性，分散投放並追蹤各平台成效，避免因單一政策變動而流失流量。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "代理型 AI 與自動化工具進入核心流程，團隊需重新劃分 AI 代理與人員的權責。可從 1 條行銷自動化流程起步，設計 AI 代理參與規則，並於內部沙盒環境測試其決策與資安影響，逐步建立 AI 參與的標準作業流程。"
+        }
+      ]
+    }
+  ]
+}
