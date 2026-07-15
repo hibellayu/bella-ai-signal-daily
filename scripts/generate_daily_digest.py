@@ -34,6 +34,7 @@ SECTION_IDS = ["major-events", "tool-updates", "trends", "applications"]
 APPLICATION_TITLES = {"品牌策略", "數位行銷", "內容行銷", "社群應用", "媒體廣告", "團隊流程"}
 SOURCE_EXCERPT_LIMIT = 220
 MAX_GENERATION_ATTEMPTS = 2
+MAX_REPAIR_ATTEMPTS = 1
 OPENAI_TIMEOUT_SECONDS = 240
 
 
@@ -83,6 +84,7 @@ def main() -> None:
     quality_feedback = ""
     primary_model = os.environ.get("OPENAI_MODEL", "gpt-4.1-mini")
     rewrite_model = os.environ.get("OPENAI_REWRITE_MODEL", "gpt-4.1")
+    validation_error = ""
     for attempt in range(1, MAX_GENERATION_ATTEMPTS + 1):
         attempt_model = primary_model if attempt == 1 else rewrite_model
         print(f"Generation attempt {attempt} using {attempt_model}.")
@@ -98,12 +100,38 @@ def main() -> None:
         )
         try:
             validate_digest(digest)
+            validation_error = ""
             break
         except ValueError as exc:
-            if attempt == MAX_GENERATION_ATTEMPTS:
-                raise RuntimeError(f"Digest failed strategy quality checks after {attempt} attempts: {exc}") from exc
+            validation_error = str(exc)
             quality_feedback = str(exc)
-            print(f"Attempt {attempt} failed strategy quality checks; requesting one rewrite: {quality_feedback}")
+            if attempt < MAX_GENERATION_ATTEMPTS:
+                print(f"Attempt {attempt} failed strategy quality checks; requesting one rewrite: {quality_feedback}")
+
+    if digest is not None and validation_error:
+        for repair_attempt in range(1, MAX_REPAIR_ATTEMPTS + 1):
+            print(f"Repair attempt {repair_attempt} using {rewrite_model}.")
+            digest = repair_digest_with_openai(
+                api_key=api_key,
+                model=rewrite_model,
+                digest=digest,
+                validation_error=validation_error,
+                articles=selected,
+                tracked_entities=config["trackedEntities"],
+            )
+            try:
+                validate_digest(digest)
+                validation_error = ""
+                break
+            except ValueError as exc:
+                validation_error = str(exc)
+                print(f"Repair attempt {repair_attempt} failed strategy quality checks: {validation_error}")
+
+    if validation_error:
+        raise RuntimeError(
+            f"Digest failed strategy quality checks after {MAX_GENERATION_ATTEMPTS} attempts "
+            f"and {MAX_REPAIR_ATTEMPTS} repair attempt: {validation_error}"
+        )
 
     if digest is None:
         raise RuntimeError("Digest generation returned no result.")
@@ -327,6 +355,105 @@ def generate_digest_with_openai(
 
     content = result["choices"][0]["message"]["content"]
     return json.loads(content)
+
+
+def repair_digest_with_openai(
+    *,
+    api_key: str,
+    model: str,
+    digest: dict[str, Any],
+    validation_error: str,
+    articles: list[Article],
+    tracked_entities: list[str],
+) -> dict[str, Any]:
+    payload = {
+        "model": model,
+        "temperature": 0.2,
+        "max_tokens": 16000,
+        "response_format": {"type": "json_object"},
+        "messages": [
+            {
+                "role": "system",
+                "content": "你是嚴格的 JSON 修稿編輯，只輸出合法 JSON，不輸出 Markdown。",
+            },
+            {
+                "role": "user",
+                "content": build_repair_prompt(
+                    digest=digest,
+                    validation_error=validation_error,
+                    articles=articles,
+                    tracked_entities=tracked_entities,
+                ),
+            },
+        ],
+    }
+    request = urllib.request.Request(
+        "https://api.openai.com/v1/chat/completions",
+        data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=OPENAI_TIMEOUT_SECONDS) as response:
+            result = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"OpenAI repair request failed: {exc.code} {detail}") from exc
+
+    content = result["choices"][0]["message"]["content"]
+    return json.loads(content)
+
+
+def build_repair_prompt(
+    *,
+    digest: dict[str, Any],
+    validation_error: str,
+    articles: list[Article],
+    tracked_entities: list[str],
+) -> str:
+    article_payload = [
+        {
+            "title": item.title,
+            "source": item.source,
+            "publishedDate": item.published_date,
+            "url": item.url,
+            "summary": item.summary,
+            "score": item.score,
+            "matchedTerms": item.matched_terms,
+        }
+        for item in articles
+    ]
+    return textwrap.dedent(
+        f"""
+        請修補這份 Bella's AI Signal Daily JSON，並輸出完整 JSON。
+
+        修補目標：
+        - 只根據候選新聞與原 JSON 修補，不得新增候選新聞外的事實。
+        - 保留 reportDate、coverageDate、generatedAt、sourcePolicy、trackedEntities。
+        - 優先修補驗證錯誤指出的欄位；若結構有缺漏，也要補齊。
+        - analysis 必須剛好 2 段，每段至少 70 字，第一段談平台、商業模式、入口或競爭規則變化，第二段談品牌、消費者與行銷團隊的決策影響。
+        - What 至少 45 字；So What 至少 60 字；Now What 至少 60 字且必須包含明確數量、實際動作與可見產出。
+        - Now What 不可出現「這週、本週、幾天內、幾週內、幾個月內」等任意期限。
+        - 應用切角必須固定 6 則，title 依序只能是：品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程。
+        - 每則 sources 必須使用候選新聞中的原文 URL，不可改成媒體首頁。
+        - 只輸出合法 JSON，不要 Markdown。
+
+        驗證錯誤：
+        {validation_error}
+
+        追蹤公司 / 工具：
+        {", ".join(tracked_entities)}
+
+        候選新聞 JSON：
+        {json.dumps(article_payload, ensure_ascii=False, indent=2)}
+
+        目前待修 JSON：
+        {json.dumps(digest, ensure_ascii=False, indent=2)}
+        """
+    ).strip()
 
 
 def build_generation_prompt(

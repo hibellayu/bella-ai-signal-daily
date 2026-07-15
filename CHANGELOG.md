@@ -2,6 +2,32 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.11.0｜2026-07-15
+
+版本類型：中改版
+
+### 修改原因
+
+2026/07/15 排程有成功執行，也收集到 23 則 AI 候選新聞，但第二次重寫後仍有 1 則新聞的 `analysis` 未達「2 段且每段至少 70 字」標準，導致整份日報被品質閘門擋下。原設計只有初稿與一次完整重寫，對可修正的小型文字深度問題缺少最後修補層，造成內容接近合格但無法出刊。
+
+### 修改內容
+
+- 新增 `repair_digest_with_openai`：當初稿與完整重寫仍未通過時，將目前 JSON、候選新聞與驗證錯誤交給高階模型做最後修補。
+- 修補 Prompt 明確要求保留既有中繼資料、只依候選新聞修正、補齊 analysis / What / So What / Now What 與六大應用切角。
+- 保留品質閘門：修補後仍不合格才停止發布，不降低內容標準。
+- Workflow 自動提交範圍補上 `index.html`，確保 SEO 版首頁會跟著每日最新日報更新。
+- Footer 版本升為 `v0.11.0`，版本日期更新為 2026/07/15。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `python3 scripts/static_site.py`
+- 手動回補 2026/07/15 日報並確認正式站 latest 更新。
+
+### 對應 commit
+
+- `Add digest repair pass`
+
 ## v0.10.0｜2026-07-12
 
 版本類型：中改版
