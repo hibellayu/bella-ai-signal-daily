@@ -1,6 +1,13 @@
 {
-  "latest": "2026-07-14",
+  "latest": "2026-07-15",
   "digests": [
+    {
+      "reportDate": "2026-07-15",
+      "coverageDate": "2026-07-14",
+      "title": "Bella's AI 趨勢日報｜2026/07/15",
+      "summary": "OpenAI、Google、Anthropic 等主流 AI 平台於 7 月 14 日集中釋出產品、入口與品牌策略重大變動，並伴隨多起合規與資料風險事件。行銷主管需重新評估 AI 工具與平台選擇、品牌信任建構、內容分發與消費者接觸點設計，以因應入口多元化、倫理溝通與法規收緊的新競爭規則。",
+      "path": "data/digests/2026-07-15.json"
+    },
     {
       "reportDate": "2026-07-14",
       "coverageDate": "2026-07-13",
