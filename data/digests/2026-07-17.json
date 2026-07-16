@@ -1,0 +1,426 @@
+{
+  "reportDate": "2026-07-17",
+  "coverageDate": "2026-07-16",
+  "generatedAt": "2026-07-17T07:16:19+08:00",
+  "headline": "AI平台開放與本地化競爭升溫，品牌決策迎來新入口與主權挑戰",
+  "summary": "全球AI平台正從封閉生態轉向開放整合，並出現本地化模型與內容主權的競爭。Google、OpenAI等巨頭的產品策略、法律爭議與歐盟監管，正在重塑品牌與消費者的互動入口。品牌行銷需重新評估AI代理、平台開放與本地內容的布局，並從具體應用與團隊流程調整切入，才能在新一輪競爭中搶占先機。",
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    }
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "涵蓋產業結構、平台競爭與政策監管等對行銷策略產生結構性影響的新聞。",
+      "items": [
+        {
+          "title": "Google將NotebookLM更名為Gemini Notebook並整合AI模式於搜尋",
+          "summary": "Google將NotebookLM更名為Gemini Notebook，並宣布用戶可透過搜尋中的AI模式直接存取筆記功能，強化AI與搜尋的整合。",
+          "analysis": [
+            "Google將AI筆記工具直接嵌入搜尋入口，代表平台正將AI應用從獨立產品轉向與核心搜尋服務深度結合，改變用戶與品牌內容互動的主要入口。這種策略不僅提升AI工具的使用率，也讓Google能更精準掌控用戶數據與行為路徑，壓縮第三方工具的生存空間。",
+            "對品牌與行銷團隊而言，這意味著消費者將更常在AI摘要、筆記與搜尋交互過程中接觸品牌資訊。若品牌內容未針對AI模式優化，可能在使用者決策初期就被AI過濾。團隊需重新設計內容結構，確保資訊能被AI正確抓取與呈現，否則將失去重要的曝光與推薦機會。"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-16",
+              "url": "https://techcrunch.com/2026/07/16/google-continues-its-renaming-streak-by-turning-notebooklm-to-gemini-notebook/"
+            },
+            {
+              "name": "The Verge",
+              "publishedDate": "2026-07-16",
+              "url": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 4,
+            "total": 16
+          },
+          "tags": [
+            "Google",
+            "AI整合",
+            "搜尋入口",
+            "內容優化"
+          ],
+          "what": "Google將AI筆記功能從獨立產品轉為搜尋內建服務，消費者可在搜尋過程中直接建立、檢索與管理AI生成內容。這一變化讓品牌內容更容易在AI輔助下被摘要與比較，行銷策略需從單一SEO優化擴展到AI摘要與互動場景。",
+          "soWhat": "品牌若忽略AI模式下的內容結構，將在AI摘要、推薦與決策過程中失去曝光優勢。行銷團隊必須理解AI如何解析、歸納與呈現品牌資訊，否則即使內容排名高，也可能被AI代理過濾或簡化，影響消費者認知與選擇。",
+          "nowWhat": "選定 2 個流量最高的產品頁，使用 Gemini Notebook 的 AI 模式輸入品牌主張與 FAQ，觀察 AI 如何摘要與比較。將 AI 未能正確呈現的 3 個重點記錄下來，針對其中 1 項調整內容結構並重新測試，確認 AI 能正確抓取。"
+        },
+        {
+          "title": "歐盟命令Google開放Android與搜尋平台給競爭對手",
+          "summary": "歐盟要求Google依數位市場法規，向競爭對手開放Android與搜尋平台核心功能，強化AI助理與搜尋引擎的互通性。",
+          "analysis": [
+            "歐盟強制Google開放Android與搜尋平台，改變了平台壟斷與第三方服務的競爭規則。這將促使更多AI助理與搜尋引擎進入主流設備，打破Google生態系的封閉優勢，讓消費者能在同一設備上自由選擇不同AI入口。",
+            "品牌與行銷團隊需重新評估多平台曝光策略，不能只依賴Google單一生態。未來消費者可能透過多種AI助理或搜尋服務接收品牌資訊，內容需針對不同平台標準調整，否則將在多元入口下失去競爭力。"
+          ],
+          "sources": [
+            {
+              "name": "The Verge",
+              "publishedDate": "2026-07-16",
+              "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 4,
+            "total": 14
+          },
+          "tags": [
+            "Google",
+            "歐盟監管",
+            "平台開放",
+            "AI助理"
+          ],
+          "what": "歐盟要求Google開放Android與搜尋平台，讓競爭對手的AI助理與搜尋引擎能直接存取核心功能。這改變了過去僅能在Google生態下運作的局面，品牌需因應多入口、多平台的內容接觸點。",
+          "soWhat": "行銷團隊若只針對Google優化，將在新興AI助理與搜尋平台上失去曝光與推薦機會。消費者行為將更分散，品牌需同步維護多平台內容一致性，否則在多元入口下容易被競爭對手搶佔心智與流量。",
+          "nowWhat": "列出 3 個主要競品在非Google搜尋或AI助理上的曝光方式，針對 1 個競品的內容呈現，分析其在新平台上的優勢。根據分析結果，調整自家 1 頁關鍵內容，確保可被至少 2 種AI助理正確抓取與推薦。"
+        },
+        {
+          "title": "台灣加速發展本土生成式AI模型以抗衡中國內容影響",
+          "summary": "台灣積極推動本土生成式AI模型建設，強調內容主權與資訊安全，作為對抗中國AI內容滲透的策略。",
+          "analysis": [
+            "台灣發展本土生成式AI模型，反映出地區性內容主權與數據安全的戰略需求。這不僅是技術競爭，更是資訊影響力與輿論控制的主權爭奪，促使政府、企業與媒體加速本地語料與應用場景的佈局。",
+            "對品牌與行銷團隊而言，本地AI模型將成為內容分發與消費者互動的新管道。若品牌內容未能被本地AI正確理解或引用，將在本地消費者心中失去信任與影響力。團隊需提前參與本地模型訓練與內容優化，建立在地可信賴的品牌形象。"
+          ],
+          "sources": [
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-07-16",
+              "url": "https://technews.tw/2026/07/16/taiwan-eyes-local-ai-as-digital-bulwark-against-chinese-influence/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 13
+          },
+          "tags": [
+            "本地AI",
+            "內容主權",
+            "資訊安全",
+            "生成式AI"
+          ],
+          "what": "台灣推動本土生成式AI模型，強調本地語料、內容審查與資訊主權，與外部AI模型形成差異化競爭。這讓品牌在內容分發與消費者信任建立上，需考慮本地AI的理解與引用機制。",
+          "soWhat": "若品牌內容未能納入本地AI模型訓練或優化，將難以在本地市場建立信任與影響力。消費者將更傾向於信任本地AI推薦的資訊，品牌需主動參與本地語料建設，否則容易被競爭對手搶佔在地心智。",
+          "nowWhat": "挑選 1 篇品牌代表性內容，提交給本地AI模型測試摘要與推薦效果。記錄 AI 未能正確呈現的 2 個重點，針對其中 1 點優化內容表述，並與本地AI開發團隊聯繫，確認內容能被模型正確引用。"
+        },
+        {
+          "title": "OpenAI推出Codex Micro鍵盤硬體，遭蘋果提告影響產品計畫",
+          "summary": "OpenAI發布Codex Micro鍵盤進軍AI硬體市場，卻因蘋果提告涉商業機密疑慮，面臨法律與產品時程風險。",
+          "analysis": [
+            "OpenAI首次以Codex Micro鍵盤進軍消費性AI硬體，嘗試將AI代理功能從雲端延伸到實體裝置。然而，蘋果提告涉及商業機密爭議，顯示AI硬體創新正面臨巨頭間的專利與法律風險，未來產品上市與生態整合充滿變數。",
+            "品牌與行銷團隊需警覺AI硬體生態的不確定性。若AI代理入口受法律糾紛影響，相關應用與合作將延後或中斷，行銷活動需預留彈性，避免過度依賴單一新興裝置或平台，並密切關注硬體與平台整合進度。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-16",
+              "url": "https://www.inside.com.tw/article/41835-amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 4,
+            "total": 11
+          },
+          "tags": [
+            "OpenAI",
+            "AI硬體",
+            "法律風險",
+            "代理入口"
+          ],
+          "what": "OpenAI以Codex Micro鍵盤切入AI硬體市場，將AI代理功能實體化，卻因蘋果提告面臨產品時程與生態整合的不確定性。品牌需重新評估AI硬體作為消費者入口的可行性與風險。",
+          "soWhat": "若AI硬體受法律糾紛影響延遲上市，品牌過早投入相關應用將面臨資源浪費與行銷時程混亂。行銷團隊需建立多元入口策略，並密切追蹤硬體與平台整合動態，才能靈活調整活動與合作規劃。",
+          "nowWhat": "盤點目前規劃與AI硬體（如Codex Micro）整合的 2 項行銷活動，針對其中 1 項設計備案：若硬體延遲上市，將內容轉移至雲端AI入口，並設定 1 個可量化的替代曝光指標。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "聚焦AI平台、應用或模型的功能升級與新入口，評估其對行銷流程與內容分發的實際影響。",
+      "items": [
+        {
+          "title": "Google AI Mode擴展，允許用戶連結並操作特定應用",
+          "summary": "Google AI Mode升級後，使用者可直接在AI模式下連結並操作多款應用，AI從單純問答轉為跨應用任務協作。",
+          "analysis": [
+            "Google將AI Mode從單一問答升級為跨應用協作平台，讓AI能直接調用第三方應用完成複雜任務。這將AI從資訊中介提升為行動代理，改變了用戶與品牌服務的互動邏輯，也讓AI成為品牌服務流程的新入口。",
+            "行銷團隊需重新設計用戶旅程，將AI代理納入服務流程。若品牌應用未能被AI正確調用，將在消費者自動化決策與任務執行中失去存在感。需優先針對AI模式優化應用介面與API，確保品牌能被AI順利串接與推薦。"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-16",
+              "url": "https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 3,
+            "total": 9
+          },
+          "tags": [
+            "Google",
+            "AI代理",
+            "應用串接",
+            "用戶旅程"
+          ],
+          "what": "Google AI Mode從單純的問答升級為可連結第三方應用的任務協作平台，品牌服務需考慮AI直接調用與自動化流程，否則將在新型用戶旅程中被邊緣化。",
+          "soWhat": "若品牌應用未能被AI代理正確串接，將在消費者自動化任務與決策流程中失去曝光與參與機會。行銷團隊需與產品、技術協作，優化API與內容結構，確保AI能準確執行品牌服務。",
+          "nowWhat": "選定 1 個品牌App或服務，測試其在Google AI Mode下是否能被AI代理正確調用。記錄 2 項串接失敗或資訊遺漏的情境，針對其中 1 項與技術團隊協作修正API或內容格式，並再次驗證AI串接效果。"
+        },
+        {
+          "title": "OpenAI發布GPT-Red模型強化安全性",
+          "summary": "OpenAI推出GPT-Red模型，專為提升大模型安全性與防禦能力設計，聚焦於檢測與防範潛在攻擊。",
+          "analysis": [
+            "GPT-Red模型標誌著AI平台從單純生成能力轉向強化安全與防護，將安全性內建於模型架構。這使AI應用在商業、金融等高風險領域更具可行性，也提升了平台對企業客戶的吸引力，促使行銷與產品策略需納入AI安全性考量。",
+            "品牌若忽略AI安全性，將在導入AI應用時面臨信任危機與合規風險。行銷團隊需主動了解AI模型的安全特性，並在對外溝通中強調品牌對AI安全的承諾，提升消費者與合作夥伴的信心。"
+          ],
+          "sources": [
+            {
+              "name": "MIT Technology Review",
+              "publishedDate": "2026-07-16",
+              "url": "https://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us/"
+            }
+          ],
+          "score": {
+            "industryImpact": 2,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 3,
+            "total": 11
+          },
+          "tags": [
+            "OpenAI",
+            "GPT-Red",
+            "AI安全",
+            "模型防禦"
+          ],
+          "what": "OpenAI發布專注於安全性的GPT-Red模型，將防禦機制內建於大模型架構，提升AI應用於高風險場景的可用性。品牌需將AI安全作為產品與行銷策略的一環。",
+          "soWhat": "若品牌未能證明AI應用的安全性，將在企業合作、用戶信任與法規遵循上處於劣勢。行銷團隊需主動溝通AI安全措施，並與技術部門協作，確保應用符合最新安全標準。",
+          "nowWhat": "整理現有AI應用的 2 項安全防護措施，並將其中 1 項以簡明圖文方式製作成品牌官網或社群貼文，明確說明品牌如何採用新一代AI安全技術。"
+        },
+        {
+          "title": "DoorDash開放命令行工具dd-cli，支持AI代理訂餐",
+          "summary": "DoorDash推出命令行工具dd-cli，允許開發者與AI代理直接透過終端機搜尋、下單與管理訂單，擴展AI自動化應用場景。",
+          "analysis": [
+            "DoorDash開放命令行工具，標誌著AI代理不再受限於傳統圖形介面，能直接在後台或自動化流程中操作服務。這讓品牌服務能被AI自動串接，進一步推動無人介面的B2B與B2C應用，改變消費者與品牌的互動方式。",
+            "行銷團隊需關注AI代理如何影響消費決策與服務流程。若品牌未能優化API與服務邏輯，將在AI自動下單與推薦流程中被排除。團隊需與開發部門協作，確保品牌能被AI代理順利調用與推薦。"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-16",
+              "url": "https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/"
+            }
+          ],
+          "score": {
+            "industryImpact": 2,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 9
+          },
+          "tags": [
+            "DoorDash",
+            "AI代理",
+            "命令行工具",
+            "自動化"
+          ],
+          "what": "DoorDash開放dd-cli命令行工具，讓AI代理可直接搜尋、下單與管理訂單，推動品牌服務進入無人介面與自動化應用場景。品牌需調整API與服務流程以適應AI代理需求。",
+          "soWhat": "若品牌API設計不符AI代理需求，將在自動化訂單與推薦流程中失去參與機會。行銷與技術團隊需協作，確保品牌服務能被AI自動串接，否則將被競爭對手搶佔新型入口。",
+          "nowWhat": "挑選 1 項品牌線上服務，測試其API是否能被AI代理或命令行工具正確調用。記錄 2 個調用失敗案例，針對其中 1 個與技術團隊討論修正方案，並驗證修正後的API可用性。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "跨新聞歸納AI平台、內容主權、代理入口與法律監管等中期趨勢，協助行銷決策者預判未來變化。",
+      "items": [
+        {
+          "title": "AI平台從封閉走向開放與深度整合",
+          "summary": "Google、OpenAI等AI平台正從封閉生態轉向開放多入口與深度整合，結合搜尋、應用與硬體，並因監管壓力加速開放策略。",
+          "analysis": [
+            "AI平台逐步開放API、整合第三方應用，並將AI功能嵌入搜尋與硬體裝置。歐盟監管與本地市場需求推動平台競爭規則改變，品牌需同步管理多入口、多平台內容，不能再依賴單一生態系統。",
+            "行銷團隊需建立跨平台內容標準與API串接能力，確保品牌資訊能被不同AI助理、搜尋引擎與硬體入口正確抓取與推薦。否則，品牌將在新一輪入口競爭中被邊緣化，流量與信任度流失。"
+          ],
+          "sources": [
+            {
+              "name": "The Verge",
+              "publishedDate": "2026-07-16",
+              "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma"
+            },
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-16",
+              "url": "https://techcrunch.com/2026/07/16/google-continues-its-renaming-streak-by-turning-notebooklm-to-gemini-notebook/"
+            },
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-16",
+              "url": "https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 4,
+            "total": 15
+          },
+          "tags": [
+            "平台開放",
+            "多入口",
+            "API整合",
+            "監管壓力"
+          ],
+          "what": "AI平台正從單一封閉生態轉向開放API、深度整合搜尋、應用與硬體入口，品牌需同步管理多平台內容與串接標準，否則將在入口競爭中失去主導權。",
+          "soWhat": "若品牌未能建立跨平台內容與API策略，將難以適應多入口流量分流與AI代理推薦。行銷團隊需與技術協作，優化內容結構與串接能力，才能在新型入口中維持曝光與信任。",
+          "nowWhat": "盤點現有內容在 3 個主要AI平台的呈現方式，針對其中 1 個平台，調整內容結構或API格式，並測試AI能否正確抓取與推薦。將測試結果記錄為可複製的操作SOP。"
+        },
+        {
+          "title": "生成式AI地區化發展與內容主權意識提升",
+          "summary": "台灣與國際多地加速本地化生成式AI模型建設，強調內容主權、數據安全與在地語料，品牌需調整內容策略以適應本地AI生態。",
+          "analysis": [
+            "地區性AI模型快速發展，政府與企業強調本地語料、內容審查與資訊主權，與跨國AI平台形成差異化競爭。這推動品牌需參與本地AI模型訓練與內容優化，否則在本地市場失去信任與影響力。",
+            "行銷團隊需建立本地語料合作與內容優化流程，確保品牌資訊能被本地AI正確理解與引用。否則，品牌將被排除在地AI推薦之外，影響消費者信任與市場滲透率。"
+          ],
+          "sources": [
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-07-16",
+              "url": "https://technews.tw/2026/07/16/taiwan-eyes-local-ai-as-digital-bulwark-against-chinese-influence/"
+            },
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-07-16",
+              "url": "https://technews.tw/2026/07/16/thinking-machines-lab-introduces-its-first-open-weights-model-named-inkling/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 12
+          },
+          "tags": [
+            "本地AI",
+            "內容主權",
+            "語料優化",
+            "地區競爭"
+          ],
+          "what": "生成式AI模型正加速本地化發展，品牌需參與本地語料建設與內容優化，否則將被排除在地AI推薦與消費者決策之外。",
+          "soWhat": "若品牌忽略本地AI模型的內容需求，將在地區市場失去信任與影響力。行銷團隊需與本地AI開發者合作，優化內容結構，提升品牌在本地AI生態中的能見度。",
+          "nowWhat": "挑選 1 篇品牌核心內容，與本地AI模型開發團隊聯繫，確認內容能被模型正確引用。根據回饋，優化 1 處內容表述，並記錄優化前後AI摘要差異。"
+        },
+        {
+          "title": "AI硬體布局與法律風險並行",
+          "summary": "AI平台積極推進硬體產品，但法律訴訟與專利糾紛成為產品上市與生態整合的主要風險，品牌需預留彈性應對。",
+          "analysis": [
+            "OpenAI等平台投入AI硬體市場，將AI代理功能實體化，試圖建立新型消費者入口。然而，專利與商業機密訴訟頻發，導致產品時程與生態整合充滿不確定性，品牌與合作夥伴需審慎規劃資源投入。",
+            "行銷團隊需建立多元入口與備案策略，避免過度依賴單一新興硬體平台。需密切追蹤法律進展與產品上市時程，靈活調整行銷活動與合作規劃，降低法律風險帶來的業務衝擊。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-16",
+              "url": "https://www.inside.com.tw/article/41835-amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 3,
+            "total": 9
+          },
+          "tags": [
+            "AI硬體",
+            "法律風險",
+            "生態整合",
+            "彈性策略"
+          ],
+          "what": "AI平台積極推進硬體產品，但法律訴訟與專利糾紛頻發，品牌需預留多元入口與備案，降低因產品時程不確定帶來的行銷與合作風險。",
+          "soWhat": "若品牌過早投入AI硬體整合，遇到法律糾紛將面臨資源浪費與時程延誤。行銷團隊需建立彈性活動規劃，並密切追蹤法律與產品進度，降低潛在業務衝擊。",
+          "nowWhat": "盤點目前與AI硬體相關的 2 項行銷合作，針對其中 1 項設計替代方案，將內容與活動轉移至現有雲端AI入口，並設定 1 個可量化的替代KPI。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "從品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程六大面向，統整AI趨勢對行銷決策與應用的具體影響。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI平台開放與本地化競爭加劇，品牌策略需從單一平台導向轉為多入口、多語境管理。品牌主張、FAQ與產品證據要能被AI代理、搜尋與本地模型正確抓取與推薦。建議從盤點現有內容在不同AI平台的呈現方式開始，建立跨平台內容優化SOP，提升品牌在多元入口下的能見度與信任度。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "AI代理與自動化工具滲透用戶旅程，數位行銷需將API串接、應用調用與AI模式優化納入策略。建議從測試品牌服務在AI代理（如Google AI Mode、DoorDash dd-cli）下的調用效果著手，與技術團隊協作優化API與內容結構，確保品牌能在自動化流程中被正確推薦與執行。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "AI摘要、筆記與本地模型成為內容分發新入口，內容行銷需針對AI可讀性、摘要結構與本地語料優化。可從選定1-2篇代表性內容，測試AI摘要與推薦效果，根據AI回饋調整內容表述，並與本地AI模型開發者合作，提升內容在AI生態中的引用率。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "AI個人化影片、數位分身與自動化互動工具逐漸普及，社群應用可結合AI生成內容與即時互動，提升用戶參與。建議從小規模測試AI生成影片或自動化FAQ回覆，觀察用戶互動數據，逐步調整社群內容策略，確保AI工具能強化品牌社群黏著度。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "AI平台開放多入口與API串接，廣告投放需同步考慮不同AI助理、搜尋與硬體入口的曝光規則。建議從分析競品在非Google平台的廣告與內容曝光方式著手，調整自家廣告素材格式與內容結構，提升在新興AI入口的曝光與點擊率。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "AI工具與平台生態變化快速，團隊需建立跨部門協作機制，隨時調整內容、API與行銷活動規劃。建議每月盤點AI平台更新與法律風險，針對重點應用設計備案流程，確保行銷活動能在多變的入口與法規環境下穩定推進。"
+        }
+      ]
+    }
+  ]
+}
