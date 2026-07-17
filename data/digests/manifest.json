@@ -1,6 +1,13 @@
 {
-  "latest": "2026-07-17",
+  "latest": "2026-07-18",
   "digests": [
+    {
+      "reportDate": "2026-07-18",
+      "coverageDate": "2026-07-17",
+      "title": "Bella's AI 趨勢日報｜2026/07/18",
+      "summary": "7 月 17 日 AI 產業動態聚焦於監管壓力、平台競爭與內容生態重構。Apple 與 OpenAI 的訴訟、舊金山對 AI 應用下架要求、Google 員工針對 AI 轉型發起抗議，以及 TikTok、Patreon 等平台的內容管理新措施，皆反映出 AI 技術商業化過程中，平台規則、合規門檻與數位內容治理加速變化。行銷決策者需重新評估品牌信任、內容授權與數據風險，並在策略上主動調整行動方案。",
+      "path": "data/digests/2026-07-18.json"
+    },
     {
       "reportDate": "2026-07-17",
       "coverageDate": "2026-07-16",
