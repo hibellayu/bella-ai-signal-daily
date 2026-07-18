@@ -1,6 +1,13 @@
 {
-  "latest": "2026-07-18",
+  "latest": "2026-07-19",
   "digests": [
+    {
+      "reportDate": "2026-07-19",
+      "coverageDate": "2026-07-18",
+      "title": "Bella's AI 趨勢日報｜2026/07/19",
+      "summary": "中國開源模型 Kimi K3 強勢登場，與美國主流模型競爭，並引發半導體與雲端市場波動。Meta 與 Anthropic 的算力合作洽談，及 Google Gemini 計價規則調整，凸顯 AI 生態系競爭正從模型本身擴展至基礎設施與商業模式層面。行銷團隊需重新審視 AI 工具選擇、預算分配與內容分發策略。",
+      "path": "data/digests/2026-07-19.json"
+    },
     {
       "reportDate": "2026-07-18",
       "coverageDate": "2026-07-17",
