@@ -2,6 +2,35 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.13.0｜2026-07-24
+
+版本類型：中改版
+
+### 修改原因
+
+v0.12.0 擴充 MarTech、Semrush、HubSpot 與 AI visibility 來源後，2026/07/24 日報雖然補到行銷策略訊號，但內容過度集中在品牌能見度與 MarTech 治理，忽略 AI 對國際事件、產業格局、深度工作者工作流與一般大眾使用習慣的影響。日報需要更像行銷主管的策略雷達，而不是單一品牌議題週報。
+
+### 修改內容
+
+- 新增「四層影響框架」作為選題與解讀基準：國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾。
+- Prompt 明確要求大事件不可被品牌能見度、GEO、MarTech 或工具比較題占滿。
+- 大事件若有候選，至少收錄 1 則非純品牌能見度事件，例如平台 / 模型 / 算力 / 資安 / AI Agent 風險 / 語音或健康等大眾入口。
+- 工具更新新增工作流視角，要求說明工具如何進入實際工作流程或日常使用，而不是只從品牌採用角度書寫。
+- 趨勢區新增跨層歸納要求，至少覆蓋品牌端以外的工作流、大眾使用、治理、算力或平台競爭。
+- `scoringPolicy` 補上 `impactFramework`，讓資料檔可回溯本版本的內容判斷框架。
+- Footer 版本升為 `v0.13.0`，版本日期維持 2026/07/24。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `python3 scripts/static_site.py`
+- `python3 scripts/generate_daily_digest.py --report-date 2026-07-24 --dry-run`
+- 2026/07/24 dry run 仍可收集 19 則候選、送 18 則進入生成，候選同時包含品牌能見度、MarTech、Claude 語音、OpenAI Health、AegisAI 資安、Gemini 用戶規模與 AMD / NVIDIA 算力題。
+
+### 對應 commit
+
+- `Add four-layer impact framework`
+
 ## v0.12.1｜2026-07-24
 
 版本類型：小改版
