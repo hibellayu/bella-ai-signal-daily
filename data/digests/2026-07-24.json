@@ -1,9 +1,9 @@
 {
   "reportDate": "2026-07-24",
   "coverageDate": "2026-07-23",
-  "generatedAt": "2026-07-24T12:11:41+08:00",
-  "headline": "AI代理治理、品牌能見度與語音入口成行銷決策新戰場",
-  "summary": "AI代理治理能力、品牌在AI回答中的能見度，以及語音與多裝置互動入口，正重塑品牌與消費者間的接觸點與信任機制。MarTech、SEO、AI平台的最新動態，要求行銷團隊同步調整內容結構、數據治理與互動策略，確保品牌在新一輪AI驅動的數位競爭中不被邊緣化。",
+  "generatedAt": "2026-07-24T14:33:07+08:00",
+  "headline": "AI搜尋入口、品牌可見度與AI代理治理重塑行銷決策格局",
+  "summary": "AI搜尋、語音模式、品牌能見度追蹤、健康數據整合與AI代理治理，正同步推動平台規則、品牌曝光、工作流與消費者習慣的深層變化。行銷決策者需以多層架構審視AI入口、內容被引用、數據治理與工具整合，才能在新一輪平台競爭與消費者行為轉型中維持競爭力。",
   "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
   "trackedEntities": [
     "OpenAI",
@@ -36,119 +36,59 @@
       "mustInclude": 13,
       "candidate": "9-12",
       "skip": "8 以下"
-    }
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾"
+    ]
   },
   "sections": [
     {
       "id": "major-events",
       "title": "大事件",
-      "description": "聚焦於影響行銷決策與品牌競爭規則的產業級變化，包括AI代理治理、AI能見度與語音入口的重大調整。",
+      "description": "聚焦改變產業格局、平台規則、算力供應、AI入口與消費者行為的重大事件。",
       "items": [
         {
-          "title": "HubSpot擴展Breeze AI，強化AI代理建立與治理能力",
-          "summary": "HubSpot進一步擴展Breeze AI，推出針對AI代理建立、治理與管理的新工具，強調AI運營的合規與監控，反映MarTech領域對AI自動化流程與風險控管的高度重視。",
+          "title": "Google Gemini月活用戶逼近十億，AI搜尋與多裝置入口地位再升級",
+          "summary": "Gemini月活用戶突破7.5億，正朝十億大關邁進，標誌Google將AI深度嵌入搜尋、Android與多裝置生態圈，強化AI作為資訊入口與品牌曝光場域的主導地位。",
           "analysis": [
-            "HubSpot此次擴展Breeze AI，將AI代理的建立、治理與管理納入MarTech主流程，標誌著AI工具從單一功能導向轉向全流程治理。這不僅提升了品牌在AI自動化上的可控性，也讓合規、數據安全與操作透明度成為MarTech平台競爭的核心規則。平台供應商開始強調AI代理的可監督性與可追溯性，降低因自動化決策失誤導致的品牌風險。",
-            "對行銷主管而言，AI代理不再只是效率工具，而是品牌與消費者互動的新前線。若缺乏治理機制，品牌將難以掌控AI代理在客戶旅程中的行為與決策，可能衍生數據誤用、回應失誤或信任危機。行銷團隊必須主動參與AI代理規則設計，確保自動化流程與品牌價值、法規要求一致，否則將在AI驅動的MarTech競爭中處於劣勢。"
+            "Gemini用戶規模的快速增長，代表Google正將AI搜尋與多模態助手全面融入其生態系，進一步鞏固平台在資訊流入口的壟斷地位。這不僅是搜尋引擎的升級，更是AI主導內容分發與用戶互動規則的轉型，平台競爭正從單一搜尋頁面擴展到多裝置、多場景的AI體驗。",
+            "對品牌與行銷團隊而言，AI搜尋入口的主導地位將改變內容被引用、品牌曝光與消費者決策的路徑。內容不再只為傳統SEO優化，而需針對AI模型可讀性、結構化資料與多語境引用設計。品牌若忽視AI入口，將在消費者搜尋、推薦與決策過程中被邊緣化。"
           ],
           "sources": [
             {
-              "name": "MarTech",
+              "name": "TechCrunch",
               "publishedDate": "2026-07-23",
-              "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/"
+              "url": "https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini/"
             }
           ],
           "score": {
-            "industryImpact": 5,
-            "digitalMarketingImpact": 5,
-            "contentSearchSocialAdsImpact": 4,
-            "toolUsability": 4,
-            "trackedEntityRelevance": 4,
-            "total": 22
+            "industryImpact": 10,
+            "digitalMarketingImpact": 8,
+            "contentSearchSocialAdsImpact": 10,
+            "toolUsability": 6,
+            "trackedEntityRelevance": 9,
+            "total": 43
           },
           "tags": [
-            "AI代理",
-            "MarTech",
-            "自動化治理",
-            "品牌合規",
-            "流程監控"
+            "AI搜尋",
+            "平台競爭",
+            "品牌能見度",
+            "多裝置入口",
+            "內容引用"
           ],
-          "what": "HubSpot將AI代理建立與治理工具納入Breeze AI，從單純自動化升級為可監控、可管理的MarTech運營流程，讓品牌能主動設計與監控AI代理行為，減少自動化風險。",
-          "soWhat": "品牌、行銷主管與IT部門需重新檢視AI代理在客戶旅程中的角色，若缺乏治理與監控，將無法即時發現AI代理的偏誤或不當行為，導致消費者信任流失與法規風險。MarTech採購標準也將從單純功能擴展到治理能力，未跟進者將在AI自動化競爭中被邊緣化。",
-          "nowWhat": "選定1個核心自動化流程（如客服回覆或潛客分流），導入Breeze AI治理模組，設定3項可監控指標（如回覆準確率、數據調用紀錄、異常警示），並每週產出1份AI代理行為稽核報告，確保流程合規與可追溯。"
+          "what": "Gemini用戶數逼近十億，代表Google已將AI深度嵌入搜尋、Android與多裝置場景，AI成為資訊入口與內容分發的主導者。這將改變品牌曝光、內容被引用與消費者決策的起點，行銷策略需同步調整。",
+          "soWhat": "品牌、內容團隊與行銷人若忽視AI搜尋入口，將在消費者的決策流程中被AI模型自動篩選、弱化曝光。內容結構、FAQ、產品比較與第三方引用將直接影響AI是否推薦品牌，競爭規則已從傳統SEO轉向AI可讀性與多模態適配。",
+          "nowWhat": "選定1個關鍵產品頁，針對Gemini生成摘要、FAQ與比較資訊，並用AI工具檢查是否能被AI正確抓取與引用。補齊3個AI未能正確理解的資訊欄位，並記錄AI摘要與原始內容的差異，作為後續優化依據。"
         },
         {
-          "title": "Semrush報告：ChatGPT類別中品牌領導者稀缺，AI能見度成挑戰",
-          "summary": "Semrush發現，僅有15%的ChatGPT應用類別存在穩定的品牌領導者，顯示AI回答場域的品牌能見度高度分散，品牌難以長期維持AI引用優勢。",
+          "title": "OpenAI全面開放ChatGPT Health，整合個人健康數據擴大用戶場景",
+          "summary": "OpenAI將ChatGPT Health全面開放美國用戶，允許連結Apple Health、MyFitnessPal等個人健康數據，AI健康應用正式進入主流消費場景，並帶動數據治理與隱私規則新挑戰。",
           "analysis": [
-            "這份報告揭示AI回答與生成內容的品牌能見度競爭，與傳統SEO截然不同。AI平台引用品牌內容的規則尚未穩定，導致領導品牌難以長期壟斷特定類別。這意味著品牌需不斷調整內容策略與結構，才能維持在AI回答中的曝光與權威性。",
-            "對行銷決策者而言，AI能見度已成新戰場。若只專注於傳統SEO優化，將錯失AI回答中的曝光機會。品牌、內容團隊與SEO人員需協作，持續追蹤AI平台引用規則，並針對AI優化內容結構，否則將在AI流量分配中失去競爭力。"
-          ],
-          "sources": [
-            {
-              "name": "MarTech",
-              "publishedDate": "2026-07-23",
-              "url": "https://martech.org/chatgpt-has-no-clear-brand-leader-in-most-categories/"
-            }
-          ],
-          "score": {
-            "industryImpact": 5,
-            "digitalMarketingImpact": 5,
-            "contentSearchSocialAdsImpact": 5,
-            "toolUsability": 3,
-            "trackedEntityRelevance": 2,
-            "total": 20
-          },
-          "tags": [
-            "AI能見度",
-            "品牌競爭",
-            "AI引用",
-            "SEO",
-            "內容策略"
-          ],
-          "what": "AI回答場域的品牌能見度高度分散，僅少數類別有穩定領導者，品牌需持續調整內容結構與策略，才能在AI引用競爭中維持曝光。",
-          "soWhat": "品牌若僅依賴SEO或單一內容優化方式，將難以在AI生成內容時被引用，導致流量與權威性流失。內容、SEO與品牌團隊必須協作，主動追蹤AI平台引用邏輯，否則在AI驅動的搜尋與推薦中逐漸被邊緣化。",
-          "nowWhat": "挑選1個核心產品頁，利用AI能見度追蹤工具（如Semrush或Scrunch）檢查該頁在ChatGPT等AI平台的引用狀況，列出3項未被引用或描述不清的重點，優化內容結構並記錄成效。"
-        },
-        {
-          "title": "Scrunch與Ahrefs Brand Radar比較，聚焦AI回答中的品牌能見度監控",
-          "summary": "Scrunch與Ahrefs Brand Radar皆可追蹤品牌在AI回答中的曝光與引用，但Scrunch更專注於AI答案優化（AEO），強調AI可爬取性、來源審核與主動優化，成為品牌AI能見度管理的專業工具。",
-          "analysis": [
-            "AI回答已成內容分發新入口，Scrunch等工具不僅追蹤品牌在AI答案中的曝光，還能主動審核AI可爬取性與引用結構，協助品牌調整內容以提升AI引用率。這類工具將AEO（AI Engine Optimization）納入行銷日常，讓品牌能即時調整內容以適應AI引用規則。",
-            "行銷團隊若無法掌握AI平台如何引用自家內容，將難以維持流量與權威性。AEO工具的導入，讓內容、SEO與品牌管理需同步調整，並建立AI能見度追蹤與優化流程，否則品牌將在AI驅動的內容分發中被動失位。"
-          ],
-          "sources": [
-            {
-              "name": "HubSpot Marketing Blog",
-              "publishedDate": "2026-07-23",
-              "url": "https://blog.hubspot.com/marketing/scrunch-vs-ahrefs"
-            }
-          ],
-          "score": {
-            "industryImpact": 4,
-            "digitalMarketingImpact": 4,
-            "contentSearchSocialAdsImpact": 5,
-            "toolUsability": 3,
-            "trackedEntityRelevance": 2,
-            "total": 16
-          },
-          "tags": [
-            "AEO",
-            "AI能見度",
-            "內容優化",
-            "品牌曝光",
-            "SEO工具"
-          ],
-          "what": "AI回答成為新流量入口，Scrunch等AEO工具能即時監控品牌在AI答案中的曝光與引用，協助品牌主動調整內容結構，提升AI引用率與權威性。",
-          "soWhat": "品牌若無法及時追蹤AI引用狀況，將失去在AI生成內容中的曝光與話語權。內容、SEO與品牌管理流程需同步導入AEO工具，建立AI能見度監控與優化機制，否則品牌聲量將被AI平台稀釋。",
-          "nowWhat": "選定1個重點產品或服務頁面，使用Scrunch進行AI引用審核，列出3個AI平台未正確引用或描述的內容區塊，針對其中1項進行內容結構調整並追蹤AI引用變化。"
-        },
-        {
-          "title": "OpenAI推廣ChatGPT Health，整合個人健康數據強化個人化服務",
-          "summary": "OpenAI將ChatGPT Health全面開放美國用戶，並支援整合Apple Health等第三方健康數據，強化AI個人化健康建議與互動能力，拓展AI應用場景與數據治理挑戰。",
-          "analysis": [
-            "OpenAI推動ChatGPT Health，讓AI可直接調用個人健康數據，標誌著AI服務從泛用聊天升級為個人化決策輔助。這不僅拓展了AI應用場景，也讓資料整合、隱私治理與數據安全成為平台競爭新焦點。AI平台未來將更深度參與用戶生活數據，提升互動黏著度。",
-            "對品牌與行銷團隊而言，AI平台成為個人資料與健康決策的中樞，品牌若能進入這類AI服務推薦清單，將取得更高信任門檻與消費者黏著度。反之，若無法適應AI平台的資料調用與推薦規則，將被排除於高價值消費場景之外。"
+            "ChatGPT Health的全面開放，標誌AI正從知識查詢、內容生成進一步滲透到個人健康、醫療與數據整合場景。這不僅擴大AI服務的應用邊界，也讓AI成為個人資訊管理與健康決策的中樞入口，推動平台與第三方數據生態的深度整合。",
+            "對品牌、健康內容提供者與行銷團隊而言，AI健康助手將成為消費者獲取健康建議、產品推薦與服務入口的關鍵節點。內容透明、數據隱私與來源揭露將直接影響品牌信任與消費者選擇，行銷策略需同步強化健康資訊的結構化與可信度。"
           ],
           "sources": [
             {
@@ -163,75 +103,103 @@
             }
           ],
           "score": {
-            "industryImpact": 4,
-            "digitalMarketingImpact": 4,
-            "contentSearchSocialAdsImpact": 4,
-            "toolUsability": 3,
-            "trackedEntityRelevance": 2,
-            "total": 17
+            "industryImpact": 8,
+            "digitalMarketingImpact": 8,
+            "contentSearchSocialAdsImpact": 7,
+            "toolUsability": 8,
+            "trackedEntityRelevance": 9,
+            "total": 40
           },
           "tags": [
-            "OpenAI",
-            "ChatGPT Health",
-            "個人化",
+            "健康AI",
             "數據整合",
-            "健康AI"
+            "內容透明",
+            "隱私治理",
+            "平台入口"
           ],
-          "what": "OpenAI讓ChatGPT Health全面支援第三方健康數據整合，AI服務從泛用聊天升級為個人化健康決策輔助，品牌若能進入推薦清單，將取得更高信任門檻。",
-          "soWhat": "品牌若無法讓產品資訊、服務流程與AI平台數據調用規則對接，將難以進入AI驅動的個人化推薦場景。醫療、健康、保健等產業需同步調整數據結構與內容透明度，否則將被AI平台排除於高價值消費決策之外。",
-          "nowWhat": "針對1項健康相關產品或服務，梳理其資料結構與隱私聲明，確認是否符合AI平台調用標準，並設計1份針對AI平台的推薦摘要，提交測試並追蹤AI引用情形。"
+          "what": "ChatGPT Health允許用戶連結個人健康數據，AI不僅能回應健康查詢，還能整合多來源資訊給出個人化建議。這將改變健康資訊的獲取、內容被引用及品牌在健康決策中的角色。",
+          "soWhat": "健康、保健、醫療相關品牌若未將內容結構化、來源明確揭露，將難以被AI健康助手正確引用或推薦。消費者對數據隱私與品牌透明度的要求提升，行銷策略需同步強化可信內容與數據治理，否則將失去AI主導的健康入口流量。",
+          "nowWhat": "挑選1則健康主題內容，新增3個來源註記與數據出處，並用ChatGPT測試是否能正確引用與推薦。記錄AI回應中遺漏或誤解的資訊，逐一補強內容結構與透明度。"
+        },
+        {
+          "title": "AMD推出Helios AI機架系統，挑戰NVIDIA算力供應鏈主導地位",
+          "summary": "AMD發表Helios AI機架級系統，正式進軍高階AI算力市場，對NVIDIA的GPU壟斷地位構成挑戰，產業進入多元供應與算力競爭新階段。",
+          "analysis": [
+            "AMD進軍AI算力機架系統，意味著AI基礎設施供應鏈正從單一GPU供應商（NVIDIA）轉向多元競爭。這將影響雲端運算、AI平台與大模型部署的成本、彈性與創新速度，產業格局有望進一步分散，降低單一平台綁定風險。",
+            "對品牌端與AI應用開發者而言，算力多元化將帶來部署選擇與成本優化空間。行銷團隊需關注AI服務供應商的基礎設施策略，評估是否能因應不同平台優化內容分發、數據處理與AI工具整合，避免因單一供應鏈瓶頸影響行銷自動化與MarTech部署。"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-23",
+              "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/"
+            }
+          ],
+          "score": {
+            "industryImpact": 10,
+            "digitalMarketingImpact": 6,
+            "contentSearchSocialAdsImpact": 7,
+            "toolUsability": 7,
+            "trackedEntityRelevance": 8,
+            "total": 38
+          },
+          "tags": [
+            "算力供應鏈",
+            "AI基礎設施",
+            "平台競爭",
+            "多元部署",
+            "MarTech"
+          ],
+          "what": "AMD推出Helios AI機架系統，打破NVIDIA在高階AI算力市場的壟斷，為雲端平台與AI應用提供更多部署選擇。這將影響AI服務成本、彈性與創新速度。",
+          "soWhat": "行銷、內容與AI應用團隊需密切關注供應鏈多元化對AI工具、MarTech平台與內容分發的影響。若只依賴單一算力平台，未來可能面臨成本上升或部署受限，影響行銷自動化與數據處理效率。",
+          "nowWhat": "盤點現有AI工具與MarTech平台，列出3項依賴特定算力供應商的關鍵功能。與IT或供應商討論是否可支援AMD新平台，並記錄可替換或多元部署的選項。"
+        },
+        {
+          "title": "Semrush報告揭示ChatGPT多數分類無明確品牌領導者，品牌能見度競爭加劇",
+          "summary": "Semrush調查發現，僅15%的ChatGPT分類有穩定品牌領導者，顯示AI生成內容場景下品牌能見度極度分散，品牌主需重新審視AI引用、AEO與內容結構策略。",
+          "analysis": [
+            "AI生成搜尋（AEO）場景下，品牌能見度不再由傳統SEO決定，而是受AI模型引用、內容結構與第三方信任訊號共同影響。Semrush數據顯示，大多數分類缺乏明確品牌領導者，品牌曝光機會分散且競爭加劇，行銷策略需轉向動態監控與多元優化。",
+            "品牌與內容團隊若未掌握AI引用規則與AEO最佳實踐，將難以在AI搜尋與內容推薦中維持領先。品牌需強化內容結構、FAQ、第三方引用與AI可讀性，並持續追蹤AI平台對品牌的引用頻率與內容呈現，否則易被新進競爭者取代。"
+          ],
+          "sources": [
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-07-23",
+              "url": "https://martech.org/chatgpt-has-no-clear-brand-leader-in-most-categories/"
+            }
+          ],
+          "score": {
+            "industryImpact": 8,
+            "digitalMarketingImpact": 10,
+            "contentSearchSocialAdsImpact": 10,
+            "toolUsability": 7,
+            "trackedEntityRelevance": 8,
+            "total": 43
+          },
+          "tags": [
+            "AI能見度",
+            "AEO",
+            "品牌競爭",
+            "內容結構",
+            "AI引用"
+          ],
+          "what": "Semrush報告顯示，ChatGPT僅15%分類有穩定品牌領導者，AI生成場景下品牌能見度極度分散。品牌曝光不再由傳統SEO主導，需轉向AI引用與內容結構優化。",
+          "soWhat": "品牌若未針對AI引用規則調整內容策略，將在AI搜尋、推薦與內容生成場景中被邊緣化。競爭者可快速搶佔AI能見度，行銷團隊需動態追蹤AI引用狀況並持續優化內容結構，否則品牌領導地位難以維持。",
+          "nowWhat": "挑選1個核心分類，利用AI能見度追蹤工具（如Scrunch、Ahrefs）記錄品牌被AI引用的3個主要內容類型。針對引用率最低的1類內容，補強FAQ、結構化資料與第三方信任訊號。"
         }
       ]
     },
     {
       "id": "tool-updates",
       "title": "工具更新",
-      "description": "涵蓋AI語音互動、AI代理治理與品牌能見度監控等工具的最新升級，聚焦於行銷與內容管理流程的實際應用。",
+      "description": "聚焦AI工具、MarTech與內容優化工具的實際工作流整合與新功能落地。",
       "items": [
         {
-          "title": "Anthropic擴展Claude語音模式至多款模型，強化語音互動入口",
-          "summary": "Anthropic將Claude語音模式擴展至Opus與Sonnet等更高階模型，並開放第三方應用整合，讓語音成為AI互動與品牌接觸的新常態。",
+          "title": "HubSpot擴展Breeze AI，強化AI代理建置、治理與管理能力",
+          "summary": "HubSpot推出Breeze AI新功能，聚焦AI代理的建置、治理與管理，回應MarTech市場對AI自動化與合規操作的高度需求，推動AI代理進入品牌營運與行銷自動化核心流程。",
           "analysis": [
-            "Anthropic將語音互動能力從Haiku擴展到Opus與Sonnet模型，並支援第三方應用嵌入，讓語音成為AI服務的主流入口。這種多模型語音支援，意味著AI平台將語音作為品牌與消費者互動的關鍵節點，未來品牌資訊、客服與內容分發都將進入語音驅動的新場景。",
-            "對行銷團隊而言，語音互動不再只是輔助功能，而是品牌曝光、內容解讀與用戶體驗的核心。若品牌內容未針對語音AI進行結構優化，將難以被AI正確解讀與推薦。客服、FAQ與產品說明需同步調整語音友好度，否則將在語音AI普及下失去主動權。"
-          ],
-          "sources": [
-            {
-              "name": "TechCrunch",
-              "publishedDate": "2026-07-23",
-              "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/"
-            },
-            {
-              "name": "The Verge",
-              "publishedDate": "2026-07-23",
-              "url": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai"
-            }
-          ],
-          "score": {
-            "industryImpact": 4,
-            "digitalMarketingImpact": 4,
-            "contentSearchSocialAdsImpact": 4,
-            "toolUsability": 3,
-            "trackedEntityRelevance": 2,
-            "total": 17
-          },
-          "tags": [
-            "Anthropic",
-            "Claude",
-            "語音AI",
-            "多裝置入口",
-            "品牌互動"
-          ],
-          "what": "Claude語音模式從僅支援Haiku擴展至Opus與Sonnet等高階模型，並開放第三方應用嵌入，讓語音成為AI互動與品牌接觸的新主流入口。",
-          "soWhat": "品牌若未針對語音AI優化內容結構與互動腳本，將難以被AI正確解讀與推薦，導致在語音驅動的搜尋、客服與內容分發場景中被動失位。行銷與客服團隊需同步調整內容與互動策略，否則品牌聲量將被語音AI稀釋。",
-          "nowWhat": "選定1則常見FAQ或產品說明，轉換為語音友好格式（如短句、明確標題），並用Claude語音模式實測AI解讀結果，記錄3項AI未能正確理解的資訊，針對其中1項優化內容結構。"
-        },
-        {
-          "title": "AI代理治理成MarTech新標準，品牌需主動管理AI運營風險",
-          "summary": "AI代理治理能力成為MarTech平台競爭新焦點，品牌需建立AI代理監控、稽核與異常警示機制，主動管理AI自動化帶來的營運與信任風險。",
-          "analysis": [
-            "MarTech平台強化AI代理治理，代表AI自動化已從效率工具升級為品牌營運風險的管理對象。平台供應商開始提供AI代理監控、稽核與異常警示功能，讓品牌主能即時掌握AI代理行為，降低決策偏誤與資料誤用風險。這將AI治理納入MarTech採購與運營標準，改變品牌與平台的合作規則。",
-            "對行銷主管與IT部門而言，AI代理治理不僅關乎合規，更直接影響品牌信任與消費者體驗。若缺乏監控與稽核，AI代理可能誤導客戶、洩漏敏感資料或違反法規，導致品牌損失。品牌需主動設計AI代理監控流程，並將治理指標納入KPI，否則在AI自動化普及下將失去競爭主動權。"
+            "HubSpot強化Breeze AI，將AI代理的建置、治理與管理納入MarTech平台核心，代表AI代理不再只是單一工具，而是需要嚴謹治理、可控性與合規性的營運資產。這將推動品牌將AI代理視為流程自動化與數據治理的關鍵節點，並強化跨部門協作與監控。",
+            "行銷團隊、品牌營運與IT部門需共同制定AI代理的治理規範，確保自動化流程的透明度、合規性與風險控管。AI代理的規模化部署將直接影響內容分發、CRM與客戶體驗，行銷策略需同步調整代理治理與監控機制。"
           ],
           "sources": [
             {
@@ -241,75 +209,30 @@
             }
           ],
           "score": {
-            "industryImpact": 5,
-            "digitalMarketingImpact": 4,
-            "contentSearchSocialAdsImpact": 3,
-            "toolUsability": 4,
-            "trackedEntityRelevance": 3,
-            "total": 19
+            "industryImpact": 8,
+            "digitalMarketingImpact": 9,
+            "contentSearchSocialAdsImpact": 8,
+            "toolUsability": 9,
+            "trackedEntityRelevance": 8,
+            "total": 42
           },
           "tags": [
-            "AI代理治理",
+            "AI代理",
             "MarTech",
-            "自動化風險",
-            "品牌信任",
-            "流程稽核"
+            "自動化",
+            "治理",
+            "流程管理"
           ],
-          "what": "AI代理治理能力成為MarTech平台競爭新標準，品牌需建立AI代理監控、稽核與異常警示機制，主動管理AI自動化帶來的營運與信任風險。",
-          "soWhat": "行銷主管與IT部門若未建立AI代理監控流程，將難以及時發現AI代理的偏誤或違規行為，導致消費者體驗受損與法規風險升高。MarTech採購標準需納入AI治理能力，否則品牌將在AI自動化競爭中處於劣勢。",
-          "nowWhat": "選定1個AI代理應用場景（如自動客服），設計3項監控指標（如回覆準確率、異常警示、數據調用紀錄），並每月產出1份AI代理稽核報告，確保運營風險可控。"
-        }
-      ]
-    },
-    {
-      "id": "trends",
-      "title": "值得追蹤的趨勢",
-      "description": "歸納AI能見度、語音入口與代理治理等跨新聞趨勢，指向品牌策略與內容結構的中期調整方向。",
-      "items": [
-        {
-          "title": "品牌能見度競爭從SEO延伸至AI回答與引用管理",
-          "summary": "AI平台引用品牌內容的規則尚未穩定，品牌能見度競爭從傳統SEO延伸至AI回答與引用管理。AEO工具興起，要求品牌內容結構與可爬取性同步優化，否則將在AI分發流量中失去曝光。",
-          "analysis": [
-            "AI平台的內容引用與推薦規則高度動態，品牌需不斷調整內容結構以適應AI的抓取與摘要邏輯。AEO工具（如Scrunch、Ahrefs Brand Radar）成為行銷日常，讓品牌能即時追蹤AI引用狀況並主動優化。這種能見度競爭已超越SEO，進入AI驅動的內容分發新階段。",
-            "內容、SEO與品牌管理團隊需同步導入AEO流程，否則品牌將在AI平台流量分配中被動失位。行銷決策者需將AI能見度納入KPI，並定期追蹤AI引用變化，否則在AI驅動的搜尋、推薦與內容分發場景中喪失主動權。"
-          ],
-          "sources": [
-            {
-              "name": "HubSpot Marketing Blog",
-              "publishedDate": "2026-07-23",
-              "url": "https://blog.hubspot.com/marketing/scrunch-vs-ahrefs"
-            },
-            {
-              "name": "MarTech",
-              "publishedDate": "2026-07-23",
-              "url": "https://martech.org/chatgpt-has-no-clear-brand-leader-in-most-categories/"
-            }
-          ],
-          "score": {
-            "industryImpact": 5,
-            "digitalMarketingImpact": 5,
-            "contentSearchSocialAdsImpact": 5,
-            "toolUsability": 4,
-            "trackedEntityRelevance": 3,
-            "total": 22
-          },
-          "tags": [
-            "AI能見度",
-            "AEO",
-            "SEO",
-            "內容分發",
-            "品牌曝光"
-          ],
-          "what": "品牌能見度競爭從SEO延伸至AI回答與引用管理，AEO工具成為內容優化新標配，品牌需同步調整內容結構與可爬取性，才能維持AI引用優勢。",
-          "soWhat": "品牌若無法即時追蹤AI引用狀況並主動優化內容，將在AI平台流量分配中被邊緣化。內容、SEO與品牌管理團隊需協作，建立AEO追蹤與優化流程，否則品牌聲量將被AI平台稀釋。",
-          "nowWhat": "選定1個高流量頁面，使用AEO工具檢查AI引用情形，列出3項未被AI正確引用的內容區塊，針對其中1項優化內容結構並追蹤成效。"
+          "what": "HubSpot擴展Breeze AI，將AI代理建置、治理與管理納入MarTech平台核心。AI代理不再只是自動化工具，而需有明確治理與流程監控，成為品牌營運中可控的AI資產。",
+          "soWhat": "行銷、營運與IT需共同制定AI代理的治理標準，否則自動化流程易產生合規、數據與品牌風險。AI代理規模化部署將改變內容分發、CRM與客戶互動規則，治理不力將直接影響品牌體驗與信任。",
+          "nowWhat": "選定1個AI代理應用場景，列出3項目前缺乏治理規範的自動化流程。與跨部門討論，針對其中1項制定明確的監控與合規檢查清單，並記錄落實成效。"
         },
         {
-          "title": "語音與多裝置入口成為品牌與消費者新互動前沿",
-          "summary": "AI語音模式擴展至多款高階模型與第三方應用，語音成為品牌與消費者互動、客服與內容分發的新主流入口，要求行銷團隊同步優化語音友好內容結構。",
+          "title": "Anthropic擴展Claude語音模式至Opus與Sonnet，提升多場景AI溝通與工作流整合",
+          "summary": "Anthropic將語音模式擴展至Claude Opus與Sonnet模型，並開放更多應用場景，讓語音AI能進入會議、郵件、協作等多元工作流，大幅提升知識工作者與行銷團隊的操作效率。",
           "analysis": [
-            "語音AI不再局限於單一模型或裝置，Anthropic等平台將語音能力擴展至多款高階模型並開放第三方整合，讓語音成為內容搜尋、客服與品牌互動的主流入口。品牌資訊若未針對語音AI優化，將難以被AI正確解讀與推薦。",
-            "行銷與客服團隊需同步調整內容結構與互動腳本，提升語音友好度與AI可讀性。否則在語音AI普及下，品牌將在語音搜尋、語音客服與多裝置互動場景中失去主動權與曝光機會。"
+            "語音AI從單一模型（Haiku）擴展至高階模型（Opus、Sonnet），代表語音互動將成為AI與用戶溝通的主流入口。這不僅提升AI在多場景下的適應力，也讓語音AI能處理更複雜的任務，如會議重排、郵件撰寫與多方協作，推動AI深度融入知識工作流。",
+            "行銷、內容與協作團隊可藉由語音AI提升跨部門溝通、內容產出與任務分配效率。語音AI的多模型支援，讓不同層級的知識工作者能根據任務複雜度選擇最佳模型，優化流程與提升產能，並降低操作門檻。"
           ],
           "sources": [
             {
@@ -324,54 +247,147 @@
             }
           ],
           "score": {
-            "industryImpact": 4,
-            "digitalMarketingImpact": 4,
-            "contentSearchSocialAdsImpact": 4,
-            "toolUsability": 3,
-            "trackedEntityRelevance": 2,
-            "total": 17
+            "industryImpact": 7,
+            "digitalMarketingImpact": 7,
+            "contentSearchSocialAdsImpact": 7,
+            "toolUsability": 9,
+            "trackedEntityRelevance": 8,
+            "total": 38
           },
           "tags": [
             "語音AI",
-            "多裝置入口",
-            "品牌互動",
-            "內容結構",
-            "客服"
+            "多模型",
+            "工作流整合",
+            "知識工作者",
+            "協作"
           ],
-          "what": "語音AI模式擴展至多款高階模型與第三方應用，語音成為品牌與消費者互動、客服與內容分發的新主流入口，品牌需同步優化語音友好內容結構。",
-          "soWhat": "品牌若未針對語音AI優化內容與互動腳本，將難以被AI正確解讀與推薦，導致在語音搜尋、語音客服與多裝置互動場景中失去曝光與主動權。",
-          "nowWhat": "選定1則常見FAQ或產品說明，轉換為語音友好格式，並用語音AI實測解讀結果，記錄3項AI未能正確理解的資訊，針對其中1項優化內容結構。"
+          "what": "Claude語音模式擴展至Opus與Sonnet，讓語音AI能處理更複雜任務並進入多場景應用。知識工作者、行銷與協作團隊可利用語音AI優化溝通與內容產出流程。",
+          "soWhat": "團隊若未將語音AI納入日常工作流，將錯失跨部門協作、內容產出與任務分配的效率提升。不同模型適用於不同任務，行銷與內容團隊需根據需求選擇最佳語音AI，否則流程優化效果有限。",
+          "nowWhat": "選定1個重複性高的會議或郵件任務，使用Claude語音模式分別用Opus與Sonnet模型執行，記錄3項效率提升或內容差異，並將最佳實踐納入團隊SOP。"
+        },
+        {
+          "title": "Scrunch與Ahrefs比較AI品牌能見度追蹤工具，聚焦AEO優化與AI引用監控",
+          "summary": "Scrunch與Ahrefs Brand Radar皆能追蹤品牌在AI答案中的能見度，但Scrunch更專注AEO優化、AI引用監控與內容結構化，協助品牌主動提升AI搜尋與內容生成場景下的曝光率。",
+          "analysis": [
+            "AI能見度追蹤工具正從傳統SEO監控轉向AI引用、AEO與內容結構化優化。Scrunch主打AI引用監控與AEO優化，讓品牌能主動調整內容以提升在AI答案中的曝光率，改變品牌被動等待搜尋流量的舊有模式。",
+            "行銷、內容與SEO團隊可利用這類工具動態追蹤品牌在AI平台的引用狀況，針對AI未能正確引用的內容主動優化結構、FAQ與信任訊號，提升品牌在AI搜尋、推薦與內容生成場景下的能見度與競爭力。"
+          ],
+          "sources": [
+            {
+              "name": "HubSpot Marketing Blog",
+              "publishedDate": "2026-07-23",
+              "url": "https://blog.hubspot.com/marketing/scrunch-vs-ahrefs"
+            }
+          ],
+          "score": {
+            "industryImpact": 7,
+            "digitalMarketingImpact": 8,
+            "contentSearchSocialAdsImpact": 8,
+            "toolUsability": 8,
+            "trackedEntityRelevance": 7,
+            "total": 38
+          },
+          "tags": [
+            "AI能見度",
+            "AEO",
+            "內容結構",
+            "品牌引用",
+            "SEO工具"
+          ],
+          "what": "Scrunch與Ahrefs等AI能見度追蹤工具，讓品牌能主動監控AI平台的引用狀況，並針對AEO與內容結構進行優化，提升AI搜尋與內容生成場景下的曝光率。",
+          "soWhat": "品牌若僅依賴傳統SEO，將難以掌握AI平台的內容引用規則。行銷與內容團隊需動態追蹤AI能見度，並針對AI未能正確引用的內容主動優化結構與信任訊號，否則品牌曝光將持續分散。",
+          "nowWhat": "選定1個關鍵主題，利用Scrunch或Ahrefs記錄品牌在AI答案中的3個引用弱點。針對其中1項立即補強FAQ、結構化資料與第三方引用，並追蹤AI引用率變化。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "跨事件歸納AI搜尋入口、品牌能見度分散、AI代理治理與多場景語音AI等新趨勢，並分析其對行銷決策與團隊流程的中期影響。",
+      "items": [
+        {
+          "title": "AI搜尋入口主導、品牌能見度分散與AI代理治理成為MarTech競爭新焦點",
+          "summary": "AI搜尋入口（如Gemini）、品牌能見度分散（Semrush報告）、AI代理治理（HubSpot）、語音AI多場景應用（Anthropic）共同推動行銷決策邏輯重組。品牌需同步掌握AI入口、內容結構、代理治理與多裝置協作，否則將在新一輪平台競爭與消費者行為轉型中失去主導權。",
+          "analysis": [
+            "AI搜尋入口與語音AI成為消費者獲取資訊、品牌被引用與互動的主流場景，平台競爭轉向多裝置、多模態與AI代理協作。品牌能見度分散，AI引用規則動態變化，內容結構與來源透明度成為維持曝光的關鍵。",
+            "MarTech工具與AI代理治理能力提升，讓行銷團隊能主動調整自動化流程、內容分發與AI引用策略。未能同步強化AI入口、代理治理與內容結構的品牌，將在AI主導的決策場景中被邊緣化，競爭門檻大幅提升。"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-23",
+              "url": "https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini/"
+            },
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-07-23",
+              "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/"
+            },
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-07-23",
+              "url": "https://martech.org/chatgpt-has-no-clear-brand-leader-in-most-categories/"
+            },
+            {
+              "name": "HubSpot Marketing Blog",
+              "publishedDate": "2026-07-23",
+              "url": "https://blog.hubspot.com/marketing/scrunch-vs-ahrefs"
+            },
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-23",
+              "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/"
+            }
+          ],
+          "score": {
+            "industryImpact": 10,
+            "digitalMarketingImpact": 10,
+            "contentSearchSocialAdsImpact": 10,
+            "toolUsability": 9,
+            "trackedEntityRelevance": 10,
+            "total": 49
+          },
+          "tags": [
+            "AI搜尋入口",
+            "品牌能見度",
+            "AI代理治理",
+            "多場景應用",
+            "MarTech"
+          ],
+          "what": "AI搜尋入口、品牌能見度分散、AI代理治理與語音AI多場景應用，正同步重塑行銷決策、內容結構與團隊流程。平台規則、消費者行為與工具整合邏輯全面更新。",
+          "soWhat": "品牌若未同步調整AI入口策略、內容結構與代理治理，將在AI主導的搜尋、推薦與自動化場景中失去曝光與競爭力。行銷團隊需跨部門協作，動態追蹤AI引用與工具整合狀況，否則難以維持領先。",
+          "nowWhat": "組成跨部門小組，針對AI入口、內容結構、代理治理與語音AI應用，列出4項現有流程的優化空間。每項指派1位負責人，完成1項具體優化並提交成效報告，產出4份優化紀錄。"
         }
       ]
     },
     {
       "id": "applications",
       "title": "應用切角彙整",
-      "description": "從品牌策略、數位行銷、內容行銷、社群應用、媒體廣告與團隊流程六大面向，統整AI代理治理、品牌能見度與語音入口等趨勢對行銷決策的實際影響。",
+      "description": "統整今日AI搜尋入口、品牌能見度、AI代理治理與語音AI多場景應用對六大行銷應用面的策略啟示。",
       "items": [
         {
           "title": "品牌策略",
-          "summary": "AI代理治理與AI能見度競爭，要求品牌將AI平台視為新的信任與曝光入口。品牌主張、產品證據、FAQ、評測與第三方引用需結構化，方便AI代理與語音AI正確抓取與推薦。品牌策略應聚焦於內容透明、數據可追溯與AI友好結構，主動管理AI代理行為與品牌在AI回答中的權威性。"
+          "summary": "AI搜尋與語音入口成為品牌信任與曝光新門檻。品牌需將AI入口納入信任架構，強化內容結構、FAQ、評測與第三方引用，確保品牌在AI推薦、摘要與多裝置場景中持續被引用。可從重點產品頁開始，逐步補齊AI可讀性與信任證據。"
         },
         {
           "title": "數位行銷",
-          "summary": "數位行銷流程需納入AI能見度追蹤與AEO優化，從SEO延伸到AI回答、語音互動與多裝置入口。行銷團隊應定期追蹤AI平台引用規則，並將AI能見度與語音互動納入KPI，確保品牌在新一輪AI流量分配中不被邊緣化。"
+          "summary": "數位行銷策略需同步優化AEO、AI能見度追蹤與內容結構，並利用MarTech工具動態監控AI引用與自動化流程。建議從AI能見度追蹤工具入手，針對流量主力分類每月檢查AI引用率，快速補強曝光弱點。"
         },
         {
           "title": "內容行銷",
-          "summary": "內容團隊需同步優化AI可爬取性、語音友好結構與AEO指標，建立AI引用監控與內容稽核流程。內容不僅要讓人易讀，更要讓AI易於抓取、摘要與推薦，否則將在AI驅動的內容分發中失去主動權。"
+          "summary": "內容產出需聚焦AI引用規則、結構化資料與來源透明，並強化健康、FAQ等高敏感度主題的可信度。可從挑選1則健康或產品內容，新增數據來源與第三方引用開始，並用AI測試內容被引用的完整度。"
         },
         {
           "title": "社群應用",
-          "summary": "AI平台與語音入口將社群互動延伸到多裝置與即時語音場景，品牌需設計語音友好互動腳本與即時回應策略，並追蹤AI代理在社群場域的行為與回饋，確保品牌聲量與互動品質不被AI稀釋。"
+          "summary": "社群互動不僅要考慮人對人的溝通，也要預設AI代理會參與內容抓取、摘要與推薦。建議針對社群熱門話題，設計3則易被AI摘要的FAQ或討論精華，並觀察AI平台是否能正確引用。"
         },
         {
           "title": "媒體廣告",
-          "summary": "AI平台成為媒體分發與廣告投放的新入口，品牌需同步調整廣告素材結構與數據標記，確保廣告內容能被AI平台正確抓取與推薦。語音廣告與AI推薦將成為新常態，廣告團隊需設計AI友好素材並追蹤AI分發成效。"
+          "summary": "媒體廣告需評估AI搜尋與推薦將如何影響廣告曝光、點擊與轉換。可從分析AI入口帶來的新流量來源、內容被推薦的頻率與廣告素材的AI可讀性著手，調整素材結構與標註，提升AI推薦機率。"
         },
         {
           "title": "團隊流程",
-          "summary": "AI代理治理與AEO工具納入日常流程，要求內容、SEO、IT與行銷團隊協作，建立AI代理監控、內容稽核與AI能見度追蹤SOP。團隊需定期產出AI代理行為報告與AEO優化成效，將AI治理納入營運KPI，確保流程透明與風險可控。"
+          "summary": "團隊需建立AI代理治理、內容結構優化與AI能見度追蹤的跨部門協作機制。可從每月召開1次AI引用與代理治理檢討會，針對流程、內容與工具整合提出具體優化建議，並落實到日常SOP。"
         }
       ]
     }
