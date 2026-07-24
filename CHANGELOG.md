@@ -2,6 +2,29 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.12.1｜2026-07-24
+
+版本類型：小改版
+
+### 修改原因
+
+v0.12.0 重新觸發 2026/07/24 日報時，來源擴充與候選選文已生效，但模型在初稿、重寫與一次修補後，仍有 1 則趨勢的 Now What 未達 60 字發布門檻，導致整份日報停止發布。這不是來源問題，而是修補層對小型文字深度問題的容錯不足。
+
+### 修改內容
+
+- 修補次數由 1 次提高為 2 次。
+- 修補 prompt 補強 Now What 過短時的重寫規格：90-120 字、兩句以內、保留明確數量、起始素材與完成產出。
+- Footer 版本升為 `v0.12.1`，版本日期維持 2026/07/24。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `python3 scripts/generate_daily_digest.py --report-date 2026-07-24 --dry-run`
+
+### 對應 commit
+
+- `Add second digest repair attempt`
+
 ## v0.12.0｜2026-07-24
 
 版本類型：中改版

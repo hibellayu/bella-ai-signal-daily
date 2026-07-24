@@ -34,7 +34,7 @@ SECTION_IDS = ["major-events", "tool-updates", "trends", "applications"]
 APPLICATION_TITLES = {"品牌策略", "數位行銷", "內容行銷", "社群應用", "媒體廣告", "團隊流程"}
 SOURCE_EXCERPT_LIMIT = 220
 MAX_GENERATION_ATTEMPTS = 2
-MAX_REPAIR_ATTEMPTS = 1
+MAX_REPAIR_ATTEMPTS = 2
 OPENAI_TIMEOUT_SECONDS = 240
 SELECTION_LIMIT = 18
 SOURCE_DIVERSITY_CAP = 5
@@ -536,6 +536,7 @@ def build_repair_prompt(
         - 優先修補驗證錯誤指出的欄位；若結構有缺漏，也要補齊。
         - analysis 必須剛好 2 段，每段至少 70 字，第一段談平台、商業模式、入口或競爭規則變化，第二段談品牌、消費者與行銷團隊的決策影響。
         - What 至少 45 字；So What 至少 60 字；Now What 至少 60 字且必須包含明確數量、實際動作與可見產出。
+        - 若驗證錯誤指出 Now What 過短，必須把該則 Now What 重寫成 90-120 字、兩句以內，並保留 1 個明確數量、1 個起始素材、1 個完成產出。
         - Now What 不可出現「這週、本週、幾天內、幾週內、幾個月內」等任意期限。
         - 應用切角必須固定 6 則，title 依序只能是：品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程。
         - 每則 sources 必須使用候選新聞中的原文 URL，不可改成媒體首頁。
