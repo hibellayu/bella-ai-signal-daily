@@ -54,8 +54,8 @@
             "digitalMarketingImpact": 5,
             "contentSearchSocialAdsImpact": 4,
             "toolUsability": 2,
-            "trackedEntityRelevance": 4,
-            "total": 20
+            "trackedEntityRelevance": 2,
+            "total": 18
           },
           "tags": [
             "廣告攔截",
@@ -92,8 +92,8 @@
             "digitalMarketingImpact": 5,
             "contentSearchSocialAdsImpact": 4,
             "toolUsability": 3,
-            "trackedEntityRelevance": 4,
-            "total": 20
+            "trackedEntityRelevance": 2,
+            "total": 18
           },
           "tags": [
             "Google",
@@ -140,8 +140,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 2,
-            "trackedEntityRelevance": 4,
-            "total": 18
+            "trackedEntityRelevance": 2,
+            "total": 16
           },
           "tags": [
             "Apple",
@@ -173,8 +173,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 4,
-            "trackedEntityRelevance": 4,
-            "total": 19
+            "trackedEntityRelevance": 2,
+            "total": 17
           },
           "tags": [
             "Anthropic",
@@ -213,8 +213,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 4,
-            "trackedEntityRelevance": 4,
-            "total": 19
+            "trackedEntityRelevance": 2,
+            "total": 17
           },
           "tags": [
             "Anthropic",
@@ -296,8 +296,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 4,
             "toolUsability": 3,
-            "trackedEntityRelevance": 4,
-            "total": 20
+            "trackedEntityRelevance": 2,
+            "total": 18
           },
           "tags": [
             "AI生態系",
@@ -334,8 +334,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 4,
-            "trackedEntityRelevance": 4,
-            "total": 19
+            "trackedEntityRelevance": 2,
+            "total": 17
           },
           "tags": [
             "本地化",

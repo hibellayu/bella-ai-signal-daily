@@ -54,8 +54,8 @@
             "digitalMarketingImpact": 5,
             "contentSearchSocialAdsImpact": 5,
             "toolUsability": 5,
-            "trackedEntityRelevance": 4,
-            "total": 24
+            "trackedEntityRelevance": 2,
+            "total": 22
           },
           "tags": [
             "內容授權",
@@ -87,8 +87,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 4,
             "toolUsability": 4,
-            "trackedEntityRelevance": 5,
-            "total": 21
+            "trackedEntityRelevance": 3,
+            "total": 19
           },
           "tags": [
             "模型安全",
@@ -120,8 +120,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 5,
             "toolUsability": 3,
-            "trackedEntityRelevance": 5,
-            "total": 21
+            "trackedEntityRelevance": 3,
+            "total": 19
           },
           "tags": [
             "內容標註",
@@ -153,8 +153,8 @@
             "digitalMarketingImpact": 3,
             "contentSearchSocialAdsImpact": 4,
             "toolUsability": 3,
-            "trackedEntityRelevance": 5,
-            "total": 20
+            "trackedEntityRelevance": 3,
+            "total": 18
           },
           "tags": [
             "著作權",
@@ -193,8 +193,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 4,
             "toolUsability": 4,
-            "trackedEntityRelevance": 5,
-            "total": 21
+            "trackedEntityRelevance": 3,
+            "total": 19
           },
           "tags": [
             "AI 模型",
@@ -226,8 +226,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 5,
-            "trackedEntityRelevance": 4,
-            "total": 20
+            "trackedEntityRelevance": 2,
+            "total": 18
           },
           "tags": [
             "自動化",
@@ -276,8 +276,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 5,
             "toolUsability": 4,
-            "trackedEntityRelevance": 5,
-            "total": 23
+            "trackedEntityRelevance": 3,
+            "total": 21
           },
           "tags": [
             "內容授權",

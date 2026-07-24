@@ -54,8 +54,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 3,
-            "trackedEntityRelevance": 4,
-            "total": 14
+            "trackedEntityRelevance": 2,
+            "total": 16
           },
           "tags": [
             "OpenAI",
@@ -86,7 +86,7 @@
             "digitalMarketingImpact": 3,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 2,
-            "trackedEntityRelevance": 4,
+            "trackedEntityRelevance": 2,
             "total": 14
           },
           "tags": [
@@ -119,7 +119,7 @@
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 3,
             "trackedEntityRelevance": 3,
-            "total": 12
+            "total": 15
           },
           "tags": [
             "Google",
@@ -160,8 +160,8 @@
             "digitalMarketingImpact": 3,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 2,
-            "trackedEntityRelevance": 4,
-            "total": 13
+            "trackedEntityRelevance": 2,
+            "total": 14
           },
           "tags": [
             "AI合規",
@@ -204,8 +204,8 @@
             "digitalMarketingImpact": 3,
             "contentSearchSocialAdsImpact": 2,
             "toolUsability": 3,
-            "trackedEntityRelevance": 4,
-            "total": 11
+            "trackedEntityRelevance": 2,
+            "total": 13
           },
           "tags": [
             "OpenAI",
@@ -237,7 +237,7 @@
             "contentSearchSocialAdsImpact": 2,
             "toolUsability": 2,
             "trackedEntityRelevance": 3,
-            "total": 9
+            "total": 12
           },
           "tags": [
             "資料安全",
@@ -281,7 +281,7 @@
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 3,
             "trackedEntityRelevance": 3,
-            "total": 12
+            "total": 15
           },
           "tags": [
             "AI入口",

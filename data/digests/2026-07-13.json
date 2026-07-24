@@ -54,8 +54,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 4,
             "toolUsability": 3,
-            "trackedEntityRelevance": 5,
-            "total": 15
+            "trackedEntityRelevance": 3,
+            "total": 18
           },
           "tags": [
             "OpenAI",
@@ -87,8 +87,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 4,
             "toolUsability": 2,
-            "trackedEntityRelevance": 4,
-            "total": 14
+            "trackedEntityRelevance": 2,
+            "total": 16
           },
           "tags": [
             "Meta",
@@ -125,8 +125,8 @@
             "digitalMarketingImpact": 2,
             "contentSearchSocialAdsImpact": 2,
             "toolUsability": 1,
-            "trackedEntityRelevance": 4,
-            "total": 9
+            "trackedEntityRelevance": 2,
+            "total": 11
           },
           "tags": [
             "OpenAI",
@@ -166,7 +166,7 @@
             "contentSearchSocialAdsImpact": 2,
             "toolUsability": 2,
             "trackedEntityRelevance": 2,
-            "total": 6
+            "total": 10
           },
           "tags": [
             "生成式AI",
@@ -215,8 +215,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 4,
             "toolUsability": 3,
-            "trackedEntityRelevance": 5,
-            "total": 15
+            "trackedEntityRelevance": 3,
+            "total": 18
           },
           "tags": [
             "AI入口",

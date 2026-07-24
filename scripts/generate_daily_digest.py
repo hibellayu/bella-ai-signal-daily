@@ -32,6 +32,13 @@ SOURCE_POLICY = "台灣媒體依台北時間前一日收集；國際媒體依來
 PRIORITY = ["產業重大性", "數位行銷影響", "內容 / 搜尋 / 社群 / 媒體廣告影響", "工具可用性"]
 SECTION_IDS = ["major-events", "tool-updates", "trends", "applications"]
 APPLICATION_TITLES = {"品牌策略", "數位行銷", "內容行銷", "社群應用", "媒體廣告", "團隊流程"}
+SCORE_LIMITS = {
+    "industryImpact": 5,
+    "digitalMarketingImpact": 5,
+    "contentSearchSocialAdsImpact": 5,
+    "toolUsability": 5,
+    "trackedEntityRelevance": 3,
+}
 SOURCE_EXCERPT_LIMIT = 220
 MAX_GENERATION_ATTEMPTS = 2
 MAX_REPAIR_ATTEMPTS = 2
@@ -159,6 +166,7 @@ def main() -> None:
             tracked_entities=config["trackedEntities"],
             quality_feedback=quality_feedback,
         )
+        normalize_digest_scores(digest)
         try:
             validate_digest(digest)
             validation_error = ""
@@ -180,6 +188,7 @@ def main() -> None:
                 articles=selected,
                 tracked_entities=config["trackedEntities"],
             )
+            normalize_digest_scores(digest)
             try:
                 validate_digest(digest)
                 validation_error = ""
@@ -656,6 +665,9 @@ def build_generation_prompt(
         - analysis: 2 段陣列，每段 70-140 字
         - sources: [{{"name","publishedDate","url"}}]
         - score: industryImpact, digitalMarketingImpact, contentSearchSocialAdsImpact, toolUsability, trackedEntityRelevance, total
+          - industryImpact、digitalMarketingImpact、contentSearchSocialAdsImpact、toolUsability 必須是 0-5 的整數
+          - trackedEntityRelevance 必須是 0-3 的整數
+          - total 必須等於五個分項加總，最高 23 分，不可使用百分制或 0-10 制
         - tags: 3-5 個
         - what: 55-140 字
         - soWhat: 75-180 字
@@ -734,6 +746,21 @@ def validate_digest(digest: dict[str, Any]) -> None:
                 issues.append(f"「{title}」Now What 只有泛泛動詞，缺少數量與完成標準")
             if not re.search(r"\d", now_what):
                 issues.append(f"「{title}」Now What 必須包含具體數量")
+            score = item.get("score", {})
+            if not isinstance(score, dict):
+                issues.append(f"「{title}」score 必須是物件")
+            else:
+                total = 0
+                for field, limit in SCORE_LIMITS.items():
+                    value = score.get(field)
+                    if not isinstance(value, int):
+                        issues.append(f"「{title}」{field} 必須是整數")
+                        continue
+                    if value < 0 or value > limit:
+                        issues.append(f"「{title}」{field} 超出 0-{limit} 分範圍：{value}")
+                    total += value
+                if score.get("total") != total:
+                    issues.append(f"「{title}」total 應等於分項加總 {total}，目前為 {score.get('total')}")
             sources = item.get("sources", [])
             if not sources:
                 issues.append(f"「{title}」缺少來源")
@@ -747,6 +774,37 @@ def validate_digest(digest: dict[str, Any]) -> None:
         issues.append(f"內容數量不足：新聞 {non_app_items} 則、應用切角 {app_items} 則")
     if issues:
         raise ValueError("；".join(issues))
+
+
+def normalize_digest_scores(digest: dict[str, Any]) -> None:
+    for section in digest.get("sections", []):
+        if section.get("id") == "applications":
+            continue
+        for item in section.get("items", []):
+            score = item.get("score")
+            if not isinstance(score, dict):
+                continue
+            normalized: dict[str, int] = {}
+            for field, limit in SCORE_LIMITS.items():
+                normalized[field] = normalize_score_value(score.get(field, 0), limit)
+            normalized["total"] = sum(normalized.values())
+            score.update(normalized)
+
+
+def normalize_score_value(value: Any, limit: int) -> int:
+    try:
+        number = int(round(float(value)))
+    except (TypeError, ValueError):
+        number = 0
+    if number < 0:
+        return 0
+    if number <= limit:
+        return number
+    if limit == 3:
+        if number <= 5:
+            return min(limit, round(number * 3 / 5))
+        return min(limit, round(number * 3 / 10))
+    return min(limit, round(number / 2))
 
 
 def update_manifest(report_date: str, coverage_date: str, digest: dict[str, Any]) -> None:

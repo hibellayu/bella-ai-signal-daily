@@ -210,8 +210,10 @@ function renderItem(item) {
 }
 
 function renderScoreBadge(container, item) {
+  const score = normalizeScore(item.score || {});
+  const total = Object.values(score).reduce((sum, value) => sum + value, 0);
   const scoreText = document.createElement("span");
-  scoreText.textContent = `${item.score?.total ?? "-"} 分`;
+  scoreText.textContent = `${total} 分`;
 
   const infoButton = document.createElement("button");
   infoButton.type = "button";
@@ -235,7 +237,7 @@ function setupScoreDialog() {
 function openScoreDialog(item) {
   if (!els.scoreDialog || !els.scoreDialogBody) return;
 
-  const score = item.score || {};
+  const score = normalizeScore(item.score || {});
   const fields = [
     ["產業重大性", score.industryImpact ?? 0, "0-5"],
     ["數位行銷影響", score.digitalMarketingImpact ?? 0, "0-5"],
@@ -244,7 +246,7 @@ function openScoreDialog(item) {
     ["指定追蹤公司 / 工具相關性", score.trackedEntityRelevance ?? 0, "0-3"]
   ];
   const calculatedTotal = fields.reduce((sum, [, value]) => sum + Number(value || 0), 0);
-  const total = score.total ?? calculatedTotal;
+  const total = calculatedTotal;
 
   const title = document.createElement("p");
   title.className = "score-dialog__item";
@@ -271,6 +273,29 @@ function openScoreDialog(item) {
 
   els.scoreDialogBody.replaceChildren(title, intro, list, formula);
   els.scoreDialog.showModal();
+}
+
+function normalizeScore(score) {
+  const fields = {
+    industryImpact: 5,
+    digitalMarketingImpact: 5,
+    contentSearchSocialAdsImpact: 5,
+    toolUsability: 5,
+    trackedEntityRelevance: 3
+  };
+  return Object.fromEntries(
+    Object.entries(fields).map(([key, max]) => [key, normalizeScoreValue(score[key], max)])
+  );
+}
+
+function normalizeScoreValue(value, max) {
+  const number = Math.round(Number(value) || 0);
+  if (number < 0) return 0;
+  if (number <= max) return number;
+  if (max === 3) {
+    return Math.min(max, Math.round(number <= 5 ? (number * 3) / 5 : (number * 3) / 10));
+  }
+  return Math.min(max, Math.round(number / 2));
 }
 
 function renderSources(container, item) {

@@ -54,8 +54,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 4,
             "toolUsability": 2,
-            "trackedEntityRelevance": 4,
-            "total": 14
+            "trackedEntityRelevance": 2,
+            "total": 16
           },
           "tags": [
             "社群平台",
@@ -87,8 +87,8 @@
             "digitalMarketingImpact": 3,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 3,
-            "trackedEntityRelevance": 4,
-            "total": 13
+            "trackedEntityRelevance": 2,
+            "total": 15
           },
           "tags": [
             "AI 安全",
@@ -120,8 +120,8 @@
             "digitalMarketingImpact": 3,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 2,
-            "trackedEntityRelevance": 4,
-            "total": 12
+            "trackedEntityRelevance": 2,
+            "total": 14
           },
           "tags": [
             "中國 AI",
@@ -154,7 +154,7 @@
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 3,
             "trackedEntityRelevance": 3,
-            "total": 12
+            "total": 15
           },
           "tags": [
             "生成式內容",
@@ -193,8 +193,8 @@
             "digitalMarketingImpact": 3,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 3,
-            "trackedEntityRelevance": 4,
-            "total": 11
+            "trackedEntityRelevance": 2,
+            "total": 14
           },
           "tags": [
             "Google",
@@ -226,8 +226,8 @@
             "digitalMarketingImpact": 2,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 3,
-            "trackedEntityRelevance": 4,
-            "total": 11
+            "trackedEntityRelevance": 2,
+            "total": 13
           },
           "tags": [
             "資安 AI",
@@ -260,7 +260,7 @@
             "contentSearchSocialAdsImpact": 2,
             "toolUsability": 3,
             "trackedEntityRelevance": 3,
-            "total": 11
+            "total": 13
           },
           "tags": [
             "Google",
@@ -309,8 +309,8 @@
             "digitalMarketingImpact": 3,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 3,
-            "trackedEntityRelevance": 4,
-            "total": 13
+            "trackedEntityRelevance": 2,
+            "total": 15
           },
           "tags": [
             "AI 安全",
@@ -348,7 +348,7 @@
             "contentSearchSocialAdsImpact": 2,
             "toolUsability": 2,
             "trackedEntityRelevance": 3,
-            "total": 10
+            "total": 13
           },
           "tags": [
             "AI 供應鏈",

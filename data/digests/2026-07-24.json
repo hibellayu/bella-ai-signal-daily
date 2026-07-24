@@ -65,12 +65,12 @@
             }
           ],
           "score": {
-            "industryImpact": 10,
-            "digitalMarketingImpact": 8,
-            "contentSearchSocialAdsImpact": 10,
-            "toolUsability": 6,
-            "trackedEntityRelevance": 9,
-            "total": 43
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 20
           },
           "tags": [
             "AI搜尋",
@@ -103,12 +103,12 @@
             }
           ],
           "score": {
-            "industryImpact": 8,
-            "digitalMarketingImpact": 8,
-            "contentSearchSocialAdsImpact": 7,
-            "toolUsability": 8,
-            "trackedEntityRelevance": 9,
-            "total": 40
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 19
           },
           "tags": [
             "健康AI",
@@ -136,12 +136,12 @@
             }
           ],
           "score": {
-            "industryImpact": 10,
-            "digitalMarketingImpact": 6,
-            "contentSearchSocialAdsImpact": 7,
-            "toolUsability": 7,
-            "trackedEntityRelevance": 8,
-            "total": 38
+            "industryImpact": 5,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 18
           },
           "tags": [
             "算力供應鏈",
@@ -169,12 +169,12 @@
             }
           ],
           "score": {
-            "industryImpact": 8,
-            "digitalMarketingImpact": 10,
-            "contentSearchSocialAdsImpact": 10,
-            "toolUsability": 7,
-            "trackedEntityRelevance": 8,
-            "total": 43
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 20
           },
           "tags": [
             "AI能見度",
@@ -209,12 +209,12 @@
             }
           ],
           "score": {
-            "industryImpact": 8,
-            "digitalMarketingImpact": 9,
-            "contentSearchSocialAdsImpact": 8,
-            "toolUsability": 9,
-            "trackedEntityRelevance": 8,
-            "total": 42
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 18
           },
           "tags": [
             "AI代理",
@@ -247,12 +247,12 @@
             }
           ],
           "score": {
-            "industryImpact": 7,
-            "digitalMarketingImpact": 7,
-            "contentSearchSocialAdsImpact": 7,
-            "toolUsability": 9,
-            "trackedEntityRelevance": 8,
-            "total": 38
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 18
           },
           "tags": [
             "語音AI",
@@ -280,12 +280,12 @@
             }
           ],
           "score": {
-            "industryImpact": 7,
-            "digitalMarketingImpact": 8,
-            "contentSearchSocialAdsImpact": 8,
-            "toolUsability": 8,
-            "trackedEntityRelevance": 7,
-            "total": 38
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 18
           },
           "tags": [
             "AI能見度",
@@ -340,12 +340,12 @@
             }
           ],
           "score": {
-            "industryImpact": 10,
-            "digitalMarketingImpact": 10,
-            "contentSearchSocialAdsImpact": 10,
-            "toolUsability": 9,
-            "trackedEntityRelevance": 10,
-            "total": 49
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 22
           },
           "tags": [
             "AI搜尋入口",

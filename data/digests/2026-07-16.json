@@ -54,8 +54,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 1,
-            "trackedEntityRelevance": 5,
-            "total": 18
+            "trackedEntityRelevance": 3,
+            "total": 16
           },
           "tags": [
             "AGI",
@@ -125,8 +125,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 3,
-            "trackedEntityRelevance": 5,
-            "total": 20
+            "trackedEntityRelevance": 3,
+            "total": 18
           },
           "tags": [
             "代理型 AI",
@@ -203,8 +203,8 @@
             "digitalMarketingImpact": 3,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 4,
-            "trackedEntityRelevance": 5,
-            "total": 19
+            "trackedEntityRelevance": 3,
+            "total": 17
           },
           "tags": [
             "OpenAI",
@@ -274,8 +274,8 @@
             "digitalMarketingImpact": 3,
             "contentSearchSocialAdsImpact": 4,
             "toolUsability": 2,
-            "trackedEntityRelevance": 4,
-            "total": 16
+            "trackedEntityRelevance": 2,
+            "total": 14
           },
           "tags": [
             "Suno",
@@ -319,8 +319,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 2,
-            "trackedEntityRelevance": 5,
-            "total": 19
+            "trackedEntityRelevance": 3,
+            "total": 17
           },
           "tags": [
             "AGI",
@@ -357,8 +357,8 @@
             "digitalMarketingImpact": 4,
             "contentSearchSocialAdsImpact": 3,
             "toolUsability": 3,
-            "trackedEntityRelevance": 5,
-            "total": 20
+            "trackedEntityRelevance": 3,
+            "total": 18
           },
           "tags": [
             "代理型 AI",
@@ -395,8 +395,8 @@
             "digitalMarketingImpact": 5,
             "contentSearchSocialAdsImpact": 5,
             "toolUsability": 4,
-            "trackedEntityRelevance": 4,
-            "total": 22
+            "trackedEntityRelevance": 2,
+            "total": 20
           },
           "tags": [
             "生成式搜尋",
