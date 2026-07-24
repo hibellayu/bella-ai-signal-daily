@@ -61,6 +61,36 @@
       "region": "international",
       "url": "https://www.technologyreview.com/feed/",
       "enabled": true
+    },
+    {
+      "name": "MarTech",
+      "region": "international",
+      "url": "https://martech.org/feed/",
+      "enabled": true
+    },
+    {
+      "name": "Semrush Blog",
+      "region": "international",
+      "url": "https://www.semrush.com/blog/feed/",
+      "enabled": true
+    },
+    {
+      "name": "HubSpot Marketing Blog",
+      "region": "international",
+      "url": "https://blog.hubspot.com/marketing/rss.xml",
+      "enabled": true
+    },
+    {
+      "name": "OpenAI News",
+      "region": "international",
+      "url": "https://openai.com/news/rss.xml",
+      "enabled": true
+    },
+    {
+      "name": "Google AI Blog",
+      "region": "international",
+      "url": "https://blog.google/technology/ai/rss/",
+      "enabled": true
     }
   ],
   "trackedEntities": [
@@ -72,7 +102,16 @@
     "Adobe",
     "Canva",
     "Midjourney",
-    "Suno"
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek"
   ],
   "aiKeywords": [
     "AI",
@@ -96,6 +135,37 @@
     "AEO",
     "素材",
     "影音",
-    "語音"
+    "語音",
+    "AI Agent",
+    "agentic",
+    "MarTech",
+    "marketing technology",
+    "CRM",
+    "automation",
+    "自動化",
+    "customer service",
+    "客服",
+    "brand visibility",
+    "AI visibility",
+    "GEO",
+    "Generative Engine Optimization",
+    "AI search",
+    "AI 搜尋",
+    "品牌能見度",
+    "AI 內容偵測",
+    "AI transparency",
+    "透明度",
+    "governance",
+    "治理",
+    "Breeze AI",
+    "Economic Index",
+    "Gemini Intelligence",
+    "Galaxy AI",
+    "Kimi",
+    "Moonshot",
+    "開源模型",
+    "open source model",
+    "GPU",
+    "算力"
   ]
 }

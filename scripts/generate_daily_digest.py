@@ -36,6 +36,67 @@ SOURCE_EXCERPT_LIMIT = 220
 MAX_GENERATION_ATTEMPTS = 2
 MAX_REPAIR_ATTEMPTS = 1
 OPENAI_TIMEOUT_SECONDS = 240
+SELECTION_LIMIT = 18
+SOURCE_DIVERSITY_CAP = 5
+AI_CORE_TERMS = [
+    "ai",
+    "artificial intelligence",
+    "生成式",
+    "人工智慧",
+    "chatgpt",
+    "gemini",
+    "claude",
+    "llm",
+    "agent",
+    "代理",
+]
+MARKETING_STRATEGY_TERMS = [
+    "marketing",
+    "行銷",
+    "advertising",
+    "廣告",
+    "seo",
+    "aeo",
+    "geo",
+    "search",
+    "搜尋",
+    "social",
+    "社群",
+    "content",
+    "內容",
+    "martech",
+    "crm",
+    "brand visibility",
+    "ai visibility",
+    "品牌能見度",
+]
+PRIORITY_TOPIC_TERMS = [
+    "generative engine optimization",
+    "ai search",
+    "ai 搜尋",
+    "breeze ai",
+    "economic index",
+    "gemini intelligence",
+    "ai agent",
+    "agentic",
+    "governance",
+    "治理",
+    "transparency",
+    "透明度",
+    "open source model",
+    "開源模型",
+    "gpu",
+    "算力",
+    "customer service",
+    "客服",
+]
+STRATEGIC_SOURCE_BONUS = {
+    "MarTech": 4,
+    "Semrush Blog": 4,
+    "HubSpot Marketing Blog": 3,
+    "OpenAI News": 2,
+    "Google AI Blog": 2,
+}
 
 
 @dataclass
@@ -65,11 +126,11 @@ def main() -> None:
 
     config = load_json(CONFIG_PATH)
     candidates = collect_articles(config, coverage_date)
-    selected = candidates[:18]
+    selected = select_articles(candidates, limit=SELECTION_LIMIT)
     print(f"Collected {len(candidates)} AI-related candidates; using {len(selected)} for generation.")
 
     if args.dry_run:
-        for article in selected[:12]:
+        for article in selected:
             print(f"- {article.published_date} {article.source} {article.score}: {article.title}")
         return
 
@@ -171,7 +232,7 @@ def collect_articles(config: dict[str, Any], coverage_date: date) -> list[Articl
                 continue
             if entry["published_date"] != coverage_date.isoformat():
                 continue
-            score, matched_terms = score_article(entry, keywords, tracked)
+            score, matched_terms = score_article(entry, keywords, tracked, source["name"])
             if score < 4:
                 continue
             seen_urls.add(entry["url"])
@@ -192,11 +253,35 @@ def collect_articles(config: dict[str, Any], coverage_date: date) -> list[Articl
     return articles
 
 
+def select_articles(candidates: list[Article], limit: int = SELECTION_LIMIT) -> list[Article]:
+    """Keep high scores while avoiding one source crowding out useful marketing signals."""
+    selected: list[Article] = []
+    deferred: list[Article] = []
+    per_source: dict[str, int] = {}
+
+    for article in candidates:
+        source_count = per_source.get(article.source, 0)
+        if source_count >= SOURCE_DIVERSITY_CAP:
+            deferred.append(article)
+            continue
+        selected.append(article)
+        per_source[article.source] = source_count + 1
+        if len(selected) >= limit:
+            return selected
+
+    for article in deferred:
+        selected.append(article)
+        if len(selected) >= limit:
+            break
+
+    return selected
+
+
 def fetch_text(url: str) -> str:
     request = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "BellaAISignalDaily/0.3.0 (+https://hibellayu.github.io/bella-ai-signal-daily/)",
+            "User-Agent": "BellaAISignalDaily/0.12.0 (+https://hibellayu.github.io/bella-ai-signal-daily/)",
             "Accept": "application/rss+xml, application/xml, text/xml, */*",
         },
     )
@@ -290,17 +375,32 @@ def truncate_source_summary(value: str) -> str:
     return clean_text(value)[:SOURCE_EXCERPT_LIMIT]
 
 
-def score_article(entry: dict[str, str], keywords: list[str], tracked: list[str]) -> tuple[int, list[str]]:
+def score_article(entry: dict[str, str], keywords: list[str], tracked: list[str], source_name: str) -> tuple[int, list[str]]:
     haystack = f"{entry['title']} {entry['summary']}".lower()
-    matched = sorted({term for term in keywords + tracked if term and term in haystack})
+    matched = sorted({term for term in keywords + tracked if term and term_matches(term, haystack)})
     score = 0
-    score += min(8, len([term for term in keywords if term in haystack]) * 2)
-    score += min(6, len([term for term in tracked if term in haystack]) * 3)
-    if any(term in haystack for term in ["marketing", "行銷", "advertising", "廣告", "seo", "search", "搜尋", "social", "社群", "content", "內容"]):
+    score += min(8, len([term for term in keywords if term_matches(term, haystack)]) * 2)
+    score += min(6, len([term for term in tracked if term_matches(term, haystack)]) * 3)
+    has_ai_core = any(term_matches(term, haystack) for term in AI_CORE_TERMS)
+    if any(term_matches(term, haystack) for term in MARKETING_STRATEGY_TERMS):
         score += 5
-    if any(term in haystack for term in ["openai", "google", "meta", "anthropic", "perplexity", "adobe", "canva", "midjourney", "suno"]):
+    if any(term_matches(term, haystack) for term in ["openai", "google", "meta", "anthropic", "perplexity", "adobe", "canva", "midjourney", "suno"]):
         score += 4
+    if has_ai_core and any(term_matches(term, haystack) for term in PRIORITY_TOPIC_TERMS):
+        score += 4
+    if has_ai_core:
+        score += STRATEGIC_SOURCE_BONUS.get(source_name, 0)
     return score, matched
+
+
+def term_matches(term: str, haystack: str) -> bool:
+    normalized = term.lower().strip()
+    if not normalized:
+        return False
+    if re.fullmatch(r"[a-z0-9][a-z0-9 .+/_-]*", normalized):
+        pattern = rf"(?<![a-z0-9]){re.escape(normalized)}(?![a-z0-9])"
+        return re.search(pattern, haystack) is not None
+    return normalized in haystack
 
 
 def generate_digest_with_openai(
@@ -501,6 +601,9 @@ def build_generation_prompt(
         - 讀者是行銷人、品牌決策者、數位行銷、內容行銷、社群與媒體廣告工作者。
         - 不要寫給 Bella 個人，不要使用「Bella 的工作視角」。
         - 內容要以行銷主管與策略者的視角解釋變化，不只複述新聞，也不要用「提升效率、強化信任、帶來機會」等空泛結論收尾。
+        - 優先辨識以下行銷決策訊號：AI 搜尋 / GEO / 品牌能見度、AI Agent 與 MarTech 工具、內容透明與來源揭露、客服與 CRM 自動化、語音與多裝置入口、模型供應鏈 / 算力 / 開源模型、資安與合規治理、平台廣告與社群互動規則。
+        - 若同一事件有多個候選來源，請合併成同一則並列出多個 sources；不要把同一事件拆成多則湊數。
+        - 若候選中出現 MarTech、Semrush、HubSpot、官方產品部落格等與行銷工作直接相關的來源，請優先判斷它們是否能補足「品牌如何被看見、內容如何被引用、工具如何進入工作流程」的角度。
         - 只使用候選新聞中的事件事實、媒體名稱、發布日期與原文 URL 作為判斷依據。
         - 不得複製來源文章句子，不得翻譯來源段落，不得用接近原文的連續句型改寫。
         - 每則 summary 只提供脈絡，不要取代原文細節；analysis、what、soWhat、nowWhat 必須用新的行銷策略觀點重寫。
@@ -515,6 +618,7 @@ def build_generation_prompt(
         - 同一篇來源文章不可在同一區塊重複湊數；trends 可以引用大事件或工具更新的來源做跨事件歸納，但必須產生新的中期判斷。
         - 每則 item 的 sources 必須使用候選新聞中的原文 URL，不可改成媒體首頁。
         - 優先順序：產業重大性 > 數位行銷影響 > 內容 / 搜尋 / 社群 / 媒體廣告影響 > 工具可用性。
+        - 收錄不是只看聲量。若事件能改變品牌流量入口、內容被 AI 引用的方式、行銷工具採購邏輯、或團隊流程治理，即使不是最大科技新聞，也應進入候選判斷。
 
         JSON schema 形狀：
         {{

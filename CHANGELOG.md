@@ -2,6 +2,34 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.12.0｜2026-07-24
+
+版本類型：中改版
+
+### 修改原因
+
+2026/07/24 與另一份 AI 日報對照後發現，本站已能自動產出日報，但候選新聞池偏向大型科技媒體與大平台事件，較少收錄 MarTech、AI 搜尋能見度、品牌內容信任、CRM / 客服自動化與工具治理等更貼近行銷決策的題材。問題核心不在版面或產文深度，而是上游來源與評分邏輯仍以泛 AI 新聞為主，導致行銷應用訊號容易被產業大新聞擠掉。
+
+### 修改內容
+
+- 新增來源：MarTech、Semrush Blog、HubSpot Marketing Blog、OpenAI News、Google AI Blog。
+- 擴充追蹤實體：HubSpot、Semrush、Substack、Samsung、AMD、NVIDIA、Moonshot AI、Kimi、DeepSeek。
+- 擴充 AI 與行銷策略關鍵字：AI Agent、MarTech、CRM、GEO、Generative Engine Optimization、AI visibility、brand visibility、內容透明、AI governance、開源模型、GPU、算力等。
+- 選文評分新增行銷策略訊號加權，讓 AI 搜尋、品牌能見度、MarTech 工具、內容信任、客服 / CRM 自動化、資安治理與供應鏈風險更容易進入候選。
+- 新增來源多樣性選文邏輯，避免同一天候選被單一媒體或單一平台事件過度占滿。
+- 修正英文關鍵字命中方式，避免 `AI` 誤命中 achievement、available 等單字片段，降低不相關文章進入候選的風險。
+- Prompt 補上「多來源同事件合併」與「行銷決策訊號」判讀規則，降低重複收錄並強化品牌、內容、搜尋、社群、媒體廣告與團隊流程的策略解讀。
+- Footer 版本升為 `v0.12.0`，版本日期更新為 2026/07/24。
+
+### 驗證
+
+- 來源 RSS 連線測試：MarTech、Semrush Blog、HubSpot Marketing Blog、OpenAI News、Google AI Blog 可讀取。
+- 2026/07/24 dry run 候選由 11 則提升為 19 則，新增 MarTech、Semrush Blog、HubSpot Marketing Blog 等行銷相關候選，並排除英文 `AI` 片段誤命中的不相關文章。
+
+### 對應 commit
+
+- `Improve marketing source selection`
+
 ## v0.11.0｜2026-07-15
 
 版本類型：中改版
