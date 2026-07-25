@@ -1,0 +1,378 @@
+{
+  "reportDate": "2026-07-26",
+  "coverageDate": "2026-07-25",
+  "generatedAt": "2026-07-26T07:26:03+08:00",
+  "headline": "AI 生態系統競爭升級：平台整合、成本結構與工作流重組同步推進",
+  "summary": "全球 AI 產業正進入平台整合與生態系統競爭新階段，從基礎設施、模型供應到品牌端工具，皆出現成本效益、數據掌控與用戶工作流重組等多層變化。行銷決策者需同步關注平台規則、工作流程與消費者端使用習慣的轉變，及早調整品牌能見度與內容策略。",
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "聚焦於改變產業格局、平台競爭、模型供應鏈、算力、資安治理與消費者端規則的重大變動。",
+      "items": [
+        {
+          "title": "Anthropic 推出 Claude Opus 5，AI 模型競爭轉向成本效益與彈性調節",
+          "summary": "Anthropic 發布 Claude Opus 5，主打以一半成本提供接近旗艦模型效能，並引入用戶可調節運算強度的新參數，顯示 AI 產業競爭不再僅以效能為主，而是強調成本控制與資源彈性。",
+          "analysis": [
+            "AI 產業的競爭重心正從單純追求模型效能，轉向成本結構與用戶自訂化。Anthropic 以『effort』參數讓用戶根據需求調整計算資源，這不僅降低企業採用門檻，也鼓勵更多場景將 AI 納入日常工作流。平台間的競爭將聚焦於誰能提供更靈活、可控的 AI 服務，並在成本與品質間取得平衡。",
+            "對品牌與行銷團隊而言，AI 工具的成本彈性將直接影響內容生成、客戶服務與自動化流程的規模。企業可根據行銷活動密度或流量高峰彈性調度 AI 資源，優化預算分配。若品牌未能善用這類模型彈性，將在內容產出速度與個人化服務上落後於競爭者。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-25",
+              "url": "https://www.inside.com.tw/article/41917-anthropic-preps-for-ipo-as-claude-opus-5-launches"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 13
+          },
+          "tags": [
+            "AI模型",
+            "成本效益",
+            "彈性調節",
+            "產業競爭"
+          ],
+          "what": "AI 模型競爭從單一效能指標轉向成本與彈性調節，品牌和用戶可根據需求調整 AI 運算強度，這將改變 AI 工具的採購與運用方式，降低大規模應用門檻。",
+          "soWhat": "行銷團隊、內容生產者與 IT 決策者需重新評估 AI 工具採用策略。若忽略成本彈性與運算資源調度，將無法在高峰期靈活擴展內容產能或自動化服務，導致預算浪費或競爭力下降。品牌若能善用這類模型，將能更有效控制行銷成本並提升個人化服務水準。",
+          "nowWhat": "從現有行銷自動化流程中，選出 1 個高頻內容產出場景，設定 2 種不同運算強度（如標準與高效能），比較每種模式下的內容品質與成本，將評估結果記錄成 1 份可量化的成效報告，作為未來資源調度依據。"
+        },
+        {
+          "title": "Meta Seller App 以 AI 批次上架與後台管理優化賣家工作流",
+          "summary": "Meta 為 Facebook Marketplace 賣家推出專屬 Seller App，結合 AI 批次上架、統一後台管理等功能，進一步強化數據掌控與廣告生態系統，搶攻副業經濟與長尾賣家市場。",
+          "analysis": [
+            "Meta 正將 Marketplace 賣家體驗全面升級，透過獨立 App 與 AI 工具鞏固用戶數據於自家生態系。這不僅提升賣家效率，也讓 Meta 能更精準追蹤用戶行為、優化廣告投放與推薦機制，進一步壯大平台經濟規模。",
+            "對品牌、個人賣家與行銷團隊而言，這意味著平台規則與流量分配將更依賴 AI 驅動的數據與自動化工具。若品牌無法適應新工具，將被排除於高效曝光與精準廣告之外；反之，善用 Seller App 的品牌可在副業經濟與社群電商中取得主動權。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-25",
+              "url": "https://www.inside.com.tw/article/41916-facebook-marketplace-turns-10-meta-launches-seller-app-side-hustle-economy"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 15
+          },
+          "tags": [
+            "Meta",
+            "AI工作流",
+            "社群電商",
+            "廣告生態"
+          ],
+          "what": "Meta 以 Seller App 將 AI 批次上架、後台管理等功能整合給 Marketplace 賣家，進一步壟斷數據流與廣告分潤入口，改變品牌與個人賣家在平台上的經營方式。",
+          "soWhat": "品牌、賣家與行銷人員需重新設計內容上架與商品管理流程，否則將在 AI 驅動的曝光排序、推薦與廣告分潤中失去競爭力。平台流量與消費者決策將更依賴 AI 處理的內容品質與數據完整性，品牌若不及時調整，將被新一代副業賣家超越。",
+          "nowWhat": "選取 1 個主力商品，使用 Seller App 的 AI 批次上架功能，生成 3 種不同描述與圖片組合，將最佳組合設定為日後上架模板，並記錄成 1 份操作手冊。"
+        },
+        {
+          "title": "AI 發展推升資料中心電力需求，產業鏈聚焦基礎設施與能源成本",
+          "summary": "AI 應用規模擴張，資料中心功耗與電力架構成為新戰場。AMD 等業者推動高功率 AI 機櫃，產業鏈從模型、算力延伸到能源與基礎設施，企業需同步考量運算效能與長期營運成本。",
+          "analysis": [
+            "AI 產業鏈正從軟體與模型競爭，進一步延伸到硬體、電力與能源管理。AMD 等企業推動高密度 AI 機櫃，反映出資料中心能耗與基礎設施已成為競爭關鍵。這將影響雲端平台、AI 服務供應商的成本結構與服務穩定性，推動產業投資重心轉向基礎設施升級。",
+            "品牌與行銷決策者需關注 AI 工具背後的基礎設施與能源議題。若供應鏈無法維持穩定算力與合理成本，將影響 AI 工具的可靠性與價格，進而影響品牌自動化、內容產出與客戶服務的可持續性。"
+          ],
+          "sources": [
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-07-25",
+              "url": "https://technews.tw/2026/07/25/ai-future-higher-electricity-costs/"
+            },
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-07-25",
+              "url": "https://technews.tw/2026/07/25/amd-helios-246kw-ai-rack-power-architecture-upgrade/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 1,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 11
+          },
+          "tags": [
+            "算力",
+            "資料中心",
+            "能源成本",
+            "AI基礎設施"
+          ],
+          "what": "AI 應用規模擴大，推動資料中心與能源基礎設施升級。產業鏈競爭從模型效能延伸到硬體與電力成本，企業需同時考慮運算效能與長期營運穩定性。",
+          "soWhat": "若品牌與行銷團隊忽略 AI 工具背後的基礎設施風險，可能面臨服務不穩、成本上升甚至供應中斷。選擇 AI 服務時，必須納入供應鏈韌性與能源成本評估，否則自動化與內容產能將受限，影響行銷活動的可預測性。",
+          "nowWhat": "針對現有 AI 工具供應商，列出 2 家主要雲端平台，查詢其資料中心能源政策與成本公告，整理成 1 份供應風險清單，並在下次工具採購時納入評估流程。"
+        },
+        {
+          "title": "OpenAI、微軟推進企業 AI「最後一哩」，FDE 服務成新競爭場域",
+          "summary": "OpenAI、微軟與新創 Ode 競逐 FDE（Full Deployment Engineering）服務，直接派工程師協助企業將 AI 深度嵌入內部流程，標誌 AI 產業進入高專業、高客製化的企業落地新階段。",
+          "analysis": [
+            "企業級 AI 部署正從 SaaS 工具採購，進化為平台方直接參與企業內部流程重構。OpenAI、微軟等巨頭以 FDE 服務切入，強化客戶黏著度並掌握企業數據。這將改變 AI 產業的商業模式，從賣模型轉向賣整合與落地能力，競爭門檻大幅提升。",
+            "品牌端與行銷主管需重新思考 AI 導入策略。若僅停留在工具層，將無法享有深度整合帶來的流程優化與數據閉環。競爭對手若率先完成內部流程 AI 化，將在效率、客戶體驗與數據變現上取得領先。"
+          ],
+          "sources": [
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-07-25",
+              "url": "https://technews.tw/2026/07/25/ai-giants-battlefield/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 12
+          },
+          "tags": [
+            "OpenAI",
+            "企業AI",
+            "流程重組",
+            "FDE"
+          ],
+          "what": "AI 產業競爭升級，平台方直接提供 FDE 服務，協助企業將 AI 深度嵌入核心流程，從單純工具供應轉向全流程整合，改變企業導入 AI 的方式與門檻。",
+          "soWhat": "品牌與行銷主管若只聚焦於單點工具，將錯失 AI 深度整合帶來的流程優化與數據閉環優勢。競爭對手若率先完成流程 AI 化，將在效率、客戶體驗與數據變現上拉開差距，傳統行銷自動化將難以應對新一輪競爭。",
+          "nowWhat": "選定 1 條主要行銷自動化流程，邀請 IT 團隊與供應商討論 AI 深度嵌入的 2 個可行點（如自動分類、智能推薦），將討論成果整理成 1 份流程優化提案，作為下階段專案啟動依據。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "解析近期 AI 工具或平台功能升級，聚焦其如何實際進入行銷、內容、用戶日常工作流。",
+      "items": [
+        {
+          "title": "OpenAI 新 AI 鍵盤工具帶來程式碼輸入新體驗，挑戰開發者工作流",
+          "summary": "OpenAI 推出專用 AI 鍵盤，讓部分程式開發者能更直覺地與 AI 協作，但對多數非技術人員而言仍顯陌生，反映 AI 工具設計正測試不同用戶群的工作流適應度。",
+          "analysis": [
+            "OpenAI 以硬體結合 AI，嘗試改變開發者與程式碼互動的方式。AI 鍵盤不僅提升輸入效率，也讓即時協作與語境理解成為可能，標誌 AI 工具設計從純軟體走向跨界體驗，並測試用戶對新型態人機介面的接受度。",
+            "行銷與產品團隊需關注不同用戶群對 AI 工具的採納障礙。開發者可藉此提升生產力，但對非技術人員則需額外教育與流程調整。品牌若能率先針對目標用戶設計專屬 AI 工具介面，將提升用戶黏著與品牌差異化。"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-07-25",
+              "url": "https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/"
+            }
+          ],
+          "score": {
+            "industryImpact": 2,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 1,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 10
+          },
+          "tags": [
+            "OpenAI",
+            "AI鍵盤",
+            "開發者工具",
+            "工作流"
+          ],
+          "what": "OpenAI 推出 AI 鍵盤，重新設計開發者與 AI 的互動方式，測試人機介面創新能否融入日常開發流程，並探索 AI 工具跨界硬體的可能性。",
+          "soWhat": "開發者可提升程式碼產出與協作效率，但非技術用戶若未接受新介面設計，將難以融入 AI 工具帶來的流程優勢。品牌若能針對用戶習慣設計專屬 AI 入口，將在用戶體驗與工作流優化上取得先機。",
+          "nowWhat": "邀請 2 位開發者實測 AI 鍵盤，記錄 3 種常見任務的操作步驟與時間，將使用心得整理成 1 份優化建議，作為團隊未來導入 AI 工具介面的參考依據。"
+        },
+        {
+          "title": "Gemini 助理進入訂閱管理場景，強化消費者日常財務掌控",
+          "summary": "Google Gemini 可協助用戶自動檢查訂閱支出、整理收據信件並在扣款前提醒，AI 助理開始滲透日常財務管理，改變消費者對資訊整理與決策的依賴方式。",
+          "analysis": [
+            "Gemini 助理將 AI 應用從單純資訊查詢，擴展到個人財務管理。自動化收據整理與預扣款提醒，標誌 AI 工具正滲透更多日常場景，提升用戶對數位助理的依賴度，並為品牌與平台創造新的用戶黏著點。",
+            "行銷與 CRM 團隊需重新設計與 AI 助理互動的內容格式與提醒機制。若品牌資訊無法被 Gemini 等助理正確解析，將失去與消費者溝通的主動權。反之，優化內容結構與提醒觸發點，能提升品牌在消費決策過程中的影響力。"
+          ],
+          "sources": [
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-07-25",
+              "url": "https://technews.tw/2026/07/25/how-gemini-can-help-manage-your-subscription-finances/"
+            }
+          ],
+          "score": {
+            "industryImpact": 2,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 10
+          },
+          "tags": [
+            "Gemini",
+            "AI助理",
+            "訂閱管理",
+            "消費者體驗"
+          ],
+          "what": "Gemini 助理將訂閱管理與收據提醒自動化，讓消費者日常財務決策更依賴 AI，品牌資訊需適應新型態助理入口，否則將減少與用戶互動機會。",
+          "soWhat": "若品牌未能讓訂閱資訊、收據與通知格式適配 AI 助理，將在消費者決策流程中被邊緣化。行銷團隊需優化內容結構與提醒設計，確保品牌能被 AI 助理正確解析並主動推薦，否則將失去主動溝通的窗口。",
+          "nowWhat": "選定 1 種訂閱服務，檢查其收據信件格式，並用 Gemini 測試能否自動辨識與提醒，將測試結果與改善建議整理成 1 份內容優化清單，供後續行銷活動使用。"
+        },
+        {
+          "title": "Stripe 擬收購 AI 模型路由層 OpenRouter，布局 AI 推論交易新模式",
+          "summary": "Stripe 擬以百億美元收購 OpenRouter，將支付基礎設施與 AI 模型 API 路由整合，意圖掌控未來 AI 推論交易的價值流動與平台分潤規則。",
+          "analysis": [
+            "支付巨頭 Stripe 進軍 AI 基礎設施，藉收購 OpenRouter 將支付與多模型 API 管理結合，企圖成為 AI 經濟中的關鍵價值分配樞紐。這將改變 AI 服務的交易模式，讓模型供應商、開發者與品牌端皆需適應新的分潤與結算規則。",
+            "品牌與行銷決策者需關注 AI 工具背後的價值流動與 API 路由變化。若未能及時調整採購與分潤策略，將在 AI 工具生態系中失去議價能力。反之，善用統一 API 管理平台，可降低整合成本並提升服務彈性。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-25",
+              "url": "https://www.inside.com.tw/article/41915-openrouter-reportedly-acquired-by-stripe-for-10-billion-alex-atallahs-second-10-billion-company-in-two-years"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 1,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 10
+          },
+          "tags": [
+            "Stripe",
+            "OpenRouter",
+            "AI模型",
+            "API管理",
+            "支付"
+          ],
+          "what": "Stripe 併購 OpenRouter，將支付與 AI 模型 API 路由整合，重塑 AI 推論服務的交易模式與分潤規則，影響品牌採購與供應鏈整合策略。",
+          "soWhat": "品牌與開發者若不及時調整 API 整合與分潤策略，將在 AI 工具採購、結算與服務彈性上失去主動權。新平台規則將影響 AI 工具生態系的價值分配與整合效率，需及早因應。",
+          "nowWhat": "盤點現有 2 種主要 AI 工具的 API 整合方式，模擬若轉移至統一 API 路由平台的整合流程，將預期節省的成本與彈性優勢記錄成 1 份比較表，作為未來採購決策參考。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "跨事件歸納 AI 產業與行銷應用的中期變化，聚焦於平台整合、工作流重組、供應鏈與消費者行為新動態。",
+      "items": [
+        {
+          "title": "AI 產業從技術競賽走向生態系統整合與成本安全治理新階段",
+          "summary": "近期多起事件顯示，AI 產業競爭已從單一模型效能與工具創新，轉向平台整合、成本彈性、基礎設施與資安治理。品牌與行銷團隊需同步關注平台規則、供應鏈韌性與內容適配，否則將在新一輪生態系競爭中失去主動權。",
+          "analysis": [
+            "AI 產業正進入生態系統競爭與平台整合新階段。從 Anthropic 彈性模型、Meta Seller App 數據閉環，到 Stripe 併購 OpenRouter、資料中心電力升級，皆顯示產業鏈從技術創新轉向成本控制、分潤規則與基礎設施治理。平台方強化對數據、交易與用戶行為的掌控，提升生態系競爭門檻。",
+            "行銷決策者需重新檢視品牌在平台生態中的定位，並優化內容結構與 API 整合，確保能被 AI 工具與助理正確解析與推薦。若忽略平台規則與供應鏈韌性，將在流量分配、內容曝光與服務穩定性上落於劣勢。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-25",
+              "url": "https://www.inside.com.tw/article/41917-anthropic-preps-for-ipo-as-claude-opus-5-launches"
+            },
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-25",
+              "url": "https://www.inside.com.tw/article/41916-facebook-marketplace-turns-10-meta-launches-seller-app-side-hustle-economy"
+            },
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-25",
+              "url": "https://www.inside.com.tw/article/41915-openrouter-reportedly-acquired-by-stripe-for-10-billion-alex-atallahs-second-10-billion-company-in-two-years"
+            },
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-07-25",
+              "url": "https://technews.tw/2026/07/25/ai-future-higher-electricity-costs/"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 14
+          },
+          "tags": [
+            "AI生態系",
+            "平台整合",
+            "成本治理",
+            "供應鏈"
+          ],
+          "what": "AI 產業競爭已從技術創新轉向平台整合、成本彈性與基礎設施治理，品牌與行銷團隊需同步調整內容、API 與供應鏈策略，才能在新生態系中維持競爭力。",
+          "soWhat": "若品牌與行銷團隊未能掌握平台規則、數據閉環與 API 整合，將在流量分配、內容曝光與服務穩定性上被邊緣化。新一輪競爭將聚焦於誰能在平台生態中建立韌性與主動權，單點工具或內容優化已無法應對整體變化。",
+          "nowWhat": "選定 1 個主要平台（如 Meta、Google），檢查現有內容、API 與數據整合現況，列出 3 項需優化的策略建議，並將其中 1 項落實為具體優化專案，完成初步成效驗證。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "針對品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程六大面向，歸納今日 AI 產業趨勢對行銷決策的具體影響與應用起點。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI 生態系統競爭升級，品牌需將平台規則、數據閉環與 API 整合納入核心策略。從平台方強化數據掌控到基礎設施升級，未來品牌不再只靠內容優化，而需主動設計能被 AI 助理、推薦系統與自動化流程正確解析的信任證據。建議從主力產品頁與 API 整合流程優化著手，確保在新生態系中維持曝光與競爭力。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "AI 工具的彈性成本與自動化能力提升，行銷團隊可根據活動密度與流量高峰調整 AI 資源分配。未來數位行銷不僅比拼內容產能，更需優化 AI 工具的運算強度、API 整合與數據結構，從而提升個人化推薦與精準廣告投放。建議從高頻內容產出場景測試不同 AI 運算模式，建立動態分配策略。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "AI 助理與自動化工具滲透日常資訊整理、財務管理等場景，內容行銷需調整格式與結構，讓品牌資訊能被 AI 助理正確解析與主動推薦。建議從訂閱服務、收據信件等高頻互動內容著手，優化資訊結構與提醒設計，提升品牌在消費者決策流程中的主動曝光率。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "平台方強化 AI 工具與社群電商整合，賣家與品牌需適應 AI 驅動的內容上架、商品管理與推薦機制。社群應用將更依賴自動化批次上架與數據分析，品牌應從主力商品或熱門活動測試 AI 工具，建立新一代社群經營模板，搶占副業經濟與長尾流量。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "AI 工具與平台整合推動廣告分潤與流量分配規則變革，品牌與代理商需同步優化廣告內容結構、數據追蹤與 API 整合，確保能在 AI 驅動的曝光排序中維持優勢。建議從廣告後台數據與內容格式優化切入，建立與平台 API 的高效對接機制。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "AI 工具與平台服務正深度嵌入企業流程，從開發者工作流到行銷自動化皆需重新設計。團隊應主動盤點現有流程，優先挑選可用 AI 深度整合的 1-2 個環節，邀請跨部門協作，將優化成果量化，為後續全面流程重組建立標準化模板。"
+        }
+      ]
+    }
+  ]
+}
