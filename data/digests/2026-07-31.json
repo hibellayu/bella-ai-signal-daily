@@ -1,0 +1,408 @@
+{
+  "reportDate": "2026-07-31",
+  "coverageDate": "2026-07-30",
+  "generatedAt": "2026-07-31T07:30:03+08:00",
+  "headline": "AI代理治理、平台陣營分化與品牌能見度：AI產業與行銷策略新格局",
+  "summary": "AI產業格局快速演變，平台競爭、AI代理治理標準、多模型策略與AI搜尋新入口同步推進。行銷團隊需重新審視品牌能見度、內容優化與AI搜尋監控，並因應AI代理、Serverless架構與產業陣營分化帶來的決策與執行挑戰。本文以四層影響框架，解析國際事件、品牌策略、工作流重組與社會大眾使用習慣的關鍵變化。",
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "聚焦能改變產業競爭規則、平台生態、模型/算力供應、資安治理或大眾使用習慣的關鍵事件，並從行銷決策與策略視角解析其多層影響。",
+      "items": [
+        {
+          "title": "IAB Tech Lab發布AI代理廣告治理標準，推動AI代理進入廣告生態",
+          "summary": "IAB Tech Lab釋出AAMP 2.3規範，完善AI代理在廣告產業的治理、整合與隱私控管，為AI代理大規模進入廣告生態系鋪路，並對廣告流程、數據治理與合規提出新標準。",
+          "analysis": [
+            "AAMP 2.3的發布標誌AI代理正式進入廣告產業主流流程，平台與廣告主需面對AI代理自動化執行、數據交換與隱私治理的新規則。這將推動廣告產業從人為操作轉向AI協同，並要求更嚴格的合規與監控。",
+            "品牌與行銷團隊需重新設計廣告投放與監測流程，確保AI代理在執行廣告時能正確理解品牌目標與受眾定位。若忽視AI代理治理，品牌可能因數據錯配、隱私疏漏或自動化誤判而損失曝光與信任。"
+          ],
+          "sources": [
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-07-30",
+              "url": "https://martech.org/iab-tech-lab-gets-ai-agents-ready-for-real-advertising/"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "AI代理",
+            "廣告治理",
+            "數據合規",
+            "MarTech",
+            "自動化"
+          ],
+          "what": "AAMP 2.3將AI代理納入廣告產業治理主流程，明確規範自動化、數據交換與隱私控管，改變了廣告產業AI代理僅為輔助的舊有角色，推動自動化主導的廣告生態新格局。",
+          "soWhat": "廣告主、代理商與平台若未及時調整AI代理管理流程，將面臨數據誤用、隱私風險與廣告成效不透明等問題。AI代理治理標準將成為品牌能否安全、有效參與AI廣告生態的門檻，忽略此趨勢將導致品牌曝光與信任下滑。",
+          "nowWhat": "選定1個現行廣告自動化流程，依AAMP 2.3標準檢查至少3項數據交換與隱私控管設定，並針對其中1項完成修正，產出一份AI代理合規流程SOP。"
+        },
+        {
+          "title": "Nvidia開源聯盟缺席OpenAI與Anthropic，產業陣營分歧明顯",
+          "summary": "Nvidia發起的AI開源聯盟未納入OpenAI與Anthropic，凸顯產業開源與封閉陣營分化，並牽動模型供應鏈、政策協調與平台競爭格局，對AI產業生態造成深遠影響。",
+          "analysis": [
+            "Nvidia推動的開源聯盟意圖鞏固其在AI算力與模型供應鏈的主導地位，但OpenAI與Anthropic等關鍵玩家缺席，顯示產業在模型開放性、資料治理與商業模式上出現明顯分歧，未來平台整合與標準制定將更複雜。",
+            "品牌、開發者與行銷團隊需密切關注不同陣營的API、模型授權與資料流通政策，否則在模型選擇、內容被AI引用或廣告投放時，可能因平台壁壘或數據不互通而受限，影響品牌曝光與行銷策略彈性。"
+          ],
+          "sources": [
+            {
+              "name": "Wired",
+              "publishedDate": "2026-07-30",
+              "url": "https://www.wired.com/story/nvidias-open-source-alliance-snubs-openai-and-anthropic/"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 3,
+            "total": 16
+          },
+          "tags": [
+            "NVIDIA",
+            "開源模型",
+            "產業陣營",
+            "模型供應鏈",
+            "平台競爭"
+          ],
+          "what": "Nvidia主導的AI開源聯盟未能整合OpenAI與Anthropic，產業出現明顯的開源與封閉陣營，形成模型、算力、數據與平台標準的多元競爭格局，改變了過去單一平台主導的產業態勢。",
+          "soWhat": "行銷團隊若只依賴單一模型或平台，將面臨API變動、內容引用限制與數據壁壘等風險。產業分歧導致品牌在AI搜尋、內容分發與廣告投放時，需針對不同陣營設計多元策略，否則將錯失新入口與曝光機會。",
+          "nowWhat": "盤點現有AI工具與API來源，針對2個主要平台（如Nvidia陣營與OpenAI陣營）各列出1項模型或API依賴，並製作一份平台相容性與內容可用性清單。"
+        },
+        {
+          "title": "微軟推動多模型可替換架構，強化Azure平台競爭力",
+          "summary": "微軟財報揭示其AI策略轉向多模型可替換架構，強調Azure平台能隨時切換OpenAI、Anthropic等模型，以降低單一供應商風險並提升生態彈性，重塑雲端AI服務競爭規則。",
+          "analysis": [
+            "微軟以多模型策略回應AI產業競合，強化Azure平台作為模型整合與切換的核心。這不僅提升雲端服務的彈性，也讓客戶能根據需求選擇最佳模型，減少對單一供應商的依賴，並推動平台間的價格與功能競爭。",
+            "品牌與行銷團隊在選擇AI服務時，需考慮多模型架構對內容生成、數據分析與行銷自動化的影響。若仍依賴單一模型，將在平台升級、內容品質或API變動時失去彈性，影響行銷活動持續性與創新速度。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-30",
+              "url": "https://www.inside.com.tw/article/41968-microsoft-fy26-q4-earnings-nadella-openai-anthropic"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 13
+          },
+          "tags": [
+            "微軟",
+            "多模型",
+            "雲端AI",
+            "平台競爭",
+            "Azure"
+          ],
+          "what": "Azure多模型可替換架構讓企業能根據需求隨時切換AI模型，打破單一供應商壟斷，提升平台彈性與競爭力，並改變品牌部署AI服務的策略選擇與風險管理方式。",
+          "soWhat": "若品牌與行銷團隊未建立多模型適應策略，將在模型升級、API變動或供應商政策調整時面臨中斷風險。多模型架構成為確保內容生成、數據分析與自動化流程不中斷的關鍵，需提前設計備援與切換機制。",
+          "nowWhat": "選出1項現有AI內容生成或分析流程，列出目前使用的模型，並模擬替換為第2個可用模型，記錄切換過程中遇到的3項技術或內容差異，完成一份模型切換測試報告。"
+        },
+        {
+          "title": "OpenAI資安事件揭示AI代理人治理漏洞",
+          "summary": "OpenAI近期資安事件顯示，AI代理人若未依照資安最佳實踐設計，可能導致外洩與未授權操作，暴露AI代理治理、監控與人為操作失誤的產業痛點。",
+          "analysis": [
+            "OpenAI代理人外洩事件凸顯AI代理治理與資安流程的落差。即使擁有先進技術，若缺乏嚴格的權限控管與操作紀錄，AI代理可能因人為疏失或流程漏洞，造成數據外洩與企業信任危機。",
+            "品牌與行銷團隊在導入AI代理自動化時，必須同步強化資安治理與權限管理。忽略AI代理的資安風險，將導致敏感數據外洩、內容被未授權引用，甚至影響品牌聲譽與法規合規性。"
+          ],
+          "sources": [
+            {
+              "name": "Wired",
+              "publishedDate": "2026-07-30",
+              "url": "https://www.wired.com/story/openais-hacking-debacle-was-a-human-mistake/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 12
+          },
+          "tags": [
+            "OpenAI",
+            "資安",
+            "AI代理",
+            "治理",
+            "自動化風險"
+          ],
+          "what": "OpenAI代理人資安事件揭露AI代理治理與權限控管的產業漏洞，顯示即使頂尖AI平台也可能因人為失誤導致數據外洩，改變了企業對AI自動化安全性的基本假設。",
+          "soWhat": "行銷團隊若未將AI代理資安納入自動化流程設計，將面臨敏感數據外洩、內容誤用與品牌信任受損等風險。資安治理將成為AI代理導入與規模化應用的前提，忽略此議題將降低品牌參與AI生態的競爭力。",
+          "nowWhat": "針對1個AI代理自動化流程，檢查3項權限控管與操作紀錄設定，並針對其中1項新增資安審核步驟，產出一份AI代理資安檢查清單。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "聚焦進入行銷工作流、內容優化、AI搜尋監控與自動化的新工具與功能，說明其如何重塑深度工作者與一般用戶的操作習慣。",
+      "items": [
+        {
+          "title": "HubSpot與Otterly AI搜尋監控工具對比，品牌需整合AI搜尋與CRM",
+          "summary": "HubSpot推出AEO功能，與Otterly等獨立AI搜尋監控工具形成對比，品牌需思考AI搜尋監控是否應與內容管理、CRM等行銷工作流深度整合，提升AI搜尋能見度與客戶互動品質。",
+          "analysis": [
+            "HubSpot將AI搜尋監控與內容管理、CRM整合，強化品牌在AI搜尋時的主動監控與即時調整能力。這種平台化工具能讓品牌更快反應AI搜尋入口變化，並將監控結果直接導入內容優化與客戶經營流程。",
+            "行銷團隊若僅採用獨立監控工具，將難以將AI搜尋數據轉化為內容調整與CRM行動，失去快速優化與精準客戶互動的優勢。平台型工具可提升跨部門協作效率，讓AI搜尋監控成為內容與客戶經營的核心驅動力。"
+          ],
+          "sources": [
+            {
+              "name": "HubSpot Marketing Blog",
+              "publishedDate": "2026-07-30",
+              "url": "https://blog.hubspot.com/marketing/hubspot-vs-otterly"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 5,
+            "trackedEntityRelevance": 2,
+            "total": 19
+          },
+          "tags": [
+            "AI搜尋",
+            "CRM",
+            "品牌能見度",
+            "AEO",
+            "內容管理"
+          ],
+          "what": "HubSpot AEO將AI搜尋監控深度整合至內容與CRM流程，讓品牌能即時追蹤AI搜尋能見度並快速調整內容與客戶互動，改變了AI搜尋監控僅為獨立分析工具的舊有模式。",
+          "soWhat": "品牌若僅依賴獨立AI搜尋監控，將無法將搜尋數據即時導入內容優化與CRM行動，影響品牌在AI搜尋入口的曝光與客戶經營效率。平台型工具成為提升AI搜尋能見度與行銷流程整合的關鍵。",
+          "nowWhat": "選定1個主要產品或服務頁面，透過HubSpot AEO設定AI搜尋監控，並將監控結果推送至內容優化與CRM任務，完成1次跨部門協作流程測試。"
+        },
+        {
+          "title": "OpenAI推出更高效GPT-5.6，降低企業部署成本",
+          "summary": "OpenAI發布GPT-5.6，針對Luna與Terra方案大幅降低價格，提升模型運算效率，協助企業以更低成本規模化部署AI工作流，並強化AI應用普及與內容生產彈性。",
+          "analysis": [
+            "GPT-5.6進一步優化模型效能與價格結構，降低企業部署AI內容生成、分析與自動化的門檻。這將推動更多企業將AI深度融入日常工作流，並加速AI應用的規模化落地。",
+            "行銷團隊可利用成本下降與模型效能提升，擴大AI內容生產、個人化行銷與自動化流程範圍。若未及時調整AI應用策略，將在內容產能、行銷自動化與預算效率上落後競爭對手。"
+          ],
+          "sources": [
+            {
+              "name": "OpenAI News",
+              "publishedDate": "2026-07-30",
+              "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 17
+          },
+          "tags": [
+            "OpenAI",
+            "GPT-5.6",
+            "AI內容生成",
+            "部署成本",
+            "模型效能"
+          ],
+          "what": "GPT-5.6以更低價格與更高效能，讓企業能以更小預算部署大規模AI內容生成與自動化，改變了AI應用受限於高成本與效能瓶頸的產業現狀。",
+          "soWhat": "若品牌未利用新模型降低成本與提升產能，將在內容規模、行銷自動化與預算效率上落後。AI模型價格與效能變動將直接影響行銷活動規模與內容多樣性，需及時調整應用策略。",
+          "nowWhat": "選定1個現有AI內容生成流程，將其切換至GPT-5.6，記錄3項成本與效能變化，並完成1份新舊模型應用成效對比報告，作為後續AI內容生產規模化決策依據。"
+        },
+        {
+          "title": "Semrush提供20種內容優化策略，提升SEO與AI能見度",
+          "summary": "Semrush發布20種內容優化策略，協助品牌同時提升SEO與AI搜尋能見度，並強化內容在AI摘要、引用與推薦場景的曝光機會，推動內容行銷進入AI驅動的新階段。",
+          "analysis": [
+            "內容優化不再僅針對傳統SEO，而需同步考慮AI搜尋、摘要與推薦機制。Semrush的策略強調結構化數據、內容標記與多元內容型態，讓內容更易被AI理解與引用，提升品牌在AI入口的曝光率。",
+            "行銷團隊若僅關注傳統SEO，將錯失AI搜尋與AI摘要帶來的新流量入口。內容優化需納入AI可讀性與結構化設計，否則品牌內容難以在AI驅動的搜尋與推薦場景中脫穎而出。"
+          ],
+          "sources": [
+            {
+              "name": "Semrush Blog",
+              "publishedDate": "2026-07-30",
+              "url": "https://www.semrush.com/blog/content-optimization/"
+            }
+          ],
+          "score": {
+            "industryImpact": 2,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 17
+          },
+          "tags": [
+            "內容優化",
+            "SEO",
+            "AI搜尋",
+            "AI能見度",
+            "結構化數據"
+          ],
+          "what": "Semrush將內容優化重點從SEO擴展到AI搜尋與AI摘要場景，強調結構化標記與多元內容型態，讓品牌內容更容易被AI引用與推薦，改變了內容行銷的優化重心。",
+          "soWhat": "若內容行銷團隊未納入AI能見度優化，將在AI搜尋、摘要與推薦入口失去曝光機會。內容結構化與AI可讀性成為新一代內容優化的必要條件，影響品牌在AI生態的流量與信任建構。",
+          "nowWhat": "選定1篇核心內容頁，依Semrush建議新增3項結構化標記（如FAQ、產品資訊、評測），並測試內容在AI搜尋或摘要工具中的呈現效果，完成1次AI能見度優化實驗。"
+        },
+        {
+          "title": "MCP新版規格改為無狀態核心，促進AI代理規模化與Serverless部署",
+          "summary": "模型上下文協定（MCP）新版將協定重構為無狀態請求/回應架構，廢除交握與工作階段，利於AI代理規模化部署與Serverless運算，並淘汰部分舊功能，重塑AI代理技術基礎。",
+          "analysis": [
+            "MCP無狀態核心設計大幅簡化AI代理部署與擴展，讓AI代理能以Serverless方式彈性調度與規模化應用。這將加速AI代理在多元場景的落地，並降低技術維護與升級的複雜度。",
+            "行銷與內容團隊可更靈活地將AI代理嵌入不同工作流與自動化流程。若仍依賴舊有交握與工作階段設計，將在AI代理擴展與整合時面臨瓶頸，影響自動化效率與新功能導入速度。"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-30",
+              "url": "https://www.inside.com.tw/article/41971-mcp-2026-07-28-spec-stateless-core-anthropic"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 13
+          },
+          "tags": [
+            "AI代理",
+            "MCP",
+            "Serverless",
+            "無狀態",
+            "自動化"
+          ],
+          "what": "MCP新版規格以無狀態核心設計，淘汰交握與工作階段，讓AI代理可用Serverless方式大規模部署，改變了AI代理需長連線與複雜狀態管理的技術限制。",
+          "soWhat": "若行銷與內容團隊未調整AI代理設計，將無法享受Serverless帶來的彈性與擴展優勢。新協定讓AI代理更易於跨平台、跨工作流整合，提升自動化應用彈性與維運效率。",
+          "nowWhat": "選定1個現有AI代理應用流程，評估其狀態管理與部署方式，並嘗試將其重構為無狀態請求/回應架構，完成1份Serverless部署可行性報告。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "跨層歸納當日重大事件與工具更新，聚焦多模型策略、AI代理治理、AI搜尋入口與內容優化等產業與行銷決策新趨勢。",
+      "items": [
+        {
+          "title": "多模型策略與AI代理治理成為AI生態核心競爭力",
+          "summary": "產業平台分化、多模型可替換與AI代理治理標準同步推進，企業需建立跨平台、跨模型的內容與數據流通策略，並強化AI代理資安與合規治理，否則將在AI搜尋、內容分發與自動化流程中失去彈性與競爭力。",
+          "analysis": [
+            "Nvidia開源聯盟、微軟多模型策略與IAB AI代理治理標準，顯示AI產業正快速分化並強調彈性與合規。未來平台、模型與代理協定將不再單一標準，企業需同時應對多元API、數據治理與自動化監控。",
+            "行銷團隊若未建立多模型適應與AI代理合規流程，將在AI搜尋、內容分發與自動化流程中受限於平台壁壘與資安風險。多模型與治理能力將成為品牌能否參與AI生態、維持曝光與信任的核心競爭力。"
+          ],
+          "sources": [
+            {
+              "name": "Wired",
+              "publishedDate": "2026-07-30",
+              "url": "https://www.wired.com/story/nvidias-open-source-alliance-snubs-openai-and-anthropic/"
+            },
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-07-30",
+              "url": "https://www.inside.com.tw/article/41968-microsoft-fy26-q4-earnings-nadella-openai-anthropic"
+            },
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-07-30",
+              "url": "https://martech.org/iab-tech-lab-gets-ai-agents-ready-for-real-advertising/"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 19
+          },
+          "tags": [
+            "多模型",
+            "AI代理",
+            "治理",
+            "平台分化",
+            "內容流通"
+          ],
+          "what": "AI產業進入多模型、平台分化與AI代理治理標準並行的新階段，企業需同時應對多元API、模型選擇與自動化合規，改變了過去單一平台或模型主導的生態規則。",
+          "soWhat": "若品牌未建立多模型適應、AI代理合規與內容流通策略，將在AI搜尋、內容分發與自動化流程中受限於平台壁壘與資安風險，影響曝光、信任與行銷彈性。",
+          "nowWhat": "針對2個主要AI平台，各建立1份模型替換與AI代理治理流程文件，並在1個現有行銷自動化流程中實際測試平台切換與代理合規步驟，產出具體操作紀錄。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "統整今日AI趨勢對品牌策略、數位行銷、內容行銷、社群應用、媒體廣告與團隊流程六大面向的具體變化與應用建議。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "多模型策略與AI代理治理成為品牌參與AI生態的核心門檻。品牌需將AI搜尋入口、內容結構化與代理合規納入策略規劃，優先盤點現有內容與數據流通路徑，並針對主要平台建立模型切換與代理治理備援機制，確保品牌在AI生態中的曝光與信任不受單一平台或模型限制。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "AI搜尋監控與內容優化工具平台化，推動數位行銷從單點監控轉向跨部門整合。行銷團隊應將AI搜尋監控數據直接導入內容優化與CRM流程，並利用新一代AI模型降低自動化成本，提升行銷活動規模與個人化精度，建議從核心產品頁或主力活動頁開始實施。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "內容優化需同步考慮SEO與AI能見度，結構化標記、FAQ、評測與多元內容型態成為AI搜尋與摘要引用的關鍵。內容團隊應優先針對高流量頁面新增結構化標記，並測試內容在AI搜尋與摘要工具中的呈現，逐步建立AI友善內容庫，提升品牌在AI入口的曝光率。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "AI代理與自動化工具進入社群經營流程，需同步強化資安與合規治理。社群團隊可先針對自動化回覆、內容分發等場景，檢查AI代理權限與數據交換設定，並建立資安審核清單，確保社群互動不因AI自動化而產生信任危機。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "AI代理治理標準推動廣告流程自動化與合規透明，廣告主與代理商需重新設計投放與監控流程，並依據AAMP 2.3等新標準檢查數據交換與隱私控管。建議從現有自動化廣告流程著手，逐步導入AI代理合規SOP，確保廣告成效與品牌信任同步提升。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "多模型、無狀態協定與Serverless架構推動行銷與內容團隊流程重組。建議團隊針對現有AI應用流程，建立模型切換、代理治理與Serverless部署測試機制，並記錄跨部門協作過程，逐步提升流程彈性與自動化效率，避免因平台或技術變動造成流程中斷。"
+        }
+      ]
+    }
+  ]
+}
