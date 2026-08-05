@@ -1,6 +1,13 @@
 {
-  "latest": "2026-08-03",
+  "latest": "2026-08-06",
   "digests": [
+    {
+      "reportDate": "2026-08-06",
+      "coverageDate": "2026-08-05",
+      "title": "Bella's AI 趨勢日報｜2026/08/06",
+      "summary": "AI 搜尋與代理人正重塑品牌流量入口、產業供應鏈與行銷工作流。Anthropic 與 Volta 的百億美元算力合約，標誌晶片商與新創主導的 AI 基礎建設新局。AI 搜尋流量不再單一依賴 Google，品牌需同時應對多元答案引擎。Meta、Super 8 等推動 AI 代理人進入實際工作流，帶動團隊組織與資安治理新挑戰。OpenAI、Anthropic 代理人資安事件頻傳，企業必須強化 AI 風險控管。行銷人需同步調整內容優化、品牌信任與工具導入策略，才能在新平台規則下維持競爭力。",
+      "path": "data/digests/2026-08-06.json"
+    },
     {
       "reportDate": "2026-08-03",
       "coverageDate": "2026-08-02",
