@@ -1,6 +1,13 @@
 {
-  "latest": "2026-08-07",
+  "latest": "2026-08-08",
   "digests": [
+    {
+      "reportDate": "2026-08-08",
+      "coverageDate": "2026-08-07",
+      "title": "Bella's AI 趨勢日報｜2026/08/08",
+      "summary": "AI產業在算力供應、資安治理、搜尋入口與行銷自動化等層面出現重大變化。AMD收購Taalas推動AI專用晶片發展，OpenAI與Google分別在資安與產品入口強化安全與用戶體驗，中國Kimi模型資安事件凸顯治理挑戰。品牌曝光、內容被AI引用、數據安全與自動化流程，皆需行銷決策者重新調整策略與團隊運作。",
+      "path": "data/digests/2026-08-08.json"
+    },
     {
       "reportDate": "2026-08-07",
       "coverageDate": "2026-08-06",
