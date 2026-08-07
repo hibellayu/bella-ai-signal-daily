@@ -1,6 +1,13 @@
 {
-  "latest": "2026-08-06",
+  "latest": "2026-08-07",
   "digests": [
+    {
+      "reportDate": "2026-08-07",
+      "coverageDate": "2026-08-06",
+      "title": "Bella's AI 趨勢日報｜2026/08/07",
+      "summary": "AI 產業格局快速變動，從硬體自主化、AI 搜尋入口多元化，到內容透明與版權治理，皆對品牌策略與行銷工作流產生深遠影響。今日關鍵事件涵蓋 Anthropic、Meta、NVIDIA、OpenAI、Suno 等主流平台與工具的重大動態，行銷決策者需重新檢視品牌能見度、內容治理、工具選型與團隊流程，才能因應 AI 生態的快速變革。",
+      "path": "data/digests/2026-08-07.json"
+    },
     {
       "reportDate": "2026-08-06",
       "coverageDate": "2026-08-05",
