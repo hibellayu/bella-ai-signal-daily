@@ -1,6 +1,13 @@
 {
-  "latest": "2026-08-11",
+  "latest": "2026-08-12",
   "digests": [
+    {
+      "reportDate": "2026-08-12",
+      "coverageDate": "2026-08-11",
+      "title": "Bella's AI 趨勢日報｜2026/08/12",
+      "summary": "AI 平台進入資安、透明度與商業化新階段。美國國會要求 OpenAI、Anthropic 說明 AI Agent 入侵事件，推動產業資安治理。Anthropic 推出浮水印技術，回應歐盟法規，內容來源追蹤成為標配。Google Gemini 用戶突破 10 億，語音互動成主流入口。OpenAI 開始在 ChatGPT 測試廣告，AI 平台商業化與品牌曝光規則重組。行銷團隊需同步調整內容治理、品牌信任與流量入口策略。",
+      "path": "data/digests/2026-08-12.json"
+    },
     {
       "reportDate": "2026-08-11",
       "coverageDate": "2026-08-10",
