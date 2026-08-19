@@ -19,9 +19,9 @@ SITEMAP_PATH = ROOT / "sitemap.xml"
 SITE_URL = "https://hibellayu.github.io/bella-ai-signal-daily/"
 SITE_NAME = "Bella's AI 趨勢日報"
 SITE_SUBTITLE = "Daily brief for marketing decisions"
-VERSION = "v0.15.0"
+VERSION = "v0.15.1"
 VERSION_DATE = "2026/08/19"
-ASSET_VERSION = "20260819b"
+ASSET_VERSION = "20260819c"
 CONTENT_NOTICE = "本站內容為 AI 趨勢整理、評論與行銷應用解讀；新聞來源與原文著作權屬各原媒體與作者所有。若需完整內容，請閱讀原文。"
 SOCIAL_IMAGE_URL = f"{SITE_URL}assets/og-image.png"
 SOCIAL_IMAGE_ALT = "Bella's AI 趨勢日報品牌預覽圖"
@@ -265,9 +265,7 @@ def render_home_page(latest_digest: dict[str, Any]) -> str:
 
   <main id="top" class="shell">
     <aside class="panel digest-meta" aria-label="日報資訊">
-      <p class="eyebrow">Today's Signal</p>
-      <h1 id="digestTitle">{escape(latest_digest.get("headline", SITE_NAME))}</h1>
-      <p id="digestSummary" class="digest-meta__summary">{escape(latest_digest.get("summary", ""))}</p>
+      <p class="eyebrow">Report Info</p>
 
       <dl class="meta-grid">
         <div>
@@ -419,9 +417,7 @@ def render_meta_panel(digest: dict[str, Any]) -> str:
         if section.get("items")
     )
     return f"""<aside class="panel digest-meta" aria-label="日報資訊">
-      <p class="eyebrow">Today's Signal</p>
-      <h1>{escape(digest.get("headline", SITE_NAME))}</h1>
-      <p class="digest-meta__summary">{escape(digest.get("summary", ""))}</p>
+      <p class="eyebrow">Report Info</p>
 
       <dl class="meta-grid">
         <div>

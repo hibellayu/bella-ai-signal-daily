@@ -144,8 +144,12 @@ function updateControls(reportDate) {
 }
 
 function renderDigest(digest) {
-  els.digestTitle.textContent = digest.headline || `Bella's AI 趨勢日報｜${formatDisplayDate(digest.reportDate)}`;
-  els.digestSummary.textContent = digest.summary || "";
+  if (els.digestTitle) {
+    els.digestTitle.textContent = digest.headline || `Bella's AI 趨勢日報｜${formatDisplayDate(digest.reportDate)}`;
+  }
+  if (els.digestSummary) {
+    els.digestSummary.textContent = digest.summary || "";
+  }
   els.reportDate.textContent = formatDisplayDate(digest.reportDate);
   els.coverageDate.textContent = formatDisplayDate(digest.coverageDate);
   els.generatedAt.textContent = formatGeneratedAt(digest.generatedAt);
@@ -471,8 +475,12 @@ function getPrimaryUrl(item) {
 }
 
 function renderEmpty(reportDate) {
-  els.digestTitle.textContent = `沒有 ${formatDisplayDate(reportDate)} 的日報`;
-  els.digestSummary.textContent = "這天還沒有 AI 日報。未來自動更新後，這裡會顯示對應日期內容。";
+  if (els.digestTitle) {
+    els.digestTitle.textContent = `沒有 ${formatDisplayDate(reportDate)} 的日報`;
+  }
+  if (els.digestSummary) {
+    els.digestSummary.textContent = "這天還沒有 AI 日報。未來自動更新後，這裡會顯示對應日期內容。";
+  }
   els.reportDate.textContent = formatDisplayDate(reportDate);
   els.coverageDate.textContent = "--";
   els.generatedAt.textContent = "--";

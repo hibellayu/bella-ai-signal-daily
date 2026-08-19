@@ -2,6 +2,32 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.15.1｜2026-08-19
+
+版本類型：小改版
+
+### 修改原因
+
+UAT 發現左側資訊卡的主標與摘要，和內容區新增的「今日策略判讀」重複，造成桌機版視覺焦點分散。既然策略判讀已成為主要內容入口，左側應回到工具型資訊，不再放判讀摘要。
+
+### 修改內容
+
+- 移除左側資訊卡的日報主標與摘要。
+- 左側 `Today's Signal` 改為 `Report Info`，保留日期、資料日期、生成時間、本日收錄、判讀框架、收錄優先順序與區塊導覽。
+- 互動版 `app.js` 補上左側標題摘要節點不存在時的防呆。
+- Footer 版本升為 `v0.15.1`，版本日期維持 2026/08/19。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `/Users/bella2022/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check app.js`
+- `python3 scripts/static_site.py`
+- 確認首頁與 2026/08/19 靜態頁左欄已改為 `Report Info`，不再出現 `digestTitle` / `digestSummary`，右側仍保留「今日策略判讀」。
+
+### 對應 commit
+
+- 待提交
+
 ## v0.15.0｜2026-08-19
 
 版本類型：中改版
