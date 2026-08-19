@@ -2,6 +2,33 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.16.1｜2026-08-19
+
+版本類型：小改版
+
+### 修改原因
+
+Google 已可透過 `site:hibellayu.github.io/bella-ai-signal-daily` 找到網站，但一般搜尋 `Bella's AI 趨勢日報` 時容易被 Bella.tw、Instagram、Threads 等既有內容壓住。問題不是索引被阻擋，而是新站品牌實體訊號與外部關聯還不夠明確。
+
+### 修改內容
+
+- 首頁新增「關於 Bella's AI 趨勢日報」區塊，明確說明本站定位、讀者、內容型態與四層判讀框架。
+- 首頁 WebSite structured data 補上 `sameAs`，關聯 Bella.tw、Instagram 與 GitHub 專案。
+- structured data 補上 `about` 主題，強化 AI 趨勢日報、數位行銷、品牌策略、內容行銷、AI 搜尋與 GEO 的語意訊號。
+- `llms.txt` 補上相關實體、主要站名、英文別名、內容類型與主要讀者。
+- Footer 版本升為 `v0.16.1`，版本日期維持 2026/08/19。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `/Users/bella2022/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check app.js`
+- `python3 scripts/static_site.py`
+- 確認首頁 HTML 已包含「關於 Bella's AI 趨勢日報」、`sameAs`、`Generative Engine Optimization`、`site-identity` 與 Footer `v0.16.1`。
+
+### 對應 commit
+
+- 待提交
+
 ## v0.16.0｜2026-08-19
 
 版本類型：中改版
@@ -31,7 +58,7 @@
 
 ### 對應 commit
 
-- 待提交
+- `a3ea29c Add AIBase supplemental China AI sources`
 
 ## v0.15.2｜2026-08-19
 

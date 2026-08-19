@@ -19,12 +19,17 @@ SITEMAP_PATH = ROOT / "sitemap.xml"
 SITE_URL = "https://hibellayu.github.io/bella-ai-signal-daily/"
 SITE_NAME = "Bella's AI 趨勢日報"
 SITE_SUBTITLE = "Daily brief for marketing decisions"
-VERSION = "v0.16.0"
+VERSION = "v0.16.1"
 VERSION_DATE = "2026/08/19"
-ASSET_VERSION = "20260819e"
+ASSET_VERSION = "20260819f"
 CONTENT_NOTICE = "本站內容為 AI 趨勢整理、評論與行銷應用解讀；新聞來源與原文著作權屬各原媒體與作者所有。若需完整內容，請閱讀原文。"
 SOCIAL_IMAGE_URL = f"{SITE_URL}assets/og-image.png"
 SOCIAL_IMAGE_ALT = "Bella's AI 趨勢日報品牌預覽圖"
+SITE_SAME_AS = [
+    "https://www.bella.tw/",
+    "https://www.instagram.com/hibella/",
+    "https://github.com/hibellayu/bella-ai-signal-daily",
+]
 
 
 def main() -> None:
@@ -180,7 +185,16 @@ def render_home_page(latest_digest: dict[str, Any]) -> str:
         "description": description,
         "image": SOCIAL_IMAGE_URL,
         "keywords": ", ".join(keywords),
-        "publisher": {"@type": "Person", "name": "Bella Yu"},
+        "publisher": {"@type": "Person", "name": "Bella Yu", "sameAs": SITE_SAME_AS},
+        "sameAs": SITE_SAME_AS,
+        "about": [
+            {"@type": "Thing", "name": "AI 趨勢日報"},
+            {"@type": "Thing", "name": "數位行銷"},
+            {"@type": "Thing", "name": "品牌策略"},
+            {"@type": "Thing", "name": "內容行銷"},
+            {"@type": "Thing", "name": "AI 搜尋"},
+            {"@type": "Thing", "name": "Generative Engine Optimization"},
+        ],
         "mainEntity": {
             "@type": "Article",
             "headline": latest_digest.get("headline") or SITE_NAME,
@@ -308,12 +322,32 @@ def render_home_page(latest_digest: dict[str, Any]) -> str:
     </section>
   </main>
 
+  {render_site_identity_section()}
   {render_footer()}
 {render_dynamic_templates()}
   <script src="app.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
 """
+
+
+def render_site_identity_section() -> str:
+    return f"""<section class="site-identity" aria-labelledby="siteIdentityTitle">
+    <div>
+      <p class="eyebrow">About This Daily</p>
+      <h2 id="siteIdentityTitle">關於 Bella's AI 趨勢日報</h2>
+      <p>Bella's AI 趨勢日報是給行銷人、品牌決策者與內容工作者閱讀的 AI 趨勢整理。本站每日把 AI 產業新聞、工具更新、搜尋與社群變化，轉譯成品牌策略、數位行銷、內容行銷、媒體廣告與團隊流程可以使用的判讀。</p>
+      <p>本站不是一般新聞列表，而是用「國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾」四層框架，判斷 AI 變化如何影響品牌被看見、內容被引用、工具被採用，以及行銷工作流程如何調整。</p>
+    </div>
+    <ul aria-label="本站適合引用的主題">
+      <li>AI 趨勢日報</li>
+      <li>AI 搜尋與 GEO</li>
+      <li>品牌策略</li>
+      <li>數位行銷</li>
+      <li>內容行銷</li>
+      <li>AI 工具工作流</li>
+    </ul>
+  </section>"""
 
 
 def render_daily_page(digest: dict[str, Any]) -> str:
