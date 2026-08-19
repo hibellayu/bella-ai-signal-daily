@@ -2,6 +2,32 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.15.2｜2026-08-19
+
+版本類型：小改版
+
+### 修改原因
+
+UAT 發現左側資訊卡完全移除主標後，桌機版少了一個能快速辨識當日趨勢主軸的視覺錨點。左側仍需要一個大標題，但不應重複右側「今日策略判讀」的摘要內容。
+
+### 修改內容
+
+- 左側資訊卡在 `Report Info` 下方新增當日日報趨勢大標，來源使用 digest 的 `headline`。
+- 左側仍不顯示摘要文字，避免和「今日策略判讀」重複。
+- 互動版日期切換時同步更新左側趨勢大標。
+- Footer 版本升為 `v0.15.2`，版本日期維持 2026/08/19。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `/Users/bella2022/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check app.js`
+- `python3 scripts/static_site.py`
+- 確認首頁與 2026/08/19 靜態頁左欄已顯示當日 `headline`，未恢復摘要文字，右側仍保留「今日策略判讀」，Footer 顯示 `v0.15.2`。
+
+### 對應 commit
+
+- 待提交
+
 ## v0.15.1｜2026-08-19
 
 版本類型：小改版
@@ -26,7 +52,7 @@ UAT 發現左側資訊卡的主標與摘要，和內容區新增的「今日策�
 
 ### 對應 commit
 
-- 待提交
+- `a0a778b Remove duplicate sidebar digest summary`
 
 ## v0.15.0｜2026-08-19
 
