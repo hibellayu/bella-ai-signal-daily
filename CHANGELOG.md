@@ -2,6 +2,36 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.14.0｜2026-08-19
+
+版本類型：中改版
+
+### 修改原因
+
+8 月日報盤點發現兩個內容策略問題：部分日期因來源資訊不足而無法產出，且已生成內容雖有 AI 趨勢解讀，但容易偏向產業新聞與品牌能見度議題，與數位行銷、內容行銷、社群、媒體廣告、深度工作者工作流與一般大眾使用情境的關聯不夠穩定。問題核心不只在產文 prompt，而是來源池與候選新聞選題分佈仍偏科技產業媒體。
+
+### 修改內容
+
+- 新增可穩定讀取的行銷、搜尋、社群與國際 AI 來源：Marketing AI Institute、Search Engine Land、Search Engine Roundtable、Social Media Today、The Decoder、AI News、Ars Technica。
+- 新增 `ANGLE_TERMS` 與 `ANGLE_LABELS`，將候選新聞標記為國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾、數位行銷 / 內容 / 社群 / 廣告等策略角度。
+- 新增 `MIN_ANGLE_COVERAGE`，候選選文時優先保留多元角度，避免高分產業新聞或單一來源把每日候選名額全部吃掉。
+- 產文 prompt 新增 `angleBuckets`，要求模型依策略角度選題，不可只挑產業格局或品牌能見度新聞。
+- PRD 補上行銷 / 搜尋 / 社群來源，以及每日選題需涵蓋多元策略角度的規格。
+- Footer 版本升為 `v0.14.0`，版本日期更新為 2026/08/19。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `python3 -m json.tool config/sources.json >/dev/null`
+- `python3 scripts/generate_daily_digest.py --report-date 2026-08-19 --dry-run`
+- `python3 scripts/static_site.py`
+- 2026/08/19 dry run 收集 37 則 AI 相關候選，選入 18 則；候選新增 Search Engine Land、Search Engine Roundtable、The Decoder、MIT Technology Review 等搜尋、SEO、工作流與國際觀點來源。
+- 最終選入候選角度分佈：產業 12、品牌 6、數位行銷 / 內容 / 社群 / 廣告 9、工作流 4、一般大眾 1。
+
+### 對應 commit
+
+- 待提交
+
 ## v0.13.1｜2026-07-24
 
 版本類型：小改版

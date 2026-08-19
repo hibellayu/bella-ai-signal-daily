@@ -46,7 +46,20 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - Wired
 - The Verge
 - MIT Technology Review
+- The Decoder
+- AI News
+- Ars Technica
 - 重要 AI 公司官方 Blog
+
+### 行銷 / 搜尋 / 社群來源
+
+- MarTech
+- Semrush Blog
+- HubSpot Marketing Blog
+- Marketing AI Institute
+- Search Engine Land
+- Search Engine Roundtable
+- Social Media Today
 
 國際媒體不做時區換算，直接依來源網站顯示的發布日期判斷。
 
@@ -71,6 +84,16 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - 是指定追蹤公司或工具的產品、商業、價格、政策或模型更新。
 - 影響品牌主、代理商、媒體或內容團隊的成本、流程與分工。
 - 是產業級事件，且能說出與行銷或品牌的關聯。
+
+每日選題需避免只被產業新聞或品牌能見度議題占滿。候選新聞需標記以下策略角度，並在每日候選中保留多元分佈：
+
+- 國際事件與產業格局：平台競爭、模型、算力、監管、資安、地緣政治。
+- 品牌端：品牌能見度、信任、搜尋、內容被引用、廣告與平台曝光。
+- 使用者端 / 深度工作者：行銷人、內容工作者、研究者、PM 與知識工作者如何把 AI 放進工作流。
+- 一般社會大眾：健康、語音助理、手機、客服、教育、詐騙、隱私與日常使用習慣。
+- 數位行銷 / 內容 / 社群 / 廣告：SEO、GEO、AEO、內容產製、社群互動、媒體廣告、CRM 與 MarTech。
+
+若候選中有足夠材料，非應用切角區塊至少要納入工作流或數位行銷通路相關新聞，並至少保留 1 則一般大眾或使用者端影響，讓日報不只像 AI 產業新聞列表。
 
 低優先或不收：
 

@@ -91,6 +91,48 @@
       "region": "international",
       "url": "https://blog.google/technology/ai/rss/",
       "enabled": true
+    },
+    {
+      "name": "Marketing AI Institute",
+      "region": "international",
+      "url": "https://www.marketingaiinstitute.com/blog/rss.xml",
+      "enabled": true
+    },
+    {
+      "name": "Search Engine Land",
+      "region": "international",
+      "url": "https://searchengineland.com/feed",
+      "enabled": true
+    },
+    {
+      "name": "Search Engine Roundtable",
+      "region": "international",
+      "url": "https://www.seroundtable.com/index.rdf",
+      "enabled": true
+    },
+    {
+      "name": "Social Media Today",
+      "region": "international",
+      "url": "https://www.socialmediatoday.com/feeds/news/",
+      "enabled": true
+    },
+    {
+      "name": "The Decoder",
+      "region": "international",
+      "url": "https://the-decoder.com/feed/",
+      "enabled": true
+    },
+    {
+      "name": "AI News",
+      "region": "international",
+      "url": "https://www.artificialintelligence-news.com/feed/",
+      "enabled": true
+    },
+    {
+      "name": "Ars Technica",
+      "region": "international",
+      "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+      "enabled": true
     }
   ],
   "trackedEntities": [
@@ -167,5 +209,12 @@
     "open source model",
     "GPU",
     "算力"
+  ],
+  "angleBuckets": [
+    "industry",
+    "brand",
+    "workflow",
+    "consumer",
+    "marketingChannel"
   ]
 }

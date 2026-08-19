@@ -45,6 +45,13 @@ MAX_REPAIR_ATTEMPTS = 2
 OPENAI_TIMEOUT_SECONDS = 240
 SELECTION_LIMIT = 18
 SOURCE_DIVERSITY_CAP = 5
+MIN_ANGLE_COVERAGE = {
+    "industry": 3,
+    "brand": 2,
+    "workflow": 2,
+    "consumer": 1,
+    "marketingChannel": 3,
+}
 AI_CORE_TERMS = [
     "ai",
     "artificial intelligence",
@@ -97,12 +104,150 @@ PRIORITY_TOPIC_TERMS = [
     "customer service",
     "客服",
 ]
+AI_RELEVANCE_TERMS = [
+    *AI_CORE_TERMS,
+    "openai",
+    "anthropic",
+    "chatgpt",
+    "gemini",
+    "claude",
+    "perplexity",
+    "midjourney",
+    "suno",
+    "generative engine optimization",
+    "ai search",
+    "ai 搜尋",
+    "ai visibility",
+    "geo",
+    "aeo",
+]
 STRATEGIC_SOURCE_BONUS = {
     "MarTech": 4,
     "Semrush Blog": 4,
     "HubSpot Marketing Blog": 3,
+    "Marketing AI Institute": 4,
+    "Search Engine Land": 4,
+    "Search Engine Roundtable": 3,
+    "Social Media Today": 3,
     "OpenAI News": 2,
     "Google AI Blog": 2,
+}
+ANGLE_TERMS = {
+    "industry": [
+        "model",
+        "模型",
+        "gpu",
+        "算力",
+        "nvidia",
+        "amd",
+        "open source",
+        "開源",
+        "regulation",
+        "監管",
+        "security",
+        "資安",
+        "governance",
+        "治理",
+        "anthropic",
+        "openai",
+        "google",
+        "meta",
+        "investment",
+        "投資",
+        "data center",
+        "資料中心",
+    ],
+    "brand": [
+        "brand",
+        "品牌",
+        "visibility",
+        "能見度",
+        "trust",
+        "信任",
+        "reputation",
+        "聲譽",
+        "customer",
+        "顧客",
+        "consumer",
+        "消費者",
+        "crm",
+        "客服",
+        "loyalty",
+        "忠誠",
+    ],
+    "workflow": [
+        "workflow",
+        "工作流",
+        "automation",
+        "自動化",
+        "agent",
+        "代理",
+        "productivity",
+        "生產力",
+        "copilot",
+        "assistant",
+        "助理",
+        "research",
+        "研究",
+        "content creation",
+        "內容產製",
+        "task",
+        "任務",
+    ],
+    "consumer": [
+        "consumer",
+        "消費者",
+        "user",
+        "使用者",
+        "teen",
+        "青少年",
+        "student",
+        "學生",
+        "education",
+        "教育",
+        "phone",
+        "手機",
+        "voice",
+        "語音",
+        "health",
+        "健康",
+        "privacy",
+        "隱私",
+        "scam",
+        "詐騙",
+        "daily",
+        "日常",
+    ],
+    "marketingChannel": [
+        "marketing",
+        "行銷",
+        "seo",
+        "aeo",
+        "geo",
+        "search",
+        "搜尋",
+        "advertising",
+        "廣告",
+        "social",
+        "社群",
+        "content",
+        "內容",
+        "martech",
+        "email",
+        "newsletter",
+        "電子報",
+        "campaign",
+        "活動",
+        "traffic",
+        "流量",
+    ],
+}
+ANGLE_LABELS = {
+    "industry": "國際事件與產業格局",
+    "brand": "品牌端",
+    "workflow": "使用者端 / 深度工作者",
+    "consumer": "一般社會大眾",
+    "marketingChannel": "數位行銷 / 內容 / 社群 / 廣告",
 }
 
 
@@ -116,6 +261,7 @@ class Article:
     summary: str
     score: int
     matched_terms: list[str]
+    angle_buckets: list[str]
 
 
 def main() -> None:
@@ -244,6 +390,7 @@ def collect_articles(config: dict[str, Any], coverage_date: date) -> list[Articl
             score, matched_terms = score_article(entry, keywords, tracked, source["name"])
             if score < 4:
                 continue
+            angle_buckets = classify_article_angles(entry, source["name"])
             seen_urls.add(entry["url"])
             articles.append(
                 Article(
@@ -255,6 +402,7 @@ def collect_articles(config: dict[str, Any], coverage_date: date) -> list[Articl
                     summary=entry["summary"],
                     score=score,
                     matched_terms=matched_terms,
+                    angle_buckets=angle_buckets,
                 )
             )
 
@@ -263,27 +411,49 @@ def collect_articles(config: dict[str, Any], coverage_date: date) -> list[Articl
 
 
 def select_articles(candidates: list[Article], limit: int = SELECTION_LIMIT) -> list[Article]:
-    """Keep high scores while avoiding one source crowding out useful marketing signals."""
+    """Keep high scores while preserving marketing, workflow, consumer and industry angles."""
     selected: list[Article] = []
     deferred: list[Article] = []
     per_source: dict[str, int] = {}
+    selected_urls: set[str] = set()
+
+    for angle, minimum in MIN_ANGLE_COVERAGE.items():
+        for article in candidates:
+            if len([item for item in selected if angle in item.angle_buckets]) >= minimum:
+                break
+            if article.url in selected_urls or angle not in article.angle_buckets:
+                continue
+            source_count = per_source.get(article.source, 0)
+            if source_count >= SOURCE_DIVERSITY_CAP:
+                continue
+            selected.append(article)
+            selected_urls.add(article.url)
+            per_source[article.source] = source_count + 1
+            if len(selected) >= limit:
+                return selected
 
     for article in candidates:
+        if article.url in selected_urls:
+            continue
         source_count = per_source.get(article.source, 0)
         if source_count >= SOURCE_DIVERSITY_CAP:
             deferred.append(article)
             continue
         selected.append(article)
+        selected_urls.add(article.url)
         per_source[article.source] = source_count + 1
         if len(selected) >= limit:
             return selected
 
     for article in deferred:
+        if article.url in selected_urls:
+            continue
         selected.append(article)
+        selected_urls.add(article.url)
         if len(selected) >= limit:
             break
 
-    return selected
+    return sorted(selected, key=lambda item: item.score, reverse=True)
 
 
 def fetch_text(url: str) -> str:
@@ -388,6 +558,8 @@ def score_article(entry: dict[str, str], keywords: list[str], tracked: list[str]
     haystack = f"{entry['title']} {entry['summary']}".lower()
     matched = sorted({term for term in keywords + tracked if term and term_matches(term, haystack)})
     score = 0
+    if not any(term_matches(term, haystack) for term in AI_RELEVANCE_TERMS):
+        return 0, matched
     score += min(8, len([term for term in keywords if term_matches(term, haystack)]) * 2)
     score += min(6, len([term for term in tracked if term_matches(term, haystack)]) * 3)
     has_ai_core = any(term_matches(term, haystack) for term in AI_CORE_TERMS)
@@ -400,6 +572,32 @@ def score_article(entry: dict[str, str], keywords: list[str], tracked: list[str]
     if has_ai_core:
         score += STRATEGIC_SOURCE_BONUS.get(source_name, 0)
     return score, matched
+
+
+def classify_article_angles(entry: dict[str, str], source_name: str) -> list[str]:
+    haystack = f"{entry['title']} {entry['summary']} {source_name}".lower()
+    buckets: list[str] = []
+    for bucket, terms in ANGLE_TERMS.items():
+        if any(term_matches(term, haystack) for term in terms):
+            buckets.append(bucket)
+
+    if source_name in {"MarTech", "Semrush Blog", "HubSpot Marketing Blog", "Marketing AI Institute"}:
+        add_bucket(buckets, "marketingChannel")
+        add_bucket(buckets, "workflow")
+    if source_name in {"Search Engine Land", "Search Engine Roundtable"}:
+        add_bucket(buckets, "marketingChannel")
+        add_bucket(buckets, "brand")
+    if source_name == "Social Media Today":
+        add_bucket(buckets, "marketingChannel")
+        add_bucket(buckets, "consumer")
+    if not buckets:
+        buckets.append("industry")
+    return buckets
+
+
+def add_bucket(buckets: list[str], bucket: str) -> None:
+    if bucket not in buckets:
+        buckets.append(bucket)
 
 
 def term_matches(term: str, haystack: str) -> bool:
@@ -532,6 +730,7 @@ def build_repair_prompt(
             "summary": item.summary,
             "score": item.score,
             "matchedTerms": item.matched_terms,
+            "angleBuckets": [ANGLE_LABELS.get(bucket, bucket) for bucket in item.angle_buckets],
         }
         for item in articles
     ]
@@ -583,6 +782,7 @@ def build_generation_prompt(
             "summary": item.summary,
             "score": item.score,
             "matchedTerms": item.matched_terms,
+            "angleBuckets": [ANGLE_LABELS.get(bucket, bucket) for bucket in item.angle_buckets],
         }
         for item in articles
     ]
@@ -612,6 +812,8 @@ def build_generation_prompt(
         - 不要寫給 Bella 個人，不要使用「Bella 的工作視角」。
         - 內容要以行銷主管與策略者的視角解釋變化，不只複述新聞，也不要用「提升效率、強化信任、帶來機會」等空泛結論收尾。
         - 每份日報必須用「四層影響框架」選題與解讀：1. 國際事件與產業格局，包含平台競爭、模型、算力、監管、資安、地緣政治；2. 品牌端，包含品牌能見度、信任、搜尋、內容被引用、廣告與平台曝光；3. 使用者端 / 深度工作者，包含行銷人、內容工作者、研究者、PM 與知識工作者如何把 AI 放進工作流；4. 一般社會大眾，包含健康、語音助理、手機、客服、教育、詐騙、隱私與日常使用習慣。
+        - 候選新聞中的 angleBuckets 是系統對該則新聞的策略角度標記。選題時不可只挑「國際事件與產業格局」，必須同時納入品牌端、使用者端 / 深度工作者、一般社會大眾或數位行銷通路的訊號。
+        - 若候選中有「數位行銷 / 內容 / 社群 / 廣告」或「使用者端 / 深度工作者」標記的新聞，非 applications 區塊至少要收 2 則；若有「一般社會大眾」標記的新聞，至少要收 1 則，除非候選數不足。
         - 優先辨識以下行銷決策訊號：AI 搜尋 / GEO / 品牌能見度、AI Agent 與 MarTech 工具、內容透明與來源揭露、客服與 CRM 自動化、語音與多裝置入口、模型供應鏈 / 算力 / 開源模型、資安與合規治理、平台廣告與社群互動規則。
         - 不可讓整份日報都圍繞品牌能見度或 MarTech。品牌端是重要面向，但必須和國際格局、工作流改變、一般大眾使用習慣並列。
         - 大事件必須優先放入會改變產業格局、平台規則、模型 / 算力供應、資安治理、監管或大眾使用入口的事件；若候選中有 AMD、NVIDIA、GPU、OpenAI、Google、Anthropic、資安、健康、語音或 AI agent 風險相關事件，至少收 1 則非純品牌能見度事件。
