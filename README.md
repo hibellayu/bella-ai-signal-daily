@@ -30,7 +30,7 @@ http://localhost:4173
 
 - `data/digests/manifest.json`：日報清單。
 - `data/digests/YYYY-MM-DD.json`：每日完整內容。
-- `config/sources.json`：自動化新聞來源、追蹤公司與 AI 關鍵字設定。
+- `config/sources.json`：自動化新聞來源、追蹤公司與 AI 關鍵字設定。來源支援 RSS / Atom，也支援少量公開 HTML 列表來源作為補充。
 - `VERSIONING.md`：版本號、大改版、中改版、小改版規則。
 - `CHANGELOG.md`：版本記錄與修改內容回溯。
 - `docs/COPYRIGHT_RISK_POLICY.md`：版權、來源引用、示範資料與 SEO 收錄風險控管規則。
@@ -43,7 +43,7 @@ http://localhost:4173
 
 ## 自動更新
 
-`.github/workflows/daily-digest.yml` 預設每天 UTC 22:30 執行，對應台北時間 06:30，為 GitHub 排程與 Pages 部署預留緩衝。流程會抓取來源 feed、篩選 AI 相關新聞、用 OpenAI API 生成日報 JSON，再提交到 GitHub Pages。
+`.github/workflows/daily-digest.yml` 預設每天 UTC 22:30 執行，對應台北時間 06:30，為 GitHub 排程與 Pages 部署預留緩衝。流程會抓取來源 feed / 公開 HTML 列表、篩選 AI 相關新聞、用 OpenAI API 生成日報 JSON，再提交到 GitHub Pages。
 
 需要回補特定日期時，可在 GitHub Actions 手動執行 `Daily AI Signal`，並於 `report_date` 輸入 `YYYY-MM-DD`。未填日期時，流程會產生當日日報。
 
@@ -72,6 +72,8 @@ OPENAI_MODEL
 - `sitemap.xml`
 
 目前 `數位時代` 與 `AI 郵報` 尚未啟用自動抓取：`數位時代` 公開 RSS 於 2026-07-10 測試回傳 404，`AI 郵報` 尚未設定穩定公開來源。後續可改用搜尋 API 或確認穩定 feed 後重新啟用。
+
+AIBase 已作為補充來源，用來補中國 AI 模型、工具、平台與應用生態。`AIBase AI News` 優先收單篇新聞，`AIBase AI Daily` 僅作為補漏候選；選文時會降低單一補充來源上限，避免二次彙整內容主導整份日報。
 
 ## 搜尋與分析
 

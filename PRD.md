@@ -147,7 +147,7 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 
 - GitHub Actions 每天 UTC 23:00 執行，對應台北時間 07:00。
 - `config/sources.json` 管理新聞來源、追蹤公司與 AI 關鍵字。
-- 產生器流程：抓取來源 feed → 依日期與 AI 相關性過濾 → 初步評分排序 → OpenAI API 產文 → JSON 品質檢查 → 寫入日報與 manifest。
+- 產生器流程：抓取來源 feed / 公開 HTML 列表 → 依日期與 AI 相關性過濾 → 初步評分排序 → OpenAI API 產文 → JSON 品質檢查 → 寫入日報與 manifest。
 - 必須設定 GitHub Secret：`OPENAI_API_KEY`。
 - 可選設定 GitHub Variable：`OPENAI_MODEL`。
 - 若沒有 API key、候選新聞不足、產文失敗、JSON 結構不符或內容太薄，不可更新 `manifest.latest`。
@@ -155,6 +155,7 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - 來源摘要只作為模型判斷材料，RSS / Atom 摘要截取上限為 220 字元。
 - 產文必須以事件事實與行銷策略觀點重寫，不可複製或翻譯來源段落。
 - `數位時代` 與 `AI 郵報` 若沒有穩定公開 feed，可暫時停用，不可讓失效來源造成整體產生日報失敗；後續改以搜尋 API 或確認來源後啟用。
+- AIBase 可作為中國 AI 生態補充來源，優先使用單篇 `AIBase AI News`，`AIBase AI Daily` 僅作為補漏候選；補充來源不可主導整份日報。
 
 ## 版本資訊
 

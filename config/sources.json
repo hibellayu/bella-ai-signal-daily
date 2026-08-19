@@ -133,6 +133,28 @@
       "region": "international",
       "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
       "enabled": true
+    },
+    {
+      "name": "AIBase AI News",
+      "region": "international",
+      "url": "https://news.aibase.com/tw/news",
+      "enabled": true,
+      "type": "html-list",
+      "linkPattern": "/tw/news/\\d+",
+      "maxItems": 36,
+      "supplemental": true,
+      "note": "Supplemental source for China AI companies, models, tools and application news. Use single news articles before daily roundups."
+    },
+    {
+      "name": "AIBase AI Daily",
+      "region": "international",
+      "url": "https://news.aibase.com/tw/daily",
+      "enabled": true,
+      "type": "html-list",
+      "linkPattern": "/tw/daily/\\d+",
+      "maxItems": 8,
+      "supplemental": true,
+      "note": "Supplemental fallback only. AIBase Daily is a secondary roundup, so selection should keep lower source dominance."
     }
   ],
   "trackedEntities": [
@@ -153,7 +175,15 @@
     "NVIDIA",
     "Moonshot AI",
     "Kimi",
-    "DeepSeek"
+    "DeepSeek",
+    "Qwen",
+    "Alibaba",
+    "Tencent",
+    "ByteDance",
+    "Doubao",
+    "Zhipu",
+    "MiniMax",
+    "Xiaohongshu"
   ],
   "aiKeywords": [
     "AI",
@@ -205,6 +235,19 @@
     "Galaxy AI",
     "Kimi",
     "Moonshot",
+    "DeepSeek",
+    "Qwen",
+    "通義千問",
+    "千問",
+    "豆包",
+    "阿里",
+    "騰訊",
+    "字節跳動",
+    "小紅書",
+    "智譜",
+    "MiniMax",
+    "中國 AI",
+    "國產大模型",
     "開源模型",
     "open source model",
     "GPU",

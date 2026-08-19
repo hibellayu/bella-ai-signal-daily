@@ -45,6 +45,8 @@ MAX_REPAIR_ATTEMPTS = 2
 OPENAI_TIMEOUT_SECONDS = 240
 SELECTION_LIMIT = 18
 SOURCE_DIVERSITY_CAP = 5
+SUPPLEMENTAL_SOURCE_DIVERSITY_CAP = 2
+SUPPLEMENTAL_SOURCES = {"AIBase AI News", "AIBase AI Daily"}
 MIN_ANGLE_COVERAGE = {
     "industry": 3,
     "brand": 2,
@@ -99,6 +101,21 @@ PRIORITY_TOPIC_TERMS = [
     "透明度",
     "open source model",
     "開源模型",
+    "qwen",
+    "通義千問",
+    "千問",
+    "doubao",
+    "豆包",
+    "alibaba",
+    "阿里",
+    "tencent",
+    "騰訊",
+    "bytedance",
+    "字節跳動",
+    "zhipu",
+    "智譜",
+    "minimax",
+    "小紅書",
     "gpu",
     "算力",
     "customer service",
@@ -376,8 +393,8 @@ def collect_articles(config: dict[str, Any], coverage_date: date) -> list[Articl
         if not source.get("enabled", True):
             continue
         try:
-            feed = fetch_text(source["url"])
-            entries = parse_feed(feed, source)
+            source_text = fetch_text(source["url"])
+            entries = parse_source_entries(source_text, source)
         except Exception as exc:  # noqa: BLE001
             print(f"Source failed: {source['name']} - {exc}")
             continue
@@ -424,7 +441,7 @@ def select_articles(candidates: list[Article], limit: int = SELECTION_LIMIT) -> 
             if article.url in selected_urls or angle not in article.angle_buckets:
                 continue
             source_count = per_source.get(article.source, 0)
-            if source_count >= SOURCE_DIVERSITY_CAP:
+            if source_count >= source_diversity_cap(article.source):
                 continue
             selected.append(article)
             selected_urls.add(article.url)
@@ -436,7 +453,7 @@ def select_articles(candidates: list[Article], limit: int = SELECTION_LIMIT) -> 
         if article.url in selected_urls:
             continue
         source_count = per_source.get(article.source, 0)
-        if source_count >= SOURCE_DIVERSITY_CAP:
+        if source_count >= source_diversity_cap(article.source):
             deferred.append(article)
             continue
         selected.append(article)
@@ -448,12 +465,22 @@ def select_articles(candidates: list[Article], limit: int = SELECTION_LIMIT) -> 
     for article in deferred:
         if article.url in selected_urls:
             continue
+        source_count = per_source.get(article.source, 0)
+        if source_count >= source_diversity_cap(article.source):
+            continue
         selected.append(article)
         selected_urls.add(article.url)
+        per_source[article.source] = source_count + 1
         if len(selected) >= limit:
             break
 
     return sorted(selected, key=lambda item: item.score, reverse=True)
+
+
+def source_diversity_cap(source_name: str) -> int:
+    if source_name in SUPPLEMENTAL_SOURCES:
+        return SUPPLEMENTAL_SOURCE_DIVERSITY_CAP
+    return SOURCE_DIVERSITY_CAP
 
 
 def fetch_text(url: str) -> str:
@@ -466,6 +493,12 @@ def fetch_text(url: str) -> str:
     )
     with urllib.request.urlopen(request, timeout=20) as response:
         return response.read().decode("utf-8", errors="replace")
+
+
+def parse_source_entries(source_text: str, source: dict[str, Any]) -> list[dict[str, str]]:
+    if source.get("type") == "html-list":
+        return parse_html_list(source_text, source)
+    return parse_feed(source_text, source)
 
 
 def parse_feed(feed: str, source: dict[str, Any]) -> list[dict[str, str]]:
@@ -482,6 +515,73 @@ def parse_feed(feed: str, source: dict[str, Any]) -> list[dict[str, str]]:
             entries.append(parse_atom_entry(node, source))
 
     return [entry for entry in entries if entry["title"] and entry["url"] and entry["published_date"]]
+
+
+def parse_html_list(page: str, source: dict[str, Any]) -> list[dict[str, str]]:
+    pattern = source.get("linkPattern")
+    if not pattern:
+        return []
+
+    max_items = int(source.get("maxItems", 12))
+    links: list[str] = []
+    for match in re.finditer(pattern, page):
+        url = absolute_url(match.group(0), source["url"])
+        if url not in links:
+            links.append(url)
+        if len(links) >= max_items:
+            break
+
+    entries: list[dict[str, str]] = []
+    for url in links:
+        try:
+            detail = fetch_text(url)
+        except Exception as exc:  # noqa: BLE001
+            print(f"HTML detail failed: {source['name']} {url} - {exc}")
+            continue
+        entries.append(parse_html_detail(detail, source, url))
+
+    return [entry for entry in entries if entry["title"] and entry["url"] and entry["published_date"]]
+
+
+def parse_html_detail(page: str, source: dict[str, Any], url: str) -> dict[str, str]:
+    title = clean_text(extract_first(page, r"<h1[^>]*>(.*?)</h1>") or extract_first(page, r"<title[^>]*>(.*?)</title>"))
+    summary = clean_text(extract_first(page, r'<meta\s+name=["\']description["\']\s+content=["\'](.*?)["\']'))
+    published_raw = extract_published_date(page)
+    return {
+        "title": title,
+        "url": url,
+        "summary": truncate_source_summary(summary),
+        "published_date": parse_source_date(published_raw, source["region"]),
+    }
+
+
+def extract_first(value: str, pattern: str) -> str:
+    match = re.search(pattern, value, flags=re.IGNORECASE | re.DOTALL)
+    return match.group(1) if match else ""
+
+
+def extract_published_date(page: str) -> str:
+    visible = extract_first(page, r"時間\s*:</span><span>([^<]+)</span>")
+    if visible:
+        return clean_text(visible)
+
+    iso_datetime = re.search(r"20\d{2}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}", page)
+    if iso_datetime:
+        return iso_datetime.group(0)
+
+    iso_date = re.search(r"20\d{2}-\d{2}-\d{2}", page)
+    if iso_date:
+        return iso_date.group(0)
+
+    english_date = re.search(r"\b[A-Z][a-z]{2,8}\s+\d{1,2},\s+20\d{2}\b", page)
+    return english_date.group(0) if english_date else ""
+
+
+def absolute_url(url: str, base_url: str) -> str:
+    if url.startswith("http://") or url.startswith("https://"):
+        return url
+    origin = re.match(r"https?://[^/]+", base_url)
+    return f"{origin.group(0) if origin else ''}{url}"
 
 
 def parse_rss_item(node: ET.Element, source: dict[str, Any]) -> dict[str, str]:
@@ -530,7 +630,7 @@ def parse_source_date(value: str, region: str) -> str:
         parsed = None
 
     if parsed is None:
-        for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%d"):
+        for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%d %H:%M:%S", "%Y-%m-%d", "%b %d, %Y", "%B %d, %Y"):
             try:
                 parsed = datetime.strptime(value.replace("Z", "+0000"), fmt)
                 break
@@ -816,7 +916,8 @@ def build_generation_prompt(
         - 每份日報必須用「四層影響框架」選題與解讀：1. 國際事件與產業格局，包含平台競爭、模型、算力、監管、資安、地緣政治；2. 品牌端，包含品牌能見度、信任、搜尋、內容被引用、廣告與平台曝光；3. 使用者端 / 深度工作者，包含行銷人、內容工作者、研究者、PM 與知識工作者如何把 AI 放進工作流；4. 一般社會大眾，包含健康、語音助理、手機、客服、教育、詐騙、隱私與日常使用習慣。
         - 候選新聞中的 angleBuckets 是系統對該則新聞的策略角度標記。選題時不可只挑「國際事件與產業格局」，必須同時納入品牌端、使用者端 / 深度工作者、一般社會大眾或數位行銷通路的訊號。
         - 若候選中有「數位行銷 / 內容 / 社群 / 廣告」或「使用者端 / 深度工作者」標記的新聞，非 applications 區塊至少要收 2 則；若有「一般社會大眾」標記的新聞，至少要收 1 則，除非候選數不足。
-        - 優先辨識以下行銷決策訊號：AI 搜尋 / GEO / 品牌能見度、AI Agent 與 MarTech 工具、內容透明與來源揭露、客服與 CRM 自動化、語音與多裝置入口、模型供應鏈 / 算力 / 開源模型、資安與合規治理、平台廣告與社群互動規則。
+        - 優先辨識以下行銷決策訊號：AI 搜尋 / GEO / 品牌能見度、AI Agent 與 MarTech 工具、內容透明與來源揭露、客服與 CRM 自動化、語音與多裝置入口、模型供應鏈 / 算力 / 開源模型、資安與合規治理、平台廣告與社群互動規則、中國 AI 模型 / 工具 / 平台對全球工具選型與內容生態的影響。
+        - AIBase AI News 與 AIBase AI Daily 是補充來源，主要用來補中國 AI 生態與亞洲平台動態。若候選中出現 Qwen / 千問、豆包、DeepSeek、Kimi、MiniMax、智譜、阿里、騰訊、字節跳動、小紅書等事件，請判斷它是否改變模型選型、內容生成工具、社群 / 電商入口、廣告分發或深度工作者工作流；不可只因為是中國公司就收錄，也不可整份日報被單一補充來源主導。
         - 不可讓整份日報都圍繞品牌能見度或 MarTech。品牌端是重要面向，但必須和國際格局、工作流改變、一般大眾使用習慣並列。
         - 大事件必須優先放入會改變產業格局、平台規則、模型 / 算力供應、資安治理、監管或大眾使用入口的事件；若候選中有 AMD、NVIDIA、GPU、OpenAI、Google、Anthropic、資安、健康、語音或 AI agent 風險相關事件，至少收 1 則非純品牌能見度事件。
         - 大事件中，純品牌能見度、GEO、MarTech 或工具比較題最多 2 則；其餘要留給國際事件、平台 / 模型 / 算力 / 資安 / 社會大眾影響。

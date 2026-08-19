@@ -2,6 +2,37 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.16.0｜2026-08-19
+
+版本類型：中改版
+
+### 修改原因
+
+新聞來源盤點後發現，目前日報對中國 AI 生態的覆蓋不足，容易漏掉 Qwen / 千問、豆包、DeepSeek、Kimi、MiniMax、智譜、阿里、騰訊、字節跳動、小紅書等模型、工具、平台與應用動態。AIBase 的公開頁面可讀且 robots 允許抓取，但其日報屬於二次彙整內容，因此應作為補充來源，不可主導整份日報。
+
+### 修改內容
+
+- 新增公開 HTML 列表來源解析能力，支援無 RSS / Atom 的公開列表頁。
+- 新增 `AIBase AI News` 補充來源，優先抓取單篇 `/tw/news/{id}`。
+- 新增 `AIBase AI Daily` 補充來源，僅作為中國 AI 生態漏網議題的補漏候選。
+- 補充來源選文上限調低為 2 則，避免二次彙整或單一來源主導日報。
+- 擴充追蹤公司 / 工具與 AI 關鍵字：Qwen、Alibaba、Tencent、ByteDance、Doubao、Zhipu、MiniMax、Xiaohongshu、通義千問、千問、豆包、阿里、騰訊、字節跳動、小紅書、智譜、中國 AI、國產大模型等。
+- 產文 prompt 補上中國 AI 生態的判讀規則，要求從模型選型、內容生成工具、社群 / 電商入口、廣告分發與深度工作者工作流角度判斷，不可只因為是中國公司就收錄。
+- 更新 PRD 與 README，記錄 AIBase 的補充來源定位與來源風險控管。
+- Footer 版本升為 `v0.16.0`，版本日期維持 2026/08/19。
+
+### 驗證
+
+- `python3 -m json.tool config/sources.json >/dev/null`
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `python3 scripts/generate_daily_digest.py --report-date 2026-08-19 --dry-run`
+- `python3 scripts/generate_daily_digest.py --report-date 2026-08-20 --dry-run`
+- 確認 2026/08/20 dry-run 中 `AIBase AI News` 可進入候選與選文，且補充來源最多只選 2 則。
+
+### 對應 commit
+
+- 待提交
+
 ## v0.15.2｜2026-08-19
 
 版本類型：小改版
@@ -26,7 +57,7 @@ UAT 發現左側資訊卡完全移除主標後，桌機版少了一個能快速�
 
 ### 對應 commit
 
-- 待提交
+- `ac9aa67 Restore sidebar trend headline`
 
 ## v0.15.1｜2026-08-19
 
