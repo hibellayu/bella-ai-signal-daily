@@ -741,12 +741,14 @@ def build_repair_prompt(
         修補目標：
         - 只根據候選新聞與原 JSON 修補，不得新增候選新聞外的事實。
         - 保留 reportDate、coverageDate、generatedAt、sourcePolicy、trackedEntities。
+        - 保留或補齊 strategyTakeaways，3-4 則，必須是今日給行銷決策者的策略判讀，不是新聞標題改寫。
         - 優先修補驗證錯誤指出的欄位；若結構有缺漏，也要補齊。
         - analysis 必須剛好 2 段，每段至少 70 字，第一段談平台、商業模式、入口或競爭規則變化，第二段談品牌、消費者與行銷團隊的決策影響。
         - What 至少 45 字；So What 至少 60 字；Now What 至少 60 字且必須包含明確數量、實際動作與可見產出。
         - 若驗證錯誤指出 Now What 過短，必須把該則 Now What 重寫成 90-120 字、兩句以內，並保留 1 個明確數量、1 個起始素材、1 個完成產出。
         - Now What 不可出現「這週、本週、幾天內、幾週內、幾個月內」等任意期限。
         - 應用切角必須固定 6 則，title 依序只能是：品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程。
+        - 非 applications item 必須有 impactAngles，從以下標籤選 1-3 個：國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾、數位行銷 / 內容 / 社群 / 廣告。
         - 每則 sources 必須使用候選新聞中的原文 URL，不可改成媒體首頁。
         - 只輸出合法 JSON，不要 Markdown。
 
@@ -846,6 +848,7 @@ def build_generation_prompt(
           "generatedAt": "{generated_at}",
           "headline": "string",
           "summary": "string",
+          "strategyTakeaways": ["3 至 4 則今日策略判讀"],
           "sourcePolicy": "{SOURCE_POLICY}",
           "trackedEntities": [...],
           "scoringPolicy": {{
@@ -865,6 +868,7 @@ def build_generation_prompt(
         - title
         - summary
         - analysis: 2 段陣列，每段 70-140 字
+        - impactAngles: 從「國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾、數位行銷 / 內容 / 社群 / 廣告」選 1-3 個，說明這則新聞的判讀角度
         - sources: [{{"name","publishedDate","url"}}]
         - score: industryImpact, digitalMarketingImpact, contentSearchSocialAdsImpact, toolUsability, trackedEntityRelevance, total
           - industryImpact、digitalMarketingImpact、contentSearchSocialAdsImpact、toolUsability 必須是 0-5 的整數

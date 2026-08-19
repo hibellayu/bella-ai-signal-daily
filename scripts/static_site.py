@@ -19,9 +19,9 @@ SITEMAP_PATH = ROOT / "sitemap.xml"
 SITE_URL = "https://hibellayu.github.io/bella-ai-signal-daily/"
 SITE_NAME = "Bella's AI 趨勢日報"
 SITE_SUBTITLE = "Daily brief for marketing decisions"
-VERSION = "v0.14.0"
+VERSION = "v0.15.0"
 VERSION_DATE = "2026/08/19"
-ASSET_VERSION = "20260819a"
+ASSET_VERSION = "20260819b"
 CONTENT_NOTICE = "本站內容為 AI 趨勢整理、評論與行銷應用解讀；新聞來源與原文著作權屬各原媒體與作者所有。若需完整內容，請閱讀原文。"
 SOCIAL_IMAGE_URL = f"{SITE_URL}assets/og-image.png"
 SOCIAL_IMAGE_ALT = "Bella's AI 趨勢日報品牌預覽圖"
@@ -283,10 +283,12 @@ def render_home_page(latest_digest: dict[str, Any]) -> str:
           <dd id="generatedAt">{format_generated_at(latest_digest.get("generatedAt"))}</dd>
         </div>
         <div>
-          <dt>收錄上限</dt>
-          <dd>10-14 則資訊</dd>
+          <dt>本日收錄</dt>
+          <dd id="collectionCount">{escape(collection_count_text(latest_digest))}</dd>
         </div>
       </dl>
+
+      {render_impact_framework(latest_digest, dynamic=True)}
 
       <div class="signal-policy">
         <h2>收錄優先順序</h2>
@@ -301,6 +303,7 @@ def render_home_page(latest_digest: dict[str, Any]) -> str:
     <section class="content" aria-live="polite">
       <div id="statusMessage" class="status" hidden></div>
       <div id="digestContent">
+{render_strategy_brief(latest_digest)}
 {render_sections(latest_digest)}
       </div>
     </section>
@@ -380,6 +383,7 @@ def render_daily_page(digest: dict[str, Any]) -> str:
   <main id="top" class="shell static-shell">
     {render_meta_panel(digest)}
     <section class="content">
+      {render_strategy_brief(digest)}
       {render_sections(digest)}
     </section>
   </main>
@@ -433,10 +437,12 @@ def render_meta_panel(digest: dict[str, Any]) -> str:
           <dd>{format_generated_at(digest.get("generatedAt"))}</dd>
         </div>
         <div>
-          <dt>收錄上限</dt>
-          <dd>10-14 則資訊</dd>
+          <dt>本日收錄</dt>
+          <dd>{escape(collection_count_text(digest))}</dd>
         </div>
       </dl>
+
+      {render_impact_framework(digest)}
 
       <div class="signal-policy">
         <h2>收錄優先順序</h2>
@@ -451,6 +457,59 @@ def render_meta_panel(digest: dict[str, Any]) -> str:
 
 def render_sections(digest: dict[str, Any]) -> str:
     return "\n".join(render_section(section) for section in digest.get("sections", []))
+
+
+def render_strategy_brief(digest: dict[str, Any]) -> str:
+    takeaways = strategy_takeaways(digest)
+    if not takeaways:
+        return ""
+    items = "\n".join(f"          <li>{escape(item)}</li>" for item in takeaways)
+    return f"""<section class="strategy-brief" aria-label="今日策略判讀">
+        <p class="eyebrow">Decision Lens</p>
+        <h2>今日策略判讀</h2>
+        <ul>
+{items}
+        </ul>
+      </section>"""
+
+
+def strategy_takeaways(digest: dict[str, Any]) -> list[str]:
+    explicit = digest.get("strategyTakeaways")
+    if isinstance(explicit, list):
+        return [str(item).strip() for item in explicit if str(item).strip()][:4]
+    summary = str(digest.get("summary", "")).strip()
+    if not summary:
+        return []
+    chunks = [
+        chunk.strip()
+        for chunk in summary.replace("；", "。").replace("，並", "。並").split("。")
+        if chunk.strip()
+    ]
+    return [chunk + "。" for chunk in chunks[:3]]
+
+
+def collection_count_text(digest: dict[str, Any]) -> str:
+    news_count = 0
+    application_count = 0
+    for section in digest.get("sections", []):
+        items = section.get("items", [])
+        if section.get("id") == "applications":
+            application_count += len(items)
+        else:
+            news_count += len(items)
+    return f"新聞判讀 {news_count} 則｜應用切角 {application_count} 則"
+
+
+def render_impact_framework(digest: dict[str, Any], dynamic: bool = False) -> str:
+    framework = digest.get("scoringPolicy", {}).get("impactFramework", [])
+    if not framework:
+        framework = ["國際事件與產業格局", "品牌端", "使用者端 / 深度工作者", "一般社會大眾"]
+    list_id = ' id="impactFrameworkList"' if dynamic else ""
+    items = "".join(f"<li>{escape(item)}</li>" for item in framework)
+    return f"""      <div class="impact-framework">
+        <h2>判讀框架</h2>
+        <ol{list_id}>{items}</ol>
+      </div>"""
 
 
 def render_section(section: dict[str, Any]) -> str:
@@ -473,18 +532,19 @@ def render_section(section: dict[str, Any]) -> str:
 def render_item(item: dict[str, Any]) -> str:
     analysis = "".join(f"<p>{escape(paragraph)}</p>" for paragraph in item.get("analysis", []))
     tags = "".join(f'<span class="tag">{escape(tag)}</span>' for tag in item.get("tags", []))
-    score = item.get("score", {})
-    total = score.get("total", "-")
+    score_badge = render_static_score(item)
+    angles = render_impact_angles(item)
     return f"""          <article class="signal-card">
             <div class="signal-card__head">
               <div>
                 <div class="source-line">{render_sources(item)}</div>
                 <h3>{escape(item.get("title", ""))}</h3>
               </div>
-              <span class="score-badge">{total} 分</span>
+              {score_badge}
             </div>
             <p class="summary">{escape(item.get("summary", ""))}</p>
             <div class="analysis">{analysis}</div>
+            {angles}
             <div class="tag-row">{tags}</div>
             <div class="framework">
               <section>
@@ -501,6 +561,68 @@ def render_item(item: dict[str, Any]) -> str:
               </section>
             </div>
           </article>"""
+
+
+def render_impact_angles(item: dict[str, Any]) -> str:
+    angles = item.get("impactAngles")
+    if not isinstance(angles, list) or not angles:
+        return ""
+    tags = "".join(f'<span class="angle-pill">{escape(str(angle))}</span>' for angle in angles[:4] if str(angle).strip())
+    if not tags:
+        return ""
+    return f"""<div class="impact-angle-row"><span>判讀角度</span>{tags}</div>"""
+
+
+def render_static_score(item: dict[str, Any]) -> str:
+    score = normalize_score(item.get("score", {}))
+    fields = [
+        ("產業重大性", score["industryImpact"], "0-5"),
+        ("數位行銷影響", score["digitalMarketingImpact"], "0-5"),
+        ("內容 / 搜尋 / 社群 / 媒體廣告影響", score["contentSearchSocialAdsImpact"], "0-5"),
+        ("工具可用性", score["toolUsability"], "0-5"),
+        ("指定追蹤公司 / 工具相關性", score["trackedEntityRelevance"], "0-3"),
+    ]
+    total = sum(value for _, value, _ in fields)
+    rows = "".join(
+        f"""<div><dt>{escape(label)}（{escape(scale)}）</dt><dd>{value} 分</dd></div>"""
+        for label, value, scale in fields
+    )
+    formula = " + ".join(str(value) for _, value, _ in fields)
+    return f"""<details class="static-score">
+                <summary>{total} 分</summary>
+                <div class="static-score__body">
+                  <p>每則資訊依 5 個面向評分，排序優先看產業重大性，再看數位行銷影響。</p>
+                  <dl class="score-breakdown">{rows}</dl>
+                  <p class="score-formula">{formula} = {total} 分</p>
+                </div>
+              </details>"""
+
+
+def normalize_score(score: dict[str, Any]) -> dict[str, int]:
+    limits = {
+        "industryImpact": 5,
+        "digitalMarketingImpact": 5,
+        "contentSearchSocialAdsImpact": 5,
+        "toolUsability": 5,
+        "trackedEntityRelevance": 3,
+    }
+    return {key: normalize_score_value(score.get(key, 0), limit) for key, limit in limits.items()}
+
+
+def normalize_score_value(value: Any, limit: int) -> int:
+    try:
+        number = round(float(value))
+    except (TypeError, ValueError):
+        number = 0
+    if number < 0:
+        return 0
+    if number <= limit:
+        return int(number)
+    if limit == 3:
+        if number <= 5:
+            return min(limit, round(number * 3 / 5))
+        return min(limit, round(number * 3 / 10))
+    return min(limit, round(number / 2))
 
 
 def render_sources(item: dict[str, Any]) -> str:

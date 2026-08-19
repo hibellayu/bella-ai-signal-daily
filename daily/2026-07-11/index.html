@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles.css?v=20260819a">
+  <link rel="stylesheet" href="../../styles.css?v=20260819b">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CQ9L4MXNL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -152,10 +152,15 @@
           <dd>2026/07/11 07:00</dd>
         </div>
         <div>
-          <dt>收錄上限</dt>
-          <dd>10-14 則資訊</dd>
+          <dt>本日收錄</dt>
+          <dd>新聞判讀 6 則｜應用切角 6 則</dd>
         </div>
       </dl>
+
+            <div class="impact-framework">
+        <h2>判讀框架</h2>
+        <ol><li>國際事件與產業格局</li><li>品牌端</li><li>使用者端 / 深度工作者</li><li>一般社會大眾</li></ol>
+      </div>
 
       <div class="signal-policy">
         <h2>收錄優先順序</h2>
@@ -170,6 +175,15 @@
       </nav>
     </aside>
     <section class="content">
+      <section class="strategy-brief" aria-label="今日策略判讀">
+        <p class="eyebrow">Decision Lens</p>
+        <h2>今日策略判讀</h2>
+        <ul>
+          <li>本日聚焦於 AI 內容治理、平台間競合、產業資本重組與產品策略調整。</li>
+          <li>Meta 因用戶反彈暫停 Instagram AI 影像生成功能，反映社群平台在 AI 創作與版權間的平衡壓力。</li>
+          <li>蘋果控告 OpenAI 涉及硬體機密竊取，突顯 AI 領域的技術與法律競賽進入新階段。</li>
+        </ul>
+      </section>
       <section id="major-events" class="digest-section">
         <div class="section-heading">
           <p class="section-heading__count">3 則資訊</p>
@@ -183,10 +197,18 @@
                 <div class="source-line"><span>來源：</span><a href="https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/" target="_blank" rel="noopener">TechCrunch</a><span>、</span><a href="https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes" target="_blank" rel="noopener">The Verge</a><span class="source-date"> · 2026/07/10</span></div>
                 <h3>Meta 暫停 Instagram AI 影像生成功能，回應用戶與創作者反彈</h3>
               </div>
-              <span class="score-badge">17 分</span>
+              <details class="static-score">
+                <summary>17 分</summary>
+                <div class="static-score__body">
+                  <p>每則資訊依 5 個面向評分，排序優先看產業重大性，再看數位行銷影響。</p>
+                  <dl class="score-breakdown"><div><dt>產業重大性（0-5）</dt><dd>4 分</dd></div><div><dt>數位行銷影響（0-5）</dt><dd>4 分</dd></div><div><dt>內容 / 搜尋 / 社群 / 媒體廣告影響（0-5）</dt><dd>4 分</dd></div><div><dt>工具可用性（0-5）</dt><dd>2 分</dd></div><div><dt>指定追蹤公司 / 工具相關性（0-3）</dt><dd>3 分</dd></div></dl>
+                  <p class="score-formula">4 + 4 + 4 + 2 + 3 = 17 分</p>
+                </div>
+              </details>
             </div>
             <p class="summary">Meta 宣布暫停 Instagram 上允許用戶標註公眾帳號生成 AI 影像的功能，主因來自用戶及創作者對內容授權與肖像權的強烈反彈。該功能原本允許用戶將公開內容作為 AI 生成素材，卻引發大規模關切，迫使平台調整策略。</p>
             <div class="analysis"><p>Meta 此舉反映平台在推動 AI 內容創作時，必須面對用戶隱私、創作者權益與內容授權的多重壓力。AI 工具若直接介入用戶公開內容，將改變平台的內容分發與創作規則，甚至影響用戶對平台信任與參與意願。這次暫停，顯示平台必須在創新與權益保護間取得新平衡。</p><p>對品牌與行銷團隊而言，未來在社群平台上發布內容，需更重視授權條款與二次創作風險。品牌若未主動管理內容授權，可能被 AI 工具擷取作為生成素材，影響品牌形象或引發法律爭議。內容策略必須納入 AI 內容再利用的風險評估，並與平台政策同步調整。</p></div>
+            
             <div class="tag-row"><span class="tag">Meta</span><span class="tag">Instagram</span><span class="tag">AI 內容治理</span><span class="tag">授權</span><span class="tag">社群平台</span></div>
             <div class="framework">
               <section>
@@ -209,10 +231,18 @@
                 <div class="source-line"><span>來源：</span><a href="https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/" target="_blank" rel="noopener">TechCrunch</a><span>、</span><a href="https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/" target="_blank" rel="noopener">Wired</a><span>、</span><a href="https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets" target="_blank" rel="noopener">The Verge</a><span class="source-date"> · 2026/07/10</span></div>
                 <h3>蘋果控告 OpenAI 涉及硬體機密竊取，AI 技術競爭進入法律新戰場</h3>
               </div>
-              <span class="score-badge">14 分</span>
+              <details class="static-score">
+                <summary>14 分</summary>
+                <div class="static-score__body">
+                  <p>每則資訊依 5 個面向評分，排序優先看產業重大性，再看數位行銷影響。</p>
+                  <dl class="score-breakdown"><div><dt>產業重大性（0-5）</dt><dd>4 分</dd></div><div><dt>數位行銷影響（0-5）</dt><dd>3 分</dd></div><div><dt>內容 / 搜尋 / 社群 / 媒體廣告影響（0-5）</dt><dd>2 分</dd></div><div><dt>工具可用性（0-5）</dt><dd>2 分</dd></div><div><dt>指定追蹤公司 / 工具相關性（0-3）</dt><dd>3 分</dd></div></dl>
+                  <p class="score-formula">4 + 3 + 2 + 2 + 3 = 14 分</p>
+                </div>
+              </details>
             </div>
             <p class="summary">蘋果正式對 OpenAI 提起訴訟，指控其高層與前員工涉嫌竊取硬體設計、機密簡報與供應鏈資料，強調 AI 技術發展已觸及硬體層面的激烈競爭。該案將影響 AI 與硬體產業的專利、人才流動與合作模式。</p>
             <div class="analysis"><p>此事件顯示 AI 平台競爭已從軟體、演算法延伸至硬體與供應鏈層面。OpenAI 被指控挖角蘋果員工並取得機密資料，反映頂尖 AI 公司正積極佈局自有硬體，強化生態系統整合。未來 AI 能力將更依賴硬體創新，平台之間的競合關係也將更複雜。</p><p>品牌與行銷團隊需注意，AI 工具未來可能不僅是雲端服務，而會深度整合於特定硬體。行銷策略應及早追蹤平台硬體發展，評估自家產品與服務是否需調整技術合作或內容格式，避免因平台生態變化而喪失行銷與分發優勢。</p></div>
+            
             <div class="tag-row"><span class="tag">OpenAI</span><span class="tag">Apple</span><span class="tag">AI 硬體</span><span class="tag">法律</span><span class="tag">人才流動</span></div>
             <div class="framework">
               <section>
@@ -235,10 +265,18 @@
                 <div class="source-line"><span>來源：</span><a href="https://www.inside.com.tw/article/41795-tencent-largest-shareholder-manus-meta-buyback" target="_blank" rel="noopener">INSIDE</a><span class="source-date"> · 2026/07/10</span></div>
                 <h3>騰訊洽談成 AI 新創 Manus 最大股東，中資加速佈局關鍵 AI 技術</h3>
               </div>
-              <span class="score-badge">12 分</span>
+              <details class="static-score">
+                <summary>12 分</summary>
+                <div class="static-score__body">
+                  <p>每則資訊依 5 個面向評分，排序優先看產業重大性，再看數位行銷影響。</p>
+                  <dl class="score-breakdown"><div><dt>產業重大性（0-5）</dt><dd>4 分</dd></div><div><dt>數位行銷影響（0-5）</dt><dd>2 分</dd></div><div><dt>內容 / 搜尋 / 社群 / 媒體廣告影響（0-5）</dt><dd>2 分</dd></div><div><dt>工具可用性（0-5）</dt><dd>2 分</dd></div><div><dt>指定追蹤公司 / 工具相關性（0-3）</dt><dd>2 分</dd></div></dl>
+                  <p class="score-formula">4 + 2 + 2 + 2 + 2 = 12 分</p>
+                </div>
+              </details>
             </div>
             <p class="summary">騰訊傳出將領投協助 Manus 原始股東自 Meta 回購股份，成為最大股東但維持少數股權，顯示中國資本積極掌握關鍵 AI 技術主導權，並調整與國際大廠的合作與競合關係。</p>
             <div class="analysis"><p>這次資本重組反映中國科技巨頭正積極佈局全球 AI 技術，並藉由股權調整重新掌控技術路線。Manus 從 Meta 回歸中資主導，意味著國際 AI 技術流動與平台合作模式將出現新變化，全球 AI 生態的主導權分布將更動態。</p><p>品牌與行銷團隊需重新評估 AI 技術供應來源，特別是在跨國合作、資料安全與技術授權方面。若關鍵 AI 技術掌握權轉移，品牌在不同市場的合作策略、數據流通與內容分發模式都需同步調整，避免因地緣政治或資本變化被動應對。</p></div>
+            
             <div class="tag-row"><span class="tag">騰訊</span><span class="tag">Manus</span><span class="tag">AI 資本</span><span class="tag">技術主導權</span><span class="tag">國際合作</span></div>
             <div class="framework">
               <section>
@@ -270,10 +308,18 @@
                 <div class="source-line"><span>來源：</span><a href="https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app/" target="_blank" rel="noopener">MIT Technology Review</a><span class="source-date"> · 2026/07/10</span></div>
                 <h3>Anthropic 揭露 Claude 內部運作與 OpenAI 超級應用策略</h3>
               </div>
-              <span class="score-badge">17 分</span>
+              <details class="static-score">
+                <summary>17 分</summary>
+                <div class="static-score__body">
+                  <p>每則資訊依 5 個面向評分，排序優先看產業重大性，再看數位行銷影響。</p>
+                  <dl class="score-breakdown"><div><dt>產業重大性（0-5）</dt><dd>4 分</dd></div><div><dt>數位行銷影響（0-5）</dt><dd>3 分</dd></div><div><dt>內容 / 搜尋 / 社群 / 媒體廣告影響（0-5）</dt><dd>4 分</dd></div><div><dt>工具可用性（0-5）</dt><dd>3 分</dd></div><div><dt>指定追蹤公司 / 工具相關性（0-3）</dt><dd>3 分</dd></div></dl>
+                  <p class="score-formula">4 + 3 + 4 + 3 + 3 = 17 分</p>
+                </div>
+              </details>
             </div>
             <p class="summary">Anthropic 公開 Claude 模型內部推理機制，同時揭示 OpenAI 正積極推動「超級應用」策略，意圖將 AI 深度整合於用戶日常操作。這標誌 AI 工具將從單一任務升級為多功能入口，改變用戶與品牌的互動模式。</p>
             <div class="analysis"><p>AI 平台正從單一工具向多功能整合型應用發展。Anthropic 釋出 Claude 內部運作細節，提升模型透明度；OpenAI 則積極佈局「超級應用」，將多種功能整合於一站式入口。這將改變用戶習慣，讓 AI 成為日常資訊、內容與任務管理的核心樞紐。</p><p>品牌與行銷團隊需重新設計與 AI 工具的互動策略，預期未來用戶將在 AI 應用中完成搜尋、內容消費與購買決策。若品牌資訊未能在 AI 超級應用中被正確抓取與呈現，將直接影響曝光與轉換，需提前調整內容結構與資料標註方式。</p></div>
+            
             <div class="tag-row"><span class="tag">Anthropic</span><span class="tag">OpenAI</span><span class="tag">Claude</span><span class="tag">超級應用</span><span class="tag">AI 工具</span></div>
             <div class="framework">
               <section>
@@ -296,10 +342,18 @@
                 <div class="source-line"><span>來源：</span><a href="https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters" target="_blank" rel="noopener">The Verge</a><span class="source-date"> · 2026/07/10</span></div>
                 <h3>Instagram 領導層表態不預設過濾 AI 內容，將選擇權交還用戶</h3>
               </div>
-              <span class="score-badge">13 分</span>
+              <details class="static-score">
+                <summary>13 分</summary>
+                <div class="static-score__body">
+                  <p>每則資訊依 5 個面向評分，排序優先看產業重大性，再看數位行銷影響。</p>
+                  <dl class="score-breakdown"><div><dt>產業重大性（0-5）</dt><dd>3 分</dd></div><div><dt>數位行銷影響（0-5）</dt><dd>3 分</dd></div><div><dt>內容 / 搜尋 / 社群 / 媒體廣告影響（0-5）</dt><dd>3 分</dd></div><div><dt>工具可用性（0-5）</dt><dd>2 分</dd></div><div><dt>指定追蹤公司 / 工具相關性（0-3）</dt><dd>2 分</dd></div></dl>
+                  <p class="score-formula">3 + 3 + 3 + 2 + 2 = 13 分</p>
+                </div>
+              </details>
             </div>
             <p class="summary">Instagram 負責人 Adam Mosseri 表示，平台不會主動過濾 AI 生成內容，而是將選擇權交給用戶。這代表 AI 內容將持續出現在用戶動態中，品牌需重新思考內容曝光、信任與互動策略。</p>
             <div class="analysis"><p>Instagram 明確表態不會預設過濾 AI 內容，顯示平台將 AI 內容視為用戶體驗的一部分。這改變了平台內容分發規則，用戶需自行決定是否接受 AI 內容，品牌與創作者則需適應 AI 內容與原生內容並存的新局面。</p><p>對行銷團隊而言，AI 內容將與品牌原創內容同台競爭，消費者辨識與信任機制將變得更複雜。品牌必須強化內容標註、透明度與差異化策略，否則在 AI 內容充斥的平台環境下，原創價值與品牌聲譽將面臨新挑戰。</p></div>
+            
             <div class="tag-row"><span class="tag">Instagram</span><span class="tag">AI 內容</span><span class="tag">內容分發</span><span class="tag">用戶選擇</span><span class="tag">品牌信任</span></div>
             <div class="framework">
               <section>
@@ -331,10 +385,18 @@
                 <div class="source-line"><span>來源：</span><a href="https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/" target="_blank" rel="noopener">TechCrunch</a><span>、</span><a href="https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters" target="_blank" rel="noopener">The Verge</a><span class="source-date"> · 2026/07/10</span></div>
                 <h3>AI 內容治理與平台規則快速變動，品牌需同步調整授權與內容結構</h3>
               </div>
-              <span class="score-badge">17 分</span>
+              <details class="static-score">
+                <summary>17 分</summary>
+                <div class="static-score__body">
+                  <p>每則資訊依 5 個面向評分，排序優先看產業重大性，再看數位行銷影響。</p>
+                  <dl class="score-breakdown"><div><dt>產業重大性（0-5）</dt><dd>4 分</dd></div><div><dt>數位行銷影響（0-5）</dt><dd>4 分</dd></div><div><dt>內容 / 搜尋 / 社群 / 媒體廣告影響（0-5）</dt><dd>4 分</dd></div><div><dt>工具可用性（0-5）</dt><dd>2 分</dd></div><div><dt>指定追蹤公司 / 工具相關性（0-3）</dt><dd>3 分</dd></div></dl>
+                  <p class="score-formula">4 + 4 + 4 + 2 + 3 = 17 分</p>
+                </div>
+              </details>
             </div>
             <p class="summary">近期多起事件顯示，AI 內容的授權、分發與辨識規則正快速變動。Meta 因反彈暫停 AI 影像功能，Instagram 不預設過濾 AI 內容，平台與用戶間的權利分配與內容治理模式正重塑。品牌需同步調整授權聲明、內容標註與資料結構，才能在新規則下維持曝光與信任。</p>
             <div class="analysis"><p>AI 內容治理已成為平台競爭與用戶信任的核心議題。平台在推動 AI 創作工具時，需兼顧創作者權益與內容分發規則。品牌若未及時調整授權與內容策略，將難以在新生態中維持主動權。</p><p>行銷團隊應建立動態內容管理機制，定期檢查授權條款與內容標註，並主動追蹤平台政策變化。否則品牌內容易被 AI 工具誤用或失去辨識度，影響行銷成效與消費者信任。</p></div>
+            
             <div class="tag-row"><span class="tag">AI 內容治理</span><span class="tag">平台政策</span><span class="tag">授權</span><span class="tag">內容標註</span><span class="tag">品牌信任</span></div>
             <div class="framework">
               <section>
@@ -387,7 +449,7 @@
   </main>
   <footer class="site-footer">
     <p>本站內容為 AI 趨勢整理、評論與行銷應用解讀；新聞來源與原文著作權屬各原媒體與作者所有。若需完整內容，請閱讀原文。</p>
-    <p>© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.14.0｜版本日期 2026/08/19</p>
+    <p>© 2026 Bella Yu. All rights reserved. Codex 協作開發｜版本 v0.15.0｜版本日期 2026/08/19</p>
   </footer>
 </body>
 </html>

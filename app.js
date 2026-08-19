@@ -14,6 +14,8 @@ const els = {
   reportDate: document.querySelector("#reportDate"),
   coverageDate: document.querySelector("#coverageDate"),
   generatedAt: document.querySelector("#generatedAt"),
+  collectionCount: document.querySelector("#collectionCount"),
+  impactFrameworkList: document.querySelector("#impactFrameworkList"),
   priorityList: document.querySelector("#priorityList"),
   status: document.querySelector("#statusMessage"),
   content: document.querySelector("#digestContent"),
@@ -33,7 +35,8 @@ async function init() {
     if (!response.ok) throw new Error("manifest not found");
     state.manifest = await response.json();
     buildDatePicker();
-    const initialDate = state.manifest.latest || state.manifest.digests?.[0]?.reportDate;
+    const publishableEntries = getPublishableDigestEntries();
+    const initialDate = publishableEntries.find((entry) => entry.reportDate === state.manifest.latest)?.reportDate || publishableEntries[0]?.reportDate;
     await selectDate(initialDate);
   } catch (error) {
     showStatus("資料讀取失敗。請確認 data/digests/manifest.json 是否存在，或使用本機伺服器開啟網站。");
@@ -146,10 +149,76 @@ function renderDigest(digest) {
   els.reportDate.textContent = formatDisplayDate(digest.reportDate);
   els.coverageDate.textContent = formatDisplayDate(digest.coverageDate);
   els.generatedAt.textContent = formatGeneratedAt(digest.generatedAt);
+  if (els.collectionCount) {
+    els.collectionCount.textContent = collectionCountText(digest);
+  }
+  renderImpactFramework(digest.scoringPolicy?.impactFramework || []);
   renderPriority(digest.scoringPolicy?.priority || []);
 
   const sections = digest.sections || [];
-  els.content.replaceChildren(...sections.map(renderSection));
+  els.content.replaceChildren(renderStrategyBrief(digest), ...sections.map(renderSection));
+}
+
+function renderStrategyBrief(digest) {
+  const takeaways = strategyTakeaways(digest);
+  if (!takeaways.length) return document.createDocumentFragment();
+
+  const section = document.createElement("section");
+  section.className = "strategy-brief";
+  section.setAttribute("aria-label", "今日策略判讀");
+
+  const eyebrow = document.createElement("p");
+  eyebrow.className = "eyebrow";
+  eyebrow.textContent = "Decision Lens";
+
+  const title = document.createElement("h2");
+  title.textContent = "今日策略判讀";
+
+  const list = document.createElement("ul");
+  list.replaceChildren(...takeaways.map((item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    return li;
+  }));
+
+  section.replaceChildren(eyebrow, title, list);
+  return section;
+}
+
+function strategyTakeaways(digest) {
+  if (Array.isArray(digest.strategyTakeaways) && digest.strategyTakeaways.length) {
+    return digest.strategyTakeaways.map(String).filter(Boolean).slice(0, 4);
+  }
+  const summary = digest.summary || "";
+  return summary
+    .replaceAll("；", "。")
+    .replaceAll("，並", "。並")
+    .split("。")
+    .map((item) => item.trim())
+    .filter(Boolean)
+    .slice(0, 3)
+    .map((item) => `${item}。`);
+}
+
+function collectionCountText(digest) {
+  const sections = digest.sections || [];
+  const newsCount = sections
+    .filter((section) => section.id !== "applications")
+    .reduce((sum, section) => sum + (section.items?.length || 0), 0);
+  const applicationCount = sections
+    .filter((section) => section.id === "applications")
+    .reduce((sum, section) => sum + (section.items?.length || 0), 0);
+  return `新聞判讀 ${newsCount} 則｜應用切角 ${applicationCount} 則`;
+}
+
+function renderImpactFramework(framework) {
+  if (!els.impactFrameworkList) return;
+  const items = framework.length ? framework : ["國際事件與產業格局", "品牌端", "使用者端 / 深度工作者", "一般社會大眾"];
+  els.impactFrameworkList.replaceChildren(...items.map((item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    return li;
+  }));
 }
 
 function renderPriority(priorityItems) {
@@ -194,6 +263,7 @@ function renderItem(item) {
   renderScoreBadge(node.querySelector(".score-badge"), item);
   node.querySelector(".summary").textContent = item.summary;
   renderParagraphs(node.querySelector(".analysis"), item.analysis || []);
+  renderImpactAngles(node.querySelector(".analysis"), item);
   node.querySelector(".what").textContent = item.what;
   node.querySelector(".so-what").textContent = item.soWhat;
   node.querySelector(".now-what").textContent = item.nowWhat;
@@ -207,6 +277,22 @@ function renderItem(item) {
   }));
 
   return node;
+}
+
+function renderImpactAngles(anchor, item) {
+  if (!Array.isArray(item.impactAngles) || !item.impactAngles.length || !anchor) return;
+  const row = document.createElement("div");
+  row.className = "impact-angle-row";
+  const label = document.createElement("span");
+  label.textContent = "判讀角度";
+  const pills = item.impactAngles.slice(0, 4).map((angle) => {
+    const pill = document.createElement("span");
+    pill.className = "angle-pill";
+    pill.textContent = angle;
+    return pill;
+  });
+  row.replaceChildren(label, ...pills);
+  anchor.after(row);
 }
 
 function renderScoreBadge(container, item) {
@@ -390,6 +476,10 @@ function renderEmpty(reportDate) {
   els.reportDate.textContent = formatDisplayDate(reportDate);
   els.coverageDate.textContent = "--";
   els.generatedAt.textContent = "--";
+  if (els.collectionCount) {
+    els.collectionCount.textContent = "--";
+  }
+  renderImpactFramework([]);
   els.priorityList.replaceChildren();
   els.content.replaceChildren();
   showStatus("這天還沒有 AI 日報。");
@@ -405,10 +495,14 @@ function hideStatus() {
 }
 
 function getDigestDates() {
-  return (state.manifest?.digests || [])
+  return getPublishableDigestEntries()
     .map((digest) => parseDate(digest.reportDate))
     .filter(Boolean)
     .sort((a, b) => b - a);
+}
+
+function getPublishableDigestEntries() {
+  return (state.manifest?.digests || []).filter((digest) => !digest.isDemo && !digest.noindex);
 }
 
 function unique(values) {
