@@ -1,0 +1,551 @@
+{
+  "reportDate": "2026-08-22",
+  "coverageDate": "2026-08-21",
+  "generatedAt": "2026-08-22T06:46:35+08:00",
+  "headline": "AI 代理協作、搜尋入口透明化與多模態影音工具全面重塑行銷與內容生態",
+  "summary": "AI 代理協作進入主流工作流，搜尋與內容分發規則加速透明化，多模態影音工具推動短影音行銷流程革新。品牌需強化內容信任與引用，行銷團隊則面臨跨平台協作、數據整合與創意產製流程重組的挑戰。深度工作者與一般大眾的AI應用習慣同步升級，數位行銷與內容策略必須回應多入口、多模式與即時互動的新常態。",
+  "strategyTakeaways": [
+    "AI 代理與協作平台成為工作流核心，品牌需重新設計資訊流與接觸點，確保產品、FAQ與信任證據能被AI代理正確引用。",
+    "搜尋與內容分發規則透明化，用戶掌控權提升，品牌內容策略需強化原創性、可驗證性與來源標註，減少被AI過濾與誤解風險。",
+    "多模態影音創作工具進入短影音產製主流程，行銷團隊需建立多版本腳本、素材測試與跨平台分發的標準作業，提升內容適應性與實驗速度。",
+    "數位行銷與CRM工具整合AI搜尋數據與引用監測，推動內容績效與品牌能見度管理進入更精細的自動化與歸因分析階段。"
+  ],
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek",
+    "Qwen",
+    "Alibaba",
+    "Tencent",
+    "ByteDance",
+    "Seedance",
+    "Kling",
+    "Runway",
+    "Pika",
+    "Veo",
+    "Dreamina",
+    "CapCut",
+    "Doubao",
+    "Zhipu",
+    "MiniMax",
+    "Xiaohongshu"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾",
+      "AI 影音 / 創意工具"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "產業格局、平台規則、模型供應、資安治理與大眾使用入口的重大變化，優先聚焦能改變行銷決策與內容分發生態的事件。",
+      "items": [
+        {
+          "title": "Slack Code上線，實現人類與多家AI代理在同一頻道協作編程",
+          "summary": "Slack Code正式上線，支援Anthropic Claude Code、GitHub Copilot、Cognition Devin等AI代理，讓人類與AI能在同一頻道協作編程，推動跨人機協作成為日常工作流。",
+          "analysis": [
+            "Slack Code的推出標誌著AI代理與人類正式進入平行協作階段，平台不再只是溝通工具，更成為多代理協作的核心工作空間。這種設計讓AI能主動參與討論、程式審查與任務分工，提升團隊決策速度與知識流動效率，並帶動協作平台競爭格局轉向『人機共創』。",
+            "對品牌與行銷團隊而言，這將改變內部協作與外部合作的資訊流設計。行銷人需重新思考如何讓AI代理正確理解品牌規範、產品資料與內容標準，並在協作過程中即時修正錯誤或補充資訊，否則AI產生的內容或建議可能偏離品牌主張，影響最終產出品質。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-08-21",
+              "url": "https://www.inside.com.tw/article/42146-slack-code-ai-agents-multiplayer-coding"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 5,
+            "trackedEntityRelevance": 3,
+            "total": 19
+          },
+          "tags": [
+            "AI代理",
+            "協作平台",
+            "工作流",
+            "Slack",
+            "程式協作"
+          ],
+          "what": "Slack Code讓AI代理與人類在同一頻道協作編程，從單一工具輔助轉向多代理共創，改變了人機協作的深度與範圍。",
+          "soWhat": "行銷團隊與品牌若未能將AI代理納入工作規範，將在知識傳遞、內容審核與決策速度上落後。AI代理參與協作後，品牌資訊、產品細節與內容標準必須能被AI快速調用與理解，否則將出現溝通落差與誤用風險，影響專案效率與品牌一致性。",
+          "nowWhat": "選定1個跨部門專案，邀請2名團隊成員與至少1個AI代理（如Copilot或Claude）在Slack Code頻道協作，針對1個任務（如腳本撰寫或資料整理）設定明確標準，並記錄AI與人類互動過程，產出1份協作流程優化建議。"
+        },
+        {
+          "title": "Google 2026年第三次垃圾郵件更新與AI搜尋模式強化",
+          "summary": "Google釋出2026年第三次Spam Update，並宣布Gemini 3.7支援AI Mode搜尋，進一步提升搜尋結果品質與AI生成內容的引用規則，影響內容分發與品牌曝光生態。",
+          "analysis": [
+            "Google持續強化搜尋品質與內容過濾標準，AI Mode由Gemini 3.7驅動，代表AI生成摘要與引用邏輯將更嚴格。這不僅影響SEO策略，也讓內容來源、原創性與信任標註成為AI引用的核心依據，平台競爭從關鍵字優化轉向內容真實性與可驗證性。",
+            "品牌與行銷人需正視AI搜尋入口帶來的內容過濾與曝光門檻。若內容無法通過AI審查，將被排除在推薦結果之外，直接影響流量與品牌能見度。內容團隊需建立AI可讀的信任證據、明確來源與結構化資訊，否則在AI時代將失去搜尋紅利。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "AI 影音 / 創意工具"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-08-21",
+              "url": "https://www.seroundtable.com/video-08-21-2026-41915.html"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 19
+          },
+          "tags": [
+            "Google",
+            "AI搜尋",
+            "Spam Update",
+            "內容分發",
+            "Gemini"
+          ],
+          "what": "Google強化垃圾內容過濾與AI Mode搜尋，AI生成摘要與引用規則升級，內容品質與來源透明度成為搜尋曝光新門檻。",
+          "soWhat": "內容無法被AI正確引用或被判為低信任，將直接失去搜尋曝光與流量。品牌、媒體與內容行銷團隊若不調整內容結構與信任標註，將在AI搜尋時代被邊緣化，錯失被AI推薦與引用的機會，影響品牌聲量與轉換。",
+          "nowWhat": "挑選3篇流量最高的內容頁，針對每篇補上明確作者、來源、更新日期與第三方引用，並用AI工具測試是否能正確抓取與摘要，產出1份AI可讀性報告。"
+        },
+        {
+          "title": "Anthropic調整資料保留政策，允許企業將Claude資料存放自有雲端",
+          "summary": "Anthropic宣布調整Claude資料保留政策，雖維持30天保留期，但允許企業客戶將資料存放於自有雲端環境，回應資料主權與合規需求，與OpenAI的零資料保留政策形成差異化。",
+          "analysis": [
+            "AI服務供應商針對企業客戶的資料主權與合規需求持續調整政策。Anthropic允許企業將Claude資料存放自有雲端，降低資料外洩與合規風險，強化企業採用AI服務的信心，也與OpenAI的ZDR政策形成競爭差異，推動市場朝多元資料治理模式發展。",
+            "行銷團隊與品牌在導入AI工具時，需重新評估資料流向、儲存地點與存取權限，確保敏感資訊不會因AI服務外包而違反法規或客戶信任。未來採購AI服務時，資料主權與合規能力將成為選型關鍵，影響企業AI佈局與數據治理策略。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-08-21",
+              "url": "https://www.inside.com.tw/article/42148-anthropic-enterprise-data-retention-own-cloud-2026"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 3,
+            "total": 14
+          },
+          "tags": [
+            "Anthropic",
+            "Claude",
+            "資料主權",
+            "AI合規",
+            "企業AI"
+          ],
+          "what": "Anthropic開放企業將Claude資料存放自有雲端，企業可自主掌控資料流向，減少合規與外洩風險，與OpenAI形成差異化競爭。",
+          "soWhat": "未來品牌與行銷團隊若不重視資料主權與合規，將面臨法規風險與客戶信任危機。AI服務選型將不再只看模型效能，資料儲存彈性與合規能力將直接影響企業AI部署規模與速度，尤其在金融、醫療、零售等高敏感產業。",
+          "nowWhat": "針對現有AI工具，盤點3類敏感資料（如用戶名單、交易紀錄、內部簡報），確認其儲存位置與存取權限，並向AI服務商提出自有雲端儲存需求，產出1份資料流向與合規風險清單。"
+        },
+        {
+          "title": "中國AI晶片程式開發瓶頸，企業極限壓榨輝達算力",
+          "summary": "中國AI產業在大規模部署階段遭遇本土AI晶片開發瓶頸，企業被迫極限壓榨稀缺NVIDIA算力，影響模型訓練與應用推廣速度，對全球供應鏈與AI平台競爭產生連鎖效應。",
+          "analysis": [
+            "中國AI晶片開發進展緩慢，導致企業在模型訓練與部署階段高度依賴NVIDIA等國際供應商。算力瓶頸不僅限制本地AI應用規模，也讓中國AI平台在全球競爭中處於被動，推升算力成本並延後創新產品落地時程，產業格局出現結構性風險。",
+            "品牌與行銷團隊若依賴中國AI平台，需警覺算力短缺可能帶來的API不穩、模型更新延遲與服務降級。國際品牌則可趁勢強化在雲端AI服務、算力租賃與跨國協作的競爭優勢。供應鏈管理、數據流通與平台選型策略需同步調整，以應對算力波動風險。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局"
+          ],
+          "sources": [
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-08-21",
+              "url": "https://technews.tw/2026/08/21/china-ai-chip-programming-bottlenecks/"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 1,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 12
+          },
+          "tags": [
+            "中國AI",
+            "NVIDIA",
+            "算力",
+            "供應鏈",
+            "模型部署"
+          ],
+          "what": "中國AI產業因本土晶片開發瓶頸，企業需極限壓榨NVIDIA算力，導致模型訓練與應用推廣受限，影響全球AI供應鏈與平台穩定性。",
+          "soWhat": "依賴中國AI平台的品牌與行銷團隊將面臨API不穩、模型延遲與服務降級風險。國際品牌可藉此鞏固雲端AI服務優勢，但供應鏈管理與平台選型需同步調整，以防止算力波動影響產品上線與行銷活動時程，否則將失去市場敏捷性。",
+          "nowWhat": "列出2個主要AI平台供應商，針對各自的算力來源、API穩定性與備援方案進行評估，並建立1份算力風險對應計畫，作為未來行銷活動與產品部署的依據。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "聚焦能進入實際工作流、日常操作或改變內容產製流程的AI工具與平台更新，特別關注AI影音、創意工具與MarTech解決方案。",
+      "items": [
+        {
+          "title": "Seedance 2.5推進長秒數、多參考素材與精準剪輯，重塑短影音創作流程",
+          "summary": "Seedance 2.5新增30秒生成、多輪延伸、跨圖片/影片/音訊參考與時間戳精準剪輯，讓短影音腳本、素材版本與社群內容測試流程全面升級，進入主流行銷工作流。",
+          "analysis": [
+            "Seedance 2.5強化多模態參考與長秒數生成，讓創作者能靈活調用不同素材，並在單一工具內完成腳本發想、分鏡設計與精準剪輯。這種一站式設計大幅降低內容產製門檻，推動短影音從單一爆款導向多版本、多輪測試與即時優化，改變品牌與社群內容的產製節奏。",
+            "行銷團隊可藉此快速產出多組腳本、版本與素材，並針對不同受眾進行A/B測試。若未導入這類工具，將在內容多樣性、社群互動與廣告素材迭代速度上落後，錯失短影音流量紅利與社群實驗機會。"
+          ],
+          "impactAngles": [
+            "AI 影音 / 創意工具",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "ByteDance Seed",
+              "publishedDate": "2026-07-31",
+              "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 5,
+            "trackedEntityRelevance": 3,
+            "total": 23
+          },
+          "tags": [
+            "Seedance",
+            "AI影音",
+            "短影音",
+            "創意工具",
+            "內容產製"
+          ],
+          "what": "Seedance 2.5讓短影音產製流程從發想、腳本到剪輯全面自動化與多版本化，降低內容團隊進入門檻，提升素材測試與社群互動效率。",
+          "soWhat": "品牌、內容與社群團隊若未導入多模態影音工具，將在素材多樣性、腳本創新與廣告版本測試上落後，錯失短影音流量與社群互動紅利。競爭對手若率先建立多版本內容產製流程，將能快速適應平台演算法與受眾偏好變化，提升品牌曝光與轉換。",
+          "nowWhat": "選定1個主力產品，利用Seedance 2.5產出3個不同腳本與版本，針對2個社群平台進行A/B測試，記錄互動數據並優化腳本，產出1份短影音內容優化報告。"
+        },
+        {
+          "title": "HubSpot推出Agent Hub，統一管理AI代理並增強用戶控制",
+          "summary": "HubSpot 7月更新推出Agent Hub，讓用戶能在單一介面統一管理所有AI代理，並自訂顯示內容與權限，推動MarTech工具與AI協作進一步整合。",
+          "analysis": [
+            "Agent Hub將AI代理納入MarTech生態，讓行銷人員能在單一平台管理多個AI代理的任務、權限與數據流。這不僅提升協作效率，也讓行銷自動化、內容產製與CRM串接更具彈性，推動AI代理從輔助角色轉向主動參與決策與執行。",
+            "品牌與行銷團隊若能善用Agent Hub，將能更精細地分配AI代理任務、監控內容產出與數據流向。若未建立統一管理機制，AI代理可能各自為政，造成數據孤島、內容不一致與決策延遲，影響行銷活動成效與品牌一致性。"
+          ],
+          "impactAngles": [
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-08-21",
+              "url": "https://martech.org/hubspot-july-2026-updates-agent-hub-arrives-and-more-ways-to-control-what-you-see/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 19
+          },
+          "tags": [
+            "HubSpot",
+            "Agent Hub",
+            "AI代理",
+            "MarTech",
+            "協作管理"
+          ],
+          "what": "HubSpot Agent Hub讓用戶能在單一介面管理多個AI代理，統一控制任務分配、內容顯示與權限，推動AI協作與MarTech深度整合。",
+          "soWhat": "行銷團隊若未建立AI代理統一管理機制，將出現數據孤島與內容不一致風險，影響行銷活動成效與跨部門協作效率。競爭對手若率先整合AI代理管理，將能提升自動化、內容產製與數據歸因能力，搶占MarTech升級紅利。",
+          "nowWhat": "在HubSpot Agent Hub中設定2個AI代理，分別負責內容產製與數據分析，針對1場行銷活動分配明確任務，檢查內容一致性與數據流向，產出1份AI代理協作成效報告。"
+        },
+        {
+          "title": "Mac版ChatGPT新增Apple Messages外掛，歐盟用戶獲電腦使用紀錄",
+          "summary": "Mac版ChatGPT本周新增Apple Messages外掛，支援用戶直接在訊息中調用AI，並針對歐盟用戶開放電腦使用紀錄，強化AI與日常溝通、工作流的整合深度。",
+          "analysis": [
+            "ChatGPT進一步打通Apple Messages與電腦使用紀錄，讓AI能直接參與日常訊息溝通與工作流程。這不僅提升AI的即時性與情境感知，也讓AI從單一應用轉向多入口協作，推動AI助理成為個人與團隊日常操作的核心節點。",
+            "品牌與行銷團隊需關注AI進入多入口協作後，用戶資料流向、隱私權限與內容調用的透明度。若未能在AI與訊息、工作流整合時建立明確規範，將出現資料外洩、內容誤用與用戶信任下滑等風險，影響品牌形象與法規合規。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-08-21",
+              "url": "https://www.ithome.com.tw/news/178320"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 18
+          },
+          "tags": [
+            "ChatGPT",
+            "Apple Messages",
+            "工作流",
+            "AI助理",
+            "隱私"
+          ],
+          "what": "Mac版ChatGPT新增Apple Messages外掛與歐盟地區電腦使用紀錄，AI助理深度融入日常訊息與工作流，提升多入口協作能力。",
+          "soWhat": "品牌與行銷團隊若未針對AI多入口協作設計資料流向與隱私規範，將面臨內容誤用、資料外洩與信任下滑風險。競爭品牌若率先建立AI協作規範，將能提升用戶體驗與資料合規，搶占AI助理應用紅利。",
+          "nowWhat": "選定1個常用訊息場景（如客服回覆或內部協作），在Mac版ChatGPT中安裝Apple Messages外掛，設定2個AI自動回覆範本，並檢查資料調用與隱私權限，產出1份AI多入口協作規範建議。"
+        },
+        {
+          "title": "Google Ads與AI Max新增實驗與規劃功能，強化A/B測試與績效預測",
+          "summary": "Google Ads與AI Max推出新A/B測試、品牌與地點參數、Performance Planner預測，讓行銷團隊能更精細規劃、實驗與優化廣告投放策略。",
+          "analysis": [
+            "Google Ads與AI Max持續強化廣告實驗與規劃功能，讓行銷人能針對不同品牌、地點與受眾快速進行A/B測試與預算預測。這種自動化與預測能力提升廣告優化效率，也讓數據驅動決策成為主流，推動廣告平台競爭從流量導向轉向精細化歸因與實驗速度。",
+            "品牌與行銷團隊若能善用這類工具，將能快速驗證創意、素材與投放策略，提升廣告轉換與ROI。若未導入實驗與預測功能，將在廣告優化、受眾細分與預算分配上落後，錯失流量紅利與競爭優勢。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-08-21",
+              "url": "https://www.seroundtable.com/google-ads-ai-max-experimentation-planning-41910.html"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "Google Ads",
+            "AI Max",
+            "A/B測試",
+            "預算預測",
+            "廣告優化"
+          ],
+          "what": "Google Ads與AI Max新功能讓行銷人能針對品牌、地點與受眾進行A/B測試與績效預測，推動廣告投放從經驗導向轉向數據驅動。",
+          "soWhat": "品牌與行銷團隊若未導入A/B測試與預測工具，將在廣告優化、素材測試與預算分配上落後，影響轉換率與ROI。競爭品牌若率先實驗並優化廣告策略，將能快速搶占受眾心智與流量紅利。",
+          "nowWhat": "針對1個主力廣告活動，設定2組A/B測試素材，利用AI Max預測3種預算配置下的績效差異，產出1份廣告優化與預算分配建議。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "跨新聞歸納AI代理、搜尋分發、影音內容產製等領域的共同變化，強調行銷決策、工作流與內容策略的中期重組方向。",
+      "items": [
+        {
+          "title": "AI代理協作與多入口整合成主流趨勢，重塑工作流與品牌接觸點",
+          "summary": "AI代理不再只在後台執行任務，而是開始進入產品UI、協作平台與日常溝通工具，推動人機協作與多入口整合。品牌、行銷團隊與深度工作者需同步調整資訊流、內容標準與協作規範，否則將在AI主導的決策與內容分發生態中失去主動權。",
+          "analysis": [
+            "AI代理正從單一輔助工具轉型為跨平台、多入口的協作核心，進入Slack、HubSpot、ChatGPT等主流工作流與產品UI。這種變化讓AI能直接參與任務分配、內容產製與決策過程，推動人機協作模式從工具導向升級為流程導向，重塑品牌與用戶的接觸點與資訊流設計。",
+            "若品牌與行銷團隊未能調整資訊流、內容標準與協作規範，將在AI主導的決策與分發生態中被動應對。深度工作者需學會與AI協作、監控AI產出品質，品牌則需建立AI可讀的信任證據與內容標註，否則將被AI代理在第一輪篩選時排除，失去曝光與轉換機會。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-08-21",
+              "url": "https://www.inside.com.tw/article/42146-slack-code-ai-agents-multiplayer-coding"
+            },
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-08-21",
+              "url": "https://martech.org/hubspot-july-2026-updates-agent-hub-arrives-and-more-ways-to-control-what-you-see/"
+            },
+            {
+              "name": "iThome",
+              "publishedDate": "2026-08-21",
+              "url": "https://www.ithome.com.tw/news/178320"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 20
+          },
+          "tags": [
+            "AI代理",
+            "多入口協作",
+            "資訊流",
+            "品牌接觸點",
+            "工作流重組"
+          ],
+          "what": "AI代理從工具輔助升級為多入口協作核心，進入主流平台與產品UI，改變人機協作深度與品牌資訊流設計。",
+          "soWhat": "品牌、行銷團隊與深度工作者若未調整資訊流與協作規範，將在AI主導的內容分發與決策生態中被動應對，失去曝光、轉換與決策主動權。競爭對手若率先建立AI協作規範，將能提升產出品質與流程效率，搶占AI協作紅利。",
+          "nowWhat": "選定1個跨部門專案，建立AI代理參與流程與內容標註規範，邀請2名團隊成員與1個AI代理協作，記錄協作瓶頸並提出3項優化建議，產出1份AI協作規範草案。"
+        },
+        {
+          "title": "搜尋入口透明化與用戶掌控權提升，品牌內容策略需強化信任與引用",
+          "summary": "Google等平台強化搜尋分發規則透明度，讓用戶可自訂偏好來源與內容推薦，AI搜尋引用與內容過濾標準同步升級。品牌需強化內容原創性、信任標註與來源揭露，否則將被AI過濾或引用不足，流量與曝光受限。",
+          "analysis": [
+            "搜尋與內容分發平台逐步釋出偏好來源按鍵與AI引用規則，讓用戶能自訂內容推薦來源，提升透明度與信任感。AI搜尋模式升級後，內容原創性、結構化標註與第三方引用成為曝光與被推薦的核心門檻，平台競爭從演算法導向轉向信任與可驗證性導向。",
+            "品牌與內容團隊若未強化內容原創性、來源標註與信任證據，將在AI搜尋與內容分發時被過濾或引用不足，流量與曝光下降。競爭品牌若率先補齊信任標註與結構化資訊，將能提升AI引用率與搜尋排名，搶占流量與轉換紅利。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-08-21",
+              "url": "https://technews.tw/2026/08/21/google-launches-preferred-sources-button-for-publishers-to-embed-on-their-sites/"
+            },
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-08-21",
+              "url": "https://www.seroundtable.com/video-08-21-2026-41915.html"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 20
+          },
+          "tags": [
+            "搜尋入口",
+            "內容信任",
+            "來源標註",
+            "AI引用",
+            "品牌內容"
+          ],
+          "what": "搜尋平台釋出偏好來源按鍵與AI引用規則，用戶可自訂內容來源，內容原創性與信任標註成為AI推薦新門檻。",
+          "soWhat": "品牌與內容團隊若未補齊信任標註與結構化資訊，將在AI搜尋與分發時被過濾或引用不足，流量與曝光下降。競爭品牌若率先強化內容信任與來源透明度，將能提升AI引用率與搜尋排名，搶占流量紅利。",
+          "nowWhat": "挑選2個主力內容頁，補上明確來源、作者與第三方引用，並用AI工具測試引用率，產出1份內容信任標註優化建議。完成後輸出 1 份素材檢查表，列出受眾、訊息、版位與成效指標各 1 欄，先找出 1 個最需要重測的廣告變因，作為下一輪素材判斷依據。"
+        },
+        {
+          "title": "多模態影音創作工具推動短影音行銷流程全面革新",
+          "summary": "Seedance等多模態影音工具進入主流行銷工作流，讓短影音腳本、素材版本與社群內容測試流程自動化、標準化。行銷團隊需同步建立多版本產製、素材測試與跨平台分發標準，否則將在短影音競爭中落後。",
+          "analysis": [
+            "多模態影音工具如Seedance 2.5推動短影音產製流程從單一爆款導向多版本、多素材與多輪測試，讓內容團隊能快速產出、測試並優化腳本與素材。這種流程自動化與標準化降低產製門檻，也讓社群互動與廣告素材測試更具彈性與實驗速度。",
+            "品牌與行銷團隊若未導入多模態影音工具並建立多版本內容產製標準，將在素材多樣性、腳本創新與社群互動上落後，錯失短影音流量與平台紅利。競爭品牌若率先建立標準流程，將能快速適應平台演算法與受眾偏好變化，提升曝光與轉換。"
+          ],
+          "impactAngles": [
+            "AI 影音 / 創意工具",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "ByteDance Seed",
+              "publishedDate": "2026-07-31",
+              "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 5,
+            "trackedEntityRelevance": 3,
+            "total": 23
+          },
+          "tags": [
+            "多模態影音",
+            "短影音",
+            "內容產製",
+            "素材測試",
+            "社群互動"
+          ],
+          "what": "多模態影音工具推動短影音產製流程自動化、標準化，讓內容團隊能快速產出多版本腳本與素材，提升社群互動與廣告素材測試效率。",
+          "soWhat": "品牌與行銷團隊若未導入多模態影音工具並建立多版本內容產製標準，將在短影音競爭中落後，錯失流量與社群互動紅利。競爭品牌若率先建立標準流程，將能快速適應平台演算法與受眾變化，提升曝光與轉換。",
+          "nowWhat": "針對1個主力行銷活動，利用多模態影音工具產出2組腳本與3組素材，針對2個社群平台進行A/B測試，記錄互動數據並優化內容，產出1份短影音產製流程優化報告。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "從品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程六大面向，統整今日AI趨勢對行銷決策與內容產製的具體影響與應用起點。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI代理與多入口協作成為主流，品牌需將AI視為新的信任與資訊流入口，主動設計可被AI正確引用的產品資料、FAQ、評測與第三方證據，並建立AI可讀的信任標註，提升在AI搜尋與內容分發中的曝光與推薦機率。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "搜尋與內容分發規則透明化，數位行銷團隊需同步強化內容原創性、結構化標註與來源揭露，並利用A/B測試與預測工具，針對不同受眾快速調整素材與預算配置，提升投放效率與轉換率。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "多模態影音工具進入內容產製主流程，內容團隊可自動產出多版本腳本與素材，並針對不同平台與受眾進行A/B測試與優化，降低產製門檻、提升內容多樣性與社群互動效率。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "短影音與多模態內容成為社群互動與內容測試主力，社群團隊需建立多版本內容產製與素材測試標準，並利用AI工具即時調整腳本與素材，提升互動率與內容適應性。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "廣告投放從經驗導向轉向數據驅動，行銷團隊應善用A/B測試、預算預測與多平台分發工具，針對品牌、地點與受眾快速優化素材與預算，提升廣告轉換與ROI。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "AI代理、協作平台與多模態工具推動團隊流程重組，行銷與內容團隊需建立AI協作規範、內容標註與資料流向管理，確保AI產出品質、協作效率與資料合規，並持續優化跨部門與AI協作流程。"
+        }
+      ]
+    }
+  ]
+}
