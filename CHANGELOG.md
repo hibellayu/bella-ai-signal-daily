@@ -24,13 +24,16 @@ GitHub Actions 執行時出現 Node.js 20 deprecated 警告。雖然目前不影
 
 ### 驗證
 
-- 待驗證：`python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
-- 待驗證：`python3 scripts/static_site.py`
-- 待驗證：手動觸發 Daily AI Signal workflow，確認新版 action 可完成 checkout、Python setup、生成與提交流程。
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `python3 scripts/static_site.py`
+- 手動觸發 Daily AI Signal workflow：`32461432582`
+- 確認 workflow 使用 `actions/checkout@v7`、`actions/setup-python@v7`、`stefanzweifel/git-auto-commit-action@v7`。
+- 確認 Daily AI Signal workflow 成功完成 checkout、Python setup、生成與提交流程，並未再出現 Node.js 20 deprecated annotation。
 
 ### 對應 commit
 
-- 待補
+- `ed42160 Upgrade daily workflow actions`
+- `1112f2a chore: generate daily AI signal`
 
 ## v0.17.1｜2026-08-21
 
