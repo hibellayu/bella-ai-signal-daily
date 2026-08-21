@@ -1,6 +1,13 @@
 {
-  "latest": "2026-08-20",
+  "latest": "2026-08-21",
   "digests": [
+    {
+      "reportDate": "2026-08-21",
+      "coverageDate": "2026-08-20",
+      "title": "Bella's AI 趨勢日報｜2026/08/21",
+      "summary": "今日AI產業動態聚焦於Google與Marvell擴大AI晶片合作、AI搜尋流量分配新規則、創意影音工具Seedance與Adobe Firefly的應用突破，以及AI代理人與UI整合的工作流重組。這些變化不僅重塑產業競爭格局，也直接影響品牌能見度、內容分發、行銷團隊的工具選型與操作習慣。品牌與行銷主管需同步關注算力供應鏈、平台流量政策及創意生產流程的變動，才能在AI驅動的內容與媒體新局中維持競爭力。",
+      "path": "data/digests/2026-08-21.json"
+    },
     {
       "reportDate": "2026-08-20",
       "coverageDate": "2026-08-19",
