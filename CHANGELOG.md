@@ -35,7 +35,8 @@
 
 ### 對應 commit
 
-- 本次修正提交訊息：`Fix short action validation for daily digest`
+- `531e2f6 Fix short action validation for daily digest`
+- `e3b9ef0 chore: update daily digest`
 
 ## v0.17.0｜2026-08-21
 
