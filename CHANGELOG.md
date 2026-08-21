@@ -2,6 +2,36 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.17.2｜2026-08-21
+
+版本類型：小改版
+
+### 修改原因
+
+GitHub Actions 執行時出現 Node.js 20 deprecated 警告。雖然目前不影響日報生成與部署，但這代表 workflow 依賴的 action runtime 已進入汰換期，未來可能從警告變成阻塞，因此提前處理自動化維護。
+
+### 修改內容
+
+- 將 Daily AI Signal workflow 的 `actions/checkout` 由 `v4` 升級為 `v7`。
+- 將 `actions/setup-python` 由 `v5` 升級為 `v7`。
+- 將 `stefanzweifel/git-auto-commit-action` 由 `v5` 升級為 `v7`。
+- Footer 版本升為 `v0.17.2`，版本日期維持 2026/08/21。
+
+### Non-scope
+
+- 本版不調整日報內容生成邏輯。
+- 本版不處理 GitHub Pages 內部部署流程出現的 `actions/upload-artifact` 警告，因該步驟不是本專案 workflow 直接定義，需等 GitHub Pages 官方流程更新。
+
+### 驗證
+
+- 待驗證：`python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- 待驗證：`python3 scripts/static_site.py`
+- 待驗證：手動觸發 Daily AI Signal workflow，確認新版 action 可完成 checkout、Python setup、生成與提交流程。
+
+### 對應 commit
+
+- 待補
+
 ## v0.17.1｜2026-08-21
 
 版本類型：小改版
