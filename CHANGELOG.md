@@ -2,6 +2,41 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.17.1｜2026-08-21
+
+版本類型：小改版
+
+### 修改原因
+
+完成 OpenAI API 付款後，手動觸發 2026/08/21 日報生成，API 已可正常呼叫，但 GitHub Actions 仍失敗。原因不是額度不足，而是內容審稿規則判定多則 `Now What / 具體行動` 過短，缺少「數量」與「完成標準」，因此在 2 次生成與 2 次修補後仍拒絕發佈。
+
+### 修改內容
+
+- 新增 `MIN_NOW_WHAT_LENGTH` 常數，統一管理 `Now What / 具體行動` 的最低長度要求。
+- 新增 `strengthen_digest_actions` 後處理流程，在生成與修補後、正式驗證前，檢查每則新聞的具體行動是否足夠原子化。
+- 依新聞角度自動補上完成標準，例如 AI 影音輸出素材測試表、Agent / 工作流輸出流程小卡、搜尋 / GEO 輸出能見度檢查表、算力 / 晶片輸出工具依賴清單。
+- 保留原本審文門檻，不因為產不出日報就降低品質要求。
+- Footer 版本升為 `v0.17.1`，版本日期維持 2026/08/21。
+
+### Non-scope
+
+- 本版不放寬 `analysis`、`What`、`So What` 的深度門檻。
+- 本版不允許空日報或低品質日報發佈。
+- 本版不處理個別來源網站的 403 問題，該問題已由其他來源候選補位，非本次失敗主因。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `PYTHONPATH=scripts python3 - <<'PY' ...`，確認各類保底行動文字皆超過 `MIN_NOW_WHAT_LENGTH`，且含有具體數量。
+- `python3 scripts/generate_daily_digest.py --report-date 2026-08-21 --dry-run`
+- `/Users/bella2022/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check app.js`
+- `python3 scripts/static_site.py`
+- 待驗證：重新觸發 GitHub Actions 生成 2026/08/21 日報。
+
+### 對應 commit
+
+- 本次修正提交訊息：`Fix short action validation for daily digest`
+
 ## v0.17.0｜2026-08-21
 
 版本類型：中改版

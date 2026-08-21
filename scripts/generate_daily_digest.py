@@ -39,6 +39,7 @@ SCORE_LIMITS = {
     "toolUsability": 5,
     "trackedEntityRelevance": 3,
 }
+MIN_NOW_WHAT_LENGTH = 60
 SOURCE_EXCERPT_LIMIT = 220
 MAX_GENERATION_ATTEMPTS = 2
 MAX_REPAIR_ATTEMPTS = 2
@@ -389,6 +390,7 @@ def main() -> None:
             quality_feedback=quality_feedback,
         )
         normalize_digest_scores(digest)
+        strengthen_digest_actions(digest)
         try:
             validate_digest(digest)
             validation_error = ""
@@ -411,6 +413,7 @@ def main() -> None:
                 tracked_entities=config["trackedEntities"],
             )
             normalize_digest_scores(digest)
+            strengthen_digest_actions(digest)
             try:
                 validate_digest(digest)
                 validation_error = ""
@@ -1168,7 +1171,7 @@ def validate_digest(digest: dict[str, Any]) -> None:
                 issues.append(f"「{title}」What 過短，仍像新聞標題摘要")
             if len(so_what) < 60:
                 issues.append(f"「{title}」So What 過短，缺少角色與連鎖影響")
-            if len(now_what) < 60:
+            if len(now_what) < MIN_NOW_WHAT_LENGTH:
                 issues.append(f"「{title}」Now What 過短，缺少原子行動設計")
             if any(term in now_what for term in ["這週", "本週"]):
                 issues.append(f"「{title}」Now What 不可限定本週")
@@ -1206,6 +1209,40 @@ def validate_digest(digest: dict[str, Any]) -> None:
         issues.append(f"內容數量不足：新聞 {non_app_items} 則、應用切角 {app_items} 則")
     if issues:
         raise ValueError("；".join(issues))
+
+
+def strengthen_digest_actions(digest: dict[str, Any]) -> None:
+    """Add an atomic completion standard when the model writes an overly short action."""
+    for section in digest.get("sections", []):
+        if section.get("id") == "applications":
+            continue
+        for item in section.get("items", []):
+            now_what = str(item.get("nowWhat", "")).strip()
+            if len(now_what) >= MIN_NOW_WHAT_LENGTH and re.search(r"\d", now_what):
+                continue
+            completion = build_action_completion(item)
+            if now_what and not now_what.endswith(("。", "！", "？")):
+                now_what += "。"
+            item["nowWhat"] = f"{now_what}{completion}" if now_what else completion
+
+
+def build_action_completion(item: dict[str, Any]) -> str:
+    title = str(item.get("title", ""))
+    tags = " ".join(str(tag) for tag in item.get("tags", []))
+    angles = " ".join(str(angle) for angle in item.get("impactAngles", []))
+    haystack = f"{title} {tags} {angles}".lower()
+
+    if any(term in haystack for term in ["seedance", "kling", "runway", "pika", "veo", "firefly", "影音", "短影音", "創意工具"]):
+        return "完成後輸出 1 張三欄表：原始素材、AI 生成版本、可投放平台，先保留 1 個最容易執行的素材測試，並記下是否值得放進下一次內容企劃。"
+    if any(term in haystack for term in ["ag-ui", "agent ui", "generative ui", "agent", "代理", "工作流", "workflow"]):
+        return "完成後輸出 1 張流程小卡：使用者輸入、AI 代理動作、人工審核點，先標出 1 個最容易卡住的環節，再判斷是否值得做成固定流程。"
+    if any(term in haystack for term in ["廣告", "ads", "campaign", "投放", "meta"]):
+        return "完成後輸出 1 份素材檢查表，列出受眾、訊息、版位與成效指標各 1 欄，先找出 1 個最需要重測的廣告變因，作為下一輪素材判斷依據。"
+    if any(term in haystack for term in ["搜尋", "seo", "aeo", "geo", "citation", "引用", "能見度"]):
+        return "完成後輸出 1 張能見度檢查表，記錄 AI 回答是否提到品牌、引用來源與缺漏資訊，先補強 1 個最常被漏掉的欄位，方便之後追蹤變化。"
+    if any(term in haystack for term in ["晶片", "gpu", "算力", "nvidia", "amd", "marvell", "資料中心"]):
+        return "完成後輸出 1 張工具依賴清單，列出主要 AI 工具、供應商與備援方案各 1 欄，先標記 1 個最可能影響日常工作的風險，避免工具中斷才補救。"
+    return "完成後輸出 1 張行動紀錄卡，列出起始素材、完成動作與下一個判斷點各 1 欄，先完成 1 個最小可驗證的調整，留下可回看的判斷依據。"
 
 
 def normalize_digest_scores(digest: dict[str, Any]) -> None:
