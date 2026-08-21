@@ -79,9 +79,9 @@ v0.2.2 -> v0.2.3
 
 ## 目前版本
 
-目前版本：`v0.16.1`
+目前版本：`v0.17.0`
 
-定義：強化首頁 SEO 與 AI 搜尋可判讀性，補上「關於本站」內容區塊、品牌實體 structured data、sameAs 關聯與 `llms.txt` 搜尋識別資訊。
+定義：新增社群訊號雷達與 AI 影音 / 創意工具判讀面向，讓日報能捕捉社群熱議但需回查官方來源驗證的 AI Agent、Generative UI、Seedance / Kling / Runway 等創意工作流訊號。
 
 ## 版本升級原則
 

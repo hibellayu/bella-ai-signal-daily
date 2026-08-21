@@ -53,6 +53,7 @@ MIN_ANGLE_COVERAGE = {
     "workflow": 2,
     "consumer": 1,
     "marketingChannel": 3,
+    "creativeVideo": 1,
 }
 AI_CORE_TERMS = [
     "ai",
@@ -120,6 +121,26 @@ PRIORITY_TOPIC_TERMS = [
     "算力",
     "customer service",
     "客服",
+    "ag-ui",
+    "agent ui",
+    "generative ui",
+    "seedance",
+    "dreamina",
+    "capcut",
+    "kling",
+    "可靈",
+    "runway",
+    "pika",
+    "veo",
+    "sora",
+    "heygen",
+    "elevenlabs",
+    "ai video",
+    "video generation",
+    "text-to-video",
+    "image-to-video",
+    "短影音",
+    "ai 影音",
 ]
 AI_RELEVANCE_TERMS = [
     *AI_CORE_TERMS,
@@ -137,6 +158,16 @@ AI_RELEVANCE_TERMS = [
     "ai visibility",
     "geo",
     "aeo",
+    "ag-ui",
+    "generative ui",
+    "seedance",
+    "kling",
+    "runway",
+    "pika",
+    "veo",
+    "ai video",
+    "video generation",
+    "ai 影音",
 ]
 STRATEGIC_SOURCE_BONUS = {
     "MarTech": 4,
@@ -148,6 +179,8 @@ STRATEGIC_SOURCE_BONUS = {
     "Social Media Today": 3,
     "OpenAI News": 2,
     "Google AI Blog": 2,
+    "ByteDance Seed": 4,
+    "CopilotKit Blog": 4,
 }
 ANGLE_TERMS = {
     "industry": [
@@ -258,6 +291,31 @@ ANGLE_TERMS = {
         "traffic",
         "流量",
     ],
+    "creativeVideo": [
+        "seedance",
+        "dreamina",
+        "capcut",
+        "kling",
+        "可靈",
+        "runway",
+        "pika",
+        "veo",
+        "sora",
+        "firefly",
+        "heygen",
+        "elevenlabs",
+        "ai video",
+        "video generation",
+        "text-to-video",
+        "image-to-video",
+        "影音",
+        "短影音",
+        "素材",
+        "剪輯",
+        "廣告素材",
+        "audio",
+        "video",
+    ],
 }
 ANGLE_LABELS = {
     "industry": "國際事件與產業格局",
@@ -265,6 +323,7 @@ ANGLE_LABELS = {
     "workflow": "使用者端 / 深度工作者",
     "consumer": "一般社會大眾",
     "marketingChannel": "數位行銷 / 內容 / 社群 / 廣告",
+    "creativeVideo": "AI 影音 / 創意工具",
 }
 
 
@@ -423,8 +482,72 @@ def collect_articles(config: dict[str, Any], coverage_date: date) -> list[Articl
                 )
             )
 
+    for article in collect_social_signal_articles(config, coverage_date, keywords, tracked):
+        if article.url in seen_urls:
+            continue
+        seen_urls.add(article.url)
+        articles.append(article)
+
     articles.sort(key=lambda item: item.score, reverse=True)
     return articles
+
+
+def collect_social_signal_articles(
+    config: dict[str, Any],
+    coverage_date: date,
+    keywords: list[str],
+    tracked: list[str],
+) -> list[Article]:
+    """Use curated social radar signals as candidates after official source verification."""
+    articles: list[Article] = []
+    for signal in config.get("socialSignals", []):
+        if not signal.get("url") or not signal.get("title"):
+            continue
+        first_seen = parse_iso_date(signal.get("firstSeenDate", ""))
+        expires_at = parse_iso_date(signal.get("expiresAt", ""))
+        if first_seen and coverage_date < first_seen:
+            continue
+        if expires_at and coverage_date > expires_at:
+            continue
+
+        entry = {
+            "title": signal["title"],
+            "url": signal["url"],
+            "summary": signal.get("summary", ""),
+            "published_date": signal.get("publishedDate", coverage_date.isoformat()),
+        }
+        score, matched_terms = score_article(entry, keywords, tracked, signal.get("source", "Social Signal Radar"))
+        score += int(signal.get("socialSignalScore", 0) or 0)
+        topics = [str(topic) for topic in signal.get("topics", []) if str(topic).strip()]
+        matched_terms = sorted(set([*matched_terms, *topics]))
+        angle_buckets = [str(bucket) for bucket in signal.get("angleBuckets", []) if str(bucket).strip()]
+        if not angle_buckets:
+            angle_buckets = classify_article_angles(entry, signal.get("source", "Social Signal Radar"))
+        articles.append(
+            Article(
+                title=entry["title"],
+                url=entry["url"],
+                source=signal.get("source", "Social Signal Radar"),
+                region="social-signal",
+                published_date=entry["published_date"],
+                summary=truncate_source_summary(
+                    f"社群訊號補捉，已回查可信來源：{entry['summary']}"
+                ),
+                score=score,
+                matched_terms=matched_terms,
+                angle_buckets=angle_buckets,
+            )
+        )
+    return articles
+
+
+def parse_iso_date(value: str) -> date | None:
+    if not value:
+        return None
+    try:
+        return datetime.strptime(value, "%Y-%m-%d").date()
+    except ValueError:
+        return None
 
 
 def select_articles(candidates: list[Article], limit: int = SELECTION_LIMIT) -> list[Article]:
@@ -848,7 +971,7 @@ def build_repair_prompt(
         - 若驗證錯誤指出 Now What 過短，必須把該則 Now What 重寫成 90-120 字、兩句以內，並保留 1 個明確數量、1 個起始素材、1 個完成產出。
         - Now What 不可出現「這週、本週、幾天內、幾週內、幾個月內」等任意期限。
         - 應用切角必須固定 6 則，title 依序只能是：品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程。
-        - 非 applications item 必須有 impactAngles，從以下標籤選 1-3 個：國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾、數位行銷 / 內容 / 社群 / 廣告。
+        - 非 applications item 必須有 impactAngles，從以下標籤選 1-3 個：國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾、數位行銷 / 內容 / 社群 / 廣告、AI 影音 / 創意工具。
         - 每則 sources 必須使用候選新聞中的原文 URL，不可改成媒體首頁。
         - 只輸出合法 JSON，不要 Markdown。
 
@@ -914,14 +1037,16 @@ def build_generation_prompt(
         - 不要寫給 Bella 個人，不要使用「Bella 的工作視角」。
         - 內容要以行銷主管與策略者的視角解釋變化，不只複述新聞，也不要用「提升效率、強化信任、帶來機會」等空泛結論收尾。
         - 每份日報必須用「四層影響框架」選題與解讀：1. 國際事件與產業格局，包含平台競爭、模型、算力、監管、資安、地緣政治；2. 品牌端，包含品牌能見度、信任、搜尋、內容被引用、廣告與平台曝光；3. 使用者端 / 深度工作者，包含行銷人、內容工作者、研究者、PM 與知識工作者如何把 AI 放進工作流；4. 一般社會大眾，包含健康、語音助理、手機、客服、教育、詐騙、隱私與日常使用習慣。
-        - 候選新聞中的 angleBuckets 是系統對該則新聞的策略角度標記。選題時不可只挑「國際事件與產業格局」，必須同時納入品牌端、使用者端 / 深度工作者、一般社會大眾或數位行銷通路的訊號。
+        - 社群訊號只用來提醒「今天大家正在討論什麼」，不能直接當事實來源。若候選摘要提到「社群訊號補捉」，必須回到該候選的官方、產品部落格或可信來源 URL 來寫，不可引用社群貼文內容作為事實。
+        - AI 影音與創意工具是獨立判讀面向，不可只併入一般工具更新。若候選中出現 Seedance、Kling、Runway、Pika、Veo、Firefly、CapCut、Dreamina、HeyGen、ElevenLabs 或類似工具，請判斷它是否改變短影音腳本、素材原型、廣告多版本、社群內容測試、創意提案或製作流程；若達到行銷應用門檻，至少收 1 則進工具更新或值得追蹤的趨勢。
+        - 候選新聞中的 angleBuckets 是系統對該則新聞的策略角度標記。選題時不可只挑「國際事件與產業格局」，必須同時納入品牌端、使用者端 / 深度工作者、一般社會大眾、數位行銷通路或 AI 影音 / 創意工具的訊號。
         - 若候選中有「數位行銷 / 內容 / 社群 / 廣告」或「使用者端 / 深度工作者」標記的新聞，非 applications 區塊至少要收 2 則；若有「一般社會大眾」標記的新聞，至少要收 1 則，除非候選數不足。
-        - 優先辨識以下行銷決策訊號：AI 搜尋 / GEO / 品牌能見度、AI Agent 與 MarTech 工具、內容透明與來源揭露、客服與 CRM 自動化、語音與多裝置入口、模型供應鏈 / 算力 / 開源模型、資安與合規治理、平台廣告與社群互動規則、中國 AI 模型 / 工具 / 平台對全球工具選型與內容生態的影響。
+        - 優先辨識以下行銷決策訊號：AI 搜尋 / GEO / 品牌能見度、AI Agent 與 MarTech 工具、Generative UI / Agent UI、AI 影音與創意素材工具、內容透明與來源揭露、客服與 CRM 自動化、語音與多裝置入口、模型供應鏈 / 算力 / 開源模型、資安與合規治理、平台廣告與社群互動規則、中國 AI 模型 / 工具 / 平台對全球工具選型與內容生態的影響。
         - AIBase AI News 與 AIBase AI Daily 是補充來源，主要用來補中國 AI 生態與亞洲平台動態。若候選中出現 Qwen / 千問、豆包、DeepSeek、Kimi、MiniMax、智譜、阿里、騰訊、字節跳動、小紅書等事件，請判斷它是否改變模型選型、內容生成工具、社群 / 電商入口、廣告分發或深度工作者工作流；不可只因為是中國公司就收錄，也不可整份日報被單一補充來源主導。
         - 不可讓整份日報都圍繞品牌能見度或 MarTech。品牌端是重要面向，但必須和國際格局、工作流改變、一般大眾使用習慣並列。
         - 大事件必須優先放入會改變產業格局、平台規則、模型 / 算力供應、資安治理、監管或大眾使用入口的事件；若候選中有 AMD、NVIDIA、GPU、OpenAI、Google、Anthropic、資安、健康、語音或 AI agent 風險相關事件，至少收 1 則非純品牌能見度事件。
         - 大事件中，純品牌能見度、GEO、MarTech 或工具比較題最多 2 則；其餘要留給國際事件、平台 / 模型 / 算力 / 資安 / 社會大眾影響。
-        - 工具更新要回答「這個工具如何進入實際工作流或日常使用」，不可只說品牌要採用；至少 1 則要從深度工作者或一般使用者如何改變操作習慣來寫。
+        - 工具更新要回答「這個工具如何進入實際工作流或日常使用」，不可只說品牌要採用；至少 1 則要從深度工作者或一般使用者如何改變操作習慣來寫。若收錄 AI 影音工具，必須說清楚它改變的是發想、腳本、分鏡、素材、剪輯、版本測試或投放哪一段流程。
         - 值得追蹤的趨勢要做跨層歸納，至少覆蓋「品牌端」以外的 1 個面向，例如工作流重組、AI 進入生活場景、資安治理、算力供應或平台競爭。
         - 若同一事件有多個候選來源，請合併成同一則並列出多個 sources；不要把同一事件拆成多則湊數。
         - 若候選中出現 MarTech、Semrush、HubSpot、官方產品部落格等與行銷工作直接相關的來源，請優先判斷它們是否能補足「品牌如何被看見、內容如何被引用、工具如何進入工作流程」的角度。
@@ -955,7 +1080,7 @@ def build_generation_prompt(
           "scoringPolicy": {{
             "priority": ["產業重大性", "數位行銷影響", "內容 / 搜尋 / 社群 / 媒體廣告影響", "工具可用性"],
             "thresholds": {{"mustInclude": 13, "candidate": "9-12", "skip": "8 以下"}},
-            "impactFramework": ["國際事件與產業格局", "品牌端", "使用者端 / 深度工作者", "一般社會大眾"]
+            "impactFramework": ["國際事件與產業格局", "品牌端", "使用者端 / 深度工作者", "一般社會大眾", "AI 影音 / 創意工具"]
           }},
           "sections": [
             {{"id": "major-events", "title": "大事件", "description": "...", "items": [3 至 4 則]}},
@@ -969,7 +1094,7 @@ def build_generation_prompt(
         - title
         - summary
         - analysis: 2 段陣列，每段 70-140 字
-        - impactAngles: 從「國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾、數位行銷 / 內容 / 社群 / 廣告」選 1-3 個，說明這則新聞的判讀角度
+        - impactAngles: 從「國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾、數位行銷 / 內容 / 社群 / 廣告、AI 影音 / 創意工具」選 1-3 個，說明這則新聞的判讀角度
         - sources: [{{"name","publishedDate","url"}}]
         - score: industryImpact, digitalMarketingImpact, contentSearchSocialAdsImpact, toolUsability, trackedEntityRelevance, total
           - industryImpact、digitalMarketingImpact、contentSearchSocialAdsImpact、toolUsability 必須是 0-5 的整數

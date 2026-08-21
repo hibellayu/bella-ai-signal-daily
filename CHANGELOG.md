@@ -2,6 +2,44 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.17.0｜2026-08-21
+
+版本類型：中改版
+
+### 修改原因
+
+日報盤點後發現，許多 AI 新知會先在社群擴散，例如 Claude Managed Agents + AG-UI、Seedance 2.5 等題材。原本系統主要依 RSS / 媒體發布日期收集，容易漏掉「原文不是當日發布、但當日社群重新熱議」的內容，也缺少 AI 影音 / 創意工具的獨立判讀面向，導致短影音、素材生成、廣告多版本與創意提案工作流的變化被 SEO、模型安全或產業新聞壓過。
+
+### 修改內容
+
+- 新增 `socialSignals` 設定區，將社群熱議內容作為候選雷達，但正式來源仍使用官方、產品部落格或可信來源 URL。
+- 新增 Claude Managed Agents + AG-UI、Seedance 2.5 兩則社群訊號候選，分別回查 CopilotKit Blog 與 ByteDance Seed 官方來源。
+- 新增 `creativeVideo` 策略角度，中文標籤為「AI 影音 / 創意工具」。
+- 選文保障新增 AI 影音 / 創意工具最低覆蓋，避免相關題材被一般產業新聞擠掉。
+- 擴充追蹤工具與關鍵字：Seedance、Kling、Runway、Pika、Veo、Dreamina、CapCut、Sora、HeyGen、ElevenLabs、AG-UI、Generative UI、AI video、短影音等。
+- 產文 prompt 補上社群訊號使用規則：社群只作為「今天大家在討論什麼」的提醒，不可直接當事實來源；必須回到官方或可信來源撰寫。
+- 產文 prompt 補上 AI 影音工作流判讀：需說明工具改變的是發想、腳本、分鏡、素材、剪輯、版本測試或投放哪一段流程。
+- Footer 版本升為 `v0.17.0`，版本日期更新為 2026/08/21。
+
+### Non-scope
+
+- 本版不直接登入或爬 Threads、Instagram、X 等社群平台。
+- 本版不把社群貼文內容當作正式新聞來源。
+- 本版先採可控的手動 / 半自動社群訊號候選池，後續再評估 API、RSS、公開搜尋或監測工具。
+
+### 驗證
+
+- `python3 -m json.tool config/sources.json >/dev/null`
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `python3 scripts/generate_daily_digest.py --report-date 2026-08-21 --dry-run`
+- `/Users/bella2022/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check app.js`
+- `python3 scripts/static_site.py`
+- 確認 2026/08/21 dry-run 候選由 35 則增加為 37 則，並成功選入 Seedance 2.5 與 Claude Managed Agents + AG-UI。
+
+### 對應 commit
+
+- `4b5ccbb Add social signal radar for AI daily`
+
 ## v0.16.1｜2026-08-19
 
 版本類型：小改版
@@ -27,7 +65,7 @@ Google 已可透過 `site:hibellayu.github.io/bella-ai-signal-daily` 找到網�
 
 ### 對應 commit
 
-- 待提交
+- `664c07b Strengthen homepage SEO identity signals`
 
 ## v0.16.0｜2026-08-19
 
