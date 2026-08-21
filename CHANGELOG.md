@@ -38,7 +38,7 @@
 
 ### 對應 commit
 
-- `4b5ccbb Add social signal radar for AI daily`
+- `c5256b7 Add social signal radar for AI daily`
 
 ## v0.16.1｜2026-08-19
 
