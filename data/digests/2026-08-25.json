@@ -1,0 +1,402 @@
+{
+  "reportDate": "2026-08-25",
+  "coverageDate": "2026-08-24",
+  "generatedAt": "2026-08-25T06:49:22+08:00",
+  "headline": "AI 代理、開源模型與影音創意工具推動行銷生態多層革新",
+  "summary": "今日 AI 日報聚焦於三大主軸：一、AI 代理與長任務模型重塑產業算力與工作流，NVIDIA、Anthropic、DeepSeek 等推動多步驟自動化與平台競爭。二、品牌能見度與內容曝光規則持續變動，Google、LinkedIn 等入口調整搜尋與推薦機制，內容標示與互動設計影響品牌被引用與被信任的方式。三、AI 影音與創意工具如 Seedance 2.5 進入短影音腳本、素材生成與多版本測試流程，行銷團隊需重新審視創意產製與投放策略。跨層影響涵蓋產業格局、品牌策略、深度工作者操作、一般用戶習慣與內容生態，行銷決策需同步調整入口布局、工具選型與內容透明度。",
+  "strategyTakeaways": [
+    "AI 代理與長任務模型推廣，要求品牌與行銷團隊重新設計內容結構與信任證據，避免在 AI 代理自動篩選時被排除。",
+    "Google、LinkedIn 等平台調整內容標示與推薦機制，品牌需優化重點資訊的可讀性與可引用性，強化在 AI 驅動入口的曝光與互動。",
+    "AI 影音創意工具進入短影音與素材生產流程，行銷團隊可藉此快速產生多版本腳本與素材，提升內容測試與廣告投放效率。",
+    "開源模型與多國供應鏈進入頭部應用，行銷決策需同步評估模型選型、內容來源透明度與資安治理，降低單一供應商風險。"
+  ],
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek",
+    "Qwen",
+    "Alibaba",
+    "Tencent",
+    "ByteDance",
+    "Seedance",
+    "Kling",
+    "Runway",
+    "Pika",
+    "Veo",
+    "Dreamina",
+    "CapCut",
+    "Doubao",
+    "Zhipu",
+    "MiniMax",
+    "Xiaohongshu"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾",
+      "AI 影音 / 創意工具"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "聚焦於產業格局、平台競爭、模型供應鏈與品牌曝光規則的重大變化，涵蓋開源模型進入國際應用、AI 代理推動算力與工作流重組、以及搜尋入口與內容標示新規。",
+      "items": [
+        {
+          "title": "中國開源模型首度進入美國法律 AI 領域，Harvey 採用 Kimi K3 推出專用模型",
+          "summary": "美國法律 AI 獨角獸 Harvey 宣布以中國月之暗面 Kimi K3 開放權重模型為基礎，開發出專用法律模型 Harvey Tenet，標誌中國開源模型首次進入美國頭部垂直應用的訓練體系。Harvey 過去主要依賴 OpenAI、Anthropic 等閉源模型，現已服務逾 2400 家機構與 20 萬名律師。",
+          "analysis": [
+            "中國開源模型進入美國高端法律 AI 應用，象徵全球 AI 供應鏈與模型選型正快速多元化。過去美國主流垂直應用多依賴 OpenAI、Anthropic 等閉源模型，如今 Harvey 直接採用 Kimi K3 並自建專用模型，顯示開源權重與後訓練路線具備產業級競爭力，未來模型供應鏈將更難由單一供應商壟斷。",
+            "對品牌與行銷團隊而言，內容被 AI 引用與推薦的依據將受不同模型訓練資料與推理邏輯影響。若模型來源多元，品牌需同步優化內容結構、信任證據與資料開放度，確保在多種 AI 入口下都能被正確理解與引用，降低單一模型偏誤或被排除的風險。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-08-24",
+              "url": "https://news.aibase.com/tw/news/30577"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 20
+          },
+          "tags": [
+            "開源模型",
+            "AI 供應鏈",
+            "法律 AI",
+            "Harvey",
+            "Kimi"
+          ],
+          "what": "中國開源模型 Kimi K3 首次被美國法律 AI 頭部應用 Harvey 採用，開發出專用法律模型，顯示國際 AI 供應鏈正從閉源壟斷走向多元競爭，模型來源將直接影響內容被引用與推薦的方式。",
+          "soWhat": "品牌、內容方與行銷團隊若只針對單一閉源模型優化內容，將面臨被多元模型生態排除或誤解的風險。模型供應鏈分散後，內容結構、信任證據與資料開放度將成為 AI 代理選擇與引用品牌的關鍵，影響品牌在多入口下的能見度與信任度。",
+          "nowWhat": "選 2 個主要產品頁，檢查是否有明確結構化資訊（如 FAQ、評測、第三方引用）。用 Kimi、OpenAI、Anthropic 各自的 API 測試摘要與推薦結果，記錄 3 處 AI 理解有落差的欄位，優先補強 1 處並公開更新。"
+        },
+        {
+          "title": "NVIDIA 發表 AVO 架構，推動 AI 代理長任務與算力生態重組",
+          "summary": "NVIDIA 推出 AVO（Agentic Variation Operators）架構，讓 AI 模型能持續執行多步驟、長時間的複雜任務。此架構不僅強化 GPU、CPU、低延遲推論晶片與資料中心運作，也改變 AI 工廠的衡量與設計邏輯，推動整體算力生態與工作流升級。",
+          "analysis": [
+            "AVO 架構使 AI 代理人能自主完成長時間、多步驟任務，對資料中心、雲端平台與企業自動化流程產生深遠影響。NVIDIA 進一步將運算需求從 GPU 擴展到 CPU、網路與儲存，並重塑 AI 工廠的效能指標，產業供應鏈需同步調整基礎設施與軟體設計。",
+            "對品牌與行銷決策者而言，AI 代理將更多內容篩選、資料彙整與任務自動化前移至 AI 工廠與平台層。若品牌資訊、FAQ、價格、比較與信任證據未結構化，將在 AI 代理自動篩選時被排除，影響消費者接觸點與轉換率。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-08-24",
+              "url": "https://www.ithome.com.tw/news/178383"
+            },
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-08-24",
+              "url": "https://www.inside.com.tw/article/42180-nvidia-vera-rubin-agentic-ai-factory-hot-chips-2026"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 19
+          },
+          "tags": [
+            "NVIDIA",
+            "AI 代理",
+            "AVO",
+            "算力",
+            "長任務"
+          ],
+          "what": "NVIDIA AVO 架構讓 AI 代理能持續執行多步驟、長時間任務，推動資料中心、雲端平台與企業自動化流程升級，產業供應鏈需同步調整基礎設施與軟體設計。",
+          "soWhat": "AI 代理將主導內容初步篩選、資料彙整與任務自動化，品牌若未優化結構化資訊與信任證據，將難以在 AI 代理自動推薦與決策流程中被選中，影響消費者接觸點與轉換效率。行銷團隊必須同步調整內容結構與平台合作策略。",
+          "nowWhat": "挑 1 個產品線，將 FAQ、評測、價格、證據等資訊結構化上傳至官網與 API。用 AI 代理工具模擬自動篩選流程，記錄 2 處被忽略或誤判的資訊，提出 1 項內容結構優化建議並執行。"
+        },
+        {
+          "title": "Google 測試粉紅色高亮標示，Featured Snippets 與 AI Overview 內容可視化規則調整",
+          "summary": "Google 搜尋在 Featured Snippets 與 AI Overview 區塊測試粉紅色高亮標示，改變過去僅用藍色標示重點的做法。這一調整將影響使用者對內容重點的辨識與互動方式，進一步改變品牌內容在搜尋入口的曝光與被引用規則。",
+          "analysis": [
+            "Google 持續優化搜尋結果的內容標示方式，從單一藍色高亮擴展到多色系，強化 AI Overview 與 Featured Snippets 的重點可視化。這不僅影響使用者閱讀體驗，也改變品牌內容被 AI 選取、標註與引用的規則，內容設計需同步考慮標示策略。",
+            "對品牌與行銷團隊來說，內容若無法被 AI 精準標註重點，將降低在搜尋入口的曝光率與被引用機會。多色高亮標示也可能影響使用者對品牌資訊的信任與互動，行銷策略需同步優化內容結構與重點標示，提升在 AI 驅動入口下的能見度與影響力。"
+          ],
+          "impactAngles": [
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "國際事件與產業格局"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-08-24",
+              "url": "https://www.seroundtable.com/google-pink-highlights-featured-snippets-41926.html"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 17
+          },
+          "tags": [
+            "Google",
+            "搜尋",
+            "Featured Snippets",
+            "AI Overview",
+            "內容標示"
+          ],
+          "what": "Google 搜尋在 Featured Snippets 與 AI Overview 測試粉紅色高亮標示，改變內容重點的可視化規則，影響品牌資訊在搜尋入口的曝光與被引用方式。",
+          "soWhat": "內容設計若未考慮 AI 標註與多色高亮策略，將降低品牌資訊在搜尋入口的可見度與信任度。品牌需同步優化重點資訊的結構與標示，提升被 AI 精準引用與推薦的機率，否則將在新一輪入口競爭中失去主動權。",
+          "nowWhat": "挑 2 篇近期內容，檢查標題、副標、重點段落是否易於 AI 標註。用 Google 搜尋 Featured Snippets 工具測試高亮效果，記錄 2 處未被標示的重點，優先補強 1 處並追蹤搜尋曝光變化。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "聚焦於 AI 影音創意工具、代理人 UI、內容推薦與資安治理等工具進入實際工作流的方式，說明其如何改變行銷人、內容工作者與團隊的操作習慣。",
+      "items": [
+        {
+          "title": "Seedance 2.5 進化：長秒數、多素材參考與精準剪輯，短影音創作流程重組",
+          "summary": "Seedance 2.5 支援 30 秒生成、多輪延伸、圖片/影片/音訊多模態參考與時間戳剪輯，讓短影音腳本、廣告素材、社群內容測試與創意提案流程全面自動化與精準化。行銷團隊可快速產生多版本腳本與素材，提升內容測試與投放效率。",
+          "analysis": [
+            "Seedance 2.5 的多模態參考與精準剪輯能力，讓短影音從發想、腳本、分鏡到素材生成與版本測試全流程自動化。這不僅降低創意門檻，也讓內容產製與廣告多版本投放變得更敏捷，推動社群內容與廣告素材的快速迭代。",
+            "對行銷與內容團隊而言，短影音不再僅靠人工剪輯與腳本設計，AI 工具可自動生成多版本腳本、分鏡與素材，並根據社群互動數據快速調整內容。這將改變團隊分工、素材測試與投放策略，提升內容適應不同平台與受眾的能力。"
+          ],
+          "impactAngles": [
+            "AI 影音 / 創意工具",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "ByteDance Seed",
+              "publishedDate": "2026-07-31",
+              "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 5,
+            "trackedEntityRelevance": 3,
+            "total": 22
+          },
+          "tags": [
+            "Seedance",
+            "AI 影音",
+            "短影音",
+            "素材自動化",
+            "創意工具"
+          ],
+          "what": "Seedance 2.5 讓短影音腳本、分鏡、素材生成與多版本剪輯流程全面自動化，行銷團隊可快速產出多版本內容，提升素材測試與投放效率，改變傳統創意產製與分工模式。",
+          "soWhat": "行銷與內容團隊若仍依賴人工腳本與剪輯，將在短影音內容競爭中落後。AI 影音工具可快速生成多版本腳本與素材，根據平台與受眾自動調整內容，提升廣告投放與社群互動的敏捷度與精準度。",
+          "nowWhat": "選 1 個行銷活動，利用 Seedance 2.5 產出 3 組不同腳本與分鏡，針對 2 個社群平台進行 A/B 測試。記錄互動數據與成效，挑選表現最佳版本進行正式投放。"
+        },
+        {
+          "title": "Claude Managed Agents 支援 AG-UI，AI 代理直接進入產品前台互動",
+          "summary": "Anthropic 的 Claude Managed Agents 現已能與 AG-UI 串接，讓 AI 代理不僅在後台執行任務，也能直接在產品前台呈現圖表、表單與工具狀態，推動 Generative UI 與代理人互動設計進入實際產品工作流。",
+          "analysis": [
+            "AI 代理與 AG-UI 的結合，讓代理人可直接在產品前台與用戶互動，呈現動態圖表、表單與工具狀態，改變過去僅在後台執行任務的限制。這推動 Generative UI 與 AI 代理設計成為產品體驗的核心，提升用戶參與感與自動化服務能力。",
+            "對行銷人與產品設計團隊而言，AI 代理可主動引導用戶操作、收集資料與即時回饋，強化品牌互動與數據收集。若未及早將代理人 UI 納入產品設計，將錯失用戶參與與自動化服務的先機，影響品牌在智能入口的競爭力。"
+          ],
+          "impactAngles": [
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "CopilotKit Blog",
+              "publishedDate": "2026-08-12",
+              "url": "https://www.copilotkit.ai/blog/claude-managed-agents-agui-compatible"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "Claude",
+            "AI Agent",
+            "AG-UI",
+            "Generative UI",
+            "產品互動"
+          ],
+          "what": "Claude Managed Agents 支援 AG-UI，讓 AI 代理能直接在產品前台與用戶互動，呈現圖表、表單與工具狀態，推動 Generative UI 成為產品體驗新標準。",
+          "soWhat": "產品與行銷團隊若未及早納入 AI 代理與 Generative UI 設計，將錯失用戶參與、數據收集與自動化服務的先機。AI 代理可主動引導用戶操作，強化品牌互動與智能入口競爭力，需同步調整產品設計與行銷策略。",
+          "nowWhat": "選 1 個產品功能，設計 2 種 AG-UI 互動流程，讓 AI 代理主動引導用戶操作。收集 10 筆用戶互動數據，分析代理 UI 對用戶參與與資料填寫的提升效果。"
+        },
+        {
+          "title": "Anthropic Mythos 5 資安能力釋出，企業版支援掃碼修漏洞並放寬資安團隊模型使用限制",
+          "summary": "Anthropic 將最強模型 Claude Mythos 5 的資安防禦能力擴大至企業客戶，支援直接掃碼修漏洞，並成立 3500 萬美元基金支援開源資安工作，預告將放寬資安團隊的模型使用限制，推動企業資安治理與自動化修復流程。",
+          "analysis": [
+            "Anthropic 釋出 Mythos 5 資安能力，讓企業可直接利用 AI 掃碼修補漏洞，並以基金支援開源資安生態。這不僅提升企業資安自動化與防禦能力，也讓資安團隊能更靈活地選用 AI 模型，推動資安治理進入 AI 驅動的新階段。",
+            "對行銷、內容與 IT 團隊而言，網站與內容平台的資安風險將由 AI 自動監控與修復，降低資料外洩與內容被竄改風險。若未及早導入 AI 資安工具，將面臨品牌信任危機與平台合作受限的風險，需同步檢討資安治理與模型選型策略。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-08-24",
+              "url": "https://www.ithome.com.tw/news/178369"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 16
+          },
+          "tags": [
+            "Anthropic",
+            "Claude",
+            "資安",
+            "漏洞修復",
+            "AI 資安治理"
+          ],
+          "what": "Anthropic Mythos 5 釋出資安能力，企業可用 AI 掃碼修補漏洞並放寬模型使用限制，推動資安治理與自動化修復進入 AI 驅動新階段，提升品牌與平台的資安防禦能力。",
+          "soWhat": "網站與內容平台若未及早導入 AI 資安工具，將面臨資料外洩、內容被竄改與品牌信任危機。AI 資安治理成為企業與平台合作的基本門檻，行銷與 IT 團隊需同步調整資安策略與模型選型，強化內容安全與信任基礎。",
+          "nowWhat": "針對 1 個主要網站或內容平台，導入 Mythos 5 資安掃碼工具，進行 1 次漏洞掃描與修補。記錄發現與修復的漏洞數量，並產出 1 份資安治理優化建議。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "跨層歸納今日 AI 產業、行銷入口與內容生態的共同變化，聚焦於模型供應鏈分散、AI 代理進入產品 UI、影音創意工具工作流革新與資安治理自動化。",
+      "items": [
+        {
+          "title": "AI 代理、開源模型與影音工具推動內容入口與工作流重組",
+          "summary": "今日多則事件顯示，AI 代理與開源模型正快速進入國際應用與企業工作流，內容被引用、推薦與曝光的規則持續變動。AI 影音創意工具進入短影音與素材生產流程，推動內容產製與投放自動化。資安治理同步進入 AI 驅動階段，品牌、行銷與 IT 團隊需同步調整入口布局、工具選型與內容結構，強化多入口下的信任與曝光。",
+          "analysis": [
+            "AI 代理、開源模型與影音工具的快速發展，推動內容入口、產品 UI 與創意產製流程全面重組。品牌與行銷決策不再只關注單一搜尋或平台入口，而需佈局多模型、多工具與多渠道，確保內容能被不同 AI 入口正確理解、引用與推薦。",
+            "團隊需同步調整內容結構、工具選型與資安治理，強化品牌信任與曝光。若未及時調整，將在多入口競爭與自動化內容生態中失去主動權，影響品牌流量、信任與轉換效率。"
+          ],
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "AI 影音 / 創意工具"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-08-24",
+              "url": "https://news.aibase.com/tw/news/30577"
+            },
+            {
+              "name": "ByteDance Seed",
+              "publishedDate": "2026-07-31",
+              "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
+            },
+            {
+              "name": "iThome",
+              "publishedDate": "2026-08-24",
+              "url": "https://www.ithome.com.tw/news/178369"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 20
+          },
+          "tags": [
+            "AI 代理",
+            "開源模型",
+            "影音工具",
+            "內容入口",
+            "多入口競爭"
+          ],
+          "what": "AI 代理、開源模型與影音工具推動內容入口、產品 UI 與產製流程重組，品牌需同步調整內容結構與工具選型，強化多入口下的信任與曝光。",
+          "soWhat": "品牌若未調整內容結構、工具選型與資安治理，將在多入口競爭與自動化內容生態中失去主動權，影響流量、信任與轉換效率。行銷團隊需同步優化內容、工具與資安策略，強化品牌競爭力。",
+          "nowWhat": "針對 3 個主要內容入口（如搜尋、AI 代理、影音平台），檢查內容結構、標示與資安工具覆蓋度。記錄每個入口的曝光與信任指標，提出 1 項優化建議並執行。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "統整今日 AI 趨勢對品牌策略、數位行銷、內容行銷、社群應用、媒體廣告與團隊流程六大面向的具體影響與策略建議。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI 代理與多元模型供應鏈推動內容被引用與推薦的規則重組，品牌需同步優化結構化資訊、信任證據與內容開放度，確保在多入口下都能被 AI 代理正確理解與推薦。建議從產品頁、FAQ、第三方引用等關鍵內容著手，強化品牌信任系統。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "Google、LinkedIn 等平台調整內容標示與推薦機制，AI 影音工具進入素材生產流程，行銷團隊可快速產生多版本內容並進行 A/B 測試，提升曝光與互動效率。建議優先將 AI 工具導入短影音、內容重點標示與多平台素材產製流程。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "內容被 AI 標註、引用與推薦的規則持續變動，內容設計需同步優化結構、標示與信任證據，提升在多入口下的可讀性與可引用性。建議從重點段落、FAQ、評測與第三方引用等欄位結構化開始，強化內容透明度與可信度。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "AI 影音創意工具進入短影音腳本、素材生成與多版本測試流程，社群內容可根據互動數據快速調整腳本與分鏡，提升社群互動與內容適應不同受眾的能力。建議從熱門主題或活動導入 AI 影音工具，進行多版本測試與互動數據追蹤。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "AI 影音工具與多平台內容標示規則改變，廣告素材可快速產生多版本並根據平台特性自動調整。建議廣告團隊將 AI 工具納入素材產製與投放流程，針對不同平台進行 A/B 測試，提升投放精準度與互動成效。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "AI 代理、影音工具與資安治理進入工作流，團隊需同步調整內容產製、工具選型與資安策略，強化內容安全、信任與自動化產製能力。建議從內容結構優化、AI 工具導入與資安掃描流程三面向同步推進，提升團隊協作與產出品質。"
+        }
+      ]
+    }
+  ]
+}
