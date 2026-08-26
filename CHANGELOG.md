@@ -31,11 +31,14 @@
 - `python3 scripts/generate_daily_digest.py --report-date 2026-08-26 --dry-run`
 - `/Users/bella2022/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check app.js`
 - `python3 scripts/static_site.py`
-- 待驗證：重新觸發 Daily AI Signal workflow 生成 2026/08/26 日報。
+- 重新觸發 Daily AI Signal workflow：`32925586406`
+- 確認 `data/digests/2026-08-26.json` 已生成，`manifest.latest` 更新為 `2026-08-26`。
+- 確認正式網址首頁與 `/daily/2026-08-26/` 均顯示 2026/08/26 日報。
 
 ### 對應 commit
 
-- 待補
+- `901fd1b Strengthen digest strategy field validation`
+- `847a094 chore: generate daily AI signal`
 
 ## v0.17.2｜2026-08-21
 
