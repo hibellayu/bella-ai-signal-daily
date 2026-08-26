@@ -79,9 +79,9 @@ v0.2.2 -> v0.2.3
 
 ## 目前版本
 
-目前版本：`v0.17.2`
+目前版本：`v0.17.3`
 
-定義：維護 GitHub Actions 自動化流程，升級 Daily AI Signal workflow 使用的官方 action 版本，降低 Node.js 20 deprecated 警告未來轉成失敗的風險。
+定義：修正 2026/08/26 自動生成因 `analysis / What / So What` 策略欄位過短而退件的問題；新增策略欄位後處理補強，保留審文門檻但提升每日自動發佈穩定度。
 
 ## 版本升級原則
 

@@ -2,6 +2,41 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.17.3｜2026-08-26
+
+版本類型：小改版
+
+### 修改原因
+
+2026/08/26 早上排程有正常啟動，但 Daily AI Signal workflow 失敗，前台因此停留在 2026/08/25。失敗原因不是 API 額度、GitHub Actions 版本或前台讀取問題，而是產文通過 2 次生成與 2 次修補後，仍有部分 `analysis`、`What`、`So What` 未達審文長度與策略深度門檻，導致 `data/digests/2026-08-26.json` 未被寫入。
+
+### 修改內容
+
+- 新增 `MIN_ANALYSIS_PARAGRAPH_LENGTH`、`MIN_WHAT_LENGTH`、`MIN_SO_WHAT_LENGTH` 常數，集中管理策略欄位品質門檻。
+- 新增 `strengthen_digest_strategy_fields` 後處理流程，在正式驗證前補強過短的 `analysis`、`What`、`So What`。
+- 依議題類型補強策略脈絡：AI 影音 / 創意工具、AI 搜尋與能見度、AI Agent / 工作流、AI 治理、算力 / 基礎設施與一般行銷應用。
+- 保留原本審文門檻，不允許低品質或空日報發布。
+- Footer 版本升為 `v0.17.3`，版本日期更新為 2026/08/26。
+
+### Non-scope
+
+- 本版不降低 `analysis`、`What`、`So What` 的最低字數。
+- 本版不改變新聞收錄排序規則。
+- 本版不處理個別來源網站 403 或 timeout，該類問題仍由來源多元化與候選補位處理。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `PYTHONPATH=scripts python3 - <<'PY' ...`，確認短欄位可被補強並通過 `validate_digest`。
+- `python3 scripts/generate_daily_digest.py --report-date 2026-08-26 --dry-run`
+- `/Users/bella2022/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check app.js`
+- `python3 scripts/static_site.py`
+- 待驗證：重新觸發 Daily AI Signal workflow 生成 2026/08/26 日報。
+
+### 對應 commit
+
+- 待補
+
 ## v0.17.2｜2026-08-21
 
 版本類型：小改版

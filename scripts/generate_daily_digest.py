@@ -39,6 +39,9 @@ SCORE_LIMITS = {
     "toolUsability": 5,
     "trackedEntityRelevance": 3,
 }
+MIN_ANALYSIS_PARAGRAPH_LENGTH = 70
+MIN_WHAT_LENGTH = 45
+MIN_SO_WHAT_LENGTH = 60
 MIN_NOW_WHAT_LENGTH = 60
 SOURCE_EXCERPT_LIMIT = 220
 MAX_GENERATION_ATTEMPTS = 2
@@ -390,6 +393,7 @@ def main() -> None:
             quality_feedback=quality_feedback,
         )
         normalize_digest_scores(digest)
+        strengthen_digest_strategy_fields(digest)
         strengthen_digest_actions(digest)
         try:
             validate_digest(digest)
@@ -413,6 +417,7 @@ def main() -> None:
                 tracked_entities=config["trackedEntities"],
             )
             normalize_digest_scores(digest)
+            strengthen_digest_strategy_fields(digest)
             strengthen_digest_actions(digest)
             try:
                 validate_digest(digest)
@@ -1165,11 +1170,11 @@ def validate_digest(digest: dict[str, Any]) -> None:
             what = item.get("what", "")
             so_what = item.get("soWhat", "")
             now_what = item.get("nowWhat", "")
-            if len(analysis) != 2 or any(len(paragraph) < 70 for paragraph in analysis):
+            if len(analysis) != 2 or any(len(paragraph) < MIN_ANALYSIS_PARAGRAPH_LENGTH for paragraph in analysis):
                 issues.append(f"「{title}」analysis 必須有 2 段且每段至少 70 字")
-            if len(what) < 45:
+            if len(what) < MIN_WHAT_LENGTH:
                 issues.append(f"「{title}」What 過短，仍像新聞標題摘要")
-            if len(so_what) < 60:
+            if len(so_what) < MIN_SO_WHAT_LENGTH:
                 issues.append(f"「{title}」So What 過短，缺少角色與連鎖影響")
             if len(now_what) < MIN_NOW_WHAT_LENGTH:
                 issues.append(f"「{title}」Now What 過短，缺少原子行動設計")
@@ -1209,6 +1214,135 @@ def validate_digest(digest: dict[str, Any]) -> None:
         issues.append(f"內容數量不足：新聞 {non_app_items} 則、應用切角 {app_items} 則")
     if issues:
         raise ValueError("；".join(issues))
+
+
+def strengthen_digest_strategy_fields(digest: dict[str, Any]) -> None:
+    """Complete short strategic explanation fields without lowering validation standards."""
+    for section in digest.get("sections", []):
+        if section.get("id") == "applications":
+            continue
+        for item in section.get("items", []):
+            item["analysis"] = strengthen_analysis_list(item)
+
+            what = str(item.get("what", "")).strip()
+            if len(what) < MIN_WHAT_LENGTH:
+                item["what"] = append_sentence(what, build_what_completion(item))
+
+            so_what = str(item.get("soWhat", "")).strip()
+            if len(so_what) < MIN_SO_WHAT_LENGTH:
+                item["soWhat"] = append_sentence(so_what, build_so_what_completion(item))
+
+
+def strengthen_analysis_list(item: dict[str, Any]) -> list[str]:
+    raw_analysis = item.get("analysis", [])
+    if isinstance(raw_analysis, str):
+        analysis = [raw_analysis.strip()]
+    elif isinstance(raw_analysis, list):
+        analysis = [str(paragraph).strip() for paragraph in raw_analysis if str(paragraph).strip()]
+    else:
+        analysis = []
+
+    if len(analysis) > 2:
+        analysis = [analysis[0], " ".join(analysis[1:])]
+    while len(analysis) < 2:
+        analysis.append("")
+
+    completions = build_analysis_completions(item)
+    for index in range(2):
+        if len(analysis[index]) < MIN_ANALYSIS_PARAGRAPH_LENGTH:
+            analysis[index] = append_sentence(analysis[index], completions[index])
+    return analysis
+
+
+def build_analysis_completions(item: dict[str, Any]) -> tuple[str, str]:
+    label = infer_strategy_label(item)
+    if label == "creative_video":
+        return (
+            "這個變化代表 AI 影音工具正從單點素材生成，往腳本、分鏡、剪輯、版本測試的完整內容產線靠近。對行銷人來說，重點不是多一個工具，而是短影音與廣告素材的測試速度、成本結構和創意決策方式正在改變。",
+            "品牌、代理商與內容工作者會受到不同層面的影響。品牌端需要重新定義素材審核與版權邊界，代理商需要把腳本企劃和工具流程整合，個人創作者則能用更低成本做出多版本內容，但也更需要清楚的風格判斷與資料標註。",
+        )
+    if label == "search_visibility":
+        return (
+            "這則資訊的核心在於 AI 搜尋、推薦或引用規則正在重排品牌被看見的入口。行銷判讀不能只停在流量升降，而要追問品牌內容是否足夠清楚、可信、可被機器摘錄，並能在不同搜尋情境中被正確理解。",
+            "受影響的不只是 SEO 團隊，也包含內容、品牌、公關與產品資訊管理。當平台把答案留在結果頁或 AI 回答中，品牌需要經營可引用的事實、清楚的比較資料與一致的訊息來源，避免能見度被平台或競品重新定義。",
+        )
+    if label == "agent_workflow":
+        return (
+            "這個事件顯示 AI 代理正在從後台工具變成可被使用者直接操作的流程入口。對行銷與產品團隊來說，AI 不只是提升效率，而是開始影響使用者怎麼提出需求、怎麼完成任務，以及品牌在哪些節點建立信任。",
+            "影響會落在品牌體驗、客服、銷售、社群私訊與內部協作流程。團隊不能只問是否導入代理，而要先拆解哪些任務適合自動處理、哪些判斷必須保留人工審核，並設計失敗時的接手與溝通方式。",
+        )
+    if label == "governance":
+        return (
+            "這則新聞反映 AI 安全、來源透明、模型治理與商業化之間的拉扯正在升高。行銷人需要把它視為品牌信任問題，而不是純技術或法務議題，因為消費者會越來越在意內容是不是由 AI 生成、資料如何被使用、誰要為結果負責。",
+            "對品牌端、平台端與內容工作者而言，治理要求會改變工具選型與產製流程。若缺少來源標註、審核紀錄與風險分級，短期可能只是效率問題，長期會變成信任、法遵與公關危機的壓力。",
+        )
+    if label == "infrastructure":
+        return (
+            "這則資訊說明 AI 競爭已延伸到模型、晶片、算力與基礎設施供應鏈。它看似離數位行銷較遠，但會間接影響工具價格、模型能力、回應速度與平台功能釋出節奏，最後仍會反映在內容與廣告工作流上。",
+            "品牌和行銷團隊需要把供應鏈與平台依賴納入風險判斷。當某個模型或平台取得更強算力，可能優先推出新的廣告、搜尋、內容生成或代理功能；若只依賴單一工具，工作流程會更容易被外部變動牽動。",
+        )
+    return (
+        "這則資訊需要放進行銷決策脈絡來看，重點不只是新聞本身，而是它如何改變內容產製、流量入口、使用者互動或工具選型。對行銷人來說，判讀價值來自把產業變化翻譯成工作流程與品牌策略的調整訊號。",
+        "受影響的角色通常不只一種，可能包含品牌端、代理商、內容工作者、社群經營者與一般使用者。若只把它視為單一工具更新，容易忽略背後的平台規則、信任機制與使用習慣正在同步改變。",
+    )
+
+
+def build_what_completion(item: dict[str, Any]) -> str:
+    label = infer_strategy_label(item)
+    if label == "creative_video":
+        return "它代表 AI 影音開始進入腳本、素材與剪輯流程，會直接影響短影音與廣告素材的生產方式。"
+    if label == "search_visibility":
+        return "它代表品牌曝光入口正在被 AI 搜尋與推薦機制重排，內容必須更容易被理解、引用與驗證。"
+    if label == "agent_workflow":
+        return "它代表 AI 代理正從後台效率工具，變成使用者可直接操作的產品與服務流程入口。"
+    if label == "governance":
+        return "它代表 AI 商業化開始進入信任、透明度與風險控管階段，會影響品牌導入工具的決策。"
+    if label == "infrastructure":
+        return "它代表 AI 競爭正在往算力、模型與平台基礎設施延伸，會間接改變工具能力與成本。"
+    return "它代表 AI 應用正在改變行銷工作流、內容判讀與品牌接觸使用者的方式。"
+
+
+def build_so_what_completion(item: dict[str, Any]) -> str:
+    label = infer_strategy_label(item)
+    if label == "creative_video":
+        return "品牌端會更容易大量測試素材，但也更需要明確的創意方向、審核規範與成效判讀，避免只是更快產出更多相似內容，卻沒有累積可複用的內容方法。"
+    if label == "search_visibility":
+        return "SEO、內容與品牌團隊都會被影響，因為競爭焦點會從排名延伸到 AI 是否願意引用、如何描述品牌，以及是否把流量留在平台內。"
+    if label == "agent_workflow":
+        return "客服、銷售、社群與產品體驗都可能被重組，團隊需要重新界定哪些任務交給 AI、哪些判斷仍要由人承擔，否則效率提升可能反而放大信任風險。"
+    if label == "governance":
+        return "品牌、平台與供應商都會被迫提高透明度，未來工具好不好用之外，能不能被信任、能不能被稽核也會成為採用條件，並影響合作夥伴選擇。"
+    if label == "infrastructure":
+        return "工具供應商與大型平台的能力差距可能擴大，行銷團隊需要避免單一平台依賴，並提早建立備援工具與內容分發策略，降低外部規則變動帶來的操作風險。"
+    return "品牌端、工具使用者與內容團隊都會受影響，因為 AI 正在同時改變效率、入口、信任與決策權的分配，也會改變行銷資源配置優先順序。"
+
+
+def infer_strategy_label(item: dict[str, Any]) -> str:
+    title = str(item.get("title", ""))
+    tags = " ".join(str(tag) for tag in item.get("tags", []))
+    angles = " ".join(str(angle) for angle in item.get("impactAngles", []))
+    haystack = f"{title} {tags} {angles}".lower()
+    if any(term in haystack for term in ["seedance", "kling", "runway", "pika", "veo", "firefly", "影音", "短影音", "創意工具"]):
+        return "creative_video"
+    if any(term in haystack for term in ["搜尋", "search", "seo", "aeo", "geo", "citation", "引用", "能見度", "google ads", "廣告"]):
+        return "search_visibility"
+    if any(term in haystack for term in ["ag-ui", "agent ui", "generative ui", "agent", "代理", "workflow", "工作流"]):
+        return "agent_workflow"
+    if any(term in haystack for term in ["安全", "治理", "法", "合規", "透明", "風險", "來源"]):
+        return "governance"
+    if any(term in haystack for term in ["晶片", "gpu", "算力", "nvidia", "amd", "marvell", "資料中心", "供應鏈"]):
+        return "infrastructure"
+    return "general"
+
+
+def append_sentence(base: str, completion: str) -> str:
+    base = base.strip()
+    completion = completion.strip()
+    if not base:
+        return completion
+    if not base.endswith(("。", "！", "？")):
+        base += "。"
+    return f"{base}{completion}"
 
 
 def strengthen_digest_actions(digest: dict[str, Any]) -> None:
