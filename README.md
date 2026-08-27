@@ -8,6 +8,7 @@
 - 支援桌機與手機閱讀。
 - 內容分為大事件、工具更新、值得追蹤的趨勢、應用切角彙整。
 - 每則重點提供 What / So What / Now What。
+- 每份日報新增 AEO 內容欄位：`answerSummary`、`promptTargets`、`aeoEntities`、`citationClaims`，讓內容不只被搜尋引擎收錄，也更容易被 AI 搜尋理解與引用。
 - 自動產文必須通過策略深度品質閘門：What 解釋結構變化、So What 分析角色與連鎖影響、Now What 提供具體數量與可見產出；未通過會自動重寫一次，仍不合格則停止發布。
 - 第一版使用 `gpt-4.1-mini` 控制成本；只有未通過品質閘門時，才改用 `gpt-4.1` 重寫，以兼顧日常費用與策略內容穩定度。
 - 應用切角固定從品牌策略、數位行銷、內容行銷、社群應用、媒體廣告與團隊流程跨新聞統整，不逐則重述新聞。
@@ -34,6 +35,8 @@ http://localhost:4173
 - `VERSIONING.md`：版本號、大改版、中改版、小改版規則。
 - `CHANGELOG.md`：版本記錄與修改內容回溯。
 - `docs/COPYRIGHT_RISK_POLICY.md`：版權、來源引用、示範資料與 SEO 收錄風險控管規則。
+- `docs/AEO_MEASUREMENT_PLAYBOOK.md`：AEO 成效驗證框架與每月追蹤方式。
+- `data/aeo/prompt-library.json`：AEO Prompt Library，整理可追蹤的使用者提問與意圖分群。
 - `robots.txt`：搜尋引擎索引規則。
 - `sitemap.xml`：搜尋引擎提交用 sitemap。
 - `llms.txt`：給 AI 搜尋與研究工具讀取的網站定位、內容結構與引用說明。
@@ -78,6 +81,8 @@ AIBase 已作為補充來源，用來補中國 AI 模型、工具、平台與應
 ## 搜尋與分析
 
 - 正式網址：https://hibellayu.github.io/bella-ai-signal-daily/
+- 每日靜態頁會輸出 `Article` structured data、來源 citation、可回答提問與 AI 可引用摘要。
+- AEO 驗證採用 `Prompt -> Visibility -> Citation -> Referral -> Conversion` 框架，不以單一 Prompt 或單一 Answer Engine 判斷成敗。
 - GA4 Measurement ID：`G-8CQ9L4MXNL`
 - SEO 基礎設定：title、description、canonical、Open Graph、Twitter Card、structured data。
 - AI 搜尋引用輔助：`llms.txt`。

@@ -32,6 +32,15 @@ SOURCE_POLICY = "台灣媒體依台北時間前一日收集；國際媒體依來
 PRIORITY = ["產業重大性", "數位行銷影響", "內容 / 搜尋 / 社群 / 媒體廣告影響", "工具可用性"]
 SECTION_IDS = ["major-events", "tool-updates", "trends", "applications"]
 APPLICATION_TITLES = {"品牌策略", "數位行銷", "內容行銷", "社群應用", "媒體廣告", "團隊流程"}
+AEO_INTENT_LABELS = ["Informational", "Commercial", "Comparison", "Brand", "Problem / Solution", "Use Case"]
+AEO_PROMPT_STARTERS = [
+    "今天 AI 趨勢對數位行銷有什麼影響？",
+    "行銷人今天應該注意哪些 AI 工具或平台變化？",
+    "AI 搜尋與生成式回答會如何改變品牌能見度？",
+    "品牌如何判斷 AI 新聞是否值得放進內容或社群策略？",
+    "哪些 AI 變化會影響內容行銷、社群應用或媒體廣告？",
+    "AI Agent、AI 影音或模型更新可以如何放進實際工作流？",
+]
 SCORE_LIMITS = {
     "industryImpact": 5,
     "digitalMarketingImpact": 5,
@@ -395,6 +404,7 @@ def main() -> None:
         normalize_digest_scores(digest)
         strengthen_digest_strategy_fields(digest)
         strengthen_digest_actions(digest)
+        ensure_digest_aeo_fields(digest)
         try:
             validate_digest(digest)
             validation_error = ""
@@ -419,6 +429,7 @@ def main() -> None:
             normalize_digest_scores(digest)
             strengthen_digest_strategy_fields(digest)
             strengthen_digest_actions(digest)
+            ensure_digest_aeo_fields(digest)
             try:
                 validate_digest(digest)
                 validation_error = ""
@@ -973,6 +984,10 @@ def build_repair_prompt(
         - 只根據候選新聞與原 JSON 修補，不得新增候選新聞外的事實。
         - 保留 reportDate、coverageDate、generatedAt、sourcePolicy、trackedEntities。
         - 保留或補齊 strategyTakeaways，3-4 則，必須是今日給行銷決策者的策略判讀，不是新聞標題改寫。
+        - 保留或補齊 answerSummary、promptTargets、aeoEntities、citationClaims，讓日報能回答真實使用者提問並保留 AEO 驗證線索。
+        - answerSummary 必須用 80-140 字直接回答「今天 AI 趨勢對行銷人有什麼影響？」。
+        - promptTargets 必須 5-8 則，使用自然語言問題，涵蓋 Informational、Brand、Problem / Solution、Use Case，不能只是關鍵字清單。
+        - citationClaims 必須 3-5 則，每則包含 claim 與 sources，sources 必須對應候選新聞原文 URL。
         - 優先修補驗證錯誤指出的欄位；若結構有缺漏，也要補齊。
         - analysis 必須剛好 2 段，每段至少 70 字，第一段談平台、商業模式、入口或競爭規則變化，第二段談品牌、消費者與行銷團隊的決策影響。
         - What 至少 45 字；So What 至少 60 字；Now What 至少 60 字且必須包含明確數量、實際動作與可見產出。
@@ -981,6 +996,7 @@ def build_repair_prompt(
         - 應用切角必須固定 6 則，title 依序只能是：品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程。
         - 非 applications item 必須有 impactAngles，從以下標籤選 1-3 個：國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾、數位行銷 / 內容 / 社群 / 廣告、AI 影音 / 創意工具。
         - 每則 sources 必須使用候選新聞中的原文 URL，不可改成媒體首頁。
+        - 每則非 applications item 必須補 citationClaim：用 45-100 字說明該則最適合被 AI 引用的來源支撐重點，不可複製來源原文。
         - 只輸出合法 JSON，不要 Markdown。
 
         驗證錯誤：
@@ -1044,6 +1060,12 @@ def build_generation_prompt(
         - 讀者是行銷人、品牌決策者、數位行銷、內容行銷、社群與媒體廣告工作者。
         - 不要寫給 Bella 個人，不要使用「Bella 的工作視角」。
         - 內容要以行銷主管與策略者的視角解釋變化，不只複述新聞，也不要用「提升效率、強化信任、帶來機會」等空泛結論收尾。
+        - AEO 寫作規則：請先把本日內容想像成要回答 AI 搜尋、ChatGPT、Perplexity、Gemini 可能收到的真實問題。不要只做 Keyword List，要用 Intent + Prompt Thinking。
+        - 每份日報必須回答「今天 AI 趨勢對行銷人有什麼影響？」並產出 answerSummary。它要像 Answer Engine 能引用的一段完整答案，包含主要趨勢、受影響角色與策略判斷。
+        - 每份日報必須產出 promptTargets，5-8 則自然語言問題，涵蓋 Informational、Commercial、Comparison、Brand、Problem / Solution、Use Case 等意圖。問題要像讀者真的會問 AI 的句子，不要只列「AI 搜尋」「AEO」這種關鍵字。
+        - 每份日報必須產出 aeoEntities，8-16 個關鍵實體，包含公司、工具、平台、概念或應用場景。實體要幫助 AI 搜尋理解這篇日報談的是誰、什麼工具、哪種行銷問題。
+        - 每份日報必須產出 citationClaims，3-5 則適合被引用的主張；每則 claim 需用自己的話整理，並附候選來源中的 sources，不可無來源推論。
+        - 每則非 applications item 必須有 citationClaim，說明「這則新聞中最值得被 AI 引用的來源支撐重點」。它不是摘要，而是可被回答引用的可驗證主張。
         - 每份日報必須用「四層影響框架」選題與解讀：1. 國際事件與產業格局，包含平台競爭、模型、算力、監管、資安、地緣政治；2. 品牌端，包含品牌能見度、信任、搜尋、內容被引用、廣告與平台曝光；3. 使用者端 / 深度工作者，包含行銷人、內容工作者、研究者、PM 與知識工作者如何把 AI 放進工作流；4. 一般社會大眾，包含健康、語音助理、手機、客服、教育、詐騙、隱私與日常使用習慣。
         - 社群訊號只用來提醒「今天大家正在討論什麼」，不能直接當事實來源。若候選摘要提到「社群訊號補捉」，必須回到該候選的官方、產品部落格或可信來源 URL 來寫，不可引用社群貼文內容作為事實。
         - AI 影音與創意工具是獨立判讀面向，不可只併入一般工具更新。若候選中出現 Seedance、Kling、Runway、Pika、Veo、Firefly、CapCut、Dreamina、HeyGen、ElevenLabs 或類似工具，請判斷它是否改變短影音腳本、素材原型、廣告多版本、社群內容測試、創意提案或製作流程；若達到行銷應用門檻，至少收 1 則進工具更新或值得追蹤的趨勢。
@@ -1082,6 +1104,15 @@ def build_generation_prompt(
           "generatedAt": "{generated_at}",
           "headline": "string",
           "summary": "string",
+          "answerSummary": "80-140 字，直接回答今天 AI 趨勢對行銷人的影響",
+          "promptTargets": [
+            {{"intent": "Informational", "prompt": "自然語言問題"}},
+            {{"intent": "Use Case", "prompt": "自然語言問題"}}
+          ],
+          "aeoEntities": ["8 至 16 個實體或概念"],
+          "citationClaims": [
+            {{"claim": "可被 AI 引用的來源支撐重點", "sources": [{{"name","publishedDate","url"}}]}}
+          ],
           "strategyTakeaways": ["3 至 4 則今日策略判讀"],
           "sourcePolicy": "{SOURCE_POLICY}",
           "trackedEntities": [...],
@@ -1102,6 +1133,7 @@ def build_generation_prompt(
         - title
         - summary
         - analysis: 2 段陣列，每段 70-140 字
+        - citationClaim: 45-100 字，適合被 AI 搜尋引用的可驗證重點，必須能對應 sources
         - impactAngles: 從「國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾、數位行銷 / 內容 / 社群 / 廣告、AI 影音 / 創意工具」選 1-3 個，說明這則新聞的判讀角度
         - sources: [{{"name","publishedDate","url"}}]
         - score: industryImpact, digitalMarketingImpact, contentSearchSocialAdsImpact, toolUsability, trackedEntityRelevance, total
@@ -1135,6 +1167,15 @@ def validate_digest(digest: dict[str, Any]) -> None:
     for key in ["reportDate", "coverageDate", "generatedAt", "headline", "summary", "sections"]:
         if key not in digest:
             issues.append(f"缺少必要欄位 {key}")
+    answer_summary = str(digest.get("answerSummary", "")).strip()
+    if len(answer_summary) < 55:
+        issues.append("answerSummary 過短，無法作為 AI 搜尋可引用摘要")
+    prompt_targets = digest.get("promptTargets", [])
+    if not isinstance(prompt_targets, list) or len(prompt_targets) < 5:
+        issues.append("promptTargets 至少需要 5 則自然語言提問")
+    citation_claims = digest.get("citationClaims", [])
+    if not isinstance(citation_claims, list) or len(citation_claims) < 3:
+        issues.append("citationClaims 至少需要 3 則來源支撐重點")
     sections = digest.get("sections", [])
     section_ids = [section.get("id") for section in sections]
     if section_ids != SECTION_IDS:
@@ -1172,6 +1213,9 @@ def validate_digest(digest: dict[str, Any]) -> None:
             now_what = item.get("nowWhat", "")
             if len(analysis) != 2 or any(len(paragraph) < MIN_ANALYSIS_PARAGRAPH_LENGTH for paragraph in analysis):
                 issues.append(f"「{title}」analysis 必須有 2 段且每段至少 70 字")
+            citation_claim = str(item.get("citationClaim", "")).strip()
+            if len(citation_claim) < 35:
+                issues.append(f"「{title}」citationClaim 過短，缺少可引用的來源支撐重點")
             if len(what) < MIN_WHAT_LENGTH:
                 issues.append(f"「{title}」What 過短，仍像新聞標題摘要")
             if len(so_what) < MIN_SO_WHAT_LENGTH:
@@ -1317,6 +1361,152 @@ def build_so_what_completion(item: dict[str, Any]) -> str:
     return "品牌端、工具使用者與內容團隊都會受影響，因為 AI 正在同時改變效率、入口、信任與決策權的分配，也會改變行銷資源配置優先順序。"
 
 
+def ensure_digest_aeo_fields(digest: dict[str, Any]) -> None:
+    """Keep AEO fields present so validation measures content usefulness, not model obedience."""
+    digest["answerSummary"] = normalize_answer_summary(digest.get("answerSummary"), digest)
+    digest["promptTargets"] = normalize_prompt_targets(digest.get("promptTargets"), digest)
+    digest["aeoEntities"] = normalize_aeo_entities(digest.get("aeoEntities"), digest)
+    digest["citationClaims"] = normalize_citation_claims(digest.get("citationClaims"), digest)
+
+    for item in iter_non_application_items(digest):
+        claim = str(item.get("citationClaim", "")).strip()
+        if len(claim) < 35:
+            item["citationClaim"] = build_item_citation_claim(item)
+
+
+def normalize_answer_summary(value: Any, digest: dict[str, Any]) -> str:
+    text = str(value or "").strip()
+    if len(text) >= 55:
+        return text
+    summary = str(digest.get("summary", "")).strip()
+    if len(summary) >= 55:
+        return summary
+    headline = str(digest.get("headline", "今日 AI 趨勢日報")).strip()
+    return (
+        f"{headline}。本日重點不是單一新聞，而是判斷 AI 如何改變搜尋入口、內容被引用方式、工具工作流與品牌決策，"
+        "協助行銷人把產業訊號轉成可觀察、可驗證、可落地的下一步。"
+    )
+
+
+def normalize_prompt_targets(value: Any, digest: dict[str, Any]) -> list[dict[str, str]]:
+    prompts: list[dict[str, str]] = []
+    if isinstance(value, list):
+        for index, item in enumerate(value):
+            if isinstance(item, dict):
+                prompt = str(item.get("prompt", "")).strip()
+                intent = str(item.get("intent", "")).strip() or AEO_INTENT_LABELS[index % len(AEO_INTENT_LABELS)]
+            else:
+                prompt = str(item).strip()
+                intent = AEO_INTENT_LABELS[index % len(AEO_INTENT_LABELS)]
+            if prompt and prompt not in [entry["prompt"] for entry in prompts]:
+                prompts.append({"intent": intent, "prompt": prompt})
+
+    headline = str(digest.get("headline", "")).strip()
+    tags = collect_digest_terms(digest, limit=8)
+    fallback_prompts = list(AEO_PROMPT_STARTERS)
+    if headline:
+        fallback_prompts.insert(0, f"{headline} 對行銷人代表什麼變化？")
+    if tags:
+        fallback_prompts.append(f"{'、'.join(tags[:3])} 會如何影響品牌內容與 AI 搜尋能見度？")
+    for prompt in fallback_prompts:
+        if len(prompts) >= 8:
+            break
+        if prompt not in [entry["prompt"] for entry in prompts]:
+            prompts.append({"intent": AEO_INTENT_LABELS[len(prompts) % len(AEO_INTENT_LABELS)], "prompt": prompt})
+    return prompts[:8]
+
+
+def normalize_aeo_entities(value: Any, digest: dict[str, Any]) -> list[str]:
+    entities: list[str] = []
+    if isinstance(value, list):
+        for item in value:
+            add_unique_text(entities, item)
+    for entity in digest.get("trackedEntities", []):
+        add_unique_text(entities, entity)
+    for term in collect_digest_terms(digest, limit=24):
+        add_unique_text(entities, term)
+    for term in ["AEO", "Answer Engine Optimization", "AI 搜尋", "GEO", "數位行銷", "內容行銷", "品牌能見度"]:
+        add_unique_text(entities, term)
+    return entities[:16]
+
+
+def normalize_citation_claims(value: Any, digest: dict[str, Any]) -> list[dict[str, Any]]:
+    claims: list[dict[str, Any]] = []
+    if isinstance(value, list):
+        for item in value:
+            if not isinstance(item, dict):
+                continue
+            claim = str(item.get("claim", "")).strip()
+            sources = item.get("sources", [])
+            if claim and isinstance(sources, list) and sources:
+                claims.append({"claim": claim, "sources": normalize_source_list(sources)})
+    for item in iter_non_application_items(digest):
+        if len(claims) >= 5:
+            break
+        claim = str(item.get("citationClaim", "")).strip() or build_item_citation_claim(item)
+        sources = normalize_source_list(item.get("sources", []))
+        if claim and sources:
+            claims.append({"claim": claim, "sources": sources})
+    return claims[:5]
+
+
+def build_item_citation_claim(item: dict[str, Any]) -> str:
+    summary = str(item.get("summary", "")).strip()
+    title = str(item.get("title", "")).strip()
+    if summary:
+        return f"{title}：{summary}"[:120].rstrip(" ，。、；：") + "。"
+    return f"{title} 是本日 AI 趨勢中可被引用的重點，需搭配來源連結判讀其對行銷與工作流的影響。"
+
+
+def iter_non_application_items(digest: dict[str, Any]) -> list[dict[str, Any]]:
+    items: list[dict[str, Any]] = []
+    for section in digest.get("sections", []):
+        if section.get("id") == "applications":
+            continue
+        items.extend(item for item in section.get("items", []) if isinstance(item, dict))
+    return items
+
+
+def collect_digest_terms(digest: dict[str, Any], limit: int) -> list[str]:
+    terms: list[str] = []
+    for section in digest.get("sections", []):
+        add_unique_text(terms, section.get("title", ""))
+        for item in section.get("items", []):
+            add_unique_text(terms, item.get("title", ""))
+            for tag in item.get("tags", []):
+                add_unique_text(terms, tag)
+            for angle in item.get("impactAngles", []):
+                add_unique_text(terms, angle)
+    return terms[:limit]
+
+
+def normalize_source_list(sources: Any) -> list[dict[str, str]]:
+    normalized: list[dict[str, str]] = []
+    if not isinstance(sources, list):
+        return normalized
+    for source in sources:
+        if not isinstance(source, dict):
+            continue
+        name = str(source.get("name", "")).strip()
+        url = str(source.get("url", "")).strip()
+        if not name or not url:
+            continue
+        normalized.append(
+            {
+                "name": name,
+                "publishedDate": str(source.get("publishedDate", "")).strip(),
+                "url": url,
+            }
+        )
+    return normalized
+
+
+def add_unique_text(items: list[str], value: Any) -> None:
+    text = str(value or "").strip()
+    if text and text not in items:
+        items.append(text)
+
+
 def infer_strategy_label(item: dict[str, Any]) -> str:
     title = str(item.get("title", ""))
     tags = " ".join(str(tag) for tag in item.get("tags", []))
@@ -1324,14 +1514,14 @@ def infer_strategy_label(item: dict[str, Any]) -> str:
     haystack = f"{title} {tags} {angles}".lower()
     if any(term in haystack for term in ["seedance", "kling", "runway", "pika", "veo", "firefly", "影音", "短影音", "創意工具"]):
         return "creative_video"
-    if any(term in haystack for term in ["搜尋", "search", "seo", "aeo", "geo", "citation", "引用", "能見度", "google ads", "廣告"]):
-        return "search_visibility"
     if any(term in haystack for term in ["ag-ui", "agent ui", "generative ui", "agent", "代理", "workflow", "工作流"]):
         return "agent_workflow"
     if any(term in haystack for term in ["安全", "治理", "法", "合規", "透明", "風險", "來源"]):
         return "governance"
     if any(term in haystack for term in ["晶片", "gpu", "算力", "nvidia", "amd", "marvell", "資料中心", "供應鏈"]):
         return "infrastructure"
+    if any(term in haystack for term in ["搜尋", "search", "seo", "aeo", "geo", "citation", "引用", "能見度", "google ads", "廣告"]):
+        return "search_visibility"
     return "general"
 
 

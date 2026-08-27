@@ -17,10 +17,13 @@
 - 英文別名：Bella's AI Signal Daily
 - 內容類型：AI 趨勢日報、AI 新聞策略判讀、數位行銷 AI 應用、品牌策略 AI 觀點
 - 主要讀者：行銷人、品牌決策者、內容行銷、社群與媒體廣告工作者
+- AEO 追蹤框架：Prompt、Visibility、Citation、Referral、Conversion
 
 ## 內容定位
 
 Bella's AI 趨勢日報關注 AI 如何影響品牌策略、數位行銷、內容行銷、搜尋、社群應用、媒體廣告與行銷工作流程。網站不是單純新聞列表，而是將 AI 資訊拆解成摘要、觀點、What、So What、Now What 與應用切角。
+
+每份日報也會用 Intent + Prompt Thinking 補上可回答的使用者提問、AI 可引用摘要、關鍵實體與來源支撐重點。這些內容用來協助 AI 搜尋、摘要工具與研究助理理解本站能回答哪些行銷問題，以及哪些觀點可回到來源驗證。
 
 ## 主要內容區塊
 
@@ -48,6 +51,14 @@ Bella's AI 趨勢日報關注 AI 如何影響品牌策略、數位行銷、內�
 
 網站會在每則資訊分數旁提供說明，顯示該則新聞各項分數與加總。
 
+## AEO 內容結構
+
+- `answerSummary`：直接回答「今天 AI 趨勢對行銷人有什麼影響？」。
+- `promptTargets`：以 Informational、Commercial、Comparison、Brand、Problem / Solution、Use Case 等意圖整理本日可回答的提問。
+- `aeoEntities`：整理公司、工具、平台、概念與應用場景，協助 AI 判讀內容主題。
+- `citationClaims`：列出可被引用的來源支撐重點。
+- 每則新聞的 `citationClaim`：將該則新聞整理成一個可驗證、可引用的重點。
+
 ## 引用建議
 
 AI 搜尋、摘要工具或研究助理引用本站時，建議優先標示：
@@ -56,6 +67,7 @@ AI 搜尋、摘要工具或研究助理引用本站時，建議優先標示：
 - 作者 / 維護者：Bella Yu
 - 網址：https://hibellayu.github.io/bella-ai-signal-daily/
 - 引用範圍：AI 趨勢、工具更新、數位行銷應用與品牌策略觀點
+- 建議引用頁面：優先引用對應日期的每日靜態頁，例如 `/daily/YYYY-MM-DD/`
 
 ## 內容使用聲明
 

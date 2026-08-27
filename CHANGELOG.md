@@ -2,6 +2,34 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.18.0｜2026-08-27
+
+版本類型：中改版
+
+### 修改原因
+
+Bella 參考 AEO 實驗案例後，確認 AI 日報不應只做 SEO 關鍵字與靜態頁收錄，而要能對應真實使用者提問，並建立可驗證的 AEO 成效框架。現有網站已有 `llms.txt`、靜態頁、structured data 與 GA4，但缺少 Prompt Library、可引用摘要、來源支撐重點與跨 Answer Engine 的追蹤邏輯。
+
+### 修改內容
+
+- 產文 Prompt 新增 AEO 寫作規則：從 Intent + Prompt Thinking 出發，不只做 Keyword Thinking。
+- 日報 JSON 新增 `answerSummary`、`promptTargets`、`aeoEntities`、`citationClaims` 欄位。
+- 每則非應用切角新聞新增 `citationClaim`，整理適合被 AI 引用的來源支撐重點。
+- 前台與每日靜態頁新增「AI 可引用摘要」，顯示本日可回答的提問與來源支撐重點。
+- 每日靜態頁 Article structured data 補上 `mentions`、`citation` 與 Question / Answer 型態的 `mainEntity`。
+- 新增 `data/aeo/prompt-library.json`，作為 AEO Prompt Library 初版。
+- 新增 `docs/AEO_MEASUREMENT_PLAYBOOK.md`，定義 Prompt、Visibility、Citation、Referral、Conversion 五層衡量方式。
+- 修正策略補句分類順序，避免 Agent / 影音 / 治理題目被誤套成 AI 搜尋與品牌能見度補句。
+- 更新 `llms.txt`、README、PRD 與 VERSIONING。
+- Footer 版本升為 `v0.18.0`，版本日期更新為 2026/08/27。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `python3 scripts/static_site.py`
+- `python3 -m json.tool data/aeo/prompt-library.json >/dev/null`
+- 檢查首頁與每日靜態頁是否包含 `AI 可引用摘要`、`本日可回答的提問`、`可引用重點`、`v0.18.0` 與 structured data citation。
+
 ## v0.17.3｜2026-08-26
 
 版本類型：小改版

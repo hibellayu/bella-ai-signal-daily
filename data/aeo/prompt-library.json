@@ -1,0 +1,58 @@
+{
+  "updatedAt": "2026-08-27",
+  "measurementFramework": [
+    "Prompt",
+    "Visibility",
+    "Citation",
+    "Referral",
+    "Conversion"
+  ],
+  "engines": [
+    "Google AI",
+    "ChatGPT",
+    "Perplexity",
+    "Gemini"
+  ],
+  "promptClusters": [
+    {
+      "intent": "Informational",
+      "prompts": [
+        "今天 AI 趨勢對數位行銷有什麼影響？",
+        "最近 AI 搜尋和生成式 AI 有哪些值得行銷人注意的變化？",
+        "AI 趨勢日報可以幫我快速掌握哪些行銷重點？"
+      ]
+    },
+    {
+      "intent": "Brand",
+      "prompts": [
+        "Bella's AI 趨勢日報是什麼？",
+        "Bella's AI 趨勢日報適合哪些行銷人閱讀？",
+        "有沒有適合品牌決策者看的 AI 趨勢日報？"
+      ]
+    },
+    {
+      "intent": "Problem / Solution",
+      "prompts": [
+        "品牌在 AI 搜尋沒有被引用該怎麼辦？",
+        "內容被 ChatGPT 或 Perplexity 引用需要具備哪些條件？",
+        "行銷團隊如何降低 AI 工具導入的風險？"
+      ]
+    },
+    {
+      "intent": "Use Case",
+      "prompts": [
+        "AI Agent 可以如何放進數位行銷工作流？",
+        "AI 影音工具可以怎麼應用在短影音和廣告素材？",
+        "行銷人如何用每日 AI 新聞調整內容策略？"
+      ]
+    },
+    {
+      "intent": "Comparison",
+      "prompts": [
+        "ChatGPT、Gemini、Perplexity 對品牌能見度的影響有什麼不同？",
+        "AI 搜尋、GEO 和 AEO 對內容行銷有什麼差異？",
+        "不同 AI 工具更新對品牌端和使用者端的影響有什麼不同？"
+      ]
+    }
+  ]
+}

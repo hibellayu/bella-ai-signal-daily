@@ -79,9 +79,9 @@ v0.2.2 -> v0.2.3
 
 ## 目前版本
 
-目前版本：`v0.17.3`
+目前版本：`v0.18.0`
 
-定義：修正 2026/08/26 自動生成因 `analysis / What / So What` 策略欄位過短而退件的問題；新增策略欄位後處理補強，保留審文門檻但提升每日自動發佈穩定度。
+定義：新增 AEO 內容結構與成效驗證基礎，包含 `answerSummary`、`promptTargets`、`aeoEntities`、`citationClaims`、每日頁可引用摘要、來源支撐重點、Prompt Library 與 AEO Measurement Playbook。
 
 ## 版本升級原則
 

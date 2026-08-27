@@ -25,6 +25,8 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - 內容區最上方需顯示「今日策略判讀」，用 3-4 點先說明當日最重要的外部變化、對品牌 / 流量 / 工作流的主要影響，以及行銷人可優先採取的判斷方向。
 - 每則重點用 What / So What / Now What 結構解讀。
 - 每則新聞可標示 `impactAngles`，說明該則資訊屬於國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾、數位行銷 / 內容 / 社群 / 廣告等哪一種判讀角度。
+- 每份日報需保留 AEO 內容欄位：`answerSummary`、`promptTargets`、`aeoEntities`、`citationClaims`。目的不是堆疊關鍵字，而是讓日報能對應真實使用者提問，並提供可被 Answer Engine 引用與驗證的來源支撐重點。
+- AEO 驗證框架採 `Prompt -> Visibility -> Citation -> Referral -> Conversion`，避免把「被提到」、「被引用」、「帶來流量」與「產生結果」混為同一個指標。
 - 每則重點需顯示來源媒體名稱，媒體名稱本身直接連到原文；不能只寫來源連結、示範來源或單一查看來源按鈕。
 - 內容需有觀點闡述，不只短摘要；每則至少說清楚對行銷工作的含義與判斷。
 - 內容需避免取代原文閱讀，不複製來源文章句子、不翻譯來源段落。
@@ -176,6 +178,8 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - `robots.txt` 需允許索引，並指向 `sitemap.xml`。
 - `sitemap.xml` 至少收錄首頁；下一階段若產生每日靜態頁，需同步收錄每日頁 URL。
 - `llms.txt` 用於說明本站定位、內容結構、收錄與評分邏輯，方便 AI 搜尋或研究工具理解引用範圍。
+- `data/aeo/prompt-library.json` 用於管理 AEO Prompt Library，將關鍵字轉成 Informational、Commercial、Comparison、Brand、Problem / Solution、Use Case 等提問意圖。
+- `docs/AEO_MEASUREMENT_PLAYBOOK.md` 用於記錄 AEO 驗證方法、每月追蹤欄位與內容優化原則。
 - GA4 Measurement ID：`G-8CQ9L4MXNL`。
 - GA4 目前作為每日到訪與內容互動的資料來源；前台顯示每日到訪人數需待下一階段串接 GA4 Data API 後再做。
 
@@ -186,6 +190,7 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - 空日報或示範空資料不可進入 sitemap，避免形成薄內容。
 - 標記 `isDemo: true` 或 `noindex: true` 的日報不可產生每日靜態頁、不可進入 `/daily/` 列表與 sitemap。
 - 每日靜態頁需包含獨立 title、description、canonical、Open Graph、Twitter Card、GA4 tag 與 Article structured data。
+- 每日靜態頁需輸出可引用摘要、可回答提問、來源支撐重點與 Article structured data 的 citation，協助 AI 搜尋判讀頁面主題與引用來源。
 - `sitemap.xml` 需自動收錄首頁與所有有效每日頁。
 - 每日自動產生流程在寫入 JSON 與 manifest 後，需同步重建靜態頁與 sitemap。
 - 需產生日報列表頁：`/daily/`，列出所有有效每日頁，並提供內部連結。

@@ -164,7 +164,7 @@ function renderDigest(digest) {
   renderPriority(digest.scoringPolicy?.priority || []);
 
   const sections = digest.sections || [];
-  els.content.replaceChildren(renderStrategyBrief(digest), ...sections.map(renderSection));
+  els.content.replaceChildren(renderStrategyBrief(digest), renderAeoBrief(digest), ...sections.map(renderSection));
 }
 
 function renderStrategyBrief(digest) {
@@ -206,6 +206,63 @@ function strategyTakeaways(digest) {
     .filter(Boolean)
     .slice(0, 3)
     .map((item) => `${item}。`);
+}
+
+function renderAeoBrief(digest) {
+  const answer = normalizedAnswerSummary(digest);
+  const prompts = normalizedPromptTargets(digest);
+  const claims = normalizedCitationClaims(digest);
+  if (!answer && !prompts.length && !claims.length) return document.createDocumentFragment();
+
+  const section = document.createElement("section");
+  section.className = "aeo-brief";
+  section.setAttribute("aria-label", "AEO 可引用摘要");
+
+  const eyebrow = document.createElement("p");
+  eyebrow.className = "eyebrow";
+  eyebrow.textContent = "Answer Engine Brief";
+
+  const title = document.createElement("h2");
+  title.textContent = "AI 可引用摘要";
+
+  const answerNode = document.createElement("p");
+  answerNode.textContent = answer;
+
+  const grid = document.createElement("div");
+  grid.className = "aeo-brief__grid";
+
+  const promptBlock = document.createElement("div");
+  const promptTitle = document.createElement("h3");
+  promptTitle.textContent = "本日可回答的提問";
+  const promptList = document.createElement("ul");
+  promptList.className = "aeo-prompt-list";
+  promptList.replaceChildren(...prompts.slice(0, 6).map((item) => {
+    const li = document.createElement("li");
+    const intent = document.createElement("span");
+    intent.textContent = item.intent || "Prompt";
+    li.append(intent, document.createTextNode(item.prompt || ""));
+    return li;
+  }));
+  promptBlock.append(promptTitle, promptList);
+  grid.append(promptBlock);
+
+  if (claims.length) {
+    const claimBlock = document.createElement("div");
+    const claimTitle = document.createElement("h3");
+    claimTitle.textContent = "來源支撐重點";
+    const claimList = document.createElement("ul");
+    claimList.className = "aeo-claim-list";
+    claimList.replaceChildren(...claims.slice(0, 3).map((item) => {
+      const li = document.createElement("li");
+      li.textContent = item.claim || "";
+      return li;
+    }));
+    claimBlock.append(claimTitle, claimList);
+    grid.append(claimBlock);
+  }
+
+  section.append(eyebrow, title, answerNode, grid);
+  return section;
 }
 
 function collectionCountText(digest) {
@@ -271,6 +328,7 @@ function renderItem(item) {
   renderScoreBadge(node.querySelector(".score-badge"), item);
   node.querySelector(".summary").textContent = item.summary;
   renderParagraphs(node.querySelector(".analysis"), item.analysis || []);
+  renderCitationClaim(node.querySelector(".analysis"), item);
   renderImpactAngles(node.querySelector(".analysis"), item);
   node.querySelector(".what").textContent = item.what;
   node.querySelector(".so-what").textContent = item.soWhat;
@@ -285,6 +343,19 @@ function renderItem(item) {
   }));
 
   return node;
+}
+
+function renderCitationClaim(anchor, item) {
+  const claim = (item.citationClaim || fallbackItemCitationClaim(item)).trim();
+  if (!claim || !anchor) return;
+  const row = document.createElement("div");
+  row.className = "citation-claim";
+  const label = document.createElement("strong");
+  label.textContent = "可引用重點";
+  const body = document.createElement("span");
+  body.textContent = claim;
+  row.append(label, body);
+  anchor.after(row);
 }
 
 function renderImpactAngles(anchor, item) {
@@ -476,6 +547,65 @@ function getPrimaryUrl(item) {
     return item.sources.find((source) => source.url)?.url || "";
   }
   return item.url || "";
+}
+
+function normalizedAnswerSummary(digest) {
+  return (digest.answerSummary || digest.summary || digest.headline || "").trim();
+}
+
+function normalizedPromptTargets(digest) {
+  const prompts = [];
+  if (Array.isArray(digest.promptTargets)) {
+    digest.promptTargets.forEach((item, index) => {
+      if (typeof item === "string" && item.trim()) {
+        prompts.push({ intent: `Intent ${index + 1}`, prompt: item.trim() });
+      } else if (item && typeof item === "object" && String(item.prompt || "").trim()) {
+        prompts.push({
+          intent: String(item.intent || `Intent ${index + 1}`).trim(),
+          prompt: String(item.prompt).trim()
+        });
+      }
+    });
+  }
+  [
+    "今天 AI 趨勢對數位行銷有什麼影響？",
+    "行銷人今天應該注意哪些 AI 工具或平台變化？",
+    "AI 搜尋與生成式回答會如何改變品牌能見度？",
+    "哪些 AI 變化會影響內容行銷、社群應用或媒體廣告？",
+    "AI Agent、AI 影音或模型更新可以如何放進實際工作流？"
+  ].forEach((prompt) => {
+    if (prompts.length < 6 && !prompts.some((item) => item.prompt === prompt)) {
+      prompts.push({ intent: "Use Case", prompt });
+    }
+  });
+  return prompts.slice(0, 6);
+}
+
+function normalizedCitationClaims(digest) {
+  const claims = [];
+  if (Array.isArray(digest.citationClaims)) {
+    digest.citationClaims.forEach((item) => {
+      if (item?.claim) claims.push(item);
+    });
+  }
+  (digest.sections || []).forEach((section) => {
+    if (section.id === "applications") return;
+    (section.items || []).forEach((item) => {
+      if (claims.length >= 5) return;
+      const claim = item.citationClaim || fallbackItemCitationClaim(item);
+      if (claim) claims.push({ claim, sources: item.sources || [] });
+    });
+  });
+  return claims.slice(0, 5);
+}
+
+function fallbackItemCitationClaim(item) {
+  const title = String(item.title || "").trim();
+  const summary = String(item.summary || "").trim();
+  if (title && summary) {
+    return `${title}：${summary}`.slice(0, 120).replace(/[ ，。、；：]+$/, "。");
+  }
+  return summary || title;
 }
 
 function renderEmpty(reportDate) {
