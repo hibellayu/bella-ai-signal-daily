@@ -2,6 +2,29 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.18.2｜2026-08-27
+
+版本類型：小改版
+
+### 修改原因
+
+Bella 追問 Prompt Library 是如何建立的，確認 v0.18.0 的 Prompt Library 是依 AEO 文章方法與網站定位先建立的初始假設，而不是雙方逐題討論後定稿的策略版本。為避免未來對外說明或專案回溯時誤以為該清單已完成驗證，需要補上版本狀態、設計來源與升級條件。
+
+### 修改內容
+
+- `data/aeo/prompt-library.json` 新增 `libraryVersion`、`status`、`note`、`designSource` 與 `nextVersionCriteria`。
+- 將目前 Prompt Library 標記為 `v0.1 初始假設版`，說明尚未經跨 Answer Engine 實測驗證。
+- `docs/AEO_MEASUREMENT_PLAYBOOK.md` 新增 Prompt Library 狀態、設計流程與升級成 v1 的條件。
+- README 補充 Prompt Library 是初始假設版，後續需經 Google AI、ChatGPT、Perplexity、Gemini 測試後再升級。
+- Footer 版本升為 `v0.18.2`，版本日期維持 2026/08/27。
+
+### 驗證
+
+- `python3 -m json.tool data/aeo/prompt-library.json >/dev/null`
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `python3 scripts/static_site.py`
+- 檢查首頁 Footer 顯示 `v0.18.2`，且前台仍不顯示 AEO 技術區塊。
+
 ## v0.18.1｜2026-08-27
 
 版本類型：小改版

@@ -36,7 +36,7 @@ http://localhost:4173
 - `CHANGELOG.md`：版本記錄與修改內容回溯。
 - `docs/COPYRIGHT_RISK_POLICY.md`：版權、來源引用、示範資料與 SEO 收錄風險控管規則。
 - `docs/AEO_MEASUREMENT_PLAYBOOK.md`：AEO 成效驗證框架與每月追蹤方式。
-- `data/aeo/prompt-library.json`：AEO Prompt Library，整理可追蹤的使用者提問與意圖分群。
+- `data/aeo/prompt-library.json`：AEO Prompt Library 初始假設版，整理可追蹤的使用者提問與意圖分群，後續需經跨 Answer Engine 測試再升級成正式追蹤版。
 - `robots.txt`：搜尋引擎索引規則。
 - `sitemap.xml`：搜尋引擎提交用 sitemap。
 - `llms.txt`：給 AI 搜尋與研究工具讀取的網站定位、內容結構與引用說明。

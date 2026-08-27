@@ -1,5 +1,20 @@
 {
+  "libraryVersion": "v0.1",
+  "status": "initial_hypothesis",
   "updatedAt": "2026-08-27",
+  "note": "本版本為依 AEO 文章方法與 Bella's AI 趨勢日報定位建立的初始假設版，尚未經跨 Answer Engine 實測驗證，不視為最終策略版。",
+  "designSource": [
+    "AEO 方法：從 Keyword Thinking 轉向 Intent + Prompt Thinking",
+    "網站定位：給行銷人、品牌決策者、內容行銷、社群與媒體廣告工作者閱讀的 AI 趨勢日報",
+    "內容主題：AI 搜尋、AEO、GEO、品牌能見度、AI Agent、AI 影音、內容行銷、社群應用、媒體廣告與行銷工作流"
+  ],
+  "nextVersionCriteria": [
+    "與 Bella 共同確認目標受眾與搜尋 / 提問情境",
+    "每個 intent cluster 擴充至 5-10 題",
+    "完成 Google AI、ChatGPT、Perplexity、Gemini 跨引擎測試",
+    "依 Visibility、Citation、Referral 結果刪修 Prompt",
+    "將有效 Prompt 升級為 v1 正式追蹤版"
+  ],
   "measurementFramework": [
     "Prompt",
     "Visibility",

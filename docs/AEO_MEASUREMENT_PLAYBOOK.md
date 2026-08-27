@@ -6,6 +6,35 @@
 
 Bella's AI 趨勢日報的 AEO 目標不是只增加關鍵字，而是讓 Answer Engine 在回答行銷人常見問題時，能理解本站定位、信任內容來源，並在適合情境中引用每日靜態頁。
 
+## Prompt Library 狀態
+
+目前 `data/aeo/prompt-library.json` 是 `v0.1 初始假設版`，不是最終版。
+
+這版 Prompt Library 是依三個來源建立：
+
+- AEO 方法：從 Keyword Thinking 轉向 Intent + Prompt Thinking。
+- 網站定位：給行銷人、品牌決策者、內容行銷、社群與媒體廣告工作者閱讀。
+- 內容主題：AI 搜尋、AEO、GEO、品牌能見度、AI Agent、AI 影音、內容行銷、社群應用、媒體廣告與行銷工作流。
+
+因此它的角色是「測試假設」，不是已驗證策略。後續要透過跨 Answer Engine 測試與 GA4 referral 觀察，才決定哪些 Prompt 保留、合併、刪除或擴充。
+
+## Prompt Library 設計流程
+
+1. 定義想被誰找到：行銷人、品牌決策者、內容工作者、社群經營者、媒體廣告工作者。
+2. 定義他們會問 AI 的真實問題，而不是只列關鍵字。
+3. 將問題分成 intent cluster：Informational、Commercial、Comparison、Brand、Problem / Solution、Use Case。
+4. 每個 cluster 先放 3-5 題作為假設，避免一開始就建立太大的清單。
+5. 每月選 10-20 題跨 Google AI、ChatGPT、Perplexity、Gemini 測試。
+6. 根據 Visibility、Citation、Referral、Conversion 決定下一版 Prompt Library。
+
+## 升級成 v1 的條件
+
+- Bella 已確認目標受眾與提問情境。
+- 每個 intent cluster 至少有 5 題，且不是同義句堆疊。
+- 至少完成 1 輪跨 Answer Engine 測試。
+- 每題都有 Visibility / Citation / Referral 記錄。
+- 能指出哪些 Prompt 真的有機會讓本站被看見或引用。
+
 ## 核心框架
 
 ```text
