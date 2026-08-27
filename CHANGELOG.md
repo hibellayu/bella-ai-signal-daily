@@ -2,6 +2,28 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.18.1｜2026-08-27
+
+版本類型：小改版
+
+### 修改原因
+
+v0.18.0 將 AEO 內容結構直接顯示在前台，包含「AI 可引用摘要」、「本日可回答的提問」、「來源支撐重點」與每則新聞的「可引用重點」。Bella 確認網站第一優先是給行銷人閱讀，這些標註看起來像後台 SEO / AEO 說明，會破壞日報閱讀體驗。
+
+### 修改內容
+
+- 前台移除「AI 可引用摘要」整個區塊。
+- 前台移除每則新聞的「可引用重點」標註。
+- 保留 AEO 資料欄位、Prompt Library、Measurement Playbook、`llms.txt` 與 structured data citation。
+- 每日靜態頁移除不可見的 Question / Answer `mainEntity`，避免 structured data 與前台可見內容不一致。
+- Footer 版本升為 `v0.18.1`，版本日期維持 2026/08/27。
+
+### 驗證
+
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- `python3 scripts/static_site.py`
+- 檢查首頁與每日靜態頁不再出現 `AI 可引用摘要`、`本日可回答的提問`、`可引用重點`，並確認 Footer 顯示 `v0.18.1`。
+
 ## v0.18.0｜2026-08-27
 
 版本類型：中改版

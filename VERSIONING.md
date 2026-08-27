@@ -79,9 +79,9 @@ v0.2.2 -> v0.2.3
 
 ## 目前版本
 
-目前版本：`v0.18.0`
+目前版本：`v0.18.1`
 
-定義：新增 AEO 內容結構與成效驗證基礎，包含 `answerSummary`、`promptTargets`、`aeoEntities`、`citationClaims`、每日頁可引用摘要、來源支撐重點、Prompt Library 與 AEO Measurement Playbook。
+定義：修正 v0.18.0 將 AEO 後台標註直接顯示於前台造成閱讀體驗突兀的問題；保留 AEO 資料結構與 structured data citation，但前台回到給行銷人閱讀的日報體驗。
 
 ## 版本升級原則
 

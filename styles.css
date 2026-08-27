@@ -395,63 +395,6 @@ a {
   line-height: 1.8;
 }
 
-.aeo-brief {
-  margin-bottom: 34px;
-  padding: 22px 24px;
-  border: 1px solid rgba(196, 154, 108, 0.36);
-  border-radius: 8px;
-  background: rgba(31, 29, 27, 0.5);
-}
-
-.aeo-brief h2 {
-  margin: 0;
-  color: var(--deep-text);
-  font-family: "Noto Serif TC", serif;
-  font-size: 20px;
-  line-height: 1.35;
-}
-
-.aeo-brief > p:not(.eyebrow) {
-  margin: 12px 0 0;
-  color: var(--deep-muted);
-  font-size: 13px;
-  line-height: 1.8;
-}
-
-.aeo-brief__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  gap: 22px;
-  margin-top: 18px;
-}
-
-.aeo-brief h3 {
-  margin: 0 0 8px;
-  color: var(--copper);
-  font-size: 13px;
-  line-height: 1.5;
-}
-
-.aeo-prompt-list,
-.aeo-claim-list {
-  display: grid;
-  gap: 8px;
-  margin: 0;
-  padding-left: 18px;
-  color: var(--deep-muted);
-  font-size: 12px;
-  line-height: 1.7;
-}
-
-.aeo-prompt-list span {
-  display: inline-block;
-  margin-right: 8px;
-  color: var(--copper);
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 1.4;
-}
-
 .status {
   padding: 22px;
   border: 1px solid var(--paper-line);
@@ -743,30 +686,6 @@ a {
   color: #403832;
   font-size: 13px;
   line-height: 1.8;
-}
-
-.citation-claim {
-  display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: 14px;
-  margin: 16px 0 0;
-  padding: 12px 14px;
-  border: 1px solid rgba(214, 198, 181, 0.8);
-  border-radius: 8px;
-  background: rgba(233, 222, 208, 0.52);
-  color: #403832;
-  font-size: 13px;
-  line-height: 1.75;
-}
-
-.citation-claim strong {
-  color: var(--headline-red);
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-.citation-claim span {
-  min-width: 0;
 }
 
 .tag-row {
@@ -1078,20 +997,12 @@ a {
     font-size: 16px;
   }
 
-  .strategy-brief h2,
-  .aeo-brief h2 {
+  .strategy-brief h2 {
     font-size: 22px;
   }
 
-  .strategy-brief ul,
-  .aeo-brief > p:not(.eyebrow),
-  .aeo-prompt-list,
-  .aeo-claim-list {
+  .strategy-brief ul {
     font-size: 15px;
-  }
-
-  .aeo-brief__grid {
-    grid-template-columns: 1fr;
   }
 
   .signal-card h3 {
@@ -1103,14 +1014,8 @@ a {
   }
 
   .summary,
-  .analysis p,
-  .citation-claim {
+  .analysis p {
     font-size: 15px;
-  }
-
-  .citation-claim {
-    grid-template-columns: 1fr;
-    gap: 4px;
   }
 
   .framework h4 {

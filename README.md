@@ -81,7 +81,7 @@ AIBase 已作為補充來源，用來補中國 AI 模型、工具、平台與應
 ## 搜尋與分析
 
 - 正式網址：https://hibellayu.github.io/bella-ai-signal-daily/
-- 每日靜態頁會輸出 `Article` structured data、來源 citation、可回答提問與 AI 可引用摘要。
+- 每日靜態頁會輸出 `Article` structured data 與來源 citation；AEO Prompt 與可引用摘要保留在資料層，不直接顯示成前台技術區塊。
 - AEO 驗證採用 `Prompt -> Visibility -> Citation -> Referral -> Conversion` 框架，不以單一 Prompt 或單一 Answer Engine 判斷成敗。
 - GA4 Measurement ID：`G-8CQ9L4MXNL`
 - SEO 基礎設定：title、description、canonical、Open Graph、Twitter Card、structured data。

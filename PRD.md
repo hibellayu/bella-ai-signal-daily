@@ -190,7 +190,7 @@ Bella's AI Signal Daily 是給行銷人與品牌決策者使用的 AI 趨勢行�
 - 空日報或示範空資料不可進入 sitemap，避免形成薄內容。
 - 標記 `isDemo: true` 或 `noindex: true` 的日報不可產生每日靜態頁、不可進入 `/daily/` 列表與 sitemap。
 - 每日靜態頁需包含獨立 title、description、canonical、Open Graph、Twitter Card、GA4 tag 與 Article structured data。
-- 每日靜態頁需輸出可引用摘要、可回答提問、來源支撐重點與 Article structured data 的 citation，協助 AI 搜尋判讀頁面主題與引用來源。
+- 每日靜態頁需輸出 Article structured data 的 citation；可引用摘要、可回答提問與來源支撐重點保留在資料層與生成資料中，不直接顯示成前台技術區塊，避免干擾行銷人閱讀體驗。
 - `sitemap.xml` 需自動收錄首頁與所有有效每日頁。
 - 每日自動產生流程在寫入 JSON 與 manifest 後，需同步重建靜態頁與 sitemap。
 - 需產生日報列表頁：`/daily/`，列出所有有效每日頁，並提供內部連結。

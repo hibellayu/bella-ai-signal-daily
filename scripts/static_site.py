@@ -19,9 +19,9 @@ SITEMAP_PATH = ROOT / "sitemap.xml"
 SITE_URL = "https://hibellayu.github.io/bella-ai-signal-daily/"
 SITE_NAME = "Bella's AI 趨勢日報"
 SITE_SUBTITLE = "Daily brief for marketing decisions"
-VERSION = "v0.18.0"
+VERSION = "v0.18.1"
 VERSION_DATE = "2026/08/27"
-ASSET_VERSION = "20260827a"
+ASSET_VERSION = "20260827b"
 CONTENT_NOTICE = "本站內容為 AI 趨勢整理、評論與行銷應用解讀；新聞來源與原文著作權屬各原媒體與作者所有。若需完整內容，請閱讀原文。"
 SOCIAL_IMAGE_URL = f"{SITE_URL}assets/og-image.png"
 SOCIAL_IMAGE_ALT = "Bella's AI 趨勢日報品牌預覽圖"
@@ -318,7 +318,6 @@ def render_home_page(latest_digest: dict[str, Any]) -> str:
       <div id="statusMessage" class="status" hidden></div>
       <div id="digestContent">
 {render_strategy_brief(latest_digest)}
-{render_aeo_brief(latest_digest)}
 {render_sections(latest_digest)}
       </div>
     </section>
@@ -340,7 +339,6 @@ def render_site_identity_section() -> str:
       <h2 id="siteIdentityTitle">關於 Bella's AI 趨勢日報</h2>
       <p>Bella's AI 趨勢日報是給行銷人、品牌決策者與內容工作者閱讀的 AI 趨勢整理。本站每日把 AI 產業新聞、工具更新、搜尋與社群變化，轉譯成品牌策略、數位行銷、內容行銷、媒體廣告與團隊流程可以使用的判讀。</p>
       <p>本站不是一般新聞列表，而是用「國際事件與產業格局、品牌端、使用者端 / 深度工作者、一般社會大眾」四層框架，判斷 AI 變化如何影響品牌被看見、內容被引用、工具被採用，以及行銷工作流程如何調整。</p>
-      <p>為了提升 AI 搜尋與 AEO 可引用性，每份日報會整理可回答的使用者提問、可引用摘要與來源支撐重點，讓內容不只被搜尋到，也更容易被 Answer Engine 正確理解與引用。</p>
     </div>
     <ul aria-label="本站適合引用的主題">
       <li>AI 趨勢日報</li>
@@ -361,7 +359,6 @@ def render_daily_page(digest: dict[str, Any]) -> str:
     canonical = f"{SITE_URL}daily/{report_date}/"
     keywords = digest_keywords(digest)
     citation_claims = normalized_citation_claims(digest)
-    prompts = normalized_prompt_targets(digest)
     json_ld = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -380,17 +377,6 @@ def render_daily_page(digest: dict[str, Any]) -> str:
         "about": [{"@type": "Thing", "name": keyword} for keyword in keywords[:12]],
         "mentions": [{"@type": "Thing", "name": entity} for entity in normalized_aeo_entities(digest)[:12]],
         "citation": [source["url"] for claim in citation_claims for source in claim.get("sources", []) if source.get("url")],
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": prompt["prompt"],
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": normalized_answer_summary(digest),
-                },
-            }
-            for prompt in prompts[:5]
-        ],
     }
 
     return f"""<!DOCTYPE html>
@@ -436,7 +422,6 @@ def render_daily_page(digest: dict[str, Any]) -> str:
     {render_meta_panel(digest)}
     <section class="content">
       {render_strategy_brief(digest)}
-      {render_aeo_brief(digest)}
       {render_sections(digest)}
     </section>
   </main>
@@ -525,45 +510,6 @@ def render_strategy_brief(digest: dict[str, Any]) -> str:
       </section>"""
 
 
-def render_aeo_brief(digest: dict[str, Any]) -> str:
-    answer = normalized_answer_summary(digest)
-    prompts = normalized_prompt_targets(digest)
-    claims = normalized_citation_claims(digest)
-    if not answer and not prompts and not claims:
-        return ""
-    prompt_items = "\n".join(
-        f"""          <li><span>{escape(item.get("intent", "Prompt"))}</span>{escape(item.get("prompt", ""))}</li>"""
-        for item in prompts[:6]
-    )
-    claim_items = "\n".join(
-        f"""          <li>{escape(claim.get("claim", ""))}</li>"""
-        for claim in claims[:3]
-        if claim.get("claim")
-    )
-    claims_block = ""
-    if claim_items:
-        claims_block = f"""        <div>
-          <h3>來源支撐重點</h3>
-          <ul class="aeo-claim-list">
-{claim_items}
-          </ul>
-        </div>"""
-    return f"""      <section class="aeo-brief" aria-label="AEO 可引用摘要">
-        <p class="eyebrow">Answer Engine Brief</p>
-        <h2>AI 可引用摘要</h2>
-        <p>{escape(answer)}</p>
-        <div class="aeo-brief__grid">
-          <div>
-            <h3>本日可回答的提問</h3>
-            <ul class="aeo-prompt-list">
-{prompt_items}
-            </ul>
-          </div>
-{claims_block}
-        </div>
-      </section>"""
-
-
 def strategy_takeaways(digest: dict[str, Any]) -> list[str]:
     explicit = digest.get("strategyTakeaways")
     if isinstance(explicit, list):
@@ -625,7 +571,6 @@ def render_item(item: dict[str, Any]) -> str:
     tags = "".join(f'<span class="tag">{escape(tag)}</span>' for tag in item.get("tags", []))
     score_badge = render_static_score(item)
     angles = render_impact_angles(item)
-    citation_claim = render_item_citation_claim(item)
     return f"""          <article class="signal-card">
             <div class="signal-card__head">
               <div>
@@ -636,7 +581,6 @@ def render_item(item: dict[str, Any]) -> str:
             </div>
             <p class="summary">{escape(item.get("summary", ""))}</p>
             <div class="analysis">{analysis}</div>
-            {citation_claim}
             {angles}
             <div class="tag-row">{tags}</div>
             <div class="framework">
@@ -664,15 +608,6 @@ def render_impact_angles(item: dict[str, Any]) -> str:
     if not tags:
         return ""
     return f"""<div class="impact-angle-row"><span>判讀角度</span>{tags}</div>"""
-
-
-def render_item_citation_claim(item: dict[str, Any]) -> str:
-    claim = str(item.get("citationClaim", "")).strip()
-    if not claim:
-        claim = fallback_item_citation_claim(item)
-    if not claim:
-        return ""
-    return f"""<div class="citation-claim"><strong>可引用重點</strong><span>{escape(claim)}</span></div>"""
 
 
 def render_static_score(item: dict[str, Any]) -> str:
@@ -976,16 +911,6 @@ def digest_keywords(digest: dict[str, Any]) -> list[str]:
             for source in item.get("sources", []):
                 add_unique(keywords, source.get("name", ""))
     return keywords[:36]
-
-
-def normalized_answer_summary(digest: dict[str, Any]) -> str:
-    answer = str(digest.get("answerSummary", "")).strip()
-    if answer:
-        return answer
-    summary = str(digest.get("summary", "")).strip()
-    if summary:
-        return summary
-    return str(digest.get("headline", SITE_NAME)).strip()
 
 
 def normalized_prompt_targets(digest: dict[str, Any]) -> list[dict[str, str]]:
