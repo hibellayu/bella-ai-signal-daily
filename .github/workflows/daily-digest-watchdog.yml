@@ -1,4 +1,4 @@
-name: Daily AI Signal
+name: Daily AI Signal Watchdog
 
 on:
   workflow_dispatch:
@@ -7,20 +7,17 @@ on:
         description: "Report date in YYYY-MM-DD (optional)"
         required: false
         type: string
-      force:
-        description: "Regenerate even when the digest already exists"
-        required: false
-        default: false
-        type: boolean
   schedule:
-    # Start at 06:30 Asia/Taipei so GitHub scheduling delays do not push publication past 07:00.
-    - cron: "30 22 * * *"
+    # Fallback checks after the main 06:30 Asia/Taipei schedule.
+    # If GitHub delays or drops the main schedule, this job publishes the missing daily digest.
+    - cron: "30 23 * * *"
+    - cron: "30 1 * * *"
 
 permissions:
   contents: write
 
 jobs:
-  generate:
+  recover-missing-digest:
     runs-on: ubuntu-latest
     concurrency:
       group: daily-ai-signal-publish-${{ github.ref }}
@@ -41,19 +38,24 @@ jobs:
           fi
           echo "date=$REPORT_DATE" >> "$GITHUB_OUTPUT"
           if [ -f "data/digests/$REPORT_DATE.json" ]; then
-            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "missing=false" >> "$GITHUB_OUTPUT"
           else
-            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "missing=true" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Stop when digest already exists
+        if: steps.report.outputs.missing != 'true'
+        run: |
+          echo "Digest data/digests/${{ steps.report.outputs.date }}.json already exists; no recovery needed."
+
       - name: Set up Python
-        if: steps.report.outputs.exists != 'true' || inputs.force == true
+        if: steps.report.outputs.missing == 'true'
         uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
       - name: Validate generation credentials
-        if: steps.report.outputs.exists != 'true' || inputs.force == true
+        if: steps.report.outputs.missing == 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
@@ -62,8 +64,8 @@ jobs:
             exit 1
           fi
 
-      - name: Generate digest
-        if: steps.report.outputs.exists != 'true' || inputs.force == true
+      - name: Generate missing digest
+        if: steps.report.outputs.missing == 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
@@ -71,14 +73,9 @@ jobs:
         run: |
           python scripts/generate_daily_digest.py --report-date "${{ steps.report.outputs.date }}"
 
-      - name: Commit changes
-        if: steps.report.outputs.exists != 'true' || inputs.force == true
+      - name: Commit recovery changes
+        if: steps.report.outputs.missing == 'true'
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: "chore: generate daily AI signal"
+          commit_message: "chore: recover missing daily AI signal"
           file_pattern: "index.html data/digests/*.json daily sitemap.xml"
-
-      - name: Skip existing digest
-        if: steps.report.outputs.exists == 'true' && inputs.force != true
-        run: |
-          echo "Digest data/digests/${{ steps.report.outputs.date }}.json already exists; generation skipped."

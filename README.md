@@ -48,7 +48,9 @@ http://localhost:4173
 
 `.github/workflows/daily-digest.yml` 預設每天 UTC 22:30 執行，對應台北時間 06:30，為 GitHub 排程與 Pages 部署預留緩衝。流程會抓取來源 feed / 公開 HTML 列表、篩選 AI 相關新聞、用 OpenAI API 生成日報 JSON，再提交到 GitHub Pages。
 
-需要回補特定日期時，可在 GitHub Actions 手動執行 `Daily AI Signal`，並於 `report_date` 輸入 `YYYY-MM-DD`。未填日期時，流程會產生當日日報。
+`.github/workflows/daily-digest-watchdog.yml` 是補跑保險機制，會在台北時間 07:30 與 09:30 檢查當日日報是否存在。若 `data/digests/YYYY-MM-DD.json` 已存在，流程會跳過；若不存在，會自動補生成並提交，避免 GitHub 排程延遲或漏跑造成前台停在前一天。
+
+需要回補特定日期時，可在 GitHub Actions 手動執行 `Daily AI Signal`，並於 `report_date` 輸入 `YYYY-MM-DD`。未填日期時，流程會產生當日日報。若該日期已存在但需要重新生成，可勾選 `force`。
 
 需要在 GitHub repository secrets 設定：
 
@@ -64,7 +66,7 @@ OPENAI_MODEL
 
 若沒有候選新聞、沒有 `OPENAI_API_KEY` 或 AI 產文未通過品質檢查，流程會失敗並保留上一份有效日報，不會發布空日報。GitHub Actions 會顯示紅燈，避免把「未發布」誤判為成功。
 
-每日排程會在台北時間 06:30 啟動，預留 GitHub Actions 排程延遲與部署時間，目標是在 07:00 前完成。成功生成後會一併提交日報 JSON、每日靜態頁、日報列表與 `sitemap.xml`。
+每日主排程會在台北時間 06:30 啟動，預留 GitHub Actions 排程延遲與部署時間，目標是在 07:00 前完成。補跑排程會在 07:30 與 09:30 檢查是否缺檔。成功生成後會一併提交日報 JSON、每日靜態頁、日報列表與 `sitemap.xml`。
 
 生成內容遵循來源風險控管：RSS / Atom 摘要只截取短片段供判斷，產文不可複製或翻譯來源段落，並以行銷策略觀點重新撰寫。示範日報與標記 `noindex` 的資料不會進入每日靜態頁與 sitemap。
 
