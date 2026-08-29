@@ -1,6 +1,13 @@
 {
-  "latest": "2026-08-28",
+  "latest": "2026-08-29",
   "digests": [
+    {
+      "reportDate": "2026-08-29",
+      "coverageDate": "2026-08-28",
+      "title": "Bella's AI 趨勢日報｜2026/08/29",
+      "summary": "今日AI領域聚焦騰訊發布開源旗艦模型Hy4preview及Midjourney V8.2圖像編輯模型上線，Google推出Gemini Omni 1.1 Flash及3.5轉錄模型強化語音及搜尋體驗。Anthropic發布模型硬體標準MHS，推動AI代理直接操控實體設備，並與Salesforce合作Claudeforce整合CRM。OpenAI聯合Google、Anthropic等逾百家企業發公開信，警示AI驅動網路攻擊將更普遍，呼籲加強集體防禦。Meta重金押注Anthropic，反映大模型軍備競賽加劇。Google AI搜尋持續優化AI模式體驗，Semrush提供追蹤AI Overviews工具，助行銷人掌握AI搜尋趨勢。整體趨勢顯示AI代理與模型硬體整合成為行銷與企業應用新焦點，安全風險與數據品質成挑戰。",
+      "path": "data/digests/2026-08-29.json"
+    },
     {
       "reportDate": "2026-08-28",
       "coverageDate": "2026-08-27",
