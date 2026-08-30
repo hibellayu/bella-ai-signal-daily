@@ -1,6 +1,13 @@
 {
-  "latest": "2026-08-29",
+  "latest": "2026-08-30",
   "digests": [
+    {
+      "reportDate": "2026-08-30",
+      "coverageDate": "2026-08-29",
+      "title": "Bella's AI 趨勢日報｜2026/08/30",
+      "summary": "Meta前團隊創立的Perceptron推出Isaac 0.5視覺AI模型，強化機器人視覺理解與思考能力，標誌著視覺AI技術新階段。Nvidia持續推動AI算力與系統整合優化，韓國政府大手筆投入算力資源，促進生成式AI普及。OpenAI因與SpaceX合作問題切斷Cursor模型供應，反映AI生態競爭與合作複雜性。Anthropic推動硬體標準化以加速AI代理整合，但面臨Sony Music與Warner版權訴訟，凸顯AI內容合規風險。TestMu AI發布Agent Assurance強化AI代理安全驗證，回應企業部署需求。AI生成影像與濾鏡引發消費者審美疲勞，高階市場反而偏好真人行銷，提醒品牌調整內容策略。整體趨勢顯示行銷人須同時關注AI技術演進、資安合規與消費者真實感受，重新設計品牌與內容接觸點。",
+      "path": "data/digests/2026-08-30.json"
+    },
     {
       "reportDate": "2026-08-29",
       "coverageDate": "2026-08-28",
