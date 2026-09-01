@@ -1,0 +1,473 @@
+{
+  "reportDate": "2026-09-01",
+  "coverageDate": "2026-08-31",
+  "generatedAt": "2026-09-01T09:19:37+08:00",
+  "headline": "AI生成詐騙防制升級與AI搜尋廣告新形態，行銷策略迎來風險與機遇並存的關鍵轉折",
+  "summary": "2026年8月底，生成式AI詐騙威脅加劇，台灣數位發展部攜手Meta、Google等四大平台建立AI源頭防詐聯防機制，從事後下架轉向事前預防。同時，Google AI搜尋新增購物輪播廣告，OpenAI ChatGPT廣告業務突破10億美元年營收，並面臨歐盟更嚴格監管。Anthropic遭遇大規模賬號盜用事件，凸顯AI平台資安風險。Semrush發布多項AI搜尋與SEO關鍵績效指標，助行銷人優化AI可見度與內容策略。阿里千問創作Agent Teams推動多智能體協作，改變影音內容製作流程。整體趨勢顯示，AI技術在行銷生態系中既帶來新商機，也伴隨資安、合規與內容可信度挑戰，行銷決策者需同步調整策略與流程，強化品牌信任與用戶體驗。",
+  "answerSummary": "生成式AI加劇詐騙風險，促使平台與政府合作強化事前偵測，品牌必須提升內容真實性與安全防護。Google與OpenAI擴大AI搜尋廣告布局，行銷人應優化AI可見度與廣告格式應用。資安事件提醒行銷團隊加強帳號與數據保護。AI多智能體工具推動內容製作流程革新，行銷團隊可利用協作AI提升創意與效率。",
+  "promptTargets": [
+    {
+      "intent": "Informational",
+      "prompt": "生成式AI如何影響網路詐騙的防範機制？"
+    },
+    {
+      "intent": "Informational",
+      "prompt": "Google AI搜尋新增的購物輪播廣告對品牌曝光有何影響？"
+    },
+    {
+      "intent": "Commercial",
+      "prompt": "有哪些AI內容行銷工具可以提升SEO與AI搜尋可見度？"
+    },
+    {
+      "intent": "Comparison",
+      "prompt": "OpenAI與Anthropic在AI平台安全與服務模式上有何差異？"
+    },
+    {
+      "intent": "Brand",
+      "prompt": "面對AI生成詐騙內容，品牌應如何維護信任與內容真實性？"
+    },
+    {
+      "intent": "Problem / Solution",
+      "prompt": "行銷團隊如何應對AI平台資安事件帶來的風險？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "多智能體AI協作工具如何改變影音內容的創作流程？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "如何利用Semrush的SEO KPIs提升品牌在AI搜尋中的排名？"
+    }
+  ],
+  "aeoEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Semrush",
+    "ChatGPT",
+    "生成式AI詐騙",
+    "AI搜尋廣告",
+    "AI內容行銷工具",
+    "阿里千問創作Agent Teams",
+    "資安事件",
+    "EU數位服務法",
+    "多智能體協作",
+    "AI可見度",
+    "AI模型訓練",
+    "數位發展部"
+  ],
+  "citationClaims": [
+    {
+      "claim": "台灣數位發展部與Meta、Google等四大平台合作，建立AI源頭防詐聯防機制，從事後下架轉向事前預防，提升詐騙內容主動辨識能力。",
+      "sources": [
+        {
+          "name": "iThome",
+          "publishedDate": "2026-08-31",
+          "url": "https://www.ithome.com.tw/news/178552"
+        }
+      ]
+    },
+    {
+      "claim": "Google AI Mode搜尋結果中新增購物輪播廣告與底部單一廣告單元，強化品牌曝光與購物轉換機會。",
+      "sources": [
+        {
+          "name": "Search Engine Roundtable",
+          "publishedDate": "2026-08-31",
+          "url": "https://www.seroundtable.com/google-ai-mode-shopping-carousel-ads-41973.html"
+        }
+      ]
+    },
+    {
+      "claim": "OpenAI ChatGPT廣告業務年化營收達10億美元，顯示AI搜尋廣告市場規模快速擴大，同時面臨歐盟依數位服務法加強監管要求。",
+      "sources": [
+        {
+          "name": "The Decoder",
+          "publishedDate": "2026-08-31",
+          "url": "https://the-decoder.com/openai-says-its-chatgpt-ad-business-hits-a-1-billion-annual-run-rate/"
+        },
+        {
+          "name": "The Verge",
+          "publishedDate": "2026-08-31",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa"
+        }
+      ]
+    },
+    {
+      "claim": "Anthropic平台遭遇大規模帳號盜用，攻擊目標從銀行卡轉向AI算力與API額度，凸顯AI平台資安防護的重要性。",
+      "sources": [
+        {
+          "name": "AIBase AI News",
+          "publishedDate": "2026-08-31",
+          "url": "https://news.aibase.com/tw/news/30722"
+        }
+      ]
+    },
+    {
+      "claim": "阿里千問創作Agent Teams上線，推動多智能體協作，將AI視頻創作從單一提示詞升級為團隊分工協作，提升影音內容製作效率與品質。",
+      "sources": [
+        {
+          "name": "AIBase AI News",
+          "publishedDate": "2026-08-31",
+          "url": "https://news.aibase.com/tw/news/30721"
+        }
+      ]
+    }
+  ],
+  "strategyTakeaways": [
+    "生成式AI詐騙防制由政府與平台合作推動，品牌必須強化內容真實性與安全監控，避免信任流失。",
+    "AI搜尋廣告格式多元化，品牌應優化AI可見度與購物廣告布局，提升轉換率與曝光效率。",
+    "AI平台資安事件提醒行銷團隊加強帳號與數據安全治理，避免服務中斷與商譽損害。",
+    "多智能體AI創作工具改變內容製作流程，行銷團隊可導入協作AI提升創意產出與工作效率。"
+  ],
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek",
+    "Qwen",
+    "Alibaba",
+    "Tencent",
+    "ByteDance",
+    "Seedance",
+    "Kling",
+    "Runway",
+    "Pika",
+    "Veo",
+    "Dreamina",
+    "CapCut",
+    "Doubao",
+    "Zhipu",
+    "MiniMax",
+    "Xiaohongshu"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾",
+      "AI 影音 / 創意工具"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "本日多起關鍵事件影響AI生態與行銷策略，包括生成式AI詐騙防制升級、AI平台資安風險與歐盟監管新規，這些均改變產業競爭與品牌風險管理。",
+      "items": [
+        {
+          "title": "AI生成詐騙內容成新威脅，數發部與Meta、Google等四大平臺聯手建立AI源頭阻詐防線",
+          "summary": "生成式AI助長詐騙文案與假帳號快速擴散，台灣數位發展部與四大平台合作，建立AI模型訓練與情資交換機制，強化事前偵測與防範。",
+          "analysis": [
+            "此舉反映平台與政府合作新商業模式，將AI模型訓練與詐騙情資結合，提升平台主動防禦能力，改變過去以事後下架為主的監管規則。這則新聞反映 AI 安全、來源透明、模型治理與商業化之間的拉扯正在升高。行銷人需要把它視為品牌信任問題，而不是純技術或法務議題，因為消費者會越來越在意內容是不是由 AI 生成、資料如何被使用、誰要為結果負責。",
+            "品牌面對AI生成詐騙威脅，必須加強內容真實性與安全監控，避免被假訊息混淆，並調整行銷策略以維護用戶信任與品牌形象。對品牌端、平台端與內容工作者而言，治理要求會改變工具選型與產製流程。若缺少來源標註、審核紀錄與風險分級，短期可能只是效率問題，長期會變成信任、法遵與公關危機的壓力。"
+          ],
+          "citationClaim": "台灣數位發展部與Meta、Google等四大平台合作，建立AI源頭防詐聯防機制，從事後下架轉向事前預防，提升詐騙內容主動辨識能力。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "一般社會大眾",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-08-31",
+              "url": "https://www.ithome.com.tw/news/178552"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 0,
+            "trackedEntityRelevance": 3,
+            "total": 16
+          },
+          "tags": [
+            "生成式AI",
+            "詐騙防制",
+            "平台合作",
+            "內容安全"
+          ],
+          "what": "生成式AI助長詐騙內容快速擴散，數位發展部與四大平台合作建立AI模型與情資交換機制，提升事前防範能力。",
+          "soWhat": "品牌面臨假訊息風險加劇，必須強化內容真實性與安全監控，否則將失去用戶信任與品牌價值。品牌、平台與供應商都會被迫提高透明度，未來工具好不好用之外，能不能被信任、能不能被稽核也會成為採用條件，並影響合作夥伴選擇。",
+          "nowWhat": "選擇1個品牌主要內容頁面，建立AI辨識詐騙風險的監控指標，並與平台合作分享異常訊息，確保內容真實性。完成後輸出 1 份素材檢查表，列出受眾、訊息、版位與成效指標各 1 欄，先找出 1 個最需要重測的廣告變因，作為下一輪素材判斷依據。"
+        },
+        {
+          "title": "Anthropic遭大規模盜號，大批賬號被強制註銷",
+          "summary": "Anthropic平台遭黑客攻擊，數千賬號被強制註銷並清空付款資訊，攻擊目標從金融資產轉向AI算力與API額度，凸顯AI平台資安風險。",
+          "analysis": [
+            "此事件揭示AI服務提供商面臨的新型資安威脅，尤其是算力與API資源成為攻擊目標，影響平台營運與用戶信任。這則新聞反映 AI 安全、來源透明、模型治理與商業化之間的拉扯正在升高。行銷人需要把它視為品牌信任問題，而不是純技術或法務議題，因為消費者會越來越在意內容是不是由 AI 生成、資料如何被使用、誰要為結果負責。",
+            "行銷團隊需將資安納入風險管理核心，強化帳號安全與數據保護，避免服務中斷與品牌形象受損。對品牌端、平台端與內容工作者而言，治理要求會改變工具選型與產製流程。若缺少來源標註、審核紀錄與風險分級，短期可能只是效率問題，長期會變成信任、法遵與公關危機的壓力。"
+          ],
+          "citationClaim": "Anthropic平台遭遇大規模帳號盜用，攻擊目標從銀行卡轉向AI算力與API額度，凸顯AI平台資安防護的重要性。",
+          "impactAngles": [
+            "國際事件與產業格局"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-08-31",
+              "url": "https://news.aibase.com/tw/news/30722"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 1,
+            "toolUsability": 0,
+            "trackedEntityRelevance": 2,
+            "total": 9
+          },
+          "tags": [
+            "資安事件",
+            "Anthropic",
+            "AI平台安全"
+          ],
+          "what": "Anthropic遭遇黑客攻擊，數千賬號被強制註銷並清空付款資訊，攻擊目標轉向AI算力與API額度。",
+          "soWhat": "行銷團隊必須加強資安防護，避免帳號被盜用導致服務中斷與品牌信任流失。品牌、平台與供應商都會被迫提高透明度，未來工具好不好用之外，能不能被信任、能不能被稽核也會成為採用條件，並影響合作夥伴選擇。",
+          "nowWhat": "檢查並更新所有AI平台帳號安全設定，啟用多重驗證，制定資安事件應變流程，確保數據與服務安全。完成後輸出 1 張行動紀錄卡，列出起始素材、完成動作與下一個判斷點各 1 欄，先完成 1 個最小可驗證的調整，留下可回看的判斷依據。"
+        },
+        {
+          "title": "ChatGPT面臨歐盟更嚴格監管，OpenAI廣告業務年營收突破10億美元",
+          "summary": "歐盟將ChatGPT列為大型搜尋引擎，依數位服務法要求OpenAI加強風險評估與內容監控；同時OpenAI廣告業務年化營收達10億美元，顯示AI搜尋廣告市場快速成長。",
+          "analysis": [
+            "歐盟監管強化意味著AI搜尋平台必須提升合規與內容安全管理，改變平台商業模式與風險治理規則。這則資訊的核心在於 AI 搜尋、推薦或引用規則正在重排品牌被看見的入口。行銷判讀不能只停在流量升降，而要追問品牌內容是否足夠清楚、可信、可被機器摘錄，並能在不同搜尋情境中被正確理解。",
+            "品牌行銷需適應AI搜尋廣告新規與格式，優化內容以符合監管要求並提升曝光與轉換效益。受影響的不只是 SEO 團隊，也包含內容、品牌、公關與產品資訊管理。當平台把答案留在結果頁或 AI 回答中，品牌需要經營可引用的事實、清楚的比較資料與一致的訊息來源，避免能見度被平台或競品重新定義。"
+          ],
+          "citationClaim": "OpenAI ChatGPT廣告業務年化營收達10億美元，並面臨歐盟依數位服務法加強監管，需提交風險評估與內容監控報告。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "一般社會大眾"
+          ],
+          "sources": [
+            {
+              "name": "The Decoder",
+              "publishedDate": "2026-08-31",
+              "url": "https://the-decoder.com/openai-says-its-chatgpt-ad-business-hits-a-1-billion-annual-run-rate/"
+            },
+            {
+              "name": "The Verge",
+              "publishedDate": "2026-08-31",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 1,
+            "trackedEntityRelevance": 3,
+            "total": 18
+          },
+          "tags": [
+            "OpenAI",
+            "ChatGPT",
+            "歐盟監管",
+            "AI搜尋廣告"
+          ],
+          "what": "歐盟將ChatGPT視為大型搜尋引擎，要求OpenAI依數位服務法提交風險評估，OpenAI廣告業務年營收突破10億美元。",
+          "soWhat": "品牌需調整AI搜尋廣告策略，符合監管要求並利用廣告新格式提升曝光與轉換。SEO、內容與品牌團隊都會被影響，因為競爭焦點會從排名延伸到 AI 是否願意引用、如何描述品牌，以及是否把流量留在平台內。",
+          "nowWhat": "優化3篇主要內容，提升AI搜尋可讀性與外部引用，並設計符合監管的廣告素材，提升品牌在AI搜尋中的曝光度。完成後輸出 1 份素材檢查表，列出受眾、訊息、版位與成效指標各 1 欄，先找出 1 個最需要重測的廣告變因，作為下一輪素材判斷依據。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "多款AI行銷與內容工具更新，涵蓋SEO指標、AI內容行銷套件與多智能體協作平台，推動行銷工作流與創意製作革新。",
+      "items": [
+        {
+          "title": "Semrush發布18項SEO KPIs，聚焦AI搜尋與品牌可見度",
+          "summary": "Semrush提出涵蓋AI可見度、關鍵字排名、品牌提及量等多項SEO指標，幫助行銷人量化AI搜尋表現與優化內容策略。",
+          "analysis": [
+            "SEO工具逐步整合AI搜尋指標，反映AI搜尋成為數位行銷重要流量來源，改變傳統SEO評估標準。這則資訊的核心在於 AI 搜尋、推薦或引用規則正在重排品牌被看見的入口。行銷判讀不能只停在流量升降，而要追問品牌內容是否足夠清楚、可信、可被機器摘錄，並能在不同搜尋情境中被正確理解。",
+            "行銷團隊可依據這些指標調整內容優化與外部連結策略，提升品牌在AI搜尋結果中的曝光與信任度。受影響的不只是 SEO 團隊，也包含內容、品牌、公關與產品資訊管理。當平台把答案留在結果頁或 AI 回答中，品牌需要經營可引用的事實、清楚的比較資料與一致的訊息來源，避免能見度被平台或競品重新定義。"
+          ],
+          "citationClaim": "Semrush提出18項SEO KPIs，包含AI可見度與品牌提及，協助行銷人追蹤與優化AI搜尋表現。",
+          "impactAngles": [
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "Semrush Blog",
+              "publishedDate": "2026-08-31",
+              "url": "https://www.semrush.com/blog/seo-kpis/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 19
+          },
+          "tags": [
+            "SEO",
+            "AI搜尋",
+            "品牌可見度",
+            "內容優化"
+          ],
+          "what": "Semrush發布涵蓋AI搜尋的18項SEO關鍵績效指標，幫助行銷人量化與優化AI搜尋流量與品牌曝光。",
+          "soWhat": "行銷團隊必須納入AI搜尋指標，調整內容與外部連結策略，提升品牌在AI搜尋中的競爭力。SEO、內容與品牌團隊都會被影響，因為競爭焦點會從排名延伸到 AI 是否願意引用、如何描述品牌，以及是否把流量留在平台內。",
+          "nowWhat": "選擇3個核心SEO指標，建立監控儀表板，定期分析AI搜尋表現，並優化內容與外部引用鏈結。完成後輸出 1 份素材檢查表，列出受眾、訊息、版位與成效指標各 1 欄，先找出 1 個最需要重測的廣告變因，作為下一輪素材判斷依據。"
+        },
+        {
+          "title": "阿里千問創作Agent Teams上線，推動多智能體協作影音製作",
+          "summary": "千問創作Agent Teams支援多智能體分工協作，從創意拆解到腳本、導演、美術全覆蓋，提升AI視頻創作效率與品質，支持多設備同步作業。",
+          "analysis": [
+            "多智能體協作代表AI內容製作從單點提示詞轉向團隊式協同，改變創意與製作流程，提升內容多樣性與專業度。這個變化代表 AI 影音工具正從單點素材生成，往腳本、分鏡、剪輯、版本測試的完整內容產線靠近。對行銷人來說，重點不是多一個工具，而是短影音與廣告素材的測試速度、成本結構和創意決策方式正在改變。",
+            "行銷團隊可導入此類工具，重組影音內容製作流程，縮短製作周期並提升素材多版本測試能力。品牌、代理商與內容工作者會受到不同層面的影響。品牌端需要重新定義素材審核與版權邊界，代理商需要把腳本企劃和工具流程整合，個人創作者則能用更低成本做出多版本內容，但也更需要清楚的風格判斷與資料標註。"
+          ],
+          "citationClaim": "阿里千問創作Agent Teams上線，實現多智能體協作，提升AI視頻創作效率與品質。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-08-31",
+              "url": "https://news.aibase.com/tw/news/30721"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 5,
+            "trackedEntityRelevance": 3,
+            "total": 17
+          },
+          "tags": [
+            "多智能體",
+            "影音製作",
+            "AI協作",
+            "阿里千問"
+          ],
+          "what": "千問創作Agent Teams推出多智能體協作功能，覆蓋創意拆解到視頻製作全流程，支持多設備同步。",
+          "soWhat": "影音內容製作流程將因多智能體協作而重組，行銷團隊能提升創意效率與素材多版本測試能力。品牌端會更容易大量測試素材，但也更需要明確的創意方向、審核規範與成效判讀，避免只是更快產出更多相似內容，卻沒有累積可複用的內容方法。",
+          "nowWhat": "導入Agent Teams工具，選擇1個影音專案，實施多智能體分工協作，完成至少3個版本素材的快速迭代。完成後輸出 1 張三欄表：原始素材、AI 生成版本、可投放平台，先保留 1 個最容易執行的素材測試，並記下是否值得放進下一次內容企劃。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "AI搜尋廣告規模擴大與監管趨嚴，生成式AI詐騙防制與資安事件提醒行銷風險管理的重要性，多智能體協作工具推動內容製作流程革新。",
+      "items": [
+        {
+          "title": "AI搜尋廣告市場規模快速擴張與合規監管趨嚴",
+          "summary": "OpenAI ChatGPT廣告業務突破10億美元年營收，Google AI Mode新增購物輪播廣告，AI搜尋廣告成為數位行銷主流，同時歐盟加強對AI搜尋平台監管，要求風險評估與內容監控。",
+          "analysis": [
+            "AI搜尋廣告新格式與規模改變品牌曝光與用戶互動規則，行銷策略需適應多元廣告展示與合規要求。這則新聞反映 AI 安全、來源透明、模型治理與商業化之間的拉扯正在升高。行銷人需要把它視為品牌信任問題，而不是純技術或法務議題，因為消費者會越來越在意內容是不是由 AI 生成、資料如何被使用、誰要為結果負責。",
+            "品牌必須強化內容合規與透明度，並優化AI搜尋可見度，才能在競爭激烈的AI搜尋環境中取得優勢。對品牌端、平台端與內容工作者而言，治理要求會改變工具選型與產製流程。若缺少來源標註、審核紀錄與風險分級，短期可能只是效率問題，長期會變成信任、法遵與公關危機的壓力。"
+          ],
+          "citationClaim": "OpenAI與Google擴大AI搜尋廣告布局，歐盟則依數位服務法加強監管，要求平台提交風險評估與內容監控報告。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "The Decoder",
+              "publishedDate": "2026-08-31",
+              "url": "https://the-decoder.com/openai-says-its-chatgpt-ad-business-hits-a-1-billion-annual-run-rate/"
+            },
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-08-31",
+              "url": "https://www.seroundtable.com/google-ai-mode-shopping-carousel-ads-41973.html"
+            },
+            {
+              "name": "The Verge",
+              "publishedDate": "2026-08-31",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 3,
+            "total": 20
+          },
+          "tags": [
+            "AI搜尋廣告",
+            "合規監管",
+            "品牌曝光",
+            "數位行銷"
+          ],
+          "what": "AI搜尋廣告規模快速擴張，Google與OpenAI推出新廣告格式，歐盟加強監管要求風險評估與內容監控。",
+          "soWhat": "品牌必須調整行銷策略，兼顧合規與曝光優化，才能在AI搜尋廣告市場中保持競爭力。品牌、平台與供應商都會被迫提高透明度，未來工具好不好用之外，能不能被信任、能不能被稽核也會成為採用條件，並影響合作夥伴選擇。",
+          "nowWhat": "制定3項AI搜尋廣告合規與優化指標，監控廣告表現與合規風險，並優化素材以符合監管要求。完成後輸出 1 份素材檢查表，列出受眾、訊息、版位與成效指標各 1 欄，先找出 1 個最需要重測的廣告變因，作為下一輪素材判斷依據。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "從今日AI趨勢中歸納品牌策略、數位行銷、內容行銷、社群應用、媒體廣告與團隊流程六大面向的變化與策略建議。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "生成式AI詐騙風險提升，品牌必須加強內容真實性與安全監控，將AI視為品牌信任入口。歐盟監管加嚴要求品牌內容合規透明，品牌主張與第三方評測需被AI系統有效識別與引用。品牌策略應整合AI防詐機制與合規要求，強化用戶信任與長期品牌價值。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "AI搜尋廣告快速擴張與多元格式推廣，行銷團隊需優化AI可見度與廣告素材，並納入AI搜尋SEO指標監控。資安事件提醒數位行銷需強化帳號安全與數據治理，避免服務中斷與信任危機。數位行銷策略應結合合規監管與技術創新，提升廣告投放效率與風險控管。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "Semrush等工具強化AI搜尋相關SEO指標，內容行銷需調整策略以提升AI可讀性與外部引用。多智能體AI協作工具推動內容創作流程革新，行銷團隊可利用協作AI提升內容品質與多版本測試能力，實現內容生產的規模化與差異化。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "生成式AI詐騙內容擴散加速，社群管理需結合AI防詐技術與平台合作，強化內容審核與用戶教育。社群行銷應利用AI工具提升互動與內容多樣性，同時警惕假訊息風險，維護社群生態健康與品牌形象。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "Google AI Mode購物輪播廣告與OpenAI廣告業務成長，媒體廣告策略需適應AI搜尋新格式與合規要求。廣告素材設計應兼顧用戶體驗與監管合規，並利用AI分析提升投放精準度與轉換率，實現廣告效益最大化。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "多智能體AI協作工具推動內容製作流程重組，行銷團隊可導入協作AI分工模式，提升創意發想與素材產出效率。資安事件提醒團隊需建立嚴謹的帳號與數據安全管理流程，確保服務穩定與品牌信任。團隊流程應結合技術創新與風險管理，提升整體競爭力。"
+        }
+      ]
+    }
+  ]
+}
