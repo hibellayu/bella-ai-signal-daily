@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-01",
+  "latest": "2026-09-02",
   "digests": [
+    {
+      "reportDate": "2026-09-02",
+      "coverageDate": "2026-09-01",
+      "title": "Bella's AI 趨勢日報｜2026/09/02",
+      "summary": "本日AI趨勢聚焦於Anthropic與Lambda簽訂巨額算力合約，鞏固NVIDIA晶片供應鏈，顯示AI產業算力資源競爭加劇；Google推出以Gemini為核心的AI影像與影片創作工具，強化品牌內容生產與多媒體行銷能力；OpenAI ChatGPT Ads年化收入突破10億美元，反映生成式廣告商業模式成熟；歐盟將ChatGPT列為超大型線上搜尋引擎，帶來更嚴格監管要求，影響品牌搜尋策略；數位安全面向，OpenAI AI Agent集體入侵事件揭示AI資安風險。這些變化促使行銷團隊必須重新評估AI工具選型、內容生成流程及品牌信任治理，並加強對生成內容的監控與合規管理。",
+      "path": "data/digests/2026-09-02.json"
+    },
     {
       "reportDate": "2026-09-01",
       "coverageDate": "2026-08-31",
