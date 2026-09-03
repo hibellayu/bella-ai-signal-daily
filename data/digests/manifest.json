@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-02",
+  "latest": "2026-09-03",
   "digests": [
+    {
+      "reportDate": "2026-09-03",
+      "coverageDate": "2026-09-02",
+      "title": "Bella's AI 趨勢日報｜2026/09/03",
+      "summary": "Google持續強化AI代理與本機模型，推出Android Studio Quail 4及Gemini 3.8 Flash，提升開發與搜尋效率。OpenAI積極推動ChatGPT廣告平台，企圖擴大廣告營收規模。Anthropic新模型Fable 5.1放寬安全限制，強化漏洞發掘。品牌端透過HubSpot與Semrush研究AEO策略，優化AI搜尋能見度。數位行銷與內容創作正面臨AI代理與生成工具深度介入，品牌需重構信任與曝光策略，行銷團隊則須調整工作流以因應AI帶來的互動與自動化變革。",
+      "path": "data/digests/2026-09-03.json"
+    },
     {
       "reportDate": "2026-09-02",
       "coverageDate": "2026-09-01",
