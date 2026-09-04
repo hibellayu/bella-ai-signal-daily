@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-03",
+  "latest": "2026-09-04",
   "digests": [
+    {
+      "reportDate": "2026-09-04",
+      "coverageDate": "2026-09-03",
+      "title": "Bella's AI 趨勢日報｜2026/09/04",
+      "summary": "AI生態正快速轉向消費級服務、算力供應鏈重組與內容可見性新規則。天貓AI空間站將多家大模型訂閱服務納入電商生態，降低AI應用門檻、重塑消費者接觸點。博通預測OpenAI與Anthropic將取代Google成為AI芯片最大客戶，反映基礎設施競爭升溫。Google Gemini 3.8 Flash被指出不友善鏈接與引用，影響品牌內容在AI搜尋中的曝光。Adobe收購Rilo強化MarTech自動化，行銷團隊需重新審視AI工具整合與內容流通策略。",
+      "path": "data/digests/2026-09-04.json"
+    },
     {
       "reportDate": "2026-09-03",
       "coverageDate": "2026-09-02",

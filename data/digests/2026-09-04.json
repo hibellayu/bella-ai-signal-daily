@@ -1,0 +1,461 @@
+{
+  "reportDate": "2026-09-04",
+  "coverageDate": "2026-09-03",
+  "generatedAt": "2026-09-04T08:11:46+08:00",
+  "headline": "AI服務消費化、算力競爭與內容可見性：多層次衝擊行銷決策與品牌策略",
+  "summary": "AI生態正快速轉向消費級服務、算力供應鏈重組與內容可見性新規則。天貓AI空間站將多家大模型訂閱服務納入電商生態，降低AI應用門檻、重塑消費者接觸點。博通預測OpenAI與Anthropic將取代Google成為AI芯片最大客戶，反映基礎設施競爭升溫。Google Gemini 3.8 Flash被指出不友善鏈接與引用，影響品牌內容在AI搜尋中的曝光。Adobe收購Rilo強化MarTech自動化，行銷團隊需重新審視AI工具整合與內容流通策略。",
+  "answerSummary": "今日AI趨勢顯示，AI服務消費化、算力供應鏈重組與內容可見性規則變動，將迫使行銷人重新設計品牌觸達、內容優化與工具採購策略。品牌需強化在AI搜尋與電商生態的可見性，並密切追蹤AI平台與MarTech工具的整合與引用規則，否則易被新入口邊緣化。",
+  "promptTargets": [
+    {
+      "intent": "Informational",
+      "prompt": "天貓AI空間站如何改變消費者選購AI服務的習慣？"
+    },
+    {
+      "intent": "Commercial",
+      "prompt": "品牌該如何調整內容策略以因應Google Gemini 3.8 Flash對鏈接與引用的不友善？"
+    },
+    {
+      "intent": "Comparison",
+      "prompt": "Adobe收購Rilo後，與其他MarTech平台在AI自動化上的優勢差異是什麼？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "行銷團隊如何利用AI工具追蹤品牌在AI搜尋中的曝光與引用？"
+    },
+    {
+      "intent": "Brand",
+      "prompt": "AI服務消費化趨勢下，品牌如何優化訂閱體驗與用戶觸達？"
+    },
+    {
+      "intent": "Problem / Solution",
+      "prompt": "當AI搜尋答案快速變動時，行銷人如何確保品牌資訊被正確引用？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "AI MarTech工具如何協助企業自動化內容分發與績效追蹤？"
+    },
+    {
+      "intent": "Commercial",
+      "prompt": "AI服務消費化、算力競爭與內容可見性：多層次衝擊行銷決策與品牌策略 對行銷人代表什麼變化？"
+    }
+  ],
+  "aeoEntities": [
+    "天貓AI空間站",
+    "阿里雲",
+    "智譜",
+    "Kimi",
+    "MiniMax",
+    "博通",
+    "OpenAI",
+    "Anthropic",
+    "Google Gemini 3.8 Flash",
+    "Adobe",
+    "Rilo",
+    "MarTech",
+    "GEO",
+    "AI搜尋",
+    "品牌能見度",
+    "內容引用"
+  ],
+  "citationClaims": [
+    {
+      "claim": "天貓AI空間站將阿里雲、智譜、Kimi、MiniMax等大模型訂閱服務整合進電商平台，讓消費者可像購買話費一樣便捷選購AI服務，標誌AI服務消費化進入新階段。",
+      "sources": [
+        {
+          "name": "AIBase AI News",
+          "publishedDate": "2026-09-03",
+          "url": "https://news.aibase.com/tw/news/30804"
+        }
+      ]
+    },
+    {
+      "claim": "博通預測，Anthropic與OpenAI將在2027-2028年超越Google，成為其AI ASIC定制芯片前兩大核心客戶，反映大模型廠商算力需求劇增。",
+      "sources": [
+        {
+          "name": "AIBase AI News",
+          "publishedDate": "2026-09-03",
+          "url": "https://news.aibase.com/tw/news/30803"
+        }
+      ]
+    },
+    {
+      "claim": "Google Gemini 3.8 Flash AI模式被用戶反映不友善鏈接與引用，導致品牌內容在AI搜尋結果中可見性下降，影響內容可信度與流量分配。",
+      "sources": [
+        {
+          "name": "Search Engine Roundtable",
+          "publishedDate": "2026-09-03",
+          "url": "https://www.seroundtable.com/google-ai-mode-gemini-38-no-links-42011.html"
+        }
+      ]
+    },
+    {
+      "claim": "Adobe收購Rilo，將AI工作流協作自動化能力納入MarTech產品組合，強化企業內容分發與營運自動化能力。",
+      "sources": [
+        {
+          "name": "MarTech",
+          "publishedDate": "2026-09-03",
+          "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/"
+        }
+      ]
+    },
+    {
+      "claim": "MarTech報告指出，AI搜尋答案與內容引用變動頻繁，GEO（生成式搜尋優化）成為行銷團隊需每週追蹤與調整的核心任務。",
+      "sources": [
+        {
+          "name": "MarTech",
+          "publishedDate": "2026-09-03",
+          "url": "https://martech.org/rapid-ai-changes-mean-geo-is-a-weekly-job-now/"
+        }
+      ]
+    }
+  ],
+  "strategyTakeaways": [
+    "AI服務消費化將電商平台變為AI應用入口，品牌需同步優化在AI生態與傳統電商的內容布局。",
+    "算力供應鏈重組顯示大模型平台將主導基礎設施話語權，行銷人需密切追蹤平台策略與API穩定性，避免流量與曝光受單一供應鏈影響。",
+    "AI搜尋與內容引用規則快速變動，品牌需建立GEO週期性監測與內容優化流程，確保資訊持續被AI引用與推薦。",
+    "MarTech工具自動化與AI整合加速，行銷團隊應盤點現有工具鏈，優先導入能追蹤AI引用與內容分發績效的解決方案。"
+  ],
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek",
+    "Qwen",
+    "Alibaba",
+    "Tencent",
+    "ByteDance",
+    "Seedance",
+    "Kling",
+    "Runway",
+    "Pika",
+    "Veo",
+    "Dreamina",
+    "CapCut",
+    "Doubao",
+    "Zhipu",
+    "MiniMax",
+    "Xiaohongshu"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾",
+      "AI 影音 / 創意工具"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "聚焦AI產業格局、基礎設施競爭、消費入口與內容規則變動，解析對品牌、用戶與行銷決策的多層影響。",
+      "items": [
+        {
+          "title": "天貓AI空間站整合大模型訂閱服務，AI應用消費化進入新階段",
+          "summary": "天貓正式上線AI空間站，將阿里雲、智譜、Kimi、MiniMax等主流大模型訂閱服務納入電商平台，消費者可像購買話費一樣便捷選購AI服務，加速AI應用普及並重塑消費者與AI的接觸點。",
+          "analysis": [
+            "AI服務從專業領域進入大眾消費市場，電商平台成為AI應用新入口。這不僅降低了AI工具的使用門檻，也讓品牌與模型供應商能直接面對消費者，改變過去以API或B2B為主的分發模式。",
+            "品牌需重新規劃在AI生態與電商平台上的內容與服務布局。若無法在新入口被消費者辨識與選擇，將失去與用戶的第一接觸權。行銷團隊應將AI服務納入消費者旅程設計，並優化訂閱體驗與品牌曝光。"
+          ],
+          "citationClaim": "天貓AI空間站首次將多家大模型訂閱服務整合進電商平台，讓消費者以充值方式選購AI產品，標誌AI服務消費化進入新節點。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "一般社會大眾"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-09-03",
+              "url": "https://news.aibase.com/tw/news/30804"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 20
+          },
+          "tags": [
+            "AI服務消費化",
+            "電商入口",
+            "大模型訂閱",
+            "品牌策略",
+            "用戶觸達"
+          ],
+          "what": "AI服務過去多以B2B或開發者API形式分發，天貓AI空間站則將主流大模型訂閱服務直接納入電商生態，消費者可像購買話費一樣選購AI產品。這一變化大幅降低AI應用門檻，也讓品牌能在消費入口直接與用戶互動，改變了AI服務的流通與選擇方式。",
+          "soWhat": "品牌若只專注於傳統數位行銷與內容曝光，將錯失AI服務消費化帶來的新接觸點。消費者選購AI工具的路徑被電商平台重塑，品牌需同步優化在AI生態與電商平台的內容、信任證據與服務體驗，否則易被競爭對手搶佔心智與流量。",
+          "nowWhat": "選定1個主力AI服務或模型，將其產品頁內容、FAQ、用戶評價與品牌主張同步優化至天貓AI空間站與自家電商頁面，並設計3組針對消費者常見問題的AI互動腳本，完成後觀察用戶諮詢與訂閱轉換數據。"
+        },
+        {
+          "title": "博通預測Anthropic與OpenAI將超越Google成為AI芯片最大客戶，算力供應鏈重塑產業主導權",
+          "summary": "博通預測，Anthropic與OpenAI將在2027-2028年超越Google，成為其AI ASIC定制芯片前兩大核心客戶，反映大模型平台對算力需求的激增與基礎設施主導權轉移。",
+          "analysis": [
+            "AI產業的主導權正從傳統搜尋與雲端巨頭轉向大模型平台。Anthropic與OpenAI成為最大芯片客戶，意味著未來AI服務的基礎設施、性能與生態規則將由模型供應商主導，供應鏈風險與平台依賴性同步升高。",
+            "行銷與品牌策略需密切關注平台策略、API穩定性與內容分發規則。若AI平台因算力瓶頸或策略調整導致服務中斷，品牌曝光、內容引用與用戶觸達都將受影響。行銷團隊需提前規劃多平台分發與備援路徑。"
+          ],
+          "citationClaim": "博通總裁預測Anthropic與OpenAI將超越Google，成為其AI ASIC業務前兩大核心客戶，反映大模型平台算力需求與產業主導權轉移。",
+          "impactAngles": [
+            "國際事件與產業格局"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-09-03",
+              "url": "https://news.aibase.com/tw/news/30803"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 3,
+            "total": 16
+          },
+          "tags": [
+            "算力供應鏈",
+            "大模型平台",
+            "基礎設施",
+            "平台策略",
+            "API穩定性"
+          ],
+          "what": "AI芯片與算力過去由Google等雲端巨頭主導，如今Anthropic與OpenAI等大模型平台成為最大芯片客戶，反映AI產業話語權與基礎設施掌控權正快速轉移。這將改變AI服務的性能、定價與分發規則，也提升平台依賴風險。",
+          "soWhat": "品牌與行銷團隊若未建立多平台內容分發與API監控機制，將面臨單一平台算力瓶頸、服務中斷或策略調整帶來的流量與曝光風險。平台主導權轉移也意味著內容被引用、推薦與分發的規則將更依賴大模型供應商。",
+          "nowWhat": "盤點現有AI工具與API串接來源，針對3個主要平台（如OpenAI、Anthropic、Google）設計備援內容分發策略，並建立每月一次的API穩定性與內容引用監測報告，確保品牌資訊不因單一平台異常而失聯。"
+        },
+        {
+          "title": "Google Gemini 3.8 Flash AI模式被指不友善鏈接與引用，品牌內容可見性受挑戰",
+          "summary": "Google Gemini 3.8 Flash AI模式用戶反映不易產生鏈接或引用來源，導致品牌內容在AI搜尋結果中曝光下降，影響內容可信度與流量分配，對行銷團隊提出新挑戰。",
+          "analysis": [
+            "AI搜尋結果的鏈接與引用規則直接影響品牌內容的可見性與流量分配。Gemini 3.8 Flash不友善鏈接，代表品牌即使優化內容，也可能難以被AI引用或導流，內容可信度與SEO策略需重新評估。",
+            "行銷人必須建立AI搜尋定期監測機制，追蹤品牌資訊是否被AI工具引用，並調整內容格式、FAQ與信任證據呈現方式。若品牌資訊無法被AI明確引用，將在新一代搜尋入口失去競爭力。"
+          ],
+          "citationClaim": "Google Gemini 3.8 Flash AI模式被反映不易產生鏈接與引用，造成品牌內容在AI搜尋結果中可見性下降，影響內容流量與可信度。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-09-03",
+              "url": "https://www.seroundtable.com/google-ai-mode-gemini-38-no-links-42011.html"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "AI搜尋",
+            "內容引用",
+            "品牌能見度",
+            "SEO",
+            "可見性"
+          ],
+          "what": "AI搜尋工具過去會引用來源或鏈接，讓品牌內容能被追溯與導流。Gemini 3.8 Flash被反映缺乏鏈接與引用，導致品牌內容即使被AI摘要，也難以獲得流量與信任背書，這大幅改變內容分發與SEO的基本規則。",
+          "soWhat": "若品牌內容無法被AI搜尋明確引用，將失去在新入口的曝光與流量來源。行銷團隊若僅依賴傳統SEO優化，將被AI搜尋規則邊緣化，需主動調整內容格式與信任證據，並建立AI搜尋可見性追蹤流程。",
+          "nowWhat": "挑選3篇核心產品內容，分別在Gemini 3.8 Flash、ChatGPT與Perplexity中查詢品牌資訊，記錄AI是否引用來源與鏈接。針對未被引用的內容，補強FAQ、第三方評測與信任證據，並每週追蹤AI搜尋結果變化。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "聚焦MarTech、AI自動化與AI搜尋監測工具的實際應用與流程整合，解析對行銷工作流與內容分發的影響。",
+      "items": [
+        {
+          "title": "Adobe收購Rilo，強化AI工作流自動化與內容分發能力",
+          "summary": "Adobe宣布收購Rilo，將AI協作與自動化能力納入MarTech產品組合，強化企業內容分發、營運自動化與跨部門協作，推動行銷團隊流程升級。",
+          "analysis": [
+            "MarTech平台競爭正聚焦於AI自動化與跨部門協作。Adobe整合Rilo後，能提供從內容產製、分發到績效追蹤的全流程自動化，降低人為錯誤並提升行銷資源配置效率。",
+            "行銷團隊應盤點現有MarTech工具，優先導入具備AI協作、內容分發與績效追蹤功能的解決方案，並規劃跨部門流程自動化，提升內容流通速度與反應市場變化的能力。"
+          ],
+          "citationClaim": "Adobe收購Rilo，將AI工作流協作自動化能力納入MarTech產品組合，強化企業內容分發與營運自動化能力。",
+          "impactAngles": [
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-09-03",
+              "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 17
+          },
+          "tags": [
+            "MarTech",
+            "AI自動化",
+            "內容分發",
+            "協作工具",
+            "Adobe"
+          ],
+          "what": "Adobe將Rilo的AI協作與自動化能力納入MarTech產品組合，意味著企業可用單一平台串接內容產製、分發與績效追蹤，減少手動作業與跨部門溝通摩擦，提升行銷流程效率與反應速度。",
+          "soWhat": "行銷團隊若未及時導入AI自動化與協作工具，將難以應對內容量暴增與分發節奏加快的挑戰。缺乏自動化的流程易出現資訊斷層與績效追蹤困難，影響品牌內容在多平台的曝光與調整速度。",
+          "nowWhat": "盤點現有MarTech工具，選出1個內容分發與1個績效追蹤工具，評估是否具備AI協作與自動化功能。若無，規劃1次跨部門流程重組會議，設計3個自動化任務並設定明確產出指標，完成後檢查流程效率提升成效。"
+        },
+        {
+          "title": "MarTech報告：AI搜尋答案快速變動，GEO成為每週必做工作",
+          "summary": "MarTech報告指出，AI搜尋答案與內容引用變動頻繁，GEO（生成式搜尋優化）需每週追蹤品牌資訊被AI引用與推薦的情況，行銷團隊需建立週期性監測與內容優化流程。",
+          "analysis": [
+            "AI搜尋與內容引用規則不像傳統SEO有長期穩定性，答案與引用來源每週都可能變動。這要求行銷團隊將GEO納入例行工作，持續追蹤AI工具如何引用品牌資訊，並快速調整內容策略。",
+            "若品牌無法被AI搜尋持續引用，將失去新入口的曝光與流量。行銷人需建立AI搜尋監測儀表板，定期檢查品牌資訊在主流AI搜尋工具的可見性，並根據變化優化內容格式與信任證據。"
+          ],
+          "citationClaim": "MarTech報告指出，AI搜尋答案與內容引用變動頻繁，GEO（生成式搜尋優化）成為行銷團隊需每週追蹤與調整的核心任務。",
+          "impactAngles": [
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-09-03",
+              "url": "https://martech.org/rapid-ai-changes-mean-geo-is-a-weekly-job-now/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "GEO",
+            "AI搜尋",
+            "內容引用",
+            "SEO",
+            "監測流程"
+          ],
+          "what": "傳統SEO優化多以月為單位調整，AI搜尋與GEO則因答案與引用來源變動頻繁，需每週追蹤與調整。這要求行銷團隊將AI搜尋可見性監測納入例行工作，快速回應內容被引用與推薦的變化。",
+          "soWhat": "品牌若無法持續被AI搜尋引用，將在新入口失去曝光與流量。行銷團隊需建立AI搜尋監測儀表板，定期檢查品牌資訊在主流AI工具的可見性，並根據變化優化內容格式與信任證據，否則將被競爭對手搶佔新入口。",
+          "nowWhat": "建立1份AI搜尋監測清單，選定Gemini、ChatGPT、Perplexity等3個主流AI工具，每週查詢品牌關鍵詞與產品資訊，記錄被引用與未被引用的內容，針對未被引用部分設計2項內容優化行動並追蹤成效。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "跨新聞歸納AI服務消費化、算力競爭與內容可見性規則變動對品牌、行銷與用戶行為的中期影響。",
+      "items": [
+        {
+          "title": "AI服務消費化與內容可見性規則重塑品牌曝光新賽局",
+          "summary": "AI服務進入消費級市場，電商平台成為AI應用新入口，品牌需同步優化在AI生態與傳統電商的內容布局。AI搜尋與內容引用規則快速變動，GEO與內容可信度成為品牌曝光核心。算力供應鏈重組則提升平台依賴風險，行銷人需建立多平台分發與監測機制，確保品牌資訊不因單一平台異常而失聯。",
+          "analysis": [
+            "這則資訊需要放進行銷決策脈絡來看，重點不只是新聞本身，而是它如何改變內容產製、流量入口、使用者互動或工具選型。對行銷人來說，判讀價值來自把產業變化翻譯成工作流程與品牌策略的調整訊號。",
+            "受影響的角色通常不只一種，可能包含品牌端、代理商、內容工作者、社群經營者與一般使用者。若只把它視為單一工具更新，容易忽略背後的平台規則、信任機制與使用習慣正在同步改變。"
+          ],
+          "what": "AI應用正在改變行銷工作流、內容判讀與品牌接觸使用者的方式，品牌需同步優化內容布局與信任證據，並建立多平台分發與監測機制以因應新入口與規則變動。",
+          "soWhat": "品牌端、工具使用者與內容團隊都會受影響，因為AI正同時改變效率、入口、信任與決策權的分配，也會改變行銷資源配置優先順序。若忽略這些變化，將被新一代入口與平台規則邊緣化。",
+          "nowWhat": "選擇1個品牌核心內容，設計1份內容優化紀錄卡，明確記錄起始素材、優化動作與產出結果，並追蹤該內容在AI搜尋與天貓AI空間站的可見性變化，作為後續決策依據。",
+          "citationClaim": "AI服務消費化與內容可見性規則重塑品牌曝光新賽局：AI服務進入消費級市場，電商平台成為AI應用新入口，品牌需同步優化在AI生態與傳統電商的內容布局。AI搜尋與內容引用規則快速變動，GEO與內容可信度成為品牌曝光核心。算力供應鏈重組則提升平台依賴風險。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-09-03",
+              "url": "https://news.aibase.com/tw/news/30804"
+            },
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-09-03",
+              "url": "https://www.seroundtable.com/google-ai-mode-gemini-38-no-links-42011.html"
+            },
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-09-03",
+              "url": "https://news.aibase.com/tw/news/30803"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "統整今日AI趨勢對品牌策略、數位行銷、內容行銷、社群應用、媒體廣告與團隊流程的具體應用與策略判斷。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI服務消費化與新入口崛起，品牌需將AI生態與電商平台納入品牌旅程設計，強化在AI搜尋、AI工具與電商平台的內容佈局。應優先盤點AI服務與產品頁內容，設計針對AI引用與消費者FAQ的優化腳本，並持續追蹤品牌在AI入口的曝光與信任證據。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "AI搜尋與內容引用規則快速變動，GEO需納入每週例行工作。行銷團隊應建立AI搜尋監測儀表板，定期檢查品牌資訊在Gemini、ChatGPT、Perplexity等AI工具的可見性，並針對未被引用內容設計優化行動，確保品牌持續被AI推薦。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "內容格式、FAQ、信任證據與第三方評測需針對AI引用規則優化。團隊應每月抽查3-5篇核心內容在AI搜尋中的引用情況，針對未被引用部分補強資料，並設計多版本內容以測試AI工具的摘要與推薦效果。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "AI服務消費化帶動用戶討論與評價，品牌可在AI空間站、社群平台同步發布用戶教學、FAQ與案例，鼓勵用戶回饋AI服務體驗，並收集常見問題優化AI互動腳本，提升用戶黏著度與轉換率。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "AI搜尋與內容引用規則變動影響廣告流量分配，品牌應同步優化內容格式與廣告素材，並與AI平台合作設計可追溯來源的廣告方案，提升在AI搜尋與電商入口的曝光與導流效率。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "MarTech工具自動化與AI協作能力提升，團隊應盤點現有工具鏈，優先導入具備AI追蹤、內容分發與績效監測功能的解決方案，規劃跨部門流程自動化，提升內容流通與市場反應速度。"
+        }
+      ]
+    }
+  ]
+}
