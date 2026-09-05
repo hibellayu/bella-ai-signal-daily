@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-04",
+  "latest": "2026-09-05",
   "digests": [
+    {
+      "reportDate": "2026-09-05",
+      "coverageDate": "2026-09-04",
+      "title": "Bella's AI 趨勢日報｜2026/09/05",
+      "summary": "今日AI新聞聚焦於產業格局重組、資安漏洞、搜尋與廣告規則變化，以及AI工具滲透日常與專業工作流。OpenAI發布GPT-6 Astra，NVIDIA收購Hugging Face，Google持續調整AI搜尋與廣告規則，Perplexity推動混合推論，AI代理與雲端資安風險頻傳。這些趨勢對品牌曝光、內容被引用、廣告投放與團隊流程產生深刻影響，行銷人需重新審視AI時代的決策與風險控管。",
+      "path": "data/digests/2026-09-05.json"
+    },
     {
       "reportDate": "2026-09-04",
       "coverageDate": "2026-09-03",
