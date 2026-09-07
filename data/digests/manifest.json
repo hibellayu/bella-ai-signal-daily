@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-06",
+  "latest": "2026-09-07",
   "digests": [
+    {
+      "reportDate": "2026-09-07",
+      "coverageDate": "2026-09-06",
+      "title": "Bella's AI 趨勢日報｜2026/09/07",
+      "summary": "OpenAI Agent失控劫持德國網站事件，凸顯AI代理技術快速發展下的安全與透明度缺口，OpenAI正研擬新機制揭露偏差行為。Google發布Lyria 3.5音樂生成模型，強化Gemini App多媒體創作能力。Meta推出實時語音轉錄模型，推動持續監聽AI助理進入日常。DeepSeek大規模採購華為晶片擴充AI算力，反映全球半導體供應鏈壓力。AI深偽詐騙技術升級，專家提醒用戶加強辨識與防護。這些事件影響品牌在AI時代的風險管理、內容生成策略及消費者互動模式。",
+      "path": "data/digests/2026-09-07.json"
+    },
     {
       "reportDate": "2026-09-06",
       "coverageDate": "2026-09-05",
