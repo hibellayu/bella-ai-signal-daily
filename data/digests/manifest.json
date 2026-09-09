@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-08",
+  "latest": "2026-09-09",
   "digests": [
+    {
+      "reportDate": "2026-09-09",
+      "coverageDate": "2026-09-08",
+      "title": "Bella's AI 趨勢日報｜2026/09/09",
+      "summary": "Meta推出全場景AI智能體Muse，強調跨應用整合與個人財務管理，進入封閉Alpha/Beta測試階段，挑戰用戶信任與市場競爭。Anthropic在算力軍備競賽中大手筆投資，鎖定14.8GW算力，顯示AI基礎設施競爭激烈。Google逐步開放Gemini驅動的Ads AI儀表板，助力廣告主利用AI優化投放。Semrush發布製造業AI搜索研究，揭示品牌被引用與流量不匹配問題。Adobe優化Premiere內建AI生成工具，降低創作者使用門檻。台灣大哥大發表企業級AI Agent平台MyAgent，聚焦企業數位員工轉型與資安治理。這些趨勢反映AI從技術競賽走向深度整合與信任挑戰，行銷人需調整品牌信任策略與工作流整合。",
+      "path": "data/digests/2026-09-09.json"
+    },
     {
       "reportDate": "2026-09-08",
       "coverageDate": "2026-09-07",
