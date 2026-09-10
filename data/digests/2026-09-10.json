@@ -1,0 +1,555 @@
+{
+  "reportDate": "2026-09-10",
+  "coverageDate": "2026-09-09",
+  "generatedAt": "2026-09-10T08:21:09+08:00",
+  "headline": "AI搜尋、個人化代理與影音模型重塑行銷決策，品牌與內容策略面臨新入口與治理挑戰",
+  "summary": "AI搜尋與個人化代理人正快速滲透搜尋、內容推薦、本地服務與日常決策流程，帶動品牌曝光與消費者互動規則轉變。Google、Meta、OpenAI等主流平台強化AI搜尋意圖、屬性指標與任務執行能力，Runway等影音模型商則轉型「世界模擬」層，推動創意產製流程重組。行銷人需關注AI入口如何重構品牌信任、內容被引用與流量分配，同時因應AI治理、資安與代理人授權等新風險。",
+  "answerSummary": "今日AI趨勢顯示，搜尋與內容分發正由AI主導，品牌曝光與流量入口不再只靠傳統SEO或社群，而需適應AI搜尋意圖、屬性標註與多代理人推薦。影音生成與個人AI助理進入本地生活與創意產製流程，行銷人必須重構內容結構、數據標準與AI信任證據，並提前因應AI代理治理與資安合規挑戰，否則將在新一輪流量與信任分配中失去主導權。",
+  "promptTargets": [
+    {
+      "intent": "Informational",
+      "prompt": "AI搜尋意圖與屬性指標會如何改變品牌在Google Merchant Center的數據洞察與曝光策略？"
+    },
+    {
+      "intent": "Commercial",
+      "prompt": "品牌該如何調整內容結構，讓AI搜尋與代理人更容易引用與推薦？"
+    },
+    {
+      "intent": "Comparison",
+      "prompt": "AI搜尋引擎（如Perplexity、Google AI Overviews）與傳統搜尋在品牌流量分配上有何不同？"
+    },
+    {
+      "intent": "Brand",
+      "prompt": "Meta Muse個人AI助理的任務執行能力，對品牌推廣與消費者互動有什麼新機會？"
+    },
+    {
+      "intent": "Problem / Solution",
+      "prompt": "行銷團隊如何因應AI代理人與多代理協作帶來的內容治理與資安風險？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "Runway等AI影音工具的『世界模型』轉型，如何重塑短影音腳本與素材產製流程？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "本地生活服務（如AI打車）結合AI助手後，品牌如何設計可被AI推薦的場景內容？"
+    },
+    {
+      "intent": "Informational",
+      "prompt": "AI搜尋流量成長下，網站SEO優化策略有哪些必須立即調整的重點？"
+    }
+  ],
+  "aeoEntities": [
+    "Google Merchant Center",
+    "AI搜尋意圖",
+    "Meta Muse",
+    "AI代理人",
+    "Runway",
+    "世界模型",
+    "OpenAI ChatGPT Images 2.5",
+    "Claude Code",
+    "豆包",
+    "本地生活AI服務",
+    "SEO代理人",
+    "AI內容標註",
+    "內容信任證據",
+    "AI治理",
+    "品牌曝光",
+    "AI影音生成工具"
+  ],
+  "citationClaims": [
+    {
+      "claim": "Google Merchant Center已擴展AI Performance Insights，新增AI搜尋意圖、搜尋詞與屬性指標，協助品牌更精細追蹤AI搜尋流量來源與內容匹配。",
+      "sources": [
+        {
+          "name": "Search Engine Roundtable",
+          "publishedDate": "2026-09-09",
+          "url": "https://www.seroundtable.com/google-merchant-center-ai-performance-new-42043.html"
+        }
+      ]
+    },
+    {
+      "claim": "Meta Muse個人AI助理不僅能回應對話，還具備執行任務、管理個人資料與專案協作的能力，並透過雲端安全VM與Sentinel代理強化用戶資料授權與行為監控。",
+      "sources": [
+        {
+          "name": "iThome",
+          "publishedDate": "2026-09-09",
+          "url": "https://www.ithome.com.tw/news/178809"
+        },
+        {
+          "name": "Social Media Today",
+          "publishedDate": "2026-09-09",
+          "url": "https://www.socialmediatoday.com/news/meta-launches-muse-personal-ai/829984/"
+        }
+      ]
+    },
+    {
+      "claim": "Google AI Overviews現已覆蓋幾乎100%的People Also Ask搜尋結果，過去僅12%，意味AI摘要成為搜尋主流入口。",
+      "sources": [
+        {
+          "name": "Search Engine Roundtable",
+          "publishedDate": "2026-09-09",
+          "url": "https://www.seroundtable.com/ppa-ai-overviews-google-42047.html"
+        }
+      ]
+    },
+    {
+      "claim": "Runway年度經常性收入突破2億美元，公司從文本生成視頻轉型為打造世界模擬層，強調多模態內容生成與創意產製流程重組。",
+      "sources": [
+        {
+          "name": "AIBase AI News",
+          "publishedDate": "2026-09-09",
+          "url": "https://news.aibase.com/tw/news/30917"
+        }
+      ]
+    },
+    {
+      "claim": "曹操出行與豆包合作AI打車服務，讓用戶在對話中獲取本地生活資訊並直接串接出行方案，未來將拓展至更多城市與Robotaxi服務。",
+      "sources": [
+        {
+          "name": "AIBase AI News",
+          "publishedDate": "2026-09-09",
+          "url": "https://news.aibase.com/tw/news/30925"
+        }
+      ]
+    }
+  ],
+  "strategyTakeaways": [
+    "AI搜尋意圖、屬性與摘要已成為品牌流量分配新規則，內容結構與標註需優先對齊AI理解邏輯。",
+    "個人AI代理人與多代理協作將推動品牌與消費者互動從單點觸達轉向任務型、持續型關係，品牌需設計可被AI執行與推薦的服務流程。",
+    "影音生成工具正從素材產出走向世界模擬，創意腳本、分鏡與多版本測試可用AI大幅重組，行銷團隊應建立AI原型產製與驗證流程。",
+    "AI治理、代理人授權與資安風險成為新門檻，品牌與行銷人需提前設計資料授權、內容透明與信任證據，降低AI誤用與內容失真風險。"
+  ],
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek",
+    "Qwen",
+    "Alibaba",
+    "Tencent",
+    "ByteDance",
+    "Seedance",
+    "Kling",
+    "Runway",
+    "Pika",
+    "Veo",
+    "Dreamina",
+    "CapCut",
+    "Doubao",
+    "Zhipu",
+    "MiniMax",
+    "Xiaohongshu"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾",
+      "AI 影音 / 創意工具"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "聚焦AI搜尋、個人代理、影音生成、平台治理等對產業格局與品牌策略有結構性影響的重大變化。",
+      "items": [
+        {
+          "title": "Google Merchant Center新增AI搜尋意圖與屬性指標，品牌需重構內容標註與流量追蹤邏輯",
+          "summary": "Google Merchant Center的AI Performance Insights擴展至更多地區，並引入AI搜尋意圖、搜尋詞和屬性指標。這讓品牌能更細緻追蹤來自AI搜尋的流量來源、內容匹配與用戶需求，對SEO、商品資料結構與內容標註提出全新要求。",
+          "analysis": [
+            "AI搜尋已從傳統關鍵字導向轉向意圖、屬性與語意理解，Google Merchant Center將AI搜尋意圖與屬性數據納入流量追蹤，代表品牌必須調整內容結構與資料標註，才能被AI有效解析與推薦。",
+            "行銷團隊若僅依賴傳統SEO或商品資料，將無法掌握AI搜尋流量分配規則。品牌需重新設計內容欄位、FAQ、屬性標籤與信任證據，確保AI能正確引用並提升商品被推薦機率。"
+          ],
+          "citationClaim": "Google Merchant Center的AI Performance Insights現已納入AI搜尋意圖、搜尋詞與屬性指標，協助品牌精細追蹤AI搜尋流量來源與內容匹配。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-09-09",
+              "url": "https://www.seroundtable.com/google-merchant-center-ai-performance-new-42043.html"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 19
+          },
+          "tags": [
+            "AI搜尋",
+            "內容標註",
+            "品牌流量",
+            "SEO",
+            "數據洞察"
+          ],
+          "what": "Google將AI搜尋意圖、屬性與內容匹配資料納入Merchant Center流量追蹤，讓品牌能細緻掌握AI搜尋流量來源與內容被引用規則。這改變了品牌僅靠傳統關鍵字與商品資料優化的舊有模式，要求內容結構與標註更貼近AI理解邏輯。",
+          "soWhat": "品牌若未調整內容結構與資料標註，將難以被AI搜尋正確解析與推薦，流量分配將落後於優化AI入口的競爭對手。行銷人需理解AI搜尋意圖與屬性標註的技術細節，並將其納入內容產製與商品資料管理流程，否則在AI主導的搜尋生態下將失去曝光與轉換機會。",
+          "nowWhat": "選擇1個主力商品或服務頁面，針對AI搜尋意圖、屬性與FAQ補強3個關鍵欄位（如用途、規格、第三方評測），並用AI工具驗證這些欄位是否能被AI搜尋摘要正確引用。完成後，將同樣方法擴展至前10大流量頁。"
+        },
+        {
+          "title": "Meta Muse個人AI助理強化任務執行與用戶授權，推動品牌互動與資料治理新模式",
+          "summary": "Meta Muse個人AI助理不僅能對話，還能協助用戶執行日常任務、專案協作，並以雲端安全VM與Sentinel代理管理個人資料與行為授權。這將消費者互動從單次查詢推進至持續任務型關係，品牌需設計可被AI代理執行與推薦的服務流程。",
+          "analysis": [
+            "個人AI代理人正從單純回應查詢進化為可執行任務、管理個人資料與協作的多元角色。Meta Muse以安全VM與多代理監控，提升用戶對資料安全與授權的掌控，也為品牌與用戶互動帶來新入口與信任機制。",
+            "品牌若能設計可被AI代理執行的服務（如預約、購買、任務協作），將在AI助理主導的消費決策流程中取得先機。行銷人需理解代理人授權、資料透明與任務型內容設計，否則難以進入消費者的日常決策場景。"
+          ],
+          "citationClaim": "Meta Muse個人AI助理具備任務執行、專案協作與安全授權機制，並以雲端VM與Sentinel代理強化資料治理與用戶控制。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者",
+            "一般社會大眾"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-09",
+              "url": "https://www.ithome.com.tw/news/178809"
+            },
+            {
+              "name": "Social Media Today",
+              "publishedDate": "2026-09-09",
+              "url": "https://www.socialmediatoday.com/news/meta-launches-muse-personal-ai/829984/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 16
+          },
+          "tags": [
+            "AI代理人",
+            "個人助理",
+            "任務型互動",
+            "資料授權",
+            "品牌服務"
+          ],
+          "what": "Meta Muse將AI助理從單純對話升級為可執行任務、協作與資料治理的多代理系統，並以安全VM與監控代理確保用戶授權與數據安全。這讓品牌不再只面對單次查詢，而需設計可被AI執行與推薦的任務型服務內容。",
+          "soWhat": "品牌若無法設計任務型內容與AI可執行的服務，將難以進入AI代理主導的消費決策流程。用戶對資料授權與行為監控的要求提升，品牌必須強化資料透明、信任證據與API串接，否則將被排除於AI助理推薦名單之外。",
+          "nowWhat": "針對1個主要服務流程（如預約、購買或客服），設計3個可被AI代理人執行的API或結構化內容欄位，並測試Muse或其他AI助理是否能正確觸發與執行。完成後，將設計文件納入品牌資料治理手冊。"
+        },
+        {
+          "title": "Google AI Overviews全面主導People Also Ask，內容被AI摘要引用成新流量入口",
+          "summary": "Google AI Overviews現已覆蓋幾乎100%的People Also Ask搜尋結果，代表AI摘要成為主流流量入口。品牌與內容網站若無法被AI正確摘要與引用，將失去大量曝光與流量機會。",
+          "analysis": [
+            "AI Overviews已取代傳統搜尋結果中的People Also Ask，內容被AI摘要與引用成為新流量分配機制。品牌與內容網站必須優化FAQ、結構化資料與信任證據，才能在AI主導的搜尋結果中維持曝光。",
+            "行銷團隊若忽視AI摘要引用規則，將被排除於AI搜尋主流入口之外。內容產製需強化可被AI解析的結構、明確標註與第三方引用，否則流量將被競爭對手或AI原生內容攫取。"
+          ],
+          "citationClaim": "Google AI Overviews現已覆蓋幾乎100%的People Also Ask搜尋結果，AI摘要成為主流流量入口。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-09-09",
+              "url": "https://www.seroundtable.com/ppa-ai-overviews-google-42047.html"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "AI搜尋",
+            "內容摘要",
+            "FAQ",
+            "SEO",
+            "流量入口"
+          ],
+          "what": "Google已將AI Overviews應用於幾乎所有People Also Ask搜尋區塊，內容能否被AI正確摘要與引用成為新一輪流量分配關鍵。這要求品牌與內容網站優化FAQ、結構化資料與信任證據，才能維持AI搜尋曝光。",
+          "soWhat": "若內容無法被AI有效摘要與引用，品牌將失去AI搜尋主流流量入口，流量將被結構化、標註明確的競爭對手攫取。行銷人需理解AI摘要規則，調整內容產製與標註流程，否則將在AI主導的搜尋生態下被邊緣化。",
+          "nowWhat": "挑選1個常見消費者問題，優化對應FAQ與結構化資料，並用AI搜尋驗證是否能被AI Overviews正確摘要與引用。記錄摘要內容與缺漏處，列出3項需補強的信任證據或第三方引用。"
+        },
+        {
+          "title": "Runway ARR突破2億美元，從影音生成轉型世界模型，重組創意產製流程",
+          "summary": "Runway年度經常性收入突破2億美元，公司戰略從單純文本生成視頻轉向打造多模態『世界模擬層』。這將影音生成從素材產出推進至腳本、分鏡、版本測試與創意驗證，行銷團隊可用AI重組短影音產製與提案流程。",
+          "analysis": [
+            "Runway營收成長與戰略轉型，標誌AI影音工具已從單一素材生成進化為多模態世界模擬平台。這將影音產製流程從腳本發想、分鏡設計到多版本測試全面AI化，降低創意門檻並提升內容多樣性。",
+            "行銷團隊可利用世界模型工具快速產出腳本原型、分鏡動畫與多版本測試，縮短提案與製作週期。若僅停留在單一素材生成，將被競爭對手以更高效率與創意多樣性超越。"
+          ],
+          "citationClaim": "Runway年度經常性收入突破2億美元，戰略從文本生成視頻轉向打造世界模擬層，強調多模態內容生成與產製流程重組。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "AI 影音 / 創意工具"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-09-09",
+              "url": "https://news.aibase.com/tw/news/30917"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 16
+          },
+          "tags": [
+            "AI影音",
+            "世界模型",
+            "創意產製",
+            "腳本分鏡",
+            "多版本測試"
+          ],
+          "what": "Runway不再僅提供文本生成視頻工具，而是轉型為多模態世界模擬平台，讓創意產製流程從腳本發想、分鏡設計到多版本測試全面AI化。這大幅降低影音創作門檻並提升內容多樣性與驗證速度。",
+          "soWhat": "行銷團隊若僅用AI生成單一影音素材，將被世界模型工具的高效率與多樣性超越。必須將AI納入腳本原型、分鏡動畫與多版本測試流程，才能在短影音與創意提案競爭中搶占先機。",
+          "nowWhat": "選擇1個即將投放的短影音活動，利用Runway等世界模型工具產出3個腳本原型與分鏡動畫，並進行A/B測試。記錄每個版本的互動數據，將最佳腳本納入正式製作流程。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "聚焦AI搜尋、SEO代理人、內容優化與本地生活服務等新工具進入實際行銷與日常應用流程的變化。",
+      "items": [
+        {
+          "title": "Semrush教你打造AI SEO代理人，自動化關鍵字研究與主題聚類",
+          "summary": "Semrush提供完整教學，協助行銷人用AI自動化關鍵字研究、主題聚類與SEO優化。AI代理人可減少重複性作業，讓內容策略更聚焦於高價值主題，提升SEO效率與內容品質。",
+          "analysis": [
+            "AI SEO代理人可自動化關鍵字收集、主題分類與內容優化，讓行銷團隊將重心轉向策略規劃與高價值內容設計。這降低了SEO門檻，也讓內容產製更貼近AI搜尋與推薦邏輯。",
+            "品牌若能將AI代理人納入SEO工作流，將加速關鍵字策略調整與內容聚類，提升AI搜尋曝光率。若仍依賴人工流程，將在AI主導的搜尋競爭中落後。影響會落在品牌體驗、客服、銷售、社群私訊與內部協作流程。團隊不能只問是否導入代理，而要先拆解哪些任務適合自動處理、哪些判斷必須保留人工審核，並設計失敗時的接手與溝通方式。"
+          ],
+          "citationClaim": "Semrush教學展示如何用AI代理人自動化關鍵字研究、主題聚類與SEO優化，提升內容策略效率。",
+          "impactAngles": [
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "Semrush Blog",
+              "publishedDate": "2026-09-09",
+              "url": "https://www.semrush.com/blog/seo-ai-agent/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 17
+          },
+          "tags": [
+            "AI代理人",
+            "SEO",
+            "關鍵字研究",
+            "內容聚類",
+            "自動化"
+          ],
+          "what": "AI SEO代理人可自動化關鍵字研究、主題聚類與內容優化，讓行銷人從重複性作業轉向高價值內容設計。這降低SEO門檻，也讓內容更貼近AI搜尋與推薦邏輯，提升整體曝光率。",
+          "soWhat": "若品牌未將AI代理人納入SEO流程，將在AI搜尋主導下落後於自動化優化的競爭對手。行銷團隊應用AI工具，能更快調整關鍵字策略與內容聚類，提升搜尋曝光與內容品質。",
+          "nowWhat": "挑選1個主力產品線，利用Semrush或類似AI SEO代理人自動產出5組關鍵字聚類與對應內容主題，並將其中3組納入下月內容產製計畫。"
+        },
+        {
+          "title": "HubSpot分享AI搜尋流量成長下的網站優化重點，內容結構與信任證據成新標準",
+          "summary": "HubSpot強調，AI搜尋流量快速成長，網站優化需聚焦於內容結構、FAQ、屬性標註與第三方信任證據。這讓品牌不再只為人類設計內容，也需考慮AI能否正確解析與推薦，SEO策略與內容產製流程需全面升級。",
+          "analysis": [
+            "AI搜尋流量成長使內容結構、FAQ、屬性標註與信任證據成為網站優化新標準。品牌需將內容設計從人類閱讀轉向AI可解析、可引用、可驗證的邏輯，否則難以維持AI搜尋曝光。",
+            "行銷人若忽略AI搜尋對內容結構與信任證據的要求，將被排除於AI摘要與推薦之外。需將AI可讀性納入內容產製流程，並建立第三方引用與FAQ補強機制，才能在AI生態下維持流量與信任。"
+          ],
+          "citationClaim": "HubSpot指出AI搜尋流量成長下，內容結構、FAQ、屬性標註與信任證據成為網站優化新標準。",
+          "impactAngles": [
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "HubSpot Marketing Blog",
+              "publishedDate": "2026-09-09",
+              "url": "https://blog.hubspot.com/marketing/optimize-website-ai-search"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 16
+          },
+          "tags": [
+            "AI搜尋",
+            "內容結構",
+            "FAQ",
+            "信任證據",
+            "SEO"
+          ],
+          "what": "AI搜尋流量快速成長，網站優化重點從人類閱讀轉向AI可解析的內容結構、FAQ、屬性標註與第三方信任證據。品牌需將AI可讀性納入內容產製流程，才能維持AI搜尋曝光與信任。",
+          "soWhat": "若忽略AI搜尋對內容結構與信任證據的要求，品牌將被排除於AI摘要與推薦之外，流量與信任度下降。行銷人需將AI可讀性納入內容設計，並補強FAQ與第三方引用，才能在AI生態下維持競爭力。",
+          "nowWhat": "針對1個高流量頁面，補強3項AI可解析的FAQ、屬性標註與第三方信任證據，並用AI搜尋工具驗證內容是否能被正確引用。記錄驗證結果，納入網站優化標準流程。"
+        },
+        {
+          "title": "曹操出行與豆包合作AI打車服務，推動本地生活場景AI化",
+          "summary": "曹操出行與豆包聯合推出AI打車服務，讓用戶在豆包內查詢本地生活資訊時可直接生成出行方案並串接叫車服務。未來將拓展至更多城市與Robotaxi，推動本地生活服務AI化與場景內容設計新模式。",
+          "analysis": [
+            "AI助手已從資訊查詢進入本地生活服務，將用戶需求、場景內容與服務串接成一體化流程。品牌需設計可被AI推薦與執行的場景內容，才能在本地生活AI入口取得曝光與轉換。",
+            "若品牌未能將服務與AI助手串接，將被排除於AI主導的本地生活決策流程。行銷人需理解對話式內容設計、API串接與場景推薦規則，才能在新入口中維持競爭力。"
+          ],
+          "citationClaim": "曹操出行與豆包合作AI打車服務，讓用戶在對話中獲取本地生活資訊並直接串接出行方案，未來將拓展至更多城市與Robotaxi服務。",
+          "impactAngles": [
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-09-09",
+              "url": "https://news.aibase.com/tw/news/30925"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 16
+          },
+          "tags": [
+            "AI助手",
+            "本地生活",
+            "場景內容",
+            "API串接",
+            "服務推薦"
+          ],
+          "what": "AI助手已從資訊查詢進入本地生活服務，將用戶需求、場景內容與服務串接成一體化流程。品牌需設計可被AI推薦與執行的場景內容，才能在本地生活AI入口取得曝光與轉換。",
+          "soWhat": "若品牌未能將服務與AI助手串接，將被排除於AI主導的本地生活決策流程。行銷人需理解對話式內容設計、API串接與場景推薦規則，才能在新入口中維持競爭力。",
+          "nowWhat": "挑選1個本地服務（如外送、預約或活動），設計3個可被AI助手推薦的場景內容與API串接方案，並測試豆包或其他AI助手是否能正確觸發服務。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "跨層歸納AI搜尋、代理人治理、影音生成與內容標註等趨勢，解析對品牌、內容、消費者與產業規則的中期影響。",
+      "items": [
+        {
+          "title": "AI搜尋與代理人治理成為品牌曝光與信任分配新戰場",
+          "summary": "AI搜尋、內容摘要與個人代理人正重構品牌流量入口與消費決策流程。品牌需將內容結構、標註、信任證據與API串接納入標準流程，並因應AI代理治理、資料授權與資安風險，否則將在新一輪流量與信任分配中失去主導權。",
+          "analysis": [
+            "AI搜尋與代理人已成為品牌曝光與消費決策的主流入口，內容結構、標註與信任證據決定能否被AI引用與推薦。API串接與任務型內容設計成為品牌進入AI助理與本地生活服務的關鍵。",
+            "AI治理、資料授權與資安風險同步升高，品牌需建立內容透明、授權管理與信任證據標準，並與AI平台協作，確保在新生態下維持信任與競爭力。影響會落在品牌體驗、客服、銷售、社群私訊與內部協作流程。團隊不能只問是否導入代理，而要先拆解哪些任務適合自動處理、哪些判斷必須保留人工審核，並設計失敗時的接手與溝通方式。"
+          ],
+          "citationClaim": "AI搜尋、內容摘要與個人代理人重構品牌流量入口與消費決策流程，內容結構、標註與信任證據成為新標準。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-09-09",
+              "url": "https://www.seroundtable.com/google-merchant-center-ai-performance-new-42043.html"
+            },
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-09",
+              "url": "https://www.ithome.com.tw/news/178809"
+            },
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-09-09",
+              "url": "https://news.aibase.com/tw/news/30925"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "AI搜尋",
+            "代理人治理",
+            "內容標註",
+            "信任證據",
+            "API串接"
+          ],
+          "what": "AI搜尋與個人代理人正重構品牌流量入口與消費決策流程，內容結構、標註與信任證據決定能否被AI引用與推薦。API串接與任務型內容設計成為品牌進入AI助理與本地生活服務的關鍵。",
+          "soWhat": "品牌若無法適應AI搜尋與代理人治理新規則，將被排除於AI主導的流量與信任分配之外。需建立內容透明、授權管理與信任證據標準，並主動與AI平台協作，否則競爭力將被重構。",
+          "nowWhat": "針對1個主要產品或服務，補強3項AI可解析的內容結構、標註與信任證據，並設計API串接方案，確保能被AI搜尋與代理人正確引用與推薦。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "統整今日AI搜尋、代理人、影音生成與內容標註等趨勢對品牌策略、數位行銷、內容行銷、社群應用、媒體廣告與團隊流程的具體應用建議。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI搜尋與代理人治理已成品牌信任與流量分配新戰場。品牌需將內容結構、FAQ、屬性標註與第三方信任證據納入標準流程，並設計可被AI代理執行與推薦的服務。建議從主力產品頁開始，補強AI可解析欄位與API串接，確保在AI入口維持信任與曝光。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "AI搜尋意圖、屬性指標與內容摘要成為數位行銷優化新重點。行銷團隊應用AI SEO代理人與內容標註工具，快速聚類關鍵字、優化內容結構與FAQ，並驗證AI搜尋是否能正確引用。建議先針對高流量頁面進行AI可讀性優化，提升AI搜尋曝光率。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "內容產製需從人類閱讀轉向AI可解析、可引用的結構，強化FAQ、屬性標註與信任證據。團隊可用AI工具自動化關鍵字研究與主題聚類，並建立第三方引用與內容透明機制。建議選1個主題，補強AI可讀性與信任證據，並用AI搜尋工具驗證引用效果。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "AI代理人與本地生活AI服務讓品牌能進入用戶日常決策與場景推薦。建議設計可被AI助理推薦的場景內容與API串接，並針對本地活動或服務測試AI入口曝光與互動成效，建立AI場景內容設計SOP。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "AI搜尋與影音世界模型工具重塑廣告腳本、分鏡與多版本測試流程。行銷團隊可用AI快速產出腳本原型與分鏡動畫，進行A/B測試並優化投放內容。建議從1個短影音活動開始，利用AI工具產出3個腳本版本並測試互動數據，納入廣告優化流程。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "AI工具普及要求團隊升級內容產製、SEO、API串接與資料治理能力。建議建立AI內容標註、FAQ補強、信任證據與API設計標準，並定期用AI搜尋與代理人驗證內容可讀性與推薦效果，形成跨部門AI優化SOP。"
+        }
+      ]
+    }
+  ]
+}
