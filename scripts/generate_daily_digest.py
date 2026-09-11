@@ -404,6 +404,7 @@ def main() -> None:
         normalize_digest_scores(digest)
         strengthen_digest_strategy_fields(digest)
         strengthen_digest_actions(digest)
+        dedupe_section_sources(digest)
         ensure_digest_aeo_fields(digest)
         try:
             validate_digest(digest)
@@ -429,6 +430,7 @@ def main() -> None:
             normalize_digest_scores(digest)
             strengthen_digest_strategy_fields(digest)
             strengthen_digest_actions(digest)
+            dedupe_section_sources(digest)
             ensure_digest_aeo_fields(digest)
             try:
                 validate_digest(digest)
@@ -1548,6 +1550,32 @@ def strengthen_digest_actions(digest: dict[str, Any]) -> None:
             if now_what and not now_what.endswith(("。", "！", "？")):
                 now_what += "。"
             item["nowWhat"] = f"{now_what}{completion}" if now_what else completion
+
+
+def dedupe_section_sources(digest: dict[str, Any]) -> None:
+    """Prevent one source URL from being counted multiple times in the same section."""
+    for section in digest.get("sections", []):
+        if section.get("id") == "applications":
+            continue
+        seen_urls: set[str] = set()
+        deduped_items: list[dict[str, Any]] = []
+        for item in section.get("items", []):
+            if not isinstance(item, dict):
+                continue
+            kept_sources: list[dict[str, Any]] = []
+            for source in item.get("sources", []):
+                if not isinstance(source, dict):
+                    continue
+                url = str(source.get("url", "")).strip()
+                if url and url in seen_urls:
+                    continue
+                kept_sources.append(source)
+                if url:
+                    seen_urls.add(url)
+            if kept_sources:
+                item["sources"] = kept_sources
+                deduped_items.append(item)
+        section["items"] = deduped_items
 
 
 def build_action_completion(item: dict[str, Any]) -> str:

@@ -2,6 +2,30 @@
 
 本檔案用來記錄每次版本調整的原因、修改內容與回溯資訊。版本號規則請參考 `VERSIONING.md`。
 
+## v0.19.1｜2026-09-11
+
+版本類型：小改版
+
+### 修改原因
+
+2026/09/11 Daily AI Signal 主排程失敗，GitHub 通知顯示所有 jobs failed。盤查後確認不是 GitHub 權限、OpenAI API Key 或額度問題，而是 AI 生成結果在同一區塊重複引用同一篇 AIBase Daily 來源，觸發品質檢查「同一區塊重複收錄來源文章」而停止發布。Watchdog 補跑已成功產出 2026/09/11 日報，但主流程仍需修補，避免後續遇到同類生成結果時再次紅燈。
+
+### 修改內容
+
+- 新增 `dedupe_section_sources` 發布前處理。
+- 同一區塊中若同一來源 URL 重複出現，只保留第一次引用。
+- 若某則新聞在來源去重後完全沒有來源，會移除該則，避免用同一篇文章湊數。
+- 保留原本品質檢查，不降低策略深度、來源數量與內容完整性門檻。
+- Footer 版本升為 `v0.19.1`，版本日期更新為 2026/09/11。
+
+### 驗證
+
+- 確認失敗 run `34545832028` 的根因為重複來源 URL，不是 API 或排程設定。
+- 確認 Watchdog run `34550228991` 已成功補產出 2026/09/11 日報。
+- `python3 -m py_compile scripts/generate_daily_digest.py scripts/static_site.py`
+- 使用測試資料驗證同區塊重複來源會被清理，且 `validate_digest` 不再因同一 URL 重複而失敗。
+- `python3 scripts/static_site.py`
+
 ## v0.19.0｜2026-08-28
 
 版本類型：中改版
