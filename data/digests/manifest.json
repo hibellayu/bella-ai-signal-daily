@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-10",
+  "latest": "2026-09-11",
   "digests": [
+    {
+      "reportDate": "2026-09-11",
+      "coverageDate": "2026-09-10",
+      "title": "Bella's AI 趨勢日報｜2026/09/11",
+      "summary": "本日AI趨勢聚焦於AI搜尋工具的使用轉變、AI代理的商業化推進，以及加州AI安全監管立法的突破。Google與ChatGPT等平台在搜尋入口與互動體驗上持續競爭，Meta推出Muse AI代理搶占用戶時間，Anthropic揭露中國AI公司模仿攻擊，凸顯產業競爭與資安風險。品牌端需因應AI代理帶來的流量入口改變，行銷團隊必須重新設計內容與數據透明度策略，並將AI工具整合進工作流程以維持競爭力。",
+      "path": "data/digests/2026-09-11.json"
+    },
     {
       "reportDate": "2026-09-10",
       "coverageDate": "2026-09-09",
