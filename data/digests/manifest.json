@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-11",
+  "latest": "2026-09-12",
   "digests": [
+    {
+      "reportDate": "2026-09-12",
+      "coverageDate": "2026-09-11",
+      "title": "Bella's AI 趨勢日報｜2026/09/12",
+      "summary": "本日AI趨勢聚焦OpenAI推出具語音交互能力的GPT-Live-1 API，並與亞馬遜DSP攜手擴展ChatGPT廣告版位，顯示AI語音與廣告投放深度整合趨勢。同時，Anthropic發布威脅報告，揭露多家中國業者非法蒸餾Claude模型用於軍事與生物武器研發，凸顯AI安全與監管挑戰。環球音樂與ElevenLabs合作推進正版授權AI音樂平台，標誌AI影音創意工具與版權合規的產業化突破。這些事件反映AI技術在行銷、內容創作與安全治理上的多層面變革。",
+      "path": "data/digests/2026-09-12.json"
+    },
     {
       "reportDate": "2026-09-11",
       "coverageDate": "2026-09-10",
