@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-13",
+  "latest": "2026-09-14",
   "digests": [
+    {
+      "reportDate": "2026-09-14",
+      "coverageDate": "2026-09-13",
+      "title": "Bella's AI 趨勢日報｜2026/09/14",
+      "summary": "本日AI產業呈現兩大核心動態：一是Anthropic執行長Dario Amodei及多位業界領袖呼籲放緩AI發展步伐，強調安全監管與獨立審核的重要性，引發產業對AI倫理與監管的高度關注；二是Insight Partners透過多元化投資策略，避免過度押注單一AI實驗室，反映資本市場對AI生態多元競爭格局的認知。此外，ElevenLabs發布升級版AI音樂生成工具Music v2.5，顯示AI影音創意工具持續優化，將加速內容行銷與數位廣告素材製作流程變革。這些動態共同揭示AI技術與生態系統正處於調整與成熟階段，對行銷人提出更高的策略調適需求。",
+      "path": "data/digests/2026-09-14.json"
+    },
     {
       "reportDate": "2026-09-13",
       "coverageDate": "2026-09-12",
