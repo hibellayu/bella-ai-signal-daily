@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-14",
+  "latest": "2026-09-15",
   "digests": [
+    {
+      "reportDate": "2026-09-15",
+      "coverageDate": "2026-09-14",
+      "title": "Bella's AI 趨勢日報｜2026/09/15",
+      "summary": "Google針對AI搜尋功能推出付費內容試點，補償出版商內容使用，強化品牌在AI搜尋中的可見度與收益模式。同時，OpenAI、Anthropic與Elon Musk罕見達成AI發展放緩共識，凸顯安全與合規成為產業新標準。SpaceX計畫2027年發射軌道AI資料中心，推動算力供應鏈革新。OpenAI發布GPT-6 Astra強化企業應用，並整合多款企業外掛，促進深度行銷工作流變革。這些趨勢共同改變品牌曝光、內容被引用方式與行銷團隊AI工具採用策略。",
+      "path": "data/digests/2026-09-15.json"
+    },
     {
       "reportDate": "2026-09-14",
       "coverageDate": "2026-09-13",
