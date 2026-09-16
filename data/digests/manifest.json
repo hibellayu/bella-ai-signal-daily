@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-15",
+  "latest": "2026-09-16",
   "digests": [
+    {
+      "reportDate": "2026-09-16",
+      "coverageDate": "2026-09-15",
+      "title": "Bella's AI 趨勢日報｜2026/09/16",
+      "summary": "2026年9月15日，Salesforce在Dreamforce大會釋出Claudeforce beta與CRM專屬模型Koa，強化AI與CRM整合，改變企業客戶管理與互動方式。Google推出Gemini 3.8 Live音頻模型，提升AI搜尋與語音互動體驗，並測試AI模式下的文字連結廣告，為數位行銷帶來新廣告形式。Meta推出結合AI助手Muse的訂閱服務Meta One，將社群與AI工具綁定，開啟付費用戶深度使用AI的商業模式。企業因Anthropic政策引發數據安全疑慮，英偉達等大廠限制使用前沿模型，凸顯企業AI治理與信任挑戰。整體趨勢顯示AI技術正重塑品牌曝光、數位行銷操作與企業內部AI治理，行銷決策者需重新評估AI工具選擇與品牌內容策略。",
+      "path": "data/digests/2026-09-16.json"
+    },
     {
       "reportDate": "2026-09-15",
       "coverageDate": "2026-09-14",
