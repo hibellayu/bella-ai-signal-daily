@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-16",
+  "latest": "2026-09-17",
   "digests": [
+    {
+      "reportDate": "2026-09-17",
+      "coverageDate": "2026-09-16",
+      "title": "Bella's AI 趨勢日報｜2026/09/17",
+      "summary": "Google開放AI代理控制智慧家庭設備，OpenAI推出Sponsored Agents廣告格式，HubSpot重塑平台以AI代理為核心，Meta簡化WhatsApp第三方AI支援，Anthropic在澳洲布局大型數據中心，推動算力供應多元化。這些動態顯示AI代理技術正從封閉測試走向多品牌、多場景的商業化應用，行銷人需重新評估品牌與消費者互動的智能入口與數據治理策略。",
+      "path": "data/digests/2026-09-17.json"
+    },
     {
       "reportDate": "2026-09-16",
       "coverageDate": "2026-09-15",
