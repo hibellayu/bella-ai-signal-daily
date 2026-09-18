@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-17",
+  "latest": "2026-09-18",
   "digests": [
+    {
+      "reportDate": "2026-09-18",
+      "coverageDate": "2026-09-17",
+      "title": "Bella's AI 趨勢日報｜2026/09/18",
+      "summary": "Google宣布智慧家庭平台Google Home導入模型脈絡協定（MCP），允許第三方AI代理人如Claude、OpenClaw在用戶授權下存取裝置資訊與事件，強化居家智慧生態系整合。OpenAI Codex開發者警告多Agent並行運作浪費算力且無提升品質，反映AI代理人協同挑戰。Anthropic與OpenAI執行長罕見公開呼籲放慢AI發展步調，顯示業界對AI安全與監管的分歧與緊張。Google Cloud也強化Gemini Enterprise成本控管，反映企業對AI工具使用成本的重視。Meta針對2026年假期行銷釋出AI資源，Pinterest推出視覺搜尋廣告與AI室內重塑功能，顯示社群與廣告平台積極利用AI創新行銷模式。千問APP升級未成年人保護，強化AI內容安全與使用監控，體現AI應用的社會責任。整體趨勢顯示AI代理人技術與應用加速成熟，行銷人須重新評估AI工具選型、成本與內容治理策略。",
+      "path": "data/digests/2026-09-18.json"
+    },
     {
       "reportDate": "2026-09-17",
       "coverageDate": "2026-09-16",
