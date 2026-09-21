@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-20",
+  "latest": "2026-09-21",
   "digests": [
+    {
+      "reportDate": "2026-09-21",
+      "coverageDate": "2026-09-20",
+      "title": "Bella's AI 趨勢日報｜2026/09/21",
+      "summary": "2026年9月20日，AI產業迎來多款大型模型如GPT-6全系的密集發布，OpenAI與Anthropic的IPO延期反映市場與資金壓力。Google Web Guide的AI搜尋介面BUG顯示平台競爭與用戶體驗的微妙調整。Runway推動即時AI影片生成，重新定義創意製作流程。AI生成內容激增導致出版業單本收益下降，顯示內容市場結構變化。Meta的Muse應用強化數據收集引發隱私關注。台灣大哥大擴大遊戲與ACG內容布局，結合AI技術強化社群經營。這些動態綜合反映AI技術與商業模式的多層次變革，對行銷人提出更高的數據治理、內容策略與即時互動能力要求。",
+      "path": "data/digests/2026-09-21.json"
+    },
     {
       "reportDate": "2026-09-20",
       "coverageDate": "2026-09-19",
