@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-23",
+  "latest": "2026-09-24",
   "digests": [
+    {
+      "reportDate": "2026-09-24",
+      "coverageDate": "2026-09-23",
+      "title": "Bella's AI 趨勢日報｜2026/09/24",
+      "summary": "Anthropic推出Claude Opus 5.5，顯著降低任務成本與越界行為，OpenAI同日發表GPT-6 Sol與Luna，雙方以成本與效能競爭為核心，改寫AI模型市場規則。Meta持續擴展Muse AI代理生態，推出專屬硬體Muse Charm並增強多模態互動與視頻聊天功能，提升用戶深度參與。Alibaba千問發布Qwen Audio 3.1系列語音大模型，並大幅降價，促進AI語音技術普及。Google面臨英國監管壓力，須簡化Android與Chrome的搜索引擎選擇流程，影響品牌搜尋曝光策略。OpenAI測試類第三方追蹤技術於ChatGPT廣告，帶來數據隱私與廣告成效新挑戰。AI惡意軟體ClosedQuorum針對Win11自主決策威脅，提醒企業資安防護須升級。整體趨勢顯示AI模型成本與效能競爭加劇，AI代理與多模態交互成為新焦點，行銷團隊需重新設計品牌在AI搜尋與代理中的可見度與互動策略。",
+      "path": "data/digests/2026-09-24.json"
+    },
     {
       "reportDate": "2026-09-23",
       "coverageDate": "2026-09-22",
