@@ -1,0 +1,630 @@
+{
+  "reportDate": "2026-09-25",
+  "coverageDate": "2026-09-24",
+  "generatedAt": "2026-09-25T08:37:58+08:00",
+  "headline": "英國強化Google搜尋監管，AI代理與廣告新動向重塑數位行銷生態",
+  "summary": "英國競爭與市場管理局推動Google搜尋預設選擇介面，納入ChatGPT、Perplexity等AI助理，改變搜尋入口競爭規則。OpenAI在台推出ChatGPT廣告，標示清晰保障用戶隱私，為AI內容商業化開新局。Meta積極擴展AI代理Muse功能，結合多裝置與影音應用，推動用戶互動與品牌曝光新模式。亞馬遜封鎖Meta Muse等AI代理購物應用，顯示平台對代理購物生態的結構性影響。Google Business Profiles測試AI自動設定營業時間，優化品牌線上資訊管理。澳洲通訊局發布AI代理安全指引，警示提示詞注入風險，強調多層防護。Google DeepMind加速推出Gemini 4，持續推動AI模型競爭。B2B品牌轉向創作者影片抗衡AI生成內容，強化AI搜尋下的品牌信任。螞蟻inclusionAI公開模型訓練透明度，符合歐盟AI法案要求。整體趨勢顯示AI代理、AI搜尋入口及內容商業化正重塑數位行銷與品牌策略。",
+  "answerSummary": "英國搜尋監管新規促使AI助理成為搜尋預設選項，改變品牌流量入口。OpenAI廣告正式登台，標示透明保障用戶隱私，為AI內容商業化鋪路。Meta擴展AI代理Muse功能，推動多裝置與影音互動，品牌需調整內容策略以迎合新用戶行為。亞馬遜封鎖代理購物工具，反映平台生態競爭加劇。行銷人應重視AI代理與搜尋入口變革，優化品牌資訊與內容信任，並布局AI影音創意工具以提升競爭力。",
+  "promptTargets": [
+    {
+      "intent": "Informational",
+      "prompt": "英國新搜尋監管政策如何影響品牌在Google和AI助理上的曝光機會？"
+    },
+    {
+      "intent": "Informational",
+      "prompt": "OpenAI在台灣推出的ChatGPT廣告有哪些特點？對行銷策略有何啟示？"
+    },
+    {
+      "intent": "Comparison",
+      "prompt": "Meta的Muse AI代理與其他AI代理工具在行銷應用上有何不同？"
+    },
+    {
+      "intent": "Problem / Solution",
+      "prompt": "如何防範AI代理中的提示詞注入攻擊，保障品牌資訊安全？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "B2B品牌如何利用創作者影片抗衡AI生成內容，提升AI搜尋下的品牌信任？"
+    },
+    {
+      "intent": "Brand",
+      "prompt": "AI代理和AI搜尋入口變革下，品牌應如何調整數位行銷策略？"
+    },
+    {
+      "intent": "Commercial",
+      "prompt": "Google Business Profiles的新AI自動設定營業時間功能對本地商家有何實際幫助？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "Meta擴展Muse AI代理的多裝置與影音功能，如何改變品牌與消費者的互動方式？"
+    }
+  ],
+  "aeoEntities": [
+    "Google",
+    "OpenAI",
+    "ChatGPT",
+    "Perplexity",
+    "Meta",
+    "Muse AI代理",
+    "亞馬遜",
+    "Gemini 4",
+    "Google Business Profiles",
+    "B2B品牌",
+    "創作者影片",
+    "提示詞注入",
+    "AI代理安全指引",
+    "螞蟻inclusionAI",
+    "AI搜尋入口",
+    "AI廣告"
+  ],
+  "citationClaims": [
+    {
+      "claim": "英國競爭與市場管理局提案要求Google在Android及Chrome中提供搜尋服務選擇介面，納入符合條件的AI助理如ChatGPT與Perplexity，將改變搜尋入口生態。",
+      "sources": [
+        {
+          "name": "iThome",
+          "publishedDate": "2026-09-24",
+          "url": "https://www.ithome.com.tw/news/179214"
+        }
+      ]
+    },
+    {
+      "claim": "OpenAI在台灣推出ChatGPT廣告，廣告標示清晰且不影響模型回覆內容，保障用戶隱私與對話獨立性，為AI內容商業化提供新模式。",
+      "sources": [
+        {
+          "name": "INSIDE",
+          "publishedDate": "2026-09-24",
+          "url": "https://www.inside.com.tw/article/42466-chatgpt-ads-launch-taiwan-southeast-asia"
+        }
+      ]
+    },
+    {
+      "claim": "亞馬遜封鎖Meta Muse及其他AI代理購物應用，反映平台對代理式購物的結構性阻力，影響AI代理在消費者購物流程中的角色與發展。",
+      "sources": [
+        {
+          "name": "INSIDE",
+          "publishedDate": "2026-09-24",
+          "url": "https://www.inside.com.tw/article/42468-amazon-blocks-meta-muse-agentic-ai-platform-war-2026"
+        }
+      ]
+    },
+    {
+      "claim": "澳洲通訊局發布AI代理安全指引，指出目前尚無完全可靠防範提示詞注入的技術，建議企業限制AI代理權限以降低風險，強調多層防護策略的重要性。",
+      "sources": [
+        {
+          "name": "iThome",
+          "publishedDate": "2026-09-24",
+          "url": "https://www.ithome.com.tw/news/179149"
+        }
+      ]
+    },
+    {
+      "claim": "英國競爭與市場管理局提案要求Google在Android及Chrome中提供搜尋服務選擇介面，納入符合條件的AI助理如ChatGPT與Perplexity，將改變搜尋入口生態。",
+      "sources": [
+        {
+          "name": "iThome",
+          "publishedDate": "2026-09-24",
+          "url": "https://www.ithome.com.tw/news/179214"
+        }
+      ]
+    }
+  ],
+  "strategyTakeaways": [
+    "搜尋入口競爭規則變革，品牌須優化AI助理可讀取的產品與服務資訊，搶占AI搜尋流量。",
+    "AI廣告標示透明成趨勢，行銷團隊需設計符合用戶隱私且具吸引力的廣告內容，兼顧用戶體驗與商業目標。",
+    "AI代理功能多元化推動用戶互動新模式，品牌應整合多裝置與影音素材，提升內容創意與互動深度。",
+    "平台封鎖代理購物工具反映生態競爭加劇，品牌需評估多平台策略，避免依賴單一代理或購物入口。"
+  ],
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek",
+    "Qwen",
+    "Alibaba",
+    "Tencent",
+    "ByteDance",
+    "Seedance",
+    "Kling",
+    "Runway",
+    "Pika",
+    "Veo",
+    "Dreamina",
+    "CapCut",
+    "Doubao",
+    "Zhipu",
+    "MiniMax",
+    "Xiaohongshu"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾",
+      "AI 影音 / 創意工具"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "涵蓋英國搜尋監管新政、OpenAI廣告上線、Meta AI代理擴展、亞馬遜封鎖AI代理購物等影響產業競爭與行銷生態的重大新聞。",
+      "items": [
+        {
+          "title": "英國擴大Google搜尋監管，ChatGPT、Perplexity有望成為預設選項",
+          "summary": "英國競爭與市場管理局要求Google在Android手機及Chrome瀏覽器提供搜尋服務預設選擇，納入符合條件的AI助理，改變搜尋入口競爭規則。",
+          "analysis": [
+            "此政策改變了搜尋入口的生態，從單一搜尋引擎壟斷轉向多元AI助理並存，促使品牌必須適應AI助理的內容呈現與推薦機制。這則資訊的核心在於 AI 搜尋、推薦或引用規則正在重排品牌被看見的入口。行銷判讀不能只停在流量升降，而要追問品牌內容是否足夠清楚、可信、可被機器摘錄，並能在不同搜尋情境中被正確理解。",
+            "品牌與行銷團隊需重新評估SEO策略，優化AI助理可讀取的資訊，否則可能在AI代理的第一輪篩選中失去曝光機會。受影響的不只是 SEO 團隊，也包含內容、品牌、公關與產品資訊管理。當平台把答案留在結果頁或 AI 回答中，品牌需要經營可引用的事實、清楚的比較資料與一致的訊息來源，避免能見度被平台或競品重新定義。"
+          ],
+          "citationClaim": "英國競爭與市場管理局提案要求Google在Android及Chrome中提供搜尋服務選擇介面，納入符合條件的AI助理如ChatGPT與Perplexity，將改變搜尋入口生態。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-24",
+              "url": "https://www.ithome.com.tw/news/179214"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 1,
+            "trackedEntityRelevance": 3,
+            "total": 19
+          },
+          "tags": [
+            "搜尋監管",
+            "AI助理",
+            "品牌曝光",
+            "數位行銷"
+          ],
+          "what": "英國新規要求Google提供搜尋服務選擇介面，納入AI助理，打破傳統搜尋壟斷。它代表品牌曝光入口正在被 AI 搜尋與推薦機制重排，內容必須更容易被理解、引用與驗證。",
+          "soWhat": "品牌需調整SEO與內容策略，確保AI助理能正確識別與推薦，否則將失去重要流量入口。SEO、內容與品牌團隊都會被影響，因為競爭焦點會從排名延伸到 AI 是否願意引用、如何描述品牌，以及是否把流量留在平台內。",
+          "nowWhat": "選定1-2個核心產品頁面，使用AI助理模擬搜尋，記錄缺失資訊並優化內容，提升AI代理曝光率。完成後輸出 1 份素材檢查表，列出受眾、訊息、版位與成效指標各 1 欄，先找出 1 個最需要重測的廣告變因，作為下一輪素材判斷依據。"
+        },
+        {
+          "title": "ChatGPT 廣告今起正式登台！OpenAI 廣告副總裁稱「這是溝通的未來」",
+          "summary": "OpenAI在台灣推出ChatGPT廣告，廣告標示清晰且不影響模型回覆內容，用戶對話隱私獲保障，開創AI內容商業化新局。",
+          "analysis": [
+            "OpenAI將廣告置於模型回覆下方並標示，平衡商業化與用戶體驗，展現AI內容平台的廣告新形態。這則資訊的核心在於 AI 搜尋、推薦或引用規則正在重排品牌被看見的入口。行銷判讀不能只停在流量升降，而要追問品牌內容是否足夠清楚、可信、可被機器摘錄，並能在不同搜尋情境中被正確理解。",
+            "品牌行銷可利用此新入口直接觸及用戶，需設計符合AI對話場景的廣告內容，避免干擾用戶互動。受影響的不只是 SEO 團隊，也包含內容、品牌、公關與產品資訊管理。當平台把答案留在結果頁或 AI 回答中，品牌需要經營可引用的事實、清楚的比較資料與一致的訊息來源，避免能見度被平台或競品重新定義。"
+          ],
+          "citationClaim": "OpenAI在台灣推出ChatGPT廣告，廣告標示清晰且不影響模型回覆內容，保障用戶隱私與對話獨立性，為AI內容商業化提供新模式。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "一般社會大眾"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-09-24",
+              "url": "https://www.inside.com.tw/article/42466-chatgpt-ads-launch-taiwan-southeast-asia"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 3,
+            "total": 19
+          },
+          "tags": [
+            "AI廣告",
+            "用戶隱私",
+            "內容商業化",
+            "品牌策略"
+          ],
+          "what": "OpenAI在台推出ChatGPT廣告，標示透明且不影響模型回覆，保障用戶隱私。它代表品牌曝光入口正在被 AI 搜尋與推薦機制重排，內容必須更容易被理解、引用與驗證。",
+          "soWhat": "品牌可利用AI對話平台做廣告投放，需兼顧用戶體驗與隱私，設計符合對話場景的廣告內容。SEO、內容與品牌團隊都會被影響，因為競爭焦點會從排名延伸到 AI 是否願意引用、如何描述品牌，以及是否把流量留在平台內。",
+          "nowWhat": "針對ChatGPT廣告格式，設計3個對話式廣告腳本，並測試用戶互動與轉換效果，優化投放策略。完成後輸出 1 份素材檢查表，列出受眾、訊息、版位與成效指標各 1 欄，先找出 1 個最需要重測的廣告變因，作為下一輪素材判斷依據。"
+        },
+        {
+          "title": "當AI 開始替人類買東西：亞馬遜封殺 Meta Muse，AI 代理購物為何讓平台如此緊張？",
+          "summary": "亞馬遜封鎖Meta Muse及多款AI代理購物應用，顯示平台對代理式購物生態的結構性阻力與競爭態勢。",
+          "analysis": [
+            "亞馬遜封鎖競爭對手AI代理工具，反映大型電商平台對代理購物生態的控制意圖與競爭策略。這個事件顯示 AI 代理正在從後台工具變成可被使用者直接操作的流程入口。對行銷與產品團隊來說，AI 不只是提升效率，而是開始影響使用者怎麼提出需求、怎麼完成任務，以及品牌在哪些節點建立信任。",
+            "品牌與行銷團隊需評估多平台代理購物策略，避免依賴單一入口，並關注平台政策變化對代理購物的影響。影響會落在品牌體驗、客服、銷售、社群私訊與內部協作流程。團隊不能只問是否導入代理，而要先拆解哪些任務適合自動處理、哪些判斷必須保留人工審核，並設計失敗時的接手與溝通方式。"
+          ],
+          "citationClaim": "亞馬遜封鎖Meta Muse及其他AI代理購物應用，反映平台對代理式購物的結構性阻力，影響AI代理在消費者購物流程中的角色與發展。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者",
+            "一般社會大眾"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-09-24",
+              "url": "https://www.inside.com.tw/article/42468-amazon-blocks-meta-muse-agentic-ai-platform-war-2026"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 1,
+            "trackedEntityRelevance": 3,
+            "total": 15
+          },
+          "tags": [
+            "AI代理購物",
+            "平台競爭",
+            "亞馬遜",
+            "品牌策略"
+          ],
+          "what": "亞馬遜封鎖Meta Muse等AI代理購物工具，加劇平台生態競爭。它代表 AI 代理正從後台效率工具，變成使用者可直接操作的產品與服務流程入口。",
+          "soWhat": "品牌需多元布局代理購物入口，避免被單一平台政策影響銷售與用戶體驗。客服、銷售、社群與產品體驗都可能被重組，團隊需要重新界定哪些任務交給 AI、哪些判斷仍要由人承擔，否則效率提升可能反而放大信任風險。",
+          "nowWhat": "分析現有代理購物平台政策，制定2-3個替代入口策略，確保銷售渠道多元與穩定。完成後輸出 1 張流程小卡：使用者輸入、AI 代理動作、人工審核點，先標出 1 個最容易卡住的環節，再判斷是否值得做成固定流程。"
+        },
+        {
+          "title": "提示詞注入仍難可靠防範，澳洲通訊局公布AI代理權限控管原則",
+          "summary": "澳洲通訊局發布AI代理安全指引，警示提示詞注入攻擊風險，建議限制AI代理權限以降低安全威脅。",
+          "analysis": [
+            "提示詞注入是AI代理面臨的重大安全挑戰，缺乏完全技術防範手段，需結合權限控管與多層防護。這個事件顯示 AI 代理正在從後台工具變成可被使用者直接操作的流程入口。對行銷與產品團隊來說，AI 不只是提升效率，而是開始影響使用者怎麼提出需求、怎麼完成任務，以及品牌在哪些節點建立信任。",
+            "品牌與行銷團隊在部署AI代理時，必須納入安全治理策略，防止代理誤執行指令導致品牌形象或數據風險。影響會落在品牌體驗、客服、銷售、社群私訊與內部協作流程。團隊不能只問是否導入代理，而要先拆解哪些任務適合自動處理、哪些判斷必須保留人工審核，並設計失敗時的接手與溝通方式。"
+          ],
+          "citationClaim": "澳洲通訊局發布AI代理安全指引，指出目前尚無完全可靠防範提示詞注入的技術，建議企業限制AI代理權限以降低風險，強調多層防護策略的重要性。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-24",
+              "url": "https://www.ithome.com.tw/news/179149"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 3,
+            "total": 16
+          },
+          "tags": [
+            "AI安全",
+            "提示詞注入",
+            "代理權限控管",
+            "品牌風險"
+          ],
+          "what": "澳洲通訊局發布AI代理安全指引，強調提示詞注入風險與權限控管必要性。它代表 AI 代理正從後台效率工具，變成使用者可直接操作的產品與服務流程入口。",
+          "soWhat": "品牌部署AI代理需強化安全治理，避免代理誤操作帶來的形象與數據風險。客服、銷售、社群與產品體驗都可能被重組，團隊需要重新界定哪些任務交給 AI、哪些判斷仍要由人承擔，否則效率提升可能反而放大信任風險。",
+          "nowWhat": "建立AI代理權限清單，限制代理可執行操作數量，並制定3項安全監控指標，確保代理行為合規。完成後輸出 1 張流程小卡：使用者輸入、AI 代理動作、人工審核點，先標出 1 個最容易卡住的環節，再判斷是否值得做成固定流程。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "涵蓋Meta Muse AI代理新功能、Google Business Profiles AI營業時間設定、OpenAI ChatGPT Voice語音操作升級、B2B品牌創作者影片應用等工具與功能變革。",
+      "items": [
+        {
+          "title": "Meta給Muse AI代理新增影音頭像、電子郵件及Mac控制功能",
+          "summary": "Meta在Connect 2026擴展Muse AI代理功能，新增視頻頭像、專屬電子郵件及Mac電腦控制，提升代理人與用戶多裝置互動體驗。",
+          "analysis": [
+            "Meta強化Muse代理的多媒體與多裝置能力，打造更沉浸且個性化的用戶互動入口，提升品牌與消費者的溝通深度。這個變化代表 AI 影音工具正從單點素材生成，往腳本、分鏡、剪輯、版本測試的完整內容產線靠近。對行銷人來說，重點不是多一個工具，而是短影音與廣告素材的測試速度、成本結構和創意決策方式正在改變。",
+            "品牌行銷可利用這些新功能打造差異化體驗，結合影音素材與即時互動，增強用戶黏著與內容吸引力。品牌、代理商與內容工作者會受到不同層面的影響。品牌端需要重新定義素材審核與版權邊界，代理商需要把腳本企劃和工具流程整合，個人創作者則能用更低成本做出多版本內容，但也更需要清楚的風格判斷與資料標註。"
+          ],
+          "citationClaim": "Meta在Connect 2026擴展Muse AI代理功能，新增視頻頭像、專屬電子郵件及Mac電腦控制，提升代理人與用戶多裝置互動體驗。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "AI 影音 / 創意工具"
+          ],
+          "sources": [
+            {
+              "name": "The Decoder",
+              "publishedDate": "2026-09-24",
+              "url": "https://the-decoder.com/meta-gives-its-muse-ai-agent-video-avatars-email-addresses-and-mac-control/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 20
+          },
+          "tags": [
+            "Meta Muse",
+            "AI代理",
+            "多裝置互動",
+            "影音創意"
+          ],
+          "what": "Meta擴展Muse AI代理功能，新增影音頭像與多裝置控制，提升互動體驗。它代表 AI 影音開始進入腳本、素材與剪輯流程，會直接影響短影音與廣告素材的生產方式。",
+          "soWhat": "品牌可利用多媒體與多裝置特性，設計更具吸引力的互動內容與體驗，增強用戶黏著。品牌端會更容易大量測試素材，但也更需要明確的創意方向、審核規範與成效判讀，避免只是更快產出更多相似內容，卻沒有累積可複用的內容方法。",
+          "nowWhat": "選擇1個核心產品，製作包含影音頭像的互動腳本，並測試用戶回饋與互動率，優化內容策略。完成後輸出 1 張三欄表：原始素材、AI 生成版本、可投放平台，先保留 1 個最容易執行的素材測試，並記下是否值得放進下一次內容企劃。"
+        },
+        {
+          "title": "Google Business Profiles測試AI自動設定營業時間功能",
+          "summary": "Google Business Profiles推出AI功能，可透過文字描述自動設定營業時間，簡化品牌線上資訊管理流程。",
+          "analysis": [
+            "AI自動解讀營業時間文字描述，降低品牌管理人員設定負擔，提高資訊準確性與即時更新能力。這則資訊的核心在於 AI 搜尋、推薦或引用規則正在重排品牌被看見的入口。行銷判讀不能只停在流量升降，而要追問品牌內容是否足夠清楚、可信、可被機器摘錄，並能在不同搜尋情境中被正確理解。",
+            "品牌端可利用此功能確保線上資訊一致性，提升搜尋結果及地圖曝光的正確性，強化本地行銷效果。受影響的不只是 SEO 團隊，也包含內容、品牌、公關與產品資訊管理。當平台把答案留在結果頁或 AI 回答中，品牌需要經營可引用的事實、清楚的比較資料與一致的訊息來源，避免能見度被平台或競品重新定義。"
+          ],
+          "citationClaim": "Google Business Profiles測試AI自動設定營業時間功能，透過文字描述自動更新，優化品牌線上資訊管理。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-09-24",
+              "url": "https://www.seroundtable.com/google-business-profiles-set-your-hours-automatically-42151.html"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 16
+          },
+          "tags": [
+            "Google Business Profiles",
+            "AI自動化",
+            "本地行銷",
+            "品牌資訊管理"
+          ],
+          "what": "Google測試AI自動設定營業時間，簡化品牌資訊管理。它代表品牌曝光入口正在被 AI 搜尋與推薦機制重排，內容必須更容易被理解、引用與驗證。",
+          "soWhat": "品牌能確保線上營業時間資訊準確與即時，提升搜尋與地圖曝光效果。SEO、內容與品牌團隊都會被影響，因為競爭焦點會從排名延伸到 AI 是否願意引用、如何描述品牌，以及是否把流量留在平台內。",
+          "nowWhat": "使用AI功能更新3個主要門店營業時間，確認資訊正確性並監控用戶反饋，提升本地行銷成效。完成後輸出 1 份素材檢查表，列出受眾、訊息、版位與成效指標各 1 欄，先找出 1 個最需要重測的廣告變因，作為下一輪素材判斷依據。"
+        },
+        {
+          "title": "ChatGPT Voice升級，支援語音操作AI代理人及外掛整合",
+          "summary": "OpenAI升級ChatGPT Voice，支援GPT-6模型及語音操作外掛，結合ChatGPT Work，讓用戶可語音指派AI代理執行多種工作。",
+          "analysis": [
+            "語音操作強化了AI代理的易用性與互動自然度，促進用戶以更直覺的方式整合AI於工作流程。這個事件顯示 AI 代理正在從後台工具變成可被使用者直接操作的流程入口。對行銷與產品團隊來說，AI 不只是提升效率，而是開始影響使用者怎麼提出需求、怎麼完成任務，以及品牌在哪些節點建立信任。",
+            "行銷與內容團隊可利用語音指令快速生成文件、簡報及網站內容，提升創作效率與多樣性。影響會落在品牌體驗、客服、銷售、社群私訊與內部協作流程。團隊不能只問是否導入代理，而要先拆解哪些任務適合自動處理、哪些判斷必須保留人工審核，並設計失敗時的接手與溝通方式。"
+          ],
+          "citationClaim": "OpenAI升級ChatGPT Voice，支援語音操作AI代理及外掛，結合工作流工具，提升用戶操作便利性。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者",
+            "一般社會大眾"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-24",
+              "url": "https://www.ithome.com.tw/news/179210"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 16
+          },
+          "tags": [
+            "ChatGPT Voice",
+            "語音操作",
+            "AI代理",
+            "工作流整合"
+          ],
+          "what": "OpenAI升級ChatGPT Voice，支援語音操作AI代理及外掛整合。它代表 AI 代理正從後台效率工具，變成使用者可直接操作的產品與服務流程入口。",
+          "soWhat": "提升行銷與內容團隊的工作效率，促進AI工具自然融入日常創作流程。客服、銷售、社群與產品體驗都可能被重組，團隊需要重新界定哪些任務交給 AI、哪些判斷仍要由人承擔，否則效率提升可能反而放大信任風險。",
+          "nowWhat": "選擇2個常用工作場景，嘗試語音指令生成內容，並記錄效率提升與使用體驗，優化團隊工作流程。完成後輸出 1 張流程小卡：使用者輸入、AI 代理動作、人工審核點，先標出 1 個最容易卡住的環節，再判斷是否值得做成固定流程。"
+        },
+        {
+          "title": "B2B品牌轉向創作者影片抗衡AI生成內容，強化AI搜尋下的品牌信任",
+          "summary": "B2B品牌利用創作者影片區隔AI生成內容，提升買家信任度與搜尋可見性，應對AI內容泛濫挑戰。",
+          "analysis": [
+            "創作者影片提供真實人聲與視覺呈現，增強內容可信度，彌補AI生成內容缺乏人性化的不足。這個變化代表 AI 影音工具正從單點素材生成，往腳本、分鏡、剪輯、版本測試的完整內容產線靠近。對行銷人來說，重點不是多一個工具，而是短影音與廣告素材的測試速度、成本結構和創意決策方式正在改變。",
+            "品牌應結合影片創作者與AI工具，打造差異化內容策略，提升AI搜尋結果中的品牌影響力。品牌、代理商與內容工作者會受到不同層面的影響。品牌端需要重新定義素材審核與版權邊界，代理商需要把腳本企劃和工具流程整合，個人創作者則能用更低成本做出多版本內容，但也更需要清楚的風格判斷與資料標註。"
+          ],
+          "citationClaim": "B2B品牌利用創作者影片對抗AI生成內容泛濫，提升品牌信任與AI搜尋表現。",
+          "impactAngles": [
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "AI 影音 / 創意工具"
+          ],
+          "sources": [
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-09-24",
+              "url": "https://martech.org/b2b-brands-turn-to-creator-video-to-fight-ai-slop-and-aid-ai-search/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 20
+          },
+          "tags": [
+            "B2B品牌",
+            "創作者影片",
+            "AI搜尋",
+            "內容差異化"
+          ],
+          "what": "B2B品牌利用創作者影片提升內容可信度，抗衡AI生成內容泛濫。它代表 AI 影音開始進入腳本、素材與剪輯流程，會直接影響短影音與廣告素材的生產方式。",
+          "soWhat": "品牌需結合人性化影片與AI工具，強化搜尋與買家信任，避免內容同質化。品牌端會更容易大量測試素材，但也更需要明確的創意方向、審核規範與成效判讀，避免只是更快產出更多相似內容，卻沒有累積可複用的內容方法。",
+          "nowWhat": "選擇1個產品線，製作3支創作者影片，並追蹤AI搜尋排名與用戶互動數據，優化內容策略。完成後輸出 1 張三欄表：原始素材、AI 生成版本、可投放平台，先保留 1 個最容易執行的素材測試，並記下是否值得放進下一次內容企劃。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "聚焦AI搜尋入口多元化、AI代理安全治理與AI內容商業化趨勢，及其對品牌與行銷生態的長期影響。",
+      "items": [
+        {
+          "title": "AI搜尋入口多元化與代理人安全治理成為行銷新焦點",
+          "summary": "英國搜尋監管推動AI助理成為搜尋預設選項，亞馬遜封鎖代理購物工具，澳洲發布AI代理安全指引，顯示AI搜尋與代理生態正面臨規則與安全雙重挑戰。",
+          "analysis": [
+            "多元AI搜尋入口打破傳統搜尋壟斷，品牌需適應AI代理的推薦邏輯與內容呈現，提升資訊可讀性與信任度。這個事件顯示 AI 代理正在從後台工具變成可被使用者直接操作的流程入口。對行銷與產品團隊來說，AI 不只是提升效率，而是開始影響使用者怎麼提出需求、怎麼完成任務，以及品牌在哪些節點建立信任。",
+            "安全治理成為部署AI代理的必備條件，行銷團隊需與資安部門協作，建立多層防護機制，保障品牌形象與用戶數據安全。影響會落在品牌體驗、客服、銷售、社群私訊與內部協作流程。團隊不能只問是否導入代理，而要先拆解哪些任務適合自動處理、哪些判斷必須保留人工審核，並設計失敗時的接手與溝通方式。"
+          ],
+          "citationClaim": "英國推動AI助理成為搜尋預設，亞馬遜封鎖代理購物工具，澳洲發布AI代理安全指引，反映AI搜尋與代理生態的規則與安全挑戰。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-24",
+              "url": "https://www.ithome.com.tw/news/179214"
+            },
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-09-24",
+              "url": "https://www.inside.com.tw/article/42468-amazon-blocks-meta-muse-agentic-ai-platform-war-2026"
+            },
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-24",
+              "url": "https://www.ithome.com.tw/news/179149"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 21
+          },
+          "tags": [
+            "AI搜尋入口",
+            "AI代理安全",
+            "平台規則",
+            "品牌策略"
+          ],
+          "what": "AI搜尋入口多元化與代理安全治理成為新焦點，改變品牌流量與風險管理。它代表 AI 代理正從後台效率工具，變成使用者可直接操作的產品與服務流程入口。",
+          "soWhat": "品牌需同步優化內容與安全策略，確保在新生態中維持曝光與信任。客服、銷售、社群與產品體驗都可能被重組，團隊需要重新界定哪些任務交給 AI、哪些判斷仍要由人承擔，否則效率提升可能反而放大信任風險。",
+          "nowWhat": "組織跨部門團隊，制定AI搜尋與代理安全雙重策略，完成3項優化與防護措施。完成後輸出 1 張流程小卡：使用者輸入、AI 代理動作、人工審核點，先標出 1 個最容易卡住的環節，再判斷是否值得做成固定流程。"
+        },
+        {
+          "title": "AI內容商業化與多媒體互動推動行銷新模式",
+          "summary": "OpenAI ChatGPT廣告登台，Meta Muse新增影音頭像與多裝置控制，B2B品牌利用創作者影片對抗AI生成內容，展現AI內容商業化與互動創新的趨勢。",
+          "analysis": [
+            "AI內容平台開始商業化廣告，品牌可直接在對話場景觸達用戶，需設計符合場景的廣告內容與互動體驗。這個變化代表 AI 影音工具正從單點素材生成，往腳本、分鏡、剪輯、版本測試的完整內容產線靠近。對行銷人來說，重點不是多一個工具，而是短影音與廣告素材的測試速度、成本結構和創意決策方式正在改變。",
+            "多媒體與多裝置互動功能豐富用戶體驗，品牌應結合影音創意工具與AI代理，提升內容差異化與用戶黏著度。品牌、代理商與內容工作者會受到不同層面的影響。品牌端需要重新定義素材審核與版權邊界，代理商需要把腳本企劃和工具流程整合，個人創作者則能用更低成本做出多版本內容，但也更需要清楚的風格判斷與資料標註。"
+          ],
+          "citationClaim": "OpenAI推出ChatGPT廣告，Meta擴展Muse AI代理影音與多裝置功能，B2B品牌利用創作者影片提升品牌信任，反映AI內容商業化與互動創新趨勢。",
+          "impactAngles": [
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "AI 影音 / 創意工具",
+            "品牌端"
+          ],
+          "sources": [
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-09-24",
+              "url": "https://www.inside.com.tw/article/42466-chatgpt-ads-launch-taiwan-southeast-asia"
+            },
+            {
+              "name": "The Decoder",
+              "publishedDate": "2026-09-24",
+              "url": "https://the-decoder.com/meta-gives-its-muse-ai-agent-video-avatars-email-addresses-and-mac-control/"
+            },
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-09-24",
+              "url": "https://martech.org/b2b-brands-turn-to-creator-video-to-fight-ai-slop-and-aid-ai-search/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 5,
+            "trackedEntityRelevance": 3,
+            "total": 22
+          },
+          "tags": [
+            "AI廣告",
+            "多媒體互動",
+            "內容商業化",
+            "品牌信任"
+          ],
+          "what": "AI內容平台商業化與多媒體互動推動行銷新模式，提升用戶體驗與品牌影響力。它代表 AI 影音開始進入腳本、素材與剪輯流程，會直接影響短影音與廣告素材的生產方式。",
+          "soWhat": "品牌需整合AI代理與影音創意工具，設計差異化內容與互動，強化用戶黏著與轉換。品牌端會更容易大量測試素材，但也更需要明確的創意方向、審核規範與成效判讀，避免只是更快產出更多相似內容，卻沒有累積可複用的內容方法。",
+          "nowWhat": "整合1個AI代理與影音工具，製作3支互動內容，並追蹤用戶參與與轉換數據，優化行銷策略。完成後輸出 1 張三欄表：原始素材、AI 生成版本、可投放平台，先保留 1 個最容易執行的素材測試，並記下是否值得放進下一次內容企劃。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "從今日AI趨勢歸納品牌策略、數位行銷、內容行銷、社群應用、媒體廣告與團隊流程六大面向的變化與具體行動建議。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI搜尋入口多元化與代理人安全治理使品牌須重塑數位曝光與信任架構。品牌應優化產品與服務資訊，確保AI助理能正確理解與推薦，同時強化安全防護，避免代理誤操作損害品牌形象。具體可從檢視核心產品頁面AI可讀性開始，建立多層安全管控機制，確保品牌在新生態中獲得穩定流量與信任。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "OpenAI ChatGPT廣告與Meta Muse多裝置影音互動功能推動數位行銷新模式。行銷團隊需設計符合AI對話場景的廣告內容，兼顧用戶隱私與體驗，並結合多媒體素材提升互動深度。建議從製作對話式廣告腳本與影音互動內容著手，測試用戶反饋與轉換效果，優化投放策略與內容創意。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "B2B品牌利用創作者影片抗衡AI生成內容泛濫，強化品牌信任與搜尋表現。內容團隊應結合人性化影片與AI工具，打造差異化內容策略，提升AI搜尋下的品牌影響力。可從選定產品線製作創作者影片開始，追蹤搜尋排名與用戶互動，持續優化內容品質與多樣性。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "Meta Muse AI代理新增影音頭像與多裝置控制功能，豐富用戶互動體驗。社群團隊可利用這些功能打造更具吸引力的影音互動內容，提升用戶黏著與分享意願。建議從策劃包含影音頭像的互動腳本開始，測試用戶參與度，優化社群內容策略，促進品牌與用戶的深度連結。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "AI廣告標示透明成趨勢，品牌需設計不干擾用戶對話體驗的廣告內容。媒體投放團隊應結合AI對話場景特性，製作多版本對話式廣告，並透過數據分析優化投放效益。具體可從設計3個對話式廣告腳本開始，測試用戶互動與轉換率，持續調整廣告內容與投放策略。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "AI代理安全風險與多元搜尋入口要求行銷團隊與資安部門緊密合作，建立跨部門治理機制。團隊應制定AI代理權限清單與安全監控指標，並同步優化內容以適應AI搜尋推薦邏輯。建議成立跨部門工作小組，完成3項安全與內容優化措施，確保品牌在AI生態中安全穩定運作。"
+        }
+      ]
+    }
+  ]
+}

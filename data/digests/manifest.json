@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-24",
+  "latest": "2026-09-25",
   "digests": [
+    {
+      "reportDate": "2026-09-25",
+      "coverageDate": "2026-09-24",
+      "title": "Bella's AI 趨勢日報｜2026/09/25",
+      "summary": "英國競爭與市場管理局推動Google搜尋預設選擇介面，納入ChatGPT、Perplexity等AI助理，改變搜尋入口競爭規則。OpenAI在台推出ChatGPT廣告，標示清晰保障用戶隱私，為AI內容商業化開新局。Meta積極擴展AI代理Muse功能，結合多裝置與影音應用，推動用戶互動與品牌曝光新模式。亞馬遜封鎖Meta Muse等AI代理購物應用，顯示平台對代理購物生態的結構性影響。Google Business Profiles測試AI自動設定營業時間，優化品牌線上資訊管理。澳洲通訊局發布AI代理安全指引，警示提示詞注入風險，強調多層防護。Google DeepMind加速推出Gemini 4，持續推動AI模型競爭。B2B品牌轉向創作者影片抗衡AI生成內容，強化AI搜尋下的品牌信任。螞蟻inclusionAI公開模型訓練透明度，符合歐盟AI法案要求。整體趨勢顯示AI代理、AI搜尋入口及內容商業化正重塑數位行銷與品牌策略。",
+      "path": "data/digests/2026-09-25.json"
+    },
     {
       "reportDate": "2026-09-24",
       "coverageDate": "2026-09-23",
