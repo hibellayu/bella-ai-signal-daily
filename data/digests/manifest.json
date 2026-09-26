@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-25",
+  "latest": "2026-09-26",
   "digests": [
+    {
+      "reportDate": "2026-09-26",
+      "coverageDate": "2026-09-25",
+      "title": "Bella's AI 趨勢日報｜2026/09/26",
+      "summary": "今日AI產業聚焦於AI代理人技術的多元應用、搜尋入口品牌競爭、語音生成能力擴展與團隊AI治理挑戰。Bing與Google強化AI搜尋品牌辨識，Anthropic大規模運用AI代理於生命科學研究，Meta推動AI眼鏡與Muse個人代理進軍消費端，Semrush與MarTech則揭示AI工具導入後品牌能見度及團隊協作新挑戰。行銷人需重新評估品牌在AI搜尋、代理與多模態入口中的曝光與信任機制，並強化AI代理治理與內容結構化。",
+      "path": "data/digests/2026-09-26.json"
+    },
     {
       "reportDate": "2026-09-25",
       "coverageDate": "2026-09-24",

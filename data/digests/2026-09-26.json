@@ -1,0 +1,541 @@
+{
+  "reportDate": "2026-09-26",
+  "coverageDate": "2026-09-25",
+  "generatedAt": "2026-09-26T08:42:38+08:00",
+  "headline": "AI代理與生成式搜尋競爭升溫，品牌能見度與內容策略進入重塑期",
+  "summary": "今日AI產業聚焦於AI代理人技術的多元應用、搜尋入口品牌競爭、語音生成能力擴展與團隊AI治理挑戰。Bing與Google強化AI搜尋品牌辨識，Anthropic大規模運用AI代理於生命科學研究，Meta推動AI眼鏡與Muse個人代理進軍消費端，Semrush與MarTech則揭示AI工具導入後品牌能見度及團隊協作新挑戰。行銷人需重新評估品牌在AI搜尋、代理與多模態入口中的曝光與信任機制，並強化AI代理治理與內容結構化。",
+  "answerSummary": "AI搜尋與代理人入口的品牌競爭加劇，行銷人需重構內容結構、強化AI可讀性與信任證據，以提升品牌在AI搜尋與代理推薦中的能見度。多代理管理與語音生成等新工具進入工作流，行銷團隊必須建立AI治理與協作標準，並主動追蹤品牌在多入口的曝光與內容被引用情境。",
+  "promptTargets": [
+    {
+      "intent": "Informational",
+      "prompt": "Bing將Copilot搜尋標籤改為AI Mode，這對AI搜尋市場有什麼意義？"
+    },
+    {
+      "intent": "Comparison",
+      "prompt": "Google Gemini Live Avatar與Meta Muse個人AI代理在品牌互動上有何差異？"
+    },
+    {
+      "intent": "Commercial",
+      "prompt": "Semrush免費試用期如何幫助品牌提升AI搜尋能見度？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "行銷團隊應如何管理多個AI代理工具，確保內容與品牌曝光一致？"
+    },
+    {
+      "intent": "Brand",
+      "prompt": "AI生成語音和虛擬形象的普及，會如何改變品牌內容製作與用戶互動？"
+    },
+    {
+      "intent": "Problem / Solution",
+      "prompt": "當AI代理成為用戶主要的資訊入口時，品牌應如何調整內容結構？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "AI代理在生命科學研究中的應用經驗對行銷自動化有何啟發？"
+    },
+    {
+      "intent": "Commercial",
+      "prompt": "AI代理與生成式搜尋競爭升溫，品牌能見度與內容策略進入重塑期 對行銷人代表什麼變化？"
+    }
+  ],
+  "aeoEntities": [
+    "Bing",
+    "Copilot",
+    "AI Mode",
+    "Google",
+    "Gemini",
+    "Gemini Live Avatar",
+    "Anthropic",
+    "Claude",
+    "Meta",
+    "Muse",
+    "Semrush",
+    "MarTech",
+    "AI代理",
+    "語音生成",
+    "品牌能見度",
+    "內容結構化"
+  ],
+  "citationClaims": [
+    {
+      "claim": "Microsoft正測試將Bing搜尋中的Copilot標籤更名為AI Mode，明顯對標Google AI搜尋，顯示AI搜尋入口品牌競爭升溫。",
+      "sources": [
+        {
+          "name": "Search Engine Roundtable",
+          "publishedDate": "2026-09-25",
+          "url": "https://www.seroundtable.com/bing-ai-mode-search-tabs-42165.html"
+        }
+      ]
+    },
+    {
+      "claim": "Anthropic動用近950個Claude AI代理，在21小時內搜尋大量DNA資料，發現全新ART酵素系統，展現AI代理在科研自動化的突破性應用。",
+      "sources": [
+        {
+          "name": "iThome",
+          "publishedDate": "2026-09-25",
+          "url": "https://www.ithome.com.tw/news/179222"
+        },
+        {
+          "name": "INSIDE",
+          "publishedDate": "2026-09-25",
+          "url": "https://www.inside.com.tw/article/42477-claude-discovers-art-enzyme-crispr-like-system-sept-2026"
+        }
+      ]
+    },
+    {
+      "claim": "Google Gemini 3.8 Live Avatar讓AI代理具備即時生成虛擬人物、臉部表情與語音互動，推動AI代理人進入更自然的多模態溝通場景。",
+      "sources": [
+        {
+          "name": "iThome",
+          "publishedDate": "2026-09-25",
+          "url": "https://www.ithome.com.tw/news/179229"
+        },
+        {
+          "name": "科技新報",
+          "publishedDate": "2026-09-25",
+          "url": "https://technews.tw/2026/09/25/gemini-3-8-live-live-avatar/"
+        }
+      ]
+    },
+    {
+      "claim": "Meta積極推廣AI眼鏡與Muse個人AI代理，年底前AI眼鏡型號將超過百款，並將Muse推到自家應用與App Store，強化消費端AI應用滲透率。",
+      "sources": [
+        {
+          "name": "科技新報",
+          "publishedDate": "2026-09-25",
+          "url": "https://technews.tw/2026/09/25/meta-3-ai-glasses-series-over-100-models-year-end/"
+        },
+        {
+          "name": "TechCrunch",
+          "publishedDate": "2026-09-25",
+          "url": "https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/"
+        }
+      ]
+    },
+    {
+      "claim": "Semrush官方建議行銷人利用免費試用期，聚焦於AI搜尋能見度、內容優化與品牌曝光，提升在AI搜尋時代的競爭力。",
+      "sources": [
+        {
+          "name": "Semrush Blog",
+          "publishedDate": "2026-09-25",
+          "url": "https://www.semrush.com/blog/free-7-day-semrush-one-trial/"
+        }
+      ]
+    }
+  ],
+  "strategyTakeaways": [
+    "AI搜尋入口品牌競爭升溫，品牌需強化內容結構化與AI可讀性，確保在AI搜尋與代理推薦中被正確引用。",
+    "多代理工具進入行銷與內容生產流程，團隊需建立AI代理管理、追蹤與協作標準，避免內容與品牌訊息分散。",
+    "語音生成與虛擬形象普及，品牌應優先測試多語音、多模態內容，提升用戶互動體驗與品牌辨識度。",
+    "AI代理在科研與行銷自動化的應用經驗，將促使行銷人重新設計內容流程，優先考慮AI摘要、推薦與多入口曝光情境。"
+  ],
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek",
+    "Qwen",
+    "Alibaba",
+    "Tencent",
+    "ByteDance",
+    "Seedance",
+    "Kling",
+    "Runway",
+    "Pika",
+    "Veo",
+    "Dreamina",
+    "CapCut",
+    "Doubao",
+    "Zhipu",
+    "MiniMax",
+    "Xiaohongshu"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾",
+      "AI 影音 / 創意工具"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "涵蓋AI搜尋入口品牌競爭、AI代理於生命科學與內容生產的突破，以及多模態AI代理推動用戶互動新場景。",
+      "items": [
+        {
+          "title": "Bing測試將Copilot標籤更名為AI Mode，AI搜尋入口品牌競爭白熱化",
+          "summary": "Microsoft在Bing搜尋頁面測試將Copilot標籤改為AI Mode，明顯對標Google AI搜尋品牌策略。這不僅是名稱調整，更反映AI搜尋入口已成為品牌辨識與用戶習慣競爭的新戰場。未來品牌曝光將不只侷限於傳統搜尋結果，還需考慮AI搜尋模式下的內容結構與可讀性。",
+          "analysis": [
+            "Bing與Google的AI搜尋命名競爭，標誌著AI搜尋入口的品牌化趨勢。平台正將AI搜尋從輔助功能轉為主入口，強化用戶對AI搜尋的認知與依賴，並形成新的品牌心智戰場。",
+            "對行銷人而言，品牌內容若未針對AI搜尋模式優化，將難以被AI代理引用或推薦。品牌需主動調整內容結構，確保在AI Mode等新入口下仍能維持高能見度與正確傳遞核心訊息。"
+          ],
+          "citationClaim": "Microsoft正測試將Bing搜尋中的Copilot標籤更名為AI Mode，明顯對標Google AI搜尋，顯示AI搜尋入口品牌競爭升溫。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-09-25",
+              "url": "https://www.seroundtable.com/bing-ai-mode-search-tabs-42165.html"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 21
+          },
+          "tags": [
+            "AI搜尋",
+            "品牌能見度",
+            "Bing",
+            "Copilot",
+            "Google"
+          ],
+          "what": "AI搜尋入口的品牌命名正成為平台競爭焦點。Bing將Copilot標籤改為AI Mode，意味AI搜尋不再只是輔助，而是主流入口，品牌需調整內容以適應AI搜尋的引用與推薦邏輯。",
+          "soWhat": "品牌若忽視AI搜尋入口的變化，將在AI代理摘要、推薦及搜尋結果中失去曝光優勢。內容結構、FAQ、產品資訊和第三方引用需更精準，否則在AI Mode等新入口下容易被排除或誤讀。",
+          "nowWhat": "選定1個主力產品頁，請AI搜尋（如Bing AI Mode或Google SGE）直接比較與競品差異，記錄AI未能正確引用的3個資訊欄位，針對這些欄位補上結構化內容並驗證AI能否正確回應。"
+        },
+        {
+          "title": "Anthropic大規模運用Claude代理，推動AI自動化於生命科學研究",
+          "summary": "Anthropic公開以近950個Claude AI代理在21小時內搜尋、分析20萬條DNA序列，發現全新ART酵素系統。這類高效率自動化分析，過去需人類科學家數週甚至數月才能完成。AI代理在科研場景的突破，預示行銷自動化與內容生產也將迎來類似規模化、分工與知識萃取的新模式。",
+          "analysis": [
+            "AI代理大規模協作不僅加速科研，也為內容生產、行銷自動化帶來新啟發。平台可將複雜任務分拆給多代理並行處理，提升知識搜尋、內容整理與產出效率。",
+            "行銷團隊可借鏡AI代理在科研的分工模式，設計多代理協作的內容審查、數據分析與自動摘要流程，減少人工作業瓶頸，並提升內容品質與產出速度。影響會落在品牌體驗、客服、銷售、社群私訊與內部協作流程。團隊不能只問是否導入代理，而要先拆解哪些任務適合自動處理、哪些判斷必須保留人工審核，並設計失敗時的接手與溝通方式。"
+          ],
+          "citationClaim": "Anthropic動用近950個Claude AI代理，在21小時內搜尋大量DNA資料，發現全新ART酵素系統，展現AI代理在科研自動化的突破性應用。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-25",
+              "url": "https://www.ithome.com.tw/news/179222"
+            },
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-09-25",
+              "url": "https://www.inside.com.tw/article/42477-claude-discovers-art-enzyme-crispr-like-system-sept-2026"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 20
+          },
+          "tags": [
+            "AI代理",
+            "Anthropic",
+            "Claude",
+            "自動化",
+            "生命科學"
+          ],
+          "what": "AI代理可被大規模調度，將龐大資料搜尋、分析與知識萃取自動化，顛覆傳統需大量人力的知識工作。這種模式不只適用於科研，也可轉化為行銷、內容審查與數據分析的高效流程。",
+          "soWhat": "行銷與內容團隊若能善用多代理協作，將顯著提升內容產出速度、品質與多樣性。未來內容審查、SEO優化、數據洞察等流程都可由AI代理分工自動完成，減少人為錯漏與重工。",
+          "nowWhat": "挑選1個重複性高的內容審查或數據分析任務，設計3個AI代理分工步驟（如資料收集、初步審查、摘要），用現有AI工具實測流程，記錄每階段產出並評估效率與品質提升幅度。"
+        },
+        {
+          "title": "Google Gemini Live Avatar推動多模態AI代理，強化用戶互動與品牌表現",
+          "summary": "Google Gemini 3.8 Live Avatar正式上線，讓AI代理人具備即時生成虛擬人物、臉部表情與語音互動能力。這標誌AI代理將從純文字對話進化為多模態溝通，未來品牌在AI助理、客服、互動內容等場景，需考慮虛擬形象、語音風格與情感表達對品牌識別的影響。",
+          "analysis": [
+            "AI代理進入多模態時代，平台競爭開始聚焦於虛擬形象、語音與情感互動的差異化。品牌不再只依賴文字內容，而需設計能被AI代理以多種形式呈現的內容與互動腳本。",
+            "行銷團隊需提前規劃品牌專屬的AI語音、虛擬形象與互動腳本，確保在AI助理、客服與新型入口中，品牌辨識度與信任感能被放大，而非被平台預設形象稀釋。"
+          ],
+          "citationClaim": "Google Gemini 3.8 Live Avatar讓AI代理具備即時生成虛擬人物、臉部表情與語音互動，推動AI代理人進入更自然的多模態溝通場景。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者",
+            "一般社會大眾"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-25",
+              "url": "https://www.ithome.com.tw/news/179229"
+            },
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-09-25",
+              "url": "https://technews.tw/2026/09/25/gemini-3-8-live-live-avatar/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 17
+          },
+          "tags": [
+            "Google",
+            "Gemini",
+            "Live Avatar",
+            "多模態",
+            "品牌互動"
+          ],
+          "what": "AI代理人從文字對話進化到虛擬形象與語音互動，未來用戶將與具備表情、聲音的AI助理溝通。品牌需設計能被AI代理多模態呈現的內容與腳本，強化品牌辨識度。",
+          "soWhat": "若品牌未主動設計AI代理專屬形象與語音，將在新型互動入口中被平台預設形象取代，失去品牌專屬辨識與情感連結。內容製作需納入多模態腳本、語音風格與互動情境。",
+          "nowWhat": "選擇1個常見客服或產品介紹情境，設計1套品牌專屬AI語音腳本與虛擬形象描述，並用Google Gemini Live Avatar等工具生成初版，測試用戶對品牌辨識度與互動感受的改變。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "聚焦於AI代理、語音生成工具及品牌能見度提升方案，解析其進入行銷工作流與內容生產流程的實際應用。",
+      "items": [
+        {
+          "title": "Meta推AI眼鏡與Muse個人AI代理，消費端AI應用多元化",
+          "summary": "Meta於Connect 2026大會發表三大系列AI眼鏡，年底前將超過百款，並積極推廣Muse個人AI代理於自家應用與App Store。這顯示AI代理與多裝置入口正快速滲透消費端，品牌需思考如何在新型AI硬體與個人代理中維持曝光與互動優勢。",
+          "analysis": [
+            "Meta將AI代理與硬體整合，推動AI眼鏡、Muse等產品進入日常生活場景，擴大AI應用觸點。這將改變品牌與消費者互動的入口與頻率，AI代理成為新型資訊分發與品牌推薦節點。",
+            "行銷人需提前佈局品牌在AI眼鏡、個人代理等新入口的內容格式與互動腳本，確保品牌資訊能被AI代理正確引用，並在多裝置場景下維持一致性與辨識度。"
+          ],
+          "citationClaim": "Meta積極推廣AI眼鏡與Muse個人AI代理，年底前AI眼鏡型號將超過百款，並將Muse推到自家應用與App Store，強化消費端AI應用滲透率。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "AI 影音 / 創意工具"
+          ],
+          "sources": [
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-09-25",
+              "url": "https://technews.tw/2026/09/25/meta-3-ai-glasses-series-over-100-models-year-end/"
+            },
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-09-25",
+              "url": "https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 16
+          },
+          "tags": [
+            "Meta",
+            "AI眼鏡",
+            "Muse",
+            "AI代理",
+            "消費端"
+          ],
+          "what": "AI代理與硬體結合，讓品牌接觸點從螢幕延伸到穿戴裝置與個人AI助理。品牌需考慮AI代理如何引用、呈現與推薦內容，並設計適合多裝置場景的互動腳本。",
+          "soWhat": "未來消費者將透過AI眼鏡、個人代理等新入口獲取資訊，品牌若未優化內容格式與互動腳本，將在新型入口中失去曝光與推薦機會。需提前設計多裝置、一致性的品牌內容策略。",
+          "nowWhat": "選擇1個品牌主力產品或服務，設計2種適用於AI眼鏡與個人代理的內容格式（如語音摘要、互動問答），並用現有AI代理工具測試在不同裝置上的呈現效果。"
+        },
+        {
+          "title": "Semrush免費試用聚焦AI搜尋能見度，品牌內容優化進入新階段",
+          "summary": "Semrush官方建議行銷人於免費試用期內，聚焦AI搜尋能見度、內容優化與品牌曝光。AI搜尋時代下，內容結構、FAQ、產品資訊與第三方引用成為提升品牌能見度的關鍵，行銷團隊需調整內容策略，主動追蹤AI代理如何引用品牌資訊。",
+          "analysis": [
+            "AI搜尋與代理推薦已成品牌流量新入口，Semrush等工具協助行銷人追蹤內容在AI搜尋中的曝光與引用情境，並針對AI可讀性優化內容結構。這則資訊的核心在於 AI 搜尋、推薦或引用規則正在重排品牌被看見的入口。行銷判讀不能只停在流量升降，而要追問品牌內容是否足夠清楚、可信、可被機器摘錄，並能在不同搜尋情境中被正確理解。",
+            "品牌需將內容優化目標從傳統SEO延伸到AI搜尋與代理推薦，主動設計結構化FAQ、比較表與信任證據，提升在AI搜尋結果與摘要中的被引用率。受影響的不只是 SEO 團隊，也包含內容、品牌、公關與產品資訊管理。當平台把答案留在結果頁或 AI 回答中，品牌需要經營可引用的事實、清楚的比較資料與一致的訊息來源，避免能見度被平台或競品重新定義。"
+          ],
+          "citationClaim": "Semrush官方建議行銷人利用免費試用期，聚焦於AI搜尋能見度、內容優化與品牌曝光，提升在AI搜尋時代的競爭力。",
+          "impactAngles": [
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "Semrush Blog",
+              "publishedDate": "2026-09-25",
+              "url": "https://www.semrush.com/blog/free-7-day-semrush-one-trial/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "Semrush",
+            "AI搜尋",
+            "內容優化",
+            "品牌能見度",
+            "SEO"
+          ],
+          "what": "AI搜尋與代理推薦改變內容被引用與曝光的規則。品牌內容需結構化、易於AI理解，並包含FAQ、比較、信任證據，才能在AI搜尋結果中脫穎而出。",
+          "soWhat": "若品牌內容未針對AI搜尋優化，將在AI代理摘要、推薦與搜尋結果中被邊緣化，流量與信任度下降。需主動追蹤AI如何引用品牌資訊，並調整內容格式與結構。",
+          "nowWhat": "用Semrush等工具分析1個主力產品頁在AI搜尋結果中的曝光情境，記錄3個被AI引用但未能正確呈現的資訊點，優化內容結構並再次追蹤AI引用結果。"
+        },
+        {
+          "title": "MarTech報告：多AI代理管理成行銷團隊新挑戰，需建立協作與監控機制",
+          "summary": "MarTech指出，行銷團隊在導入多個AI代理後，常因缺乏統一管理與追蹤標準，導致代理運作、內容一致性與品牌訊息難以掌控。AI代理分布於GTM（Go-To-Market）堆疊各層，團隊需建立明確的代理擁有權、運作紀錄與協作流程，確保品牌資訊在各代理間一致且可追蹤。",
+          "analysis": [
+            "AI代理工具多元化，行銷團隊面臨代理分散、權責不明與內容一致性難題。缺乏治理標準將導致品牌訊息失真、內容版本混亂與運作風險提升。這個事件顯示 AI 代理正在從後台工具變成可被使用者直接操作的流程入口。對行銷與產品團隊來說，AI 不只是提升效率，而是開始影響使用者怎麼提出需求、怎麼完成任務，以及品牌在哪些節點建立信任。",
+            "團隊需制定AI代理管理規範，包括代理清單、運作紀錄、內容審查與協作流程，確保每個代理的任務、產出與品牌訊息可被追蹤與驗證。影響會落在品牌體驗、客服、銷售、社群私訊與內部協作流程。團隊不能只問是否導入代理，而要先拆解哪些任務適合自動處理、哪些判斷必須保留人工審核，並設計失敗時的接手與溝通方式。"
+          ],
+          "citationClaim": "MarTech報告指出，行銷團隊在導入多個AI代理後，常因缺乏統一管理與追蹤機制，導致代理運作與內容一致性難以掌握。",
+          "impactAngles": [
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-09-25",
+              "url": "https://martech.org/gtm-teams-are-losing-track-of-their-ai-agents/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 16
+          },
+          "tags": [
+            "AI代理",
+            "MarTech",
+            "團隊協作",
+            "內容一致性",
+            "治理"
+          ],
+          "what": "AI代理工具在行銷流程中分工細化，若缺乏統一管理與追蹤，將導致品牌訊息失控與內容版本混亂。團隊需建立代理清單、審查與協作流程，確保內容產出一致可追蹤。",
+          "soWhat": "若不建立AI代理管理標準，品牌資訊將在多代理間出現落差，影響用戶體驗與信任。團隊協作、內容審查與產出紀錄需納入AI代理治理機制，降低溝通與運作風險。",
+          "nowWhat": "盤點現有AI代理工具，建立1份代理清單，為每個代理定義任務與負責人，並設計2個內容審查與協作流程，確保產出可追蹤且內容一致。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "整合AI搜尋、代理多元化、語音生成與AI治理等跨層變化，預示品牌策略與內容生產將進入結構重塑期。",
+      "items": [
+        {
+          "title": "AI搜尋與代理成為品牌新入口，內容結構化與治理成關鍵戰場",
+          "summary": "AI搜尋入口品牌競爭升溫，AI代理多元化與多模態互動普及，行銷人需重構內容結構、強化AI可讀性與信任證據。團隊需建立AI代理管理與協作標準，並主動追蹤品牌在多入口的曝光與內容被引用情境。語音生成、虛擬形象等新工具進入內容生產流程，品牌需提前設計多模態腳本與互動策略，以維持品牌辨識與用戶信任。",
+          "analysis": [
+            "AI搜尋與代理推薦正取代傳統搜尋結果成為品牌曝光主戰場，內容結構化、FAQ、第三方引用等成為AI引用與推薦的關鍵。AI代理多元化與多模態互動則推動內容生產流程重組。",
+            "品牌與行銷團隊需同步強化內容結構、AI治理與多模態腳本設計，並建立AI代理協作與追蹤機制，確保品牌訊息在各入口一致且可被AI正確引用。品牌、代理商與內容工作者會受到不同層面的影響。品牌端需要重新定義素材審核與版權邊界，代理商需要把腳本企劃和工具流程整合，個人創作者則能用更低成本做出多版本內容，但也更需要清楚的風格判斷與資料標註。"
+          ],
+          "citationClaim": "AI搜尋入口品牌競爭升溫，AI代理多元化與多模態互動普及，內容結構化與AI治理成為品牌能見度與內容一致性的關鍵。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "使用者端 / 深度工作者",
+            "AI 影音 / 創意工具"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-09-25",
+              "url": "https://www.seroundtable.com/bing-ai-mode-search-tabs-42165.html"
+            },
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-09-25",
+              "url": "https://martech.org/gtm-teams-are-losing-track-of-their-ai-agents/"
+            },
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-25",
+              "url": "https://www.ithome.com.tw/news/179229"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 3,
+            "total": 22
+          },
+          "tags": [
+            "AI搜尋",
+            "AI代理",
+            "內容結構化",
+            "品牌治理",
+            "多模態"
+          ],
+          "what": "AI搜尋與代理成為品牌曝光與內容被引用的新主場，內容結構化、FAQ、信任證據與第三方引用將決定品牌能否在AI入口中被正確推薦。AI代理多元化則要求團隊同步強化治理與協作。",
+          "soWhat": "若品牌未主動調整內容結構與AI治理，將在AI搜尋、代理推薦與多模態互動中失去曝光與信任優勢。需同步優化內容、設計多模態腳本並建立AI代理管理標準。",
+          "nowWhat": "選擇1個主力產品或服務，設計1份結構化FAQ、1份多模態互動腳本，並建立1份AI代理管理清單，追蹤AI搜尋與代理推薦的內容引用與品牌曝光情境。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "從品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程六大面向，統整今日AI趨勢對行銷決策與工作流的影響與行動建議。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI搜尋與多代理入口成為品牌曝光新主場，品牌需主動設計結構化內容、FAQ、第三方引用與多模態腳本，確保在AI搜尋、代理推薦與虛擬互動中維持辨識度與信任。建議先針對主力產品頁建立AI可讀FAQ與品牌信任證據，並測試在不同AI入口的引用情境。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "數位行銷團隊需同步追蹤品牌在AI搜尋、代理與多裝置入口的曝光情境，並調整內容優化策略。可利用Semrush等工具分析AI搜尋能見度，針對AI引用不佳的資訊點優化內容結構，提升AI搜尋與代理推薦的流量轉換率。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "內容生產流程需納入AI代理分工、語音生成與多模態腳本設計。建議將重複性高的內容審查、摘要與FAQ自動化，並設計適用於AI代理、語音與虛擬形象的多版本內容，提升內容被AI引用與多入口分發的效率。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "AI代理與多模態互動將改變社群內容的製作與分發方式。品牌可設計適用於AI代理的互動問答、語音摘要與虛擬形象腳本，提升社群用戶與AI助理、個人代理的互動深度，並追蹤品牌在社群AI入口的曝光與引用情境。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "AI搜尋與代理推薦將成為廣告內容被引用與曝光的新場域。廣告主需設計易於AI理解與引用的廣告腳本、產品比較與信任證據，並測試廣告內容在AI搜尋與代理推薦中的呈現效果，優化多入口的廣告轉換路徑。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "多AI代理工具進入行銷與內容生產流程，團隊需建立AI代理清單、內容審查與協作流程，確保每個代理的產出、任務與品牌訊息可追蹤且一致。建議先盤點現有AI代理，為每個代理定義負責人與審查標準，降低內容混亂與運作風險。"
+        }
+      ]
+    }
+  ]
+}
