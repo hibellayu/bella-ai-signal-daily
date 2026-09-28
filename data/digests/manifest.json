@@ -1,6 +1,13 @@
 {
-  "latest": "2026-09-27",
+  "latest": "2026-09-28",
   "digests": [
+    {
+      "reportDate": "2026-09-28",
+      "coverageDate": "2026-09-27",
+      "title": "Bella's AI 趨勢日報｜2026/09/28",
+      "summary": "Google AI Pro 用戶可享 200 個 Colab 運算單元，搭配 CLI 直接呼叫 A100 GPU，顯著提升開發者與代理任務算力；Meta 推出 Muse AI 代理，聚焦打造個人化第二大腦，但品牌信任與用戶資料安全疑慮仍待解決。OpenAI 與 Anthropic 面臨代理安全事件，凸顯 AI 產業算力擴張與資安治理的雙重挑戰。YouTube、X 等平台推動 AI 驅動的內容創作與互動機制，促使行銷工作流與品牌策略必須因應 AI 代理與算力新規則調整。",
+      "path": "data/digests/2026-09-28.json"
+    },
     {
       "reportDate": "2026-09-27",
       "coverageDate": "2026-09-26",
