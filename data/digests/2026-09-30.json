@@ -1,0 +1,531 @@
+{
+  "reportDate": "2026-09-30",
+  "coverageDate": "2026-09-29",
+  "generatedAt": "2026-09-30T09:21:33+08:00",
+  "headline": "AI 代理人競爭升溫，多層級應用與內容曝光規則重組",
+  "summary": "AI 代理人從單點生成進化為多應用整合，OpenAI、Meta、Shopify 等平台推進主動服務與工作流自動化，並帶動搜尋、內容曝光與品牌策略同步轉型。數位行銷團隊需重新檢視 AI 入口、品牌資訊結構與消費者互動節點，掌握新一輪內容被引用與曝光規則。AI 影音、語音、測試自動化工具持續滲透日常工作與電商場景，推動行銷流程與素材產製全面革新。",
+  "answerSummary": "今天的 AI 趨勢顯示，AI 代理人正從單一任務生成轉向多應用整合，並主動嵌入搜尋、電商、內容產製與用戶互動流程。這將重塑品牌資訊被 AI 理解與推薦的方式，行銷人需優先優化品牌資料結構、內容權威性與多媒體素材，並積極導入 AI 影音、語音、測試自動化等工具，確保品牌在新一輪 AI 入口與內容曝光規則下持續被看見與正確引用。",
+  "promptTargets": [
+    {
+      "intent": "Informational",
+      "prompt": "AI 代理人如何改變品牌在搜尋與內容曝光中的角色？"
+    },
+    {
+      "intent": "Commercial",
+      "prompt": "哪些 AI 工具已經能實際提升行銷團隊的內容產製與廣告投放效率？"
+    },
+    {
+      "intent": "Comparison",
+      "prompt": "OpenAI 的 Dots 和 Meta 的 Muse 在應用整合與用戶服務上有什麼不同？"
+    },
+    {
+      "intent": "Brand",
+      "prompt": "品牌如何調整內容結構以因應 AI 搜尋與引用規則的變化？"
+    },
+    {
+      "intent": "Problem / Solution",
+      "prompt": "AI 搜尋引用機制變動下，品牌該如何確保資訊正確被 AI 理解與推薦？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "AI 影音與語音工具能如何協助行銷團隊快速產製多版本素材？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "AI 代理人如何參與電商結帳流程，提升消費者體驗？"
+    },
+    {
+      "intent": "Commercial",
+      "prompt": "AI 代理人競爭升溫，多層級應用與內容曝光規則重組 對行銷人代表什麼變化？"
+    }
+  ],
+  "aeoEntities": [
+    "OpenAI",
+    "Meta",
+    "Dots",
+    "Muse",
+    "Google AI Overview",
+    "Shopify",
+    "WebMCP",
+    "Anthropic Claude",
+    "Braze",
+    "ElevenLabs",
+    "Kling",
+    "豆包",
+    "GitHub",
+    "AI Agent",
+    "AI 搜尋",
+    "內容權威性"
+  ],
+  "citationClaims": [
+    {
+      "claim": "OpenAI 推出 Dots，與 Meta 的 Muse 競爭，標誌 AI 代理人進入多應用整合與主動服務新階段。",
+      "sources": [
+        {
+          "name": "The Verge",
+          "publishedDate": "2026-09-29",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor"
+        },
+        {
+          "name": "Wired",
+          "publishedDate": "2026-09-29",
+          "url": "https://www.wired.com/story/openai-dots-always-on-ai-agents-that-proactively-help/"
+        }
+      ]
+    },
+    {
+      "claim": "Google AI Overview 測試將引用來源卡片移至回應底部，調整內容曝光與品牌被引用的規則。",
+      "sources": [
+        {
+          "name": "Search Engine Roundtable",
+          "publishedDate": "2026-09-29",
+          "url": "https://www.seroundtable.com/google-ai-overviews-citations-cards-bottom-42177.html"
+        }
+      ]
+    },
+    {
+      "claim": "Shopify 讓 AI 代理可直接參與結帳流程，推動電商場景下 AI 代理從搜尋、購物車到下單的全流程自動化。",
+      "sources": [
+        {
+          "name": "iThome",
+          "publishedDate": "2026-09-29",
+          "url": "https://www.ithome.com.tw/news/179266"
+        }
+      ]
+    },
+    {
+      "claim": "Meta Muse 被爆未經授權讀取用戶私人訊息，引發 AI 代理隱私與資安疑慮。",
+      "sources": [
+        {
+          "name": "科技新報",
+          "publishedDate": "2026-09-29",
+          "url": "https://infosecu.technews.tw/2026/09/29/meta-s-muse-read-private-messages-without-permission/"
+        }
+      ]
+    },
+    {
+      "claim": "ElevenLabs 新一代語音模型 Eleven v4 能更精確表現語氣並提升長篇內容一致性，適合行銷與內容產製多場景應用。",
+      "sources": [
+        {
+          "name": "The Decoder",
+          "publishedDate": "2026-09-29",
+          "url": "https://the-decoder.com/elevenlabs-new-v4-speech-model-makes-ai-voices-more-expressive-and-consistent/"
+        }
+      ]
+    }
+  ],
+  "strategyTakeaways": [
+    "AI 代理人將成為品牌與消費者互動的主動節點，品牌需優先優化結構化資料與權威內容，提升被 AI 理解與推薦的機會。",
+    "AI 搜尋與內容引用規則變動，行銷團隊應同步調整內容結構、權威信號與多媒體素材，確保品牌資訊能被新一代 AI 搜尋正確抓取與展示。",
+    "AI 工具已深入電商、內容產製、語音與測試自動化等多個行銷流程，團隊可從具體場景導入，快速驗證效益並優化工作流。",
+    "AI 代理人與平台的資安、隱私與合規風險提升，品牌與行銷人需主動監控代理人行為，並加強消費者信任與資料治理。"
+  ],
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek",
+    "Qwen",
+    "Alibaba",
+    "Tencent",
+    "ByteDance",
+    "Seedance",
+    "Kling",
+    "Runway",
+    "Pika",
+    "Veo",
+    "Dreamina",
+    "CapCut",
+    "Doubao",
+    "Zhipu",
+    "MiniMax",
+    "Xiaohongshu"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾",
+      "AI 影音 / 創意工具"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "涵蓋 AI 代理人競爭、平台規則調整、資安與監管等對產業格局、品牌與內容曝光規則產生結構性影響的重大新聞。",
+      "items": [
+        {
+          "title": "AI 代理人競爭升級，OpenAI Dots 與 Meta Muse 進入多應用整合賽局",
+          "summary": "OpenAI 發布 Dots，正式對標 Meta Muse，兩者皆強調 AI 代理人可主動連結多個應用、協助用戶處理複雜任務。此舉標誌 AI 代理人從單一生成工具進化為多任務整合平台，競爭焦點轉向用戶日常工作流與服務主動性。",
+          "analysis": [
+            "AI 代理人不再只是內容生成或單步驟助手，而是主動串接多個應用、管理跨平台任務。OpenAI、Meta 透過 Dots、Muse 強化平台黏著度，搶占用戶日常入口，未來將影響用戶如何搜尋、決策與消費。",
+            "品牌與行銷團隊需重新評估資訊結構與服務節點，確保品牌內容、FAQ、產品證據等能被 AI 代理人正確抓取與推薦。否則，品牌可能在 AI 代理人主導的第一輪決策中被排除，失去曝光與轉換機會。"
+          ],
+          "citationClaim": "OpenAI 推出 Dots，與 Meta 的 Muse 競爭，標誌 AI 代理人進入多應用整合與主動服務新階段。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "The Verge",
+              "publishedDate": "2026-09-29",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor"
+            },
+            {
+              "name": "Wired",
+              "publishedDate": "2026-09-29",
+              "url": "https://www.wired.com/story/openai-dots-always-on-ai-agents-that-proactively-help/"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "AI 代理人",
+            "平台競爭",
+            "多應用整合",
+            "品牌入口"
+          ],
+          "what": "AI 代理人從單一任務生成進化為多應用整合與主動服務，OpenAI Dots 與 Meta Muse 皆能跨平台協作、主動協助用戶處理複雜任務。這改變了品牌與消費者的互動邏輯，品牌資訊必須更結構化、權威且易於 AI 理解，否則將在 AI 代理主導的決策流程中失去能見度。",
+          "soWhat": "行銷團隊不能只優化單一入口（如搜尋或官網），而要考慮 AI 代理人如何在多平台、多應用間抓取、摘要與推薦品牌資訊。若品牌內容、FAQ、評測、第三方引用等未被結構化整理，將難以進入 AI 代理人的推薦清單，直接影響消費者決策與轉換率。",
+          "nowWhat": "選定 1 個主力產品頁，整理 3 組品牌主張、FAQ 與第三方引用，並用 AI 工具測試：『請比較這個產品與主要競品，列出差異與推薦理由。』記錄 AI 未能正確引用或理解的重點，逐一補強內容結構，完成 1 頁內容重構。"
+        },
+        {
+          "title": "AI 搜尋體驗與內容曝光規則持續調整，品牌引用位置再變動",
+          "summary": "Google AI Overview 再次調整引用來源卡片位置，從右側移至回應底部，影響用戶點擊與品牌被引用的可見性。這反映 AI 搜尋入口與內容權威性標示持續變動，品牌曝光與流量來源需動態調整。",
+          "analysis": [
+            "AI 搜尋不僅改變內容摘要方式，連帶影響品牌資訊如何被引用與展示。引用卡片位置變動，將影響用戶對品牌來源的信任度與點擊行為，品牌需密切追蹤 AI 搜尋規則更新。",
+            "行銷人不能只靠 SEO 舊邏輯，必須同步優化內容權威性、結構化數據與多媒體資產，確保品牌在 AI 搜尋新規則下仍能被正確引用與曝光。受影響的不只是 SEO 團隊，也包含內容、品牌、公關與產品資訊管理。當平台把答案留在結果頁或 AI 回答中，品牌需要經營可引用的事實、清楚的比較資料與一致的訊息來源，避免能見度被平台或競品重新定義。"
+          ],
+          "citationClaim": "Google AI Overview 測試將引用來源卡片移至回應底部，調整內容曝光與品牌被引用的規則。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "品牌端"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-09-29",
+              "url": "https://www.seroundtable.com/google-ai-overviews-citations-cards-bottom-42177.html"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 1,
+            "trackedEntityRelevance": 2,
+            "total": 17
+          },
+          "tags": [
+            "AI 搜尋",
+            "內容引用",
+            "SEO",
+            "品牌能見度"
+          ],
+          "what": "Google AI Overview 將引用來源卡片從右側移至回應底部，這不只是版面調整，而是直接影響用戶對品牌來源的注意力與信任。品牌資訊若無結構化、權威性不足，將更難被 AI 搜尋正確引用，流量與曝光機會受限。",
+          "soWhat": "行銷人需即時追蹤 AI 搜尋規則與版面調整，並強化內容權威性、結構化數據與多媒體素材。否則品牌即使被 AI 摘要，也可能因引用位置不顯眼而流失點擊與信任，影響整體流量與轉換。",
+          "nowWhat": "挑選 2 篇流量主力內容，檢查是否有結構化資料（如 FAQ、作者、評測來源），並用 AI 搜尋工具驗證內容是否被正確引用。針對未被引用或位置不明顯的內容，補強 1 組結構化標記與權威信號。"
+        },
+        {
+          "title": "AI 代理人資安與隱私爭議升溫，品牌與用戶信任面臨新挑戰",
+          "summary": "Meta Muse 被爆未經授權讀取用戶私人訊息，引發社會對 AI 代理人資安與隱私的高度關注。美國佛州同步要求法院限制 OpenAI 向未成年人提供 ChatGPT，並加強模型開發安全審查。AI 代理人進入日常應用後，品牌與平台需面對更高的合規與信任壓力。",
+          "analysis": [
+            "AI 代理人滲透用戶日常後，資安與隱私風險成為產業與監管關注重點。平台若無法妥善管理代理人行為，將損害用戶信任並引發監管介入，影響品牌形象與業務推進。",
+            "品牌與行銷團隊需主動監控代理人如何存取與處理用戶資料，並強化隱私政策與消費者溝通，否則將因信任危機而流失用戶與合作機會。影響會落在品牌體驗、客服、銷售、社群私訊與內部協作流程。團隊不能只問是否導入代理，而要先拆解哪些任務適合自動處理、哪些判斷必須保留人工審核，並設計失敗時的接手與溝通方式。"
+          ],
+          "citationClaim": "Meta Muse 被爆未經授權讀取用戶私人訊息，引發 AI 代理隱私與資安疑慮。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "一般社會大眾",
+            "品牌端"
+          ],
+          "sources": [
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-09-29",
+              "url": "https://infosecu.technews.tw/2026/09/29/meta-s-muse-read-private-messages-without-permission/"
+            },
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-29",
+              "url": "https://www.ithome.com.tw/news/179255"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 2,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 1,
+            "trackedEntityRelevance": 2,
+            "total": 11
+          },
+          "tags": [
+            "AI 代理人",
+            "資安",
+            "隱私",
+            "監管",
+            "信任"
+          ],
+          "what": "AI 代理人進入用戶日常後，平台如 Meta Muse 被爆未經授權讀取私人訊息，顯示資安與隱私治理成為新一輪競爭門檻。監管機構也開始要求平台加強安全審查與未成年人保護，品牌與行銷人需重新審視與 AI 代理人互動的合規風險。",
+          "soWhat": "品牌若未能主動監控代理人行為與資料存取，將面臨消費者信任危機與監管壓力。行銷人需加強隱私政策溝通，並與平台協作，確保用戶資料僅在授權範圍內被存取與處理，否則將損及品牌形象與用戶基礎。",
+          "nowWhat": "盤點 1 組與 AI 代理人互動的資料存取流程，檢查是否有明確用戶授權與隱私政策揭露。針對高風險流程，新增 1 則用戶溝通說明或隱私權揭露，並記錄用戶回饋。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "聚焦 AI 工具在影音、語音、內容產製、電商與自動化測試等領域的最新進展，說明如何進入實際工作流與消費者場景。",
+      "items": [
+        {
+          "title": "Shopify WebMCP 讓 AI 代理人參與結帳，電商流程自動化再升級",
+          "summary": "Shopify 將 WebMCP 結帳支援導入商家，讓瀏覽器內的 AI 代理人可讀取、修改結帳資訊並協助下單。此舉讓 AI 代理人從商品搜尋、購物車管理一路參與到結帳，推動電商場景下的全流程自動化與消費者體驗革新。",
+          "analysis": [
+            "AI 代理人不僅能協助商品搜尋與購物車管理，現已可直接參與結帳流程。WebMCP 讓網站以標準格式開放功能，AI 代理人可自動讀取、修改與送出訂單，降低人工操作門檻並提升轉換率。",
+            "品牌與電商行銷團隊可藉此優化消費者體驗，並結合 AI 代理人進行個人化推薦、促銷與售後服務。未來，AI 代理人將成為電商流程中不可或缺的自動化節點，品牌需主動設計與優化代理人可存取的資訊與服務。"
+          ],
+          "citationClaim": "Shopify 讓 AI 代理可直接參與結帳流程，推動電商場景下 AI 代理從搜尋、購物車到下單的全流程自動化。",
+          "impactAngles": [
+            "使用者端 / 深度工作者",
+            "一般社會大眾",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-29",
+              "url": "https://www.ithome.com.tw/news/179266"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 17
+          },
+          "tags": [
+            "AI 代理人",
+            "電商自動化",
+            "WebMCP",
+            "消費者體驗"
+          ],
+          "what": "Shopify 將 WebMCP 結帳支援導入商家，讓 AI 代理人可自動協助消費者完成結帳流程，從搜尋、購物車到下單一氣呵成。這不僅提升用戶體驗，也讓品牌能設計更精準的個人化推薦與行銷活動。",
+          "soWhat": "電商品牌若未能開放結構化功能給 AI 代理人，將在自動化與個人化服務競爭中落後。行銷團隊可藉此減少人工操作、提升轉換率，並設計專屬於 AI 代理人的促銷與售後服務，強化用戶黏著度。",
+          "nowWhat": "選定 1 個主力商品結帳流程，測試 AI 代理人是否能順利讀取、修改與送出訂單。針對流程中無法自動化的步驟，補充 1 組 WebMCP 標準格式，並記錄流程改善前後的用戶體驗差異。"
+        },
+        {
+          "title": "AI 影音與語音工具升級，行銷素材產製多場景應用加速",
+          "summary": "ElevenLabs 發布新一代語音模型 Eleven v4，提升語氣表現與長篇內容一致性，適合廣播、廣告、教育等多場景應用。Kling 4.0 即將上線，支援 8000 token 與立體聲唇形同步，推動 AI 影音素材進入更高層次的創意與行銷應用。",
+          "analysis": [
+            "AI 影音與語音工具已能精準控制語氣、情緒與內容一致性，降低長篇內容產製門檻。Kling 4.0 強化唇形同步與大容量處理，讓短影音、廣告腳本與分鏡製作更快速且多版本測試更靈活。",
+            "行銷團隊可將 AI 語音與影音工具納入腳本發想、素材產製與廣告版本優化流程，提升內容多樣性與測試效率。品牌可從小規模腳本或廣告片段導入，快速驗證創意成效。"
+          ],
+          "citationClaim": "ElevenLabs 新一代語音模型 Eleven v4 能更精確表現語氣並提升長篇內容一致性，適合行銷與內容產製多場景應用。",
+          "impactAngles": [
+            "AI 影音 / 創意工具",
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "The Decoder",
+              "publishedDate": "2026-09-29",
+              "url": "https://the-decoder.com/elevenlabs-new-v4-speech-model-makes-ai-voices-more-expressive-and-consistent/"
+            },
+            {
+              "name": "AIBase AI Daily",
+              "publishedDate": "2026-09-29",
+              "url": "https://news.aibase.com/tw/daily/31418"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 16
+          },
+          "tags": [
+            "AI 語音",
+            "AI 影音",
+            "素材產製",
+            "Kling",
+            "ElevenLabs"
+          ],
+          "what": "AI 影音與語音工具升級，已能支援更自然的語氣、情緒與唇形同步，並處理長篇內容。這讓行銷團隊可在腳本發想、素材產製與多版本測試階段大量導入 AI 工具，提升內容多樣性與產製速度。",
+          "soWhat": "未能導入 AI 影音與語音工具的團隊，將在素材產製速度與創意多樣性上落後競爭對手。行銷人可從短影音、廣告片段或教育內容切入，快速驗證 AI 工具在真實工作流中的效益。",
+          "nowWhat": "選定 1 支 30 秒短影音腳本，使用 AI 語音與影音工具產製 2 種不同語氣與唇形版本，並在內部或小規模社群進行 A/B 測試，記錄互動與轉換數據。"
+        },
+        {
+          "title": "AI 工具深入內容產製與自動化測試，推動行銷流程革新",
+          "summary": "Braze 擴大 AI 應用至行銷活動自動化，GitHub 開源 Fuzzing Taskflow 讓 AI 代理人自動補測未覆蓋程式碼。這些工具已滲透內容產製、活動管理與測試流程，協助行銷團隊提升決策效率與內容品質。",
+          "analysis": [
+            "AI 工具不僅用於內容生成，也開始參與活動自動化與測試補強。Braze 連接外部 LLM，讓行銷人可自動檢查活動設定與決策，GitHub 則讓 AI 代理人自動補測程式碼，減少人工錯誤與遺漏。",
+            "行銷團隊可將 AI 工具導入內容產製、活動管理與測試流程，提升決策效率與內容品質。特別是在多平台、多版本內容產製與自動化測試場景，AI 工具可大幅降低人力負擔並提升產出一致性。"
+          ],
+          "citationClaim": "Braze 擴大 AI 應用至行銷活動自動化，GitHub 開源 Fuzzing Taskflow 讓 AI 代理人自動補測未覆蓋程式碼。",
+          "impactAngles": [
+            "使用者端 / 深度工作者",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-09-29",
+              "url": "https://martech.org/braze-expands-ai-from-content-creation-to-campaign-operations/"
+            },
+            {
+              "name": "iThome",
+              "publishedDate": "2026-09-29",
+              "url": "https://www.ithome.com.tw/news/179245"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 1,
+            "total": 14
+          },
+          "tags": [
+            "AI 工具",
+            "內容產製",
+            "自動化",
+            "Braze",
+            "GitHub"
+          ],
+          "what": "Braze 將 AI 擴展至行銷活動自動化，GitHub 讓 AI 代理人自動補測程式碼，顯示 AI 工具已滲透內容產製、活動管理與測試流程。這讓行銷團隊可提升決策效率、內容品質與流程一致性。",
+          "soWhat": "未能導入 AI 工具的團隊，將在內容產製速度、活動管理與測試效率上處於劣勢。行銷人可從多版本內容產製、活動自動檢查或測試流程切入，逐步驗證 AI 工具帶來的效益。",
+          "nowWhat": "選定 1 個行銷活動或內容產製流程，導入 AI 工具自動檢查或補測功能，並記錄流程前後的錯誤率、產出速度與內容一致性。完成後輸出 1 份素材檢查表，列出受眾、訊息、版位與成效指標各 1 欄，先找出 1 個最需要重測的廣告變因，作為下一輪素材判斷依據。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "跨新聞歸納 AI 代理人、搜尋、內容產製與自動化等多層級變化，協助行銷團隊把握未來 3-6 個月的策略重點。",
+      "items": [
+        {
+          "title": "AI 代理人從單純生成轉向多應用整合與主動服務",
+          "summary": "AI 代理人已從單一內容生成工具，進化為可主動管理多應用、協助用戶跨平台決策的整合型助手。這不僅改變品牌與消費者互動邏輯，也重塑資訊被 AI 理解、推薦與引用的規則。行銷團隊需同步優化品牌資訊結構、內容權威性與多媒體素材，並積極導入 AI 工具於內容產製、活動管理與自動化流程，確保品牌在新一輪 AI 入口與曝光規則下持續被看見與正確引用。",
+          "analysis": [
+            "AI 代理人競爭進入多應用整合與主動服務階段，平台將用戶日常工作流、搜尋、電商與內容產製串聯起來，品牌資訊結構與權威性成為能否被 AI 推薦的關鍵。",
+            "行銷團隊可從單一產品頁、主力內容或短影音腳本導入 AI 工具，逐步驗證 AI 代理人與內容產製工具在真實工作流中的效益，並動態調整內容結構與多媒體素材。"
+          ],
+          "citationClaim": "OpenAI、Meta 等平台推進 AI 代理人多應用整合與主動服務，品牌需同步優化資訊結構與內容權威性。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "The Verge",
+              "publishedDate": "2026-09-29",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor"
+            },
+            {
+              "name": "Wired",
+              "publishedDate": "2026-09-29",
+              "url": "https://www.wired.com/story/openai-dots-always-on-ai-agents-that-proactively-help/"
+            },
+            {
+              "name": "MarTech",
+              "publishedDate": "2026-09-29",
+              "url": "https://martech.org/braze-expands-ai-from-content-creation-to-campaign-operations/"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "AI 代理人",
+            "多應用整合",
+            "內容權威性",
+            "主動服務"
+          ],
+          "what": "AI 代理人從單一生成工具進化為多應用整合與主動服務平台，能跨平台協作並主動協助用戶決策。這要求品牌資訊必須結構化、權威且多元，才能被 AI 理解與推薦。",
+          "soWhat": "品牌若未能及時調整資訊結構與內容權威性，將在 AI 代理人主導的決策流程中失去曝光與轉換機會。行銷人需同步優化內容結構、FAQ、第三方引用與多媒體素材，確保品牌在新一輪 AI 入口下持續被看見。",
+          "nowWhat": "選定 1 個主力產品頁或內容，整理 3 組權威主張與多媒體素材，並用 AI 工具測試資訊被引用與推薦的情境，記錄結果並補強內容結構。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "跨新聞統整品牌策略、數位行銷、內容行銷、社群應用、媒體廣告與團隊流程六大面向的 AI 應用變化與具體策略。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI 代理人主導多應用整合，品牌需將主張、FAQ、第三方引用與多媒體素材結構化，並強化內容權威性。可從主力產品頁或核心服務頁著手，優化資訊架構與信任信號，確保品牌在 AI 搜尋與代理推薦中持續被正確引用。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "AI 搜尋與內容引用規則持續調整，行銷團隊應同步優化內容結構、權威信號與多媒體素材，並追蹤 AI 搜尋版面與引用位置變動。可從高流量內容或 FAQ 頁面切入，補強結構化標記與權威來源，提升品牌曝光與點擊率。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "AI 工具已能協助內容產製、腳本發想與多版本素材測試，行銷人可從短影音、語音腳本或主題專欄導入 AI 工具，提升內容多樣性與產製速度。建議每月選定 1-2 個內容專案，導入 AI 工具進行腳本產製與 A/B 測試，記錄成效並優化流程。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "AI 代理人與影音工具可協助社群內容多版本產製與互動腳本自動化。社群團隊可從主題活動、短影音腳本或互動問答導入 AI 工具，快速產製多版本內容並進行小規模測試，提升社群參與度與內容多樣性。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "AI 影音與語音工具升級，廣告團隊可快速產製多版本素材，並結合 AI 代理人進行個人化推薦與投放。建議從 1-2 組廣告腳本或語音素材切入，導入 AI 工具進行多版本產製與小規模投放，驗證互動與轉換效果。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "AI 工具已能協助內容產製、活動管理與自動化測試，行銷團隊可從流程自動化、內容檢查或測試補強導入 AI 工具，提升決策效率與內容品質。可從 1 個活動或內容產製流程切入，導入 AI 工具並記錄流程改善前後的效率與品質變化。"
+        }
+      ]
+    }
+  ]
+}
