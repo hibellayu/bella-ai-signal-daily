@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-02",
+  "latest": "2026-10-03",
   "digests": [
+    {
+      "reportDate": "2026-10-03",
+      "coverageDate": "2026-10-02",
+      "title": "Bella's AI 趨勢日報｜2026/10/03",
+      "summary": "本日 AI 動態聚焦於 AI 代理人平台的功能擴展、搜尋與廣告數據追蹤規則調整，以及語音與影音模型的突破。Meta 與 OpenAI 競逐企業級與消費者級 AI 代理市場，Google 則加速將追蹤參數與廣告格式嵌入 AI 搜尋介面。Anthropic、AWS 等開放自訂化與決策模組，推動行銷自動化與內容生成進一步個人化。算力供應鏈與資安治理亦成為產業關注焦點，影響品牌曝光、內容被引用與 MarTech 工具選型。",
+      "path": "data/digests/2026-10-03.json"
+    },
     {
       "reportDate": "2026-10-02",
       "coverageDate": "2026-10-01",
