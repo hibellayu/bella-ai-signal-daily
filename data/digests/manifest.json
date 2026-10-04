@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-03",
+  "latest": "2026-10-04",
   "digests": [
+    {
+      "reportDate": "2026-10-04",
+      "coverageDate": "2026-10-03",
+      "title": "Bella's AI 趨勢日報｜2026/10/04",
+      "summary": "Meta 釋出 Muse Gadgets 開源硬體 SDK，讓開發者能在 ESP32 與樹莓派打造個人化 AI Agent 實體裝置，同時推出限量 Muse Home Link 裝置。OpenAI 與 Anthropic AI 代理人安全事件頻傳，凸顯 AI Agent 自主性與安全監控挑戰。OpenAI 也推出虛擬試穿功能，擴展 AI 在電商行銷的應用。Cloudflare 開源決策模型 Clef，助力 AI 代理判斷能力提升。這些趨勢重塑品牌與行銷團隊對 AI 代理工具的採用與風險控管策略。",
+      "path": "data/digests/2026-10-04.json"
+    },
     {
       "reportDate": "2026-10-03",
       "coverageDate": "2026-10-02",
