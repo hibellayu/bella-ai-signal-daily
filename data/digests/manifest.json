@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-05",
+  "latest": "2026-10-06",
   "digests": [
+    {
+      "reportDate": "2026-10-06",
+      "coverageDate": "2026-10-05",
+      "title": "Bella's AI 趨勢日報｜2026/10/06",
+      "summary": "今日AI產業聚焦於廣告新格式、搜尋與本地化工具升級，以及內容透明與信任治理。OpenAI與Google分別推出嵌入式廣告與AI本地化工具，品牌可見度與流量入口正被AI平台重組。內容水印、AI信任議題與中國AI代理群組的地緣競爭，也同步影響品牌策略、工作流與社會信任標準。",
+      "path": "data/digests/2026-10-06.json"
+    },
     {
       "reportDate": "2026-10-05",
       "coverageDate": "2026-10-04",
