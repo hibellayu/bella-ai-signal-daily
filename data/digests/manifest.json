@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-06",
+  "latest": "2026-10-07",
   "digests": [
+    {
+      "reportDate": "2026-10-07",
+      "coverageDate": "2026-10-06",
+      "title": "Bella's AI 趨勢日報｜2026/10/07",
+      "summary": "今日AI產業聚焦於監管壓力、搜尋生成規則與廣告創新。紐約市議會推動AI模型第三方驗證，OpenAI針對歐盟法規啟用文字浮水印textGrain，Google與Meta則強化生成搜尋與廣告工具。行銷團隊需同步調整內容透明機制、品牌故事管理與多入口曝光策略，並因應AI流量分配與內容被引用規則的快速變動。",
+      "path": "data/digests/2026-10-07.json"
+    },
     {
       "reportDate": "2026-10-06",
       "coverageDate": "2026-10-05",
