@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-09",
+  "latest": "2026-10-10",
   "digests": [
+    {
+      "reportDate": "2026-10-10",
+      "coverageDate": "2026-10-09",
+      "title": "Bella's AI 趨勢日報｜2026/10/10",
+      "summary": "Google於2026年10月9日發布多項以Gemini模型為核心的AI產品，包含能在本地端運作的AI會議筆記App與具備獨立帳號的企業AI代理Gemini Agent，這些工具強化了企業內部協作與內容生成的智能化。Anthropic則更新Claude使用政策，明確禁止無目的辱罵AI，反映AI倫理與合規治理趨勢。此外，Google Ads新增AI生成素材預覽功能，提升廣告投放透明度與控制力。快手發布AI視頻治理公告，顯示生成式AI內容合規監管加強。這些變化不僅重塑企業內部工作流，也影響品牌曝光與內容可信度，行銷團隊須重新評估AI工具整合與風險管理策略。",
+      "path": "data/digests/2026-10-10.json"
+    },
     {
       "reportDate": "2026-10-09",
       "coverageDate": "2026-10-08",
