@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-12",
+  "latest": "2026-10-13",
   "digests": [
+    {
+      "reportDate": "2026-10-13",
+      "coverageDate": "2026-10-12",
+      "title": "Bella's AI 趨勢日報｜2026/10/13",
+      "summary": "今日AI趨勢聚焦於AI搜尋引用與品牌能見度、代理型AI模型的任務能力提升，以及行銷自動化工具的滲透。Google與Semrush強化了AI在搜尋與廣告中的引用與監控能力，Meta則以Muse Wonder模型推動代理型AI任務，MarTech與資安領域則聚焦於AI代理的治理與團隊結構調整。這些變化正重塑品牌曝光、內容被引用、行銷流程與風險管理的核心規則。",
+      "path": "data/digests/2026-10-13.json"
+    },
     {
       "reportDate": "2026-10-12",
       "coverageDate": "2026-10-11",
