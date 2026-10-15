@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-14",
+  "latest": "2026-10-15",
   "digests": [
+    {
+      "reportDate": "2026-10-15",
+      "coverageDate": "2026-10-14",
+      "title": "Bella's AI 趨勢日報｜2026/10/15",
+      "summary": "今日 AI 動態聚焦於產業透明度、平台入口變革與代理 AI 安全治理。Anthropic 與 OpenAI 爭奪安全評估報告發表權凸顯模型透明度與公信力的產業矛盾；Google Gemini 4 Argon 釋出與 AI App 自製工具推動用戶端創新，改變品牌與內容曝光入口；Nvidia、英特爾加碼算力與代理 AI 基礎設施，金融監管聚焦代理 AI 風險分級，反映企業與大眾對 AI 風險治理需求升高。行銷人需重新審視品牌信任、內容可見性與 AI 工作流的治理策略。",
+      "path": "data/digests/2026-10-15.json"
+    },
     {
       "reportDate": "2026-10-14",
       "coverageDate": "2026-10-13",
