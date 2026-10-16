@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-15",
+  "latest": "2026-10-16",
   "digests": [
+    {
+      "reportDate": "2026-10-16",
+      "coverageDate": "2026-10-15",
+      "title": "Bella's AI 趨勢日報｜2026/10/16",
+      "summary": "今日AI產業在搜尋購物入口、客服語音技術、API訂閱整合與本地模型部署等層面出現多項重大變化。Google正式於美國推出Universal Cart，將搜尋與Gemini購物體驗整合，強化AI驅動的消費決策流程。xAI的Grok Voice 3.0語音模型在第三方評測中超越OpenAI與Google，提升企業客服自動化門檻。Anthropic打通Claude訂閱額度與第三方API，並擴展東南亞市場，推動多模型生態與國際合作。Meta攜手Apple釋出可於Mac本地運行的Muse Spark Open，帶動本地化AI模型應用。這些趨勢將改變品牌流量分配、行銷工具採購、內容曝光與團隊協作流程。",
+      "path": "data/digests/2026-10-16.json"
+    },
     {
       "reportDate": "2026-10-15",
       "coverageDate": "2026-10-14",
