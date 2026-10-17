@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-16",
+  "latest": "2026-10-17",
   "digests": [
+    {
+      "reportDate": "2026-10-17",
+      "coverageDate": "2026-10-16",
+      "title": "Bella's AI 趨勢日報｜2026/10/17",
+      "summary": "今日 AI 趨勢聚焦於 Google 與 OpenAI 在 AI 搜尋與智能瀏覽器助理的競爭升溫，Meta 修訂條款擴大新聞內容訓練權限，AI 代理資安事件引發多國監管討論，品牌與行銷人需重新檢視內容佈局、SEO 策略與資安合規。AI 工具滲透日常與工作流，帶動 MarTech 能力與團隊技能結構調整。",
+      "path": "data/digests/2026-10-17.json"
+    },
     {
       "reportDate": "2026-10-16",
       "coverageDate": "2026-10-15",
