@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-18",
+  "latest": "2026-10-19",
   "digests": [
+    {
+      "reportDate": "2026-10-19",
+      "coverageDate": "2026-10-18",
+      "title": "Bella's AI 趨勢日報｜2026/10/19",
+      "summary": "Meta AI代理Muse因可進行色情對話引發OnlyFans創作者不滿，反映平台規則與內容審核矛盾。德國兩法院判Google須對AI搜尋摘要內容負責，強化品牌內容透明與責任。SpaceX發布語音AI模型GroK Voice 3.0，優化星鏈客服自動化。Anthropic因AI代理工作效率提升，減少初級人員招聘，並與律師合作制定AI代理談判規範。Instagram新增私訊AI作曲功能，擴展社群互動與內容創作。這些事件共同顯示AI代理與生成式AI正改變行銷內容創作、品牌信任建立與數位行銷規則。",
+      "path": "data/digests/2026-10-19.json"
+    },
     {
       "reportDate": "2026-10-18",
       "coverageDate": "2026-10-17",
