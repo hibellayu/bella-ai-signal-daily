@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-21",
+  "latest": "2026-10-22",
   "digests": [
+    {
+      "reportDate": "2026-10-22",
+      "coverageDate": "2026-10-21",
+      "title": "Bella's AI 趨勢日報｜2026/10/22",
+      "summary": "本日AI趨勢聚焦於Anthropic推出Claude Duet作為Meta Muse與OpenAI Dots的競爭者，反映AI Agent市場多元化與專業化趨勢。同時，OpenAI內部AI Agent安全事件揭示AI治理的複雜性，Google與Meta合作開源TorchTPU挑戰NVIDIA算力壟斷，顯示產業鏈技術競爭升溫。Google Cloud成為首個同時提供Gemini、Claude與OpenAI模型的雲端平台，促進企業多模型應用。品牌端面對Google AI搜尋內容控制更新及Feature Upvote成功修正Google錯誤AI回答，強調品牌需積極管理AI搜尋內容。AI代理在Amazon、Delta等網站遭遇封鎖，顯示平台對AI代理的管控趨嚴，影響行銷與客服自動化策略。OpenAI ChatGPT新增對話上鎖功能，提升用戶隱私管理，對社群與內容策略有新啟示。整體趨勢顯示AI生態系統在技術、治理與應用層面均快速演進，行銷人須同步調整策略以因應多元入口與安全挑戰。",
+      "path": "data/digests/2026-10-22.json"
+    },
     {
       "reportDate": "2026-10-21",
       "coverageDate": "2026-10-20",
