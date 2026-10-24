@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-23",
+  "latest": "2026-10-24",
   "digests": [
+    {
+      "reportDate": "2026-10-24",
+      "coverageDate": "2026-10-23",
+      "title": "Bella's AI 趨勢日報｜2026/10/24",
+      "summary": "AI代理標準進入社區治理、Google搜尋加強AI摘要引用、品牌AEO工具多元化、中國AI模型開源與出海，正同步重塑數位行銷生態。行銷團隊需掌握AI可見度、內容透明度與全球合規策略，才能在AI主導的搜尋與內容分發時代維持競爭力。",
+      "path": "data/digests/2026-10-24.json"
+    },
     {
       "reportDate": "2026-10-23",
       "coverageDate": "2026-10-22",

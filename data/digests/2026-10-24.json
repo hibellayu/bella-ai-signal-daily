@@ -1,0 +1,543 @@
+{
+  "reportDate": "2026-10-24",
+  "coverageDate": "2026-10-23",
+  "generatedAt": "2026-10-24T08:51:03+08:00",
+  "headline": "AI代理生態開放、搜尋內容透明化、品牌AEO戰略與中國模型出海：行銷決策新規則",
+  "summary": "AI代理標準進入社區治理、Google搜尋加強AI摘要引用、品牌AEO工具多元化、中國AI模型開源與出海，正同步重塑數位行銷生態。行銷團隊需掌握AI可見度、內容透明度與全球合規策略，才能在AI主導的搜尋與內容分發時代維持競爭力。",
+  "answerSummary": "今日AI趨勢顯示，AI代理與搜尋生態進入多元治理與內容透明新階段。品牌需強化AEO（Answer Engine Optimization）策略，確保在AI摘要、搜尋引用與多平台模型下維持可見度與信任。中國AI模型開源與全球授權也帶來內容合規與技術流通新挑戰，行銷人應同步調整內容結構、數據治理與工具選型，主動回應AI生態變化。",
+  "promptTargets": [
+    {
+      "intent": "Informational",
+      "prompt": "AI代理標準進入社區治理會如何影響品牌與行銷團隊的內容策略？"
+    },
+    {
+      "intent": "Commercial",
+      "prompt": "品牌該如何選擇AEO工具以提升AI搜尋可見度？"
+    },
+    {
+      "intent": "Comparison",
+      "prompt": "Profound、Bluefish AI 與 Ahrefs Brand Radar 在AEO功能上有何差異？"
+    },
+    {
+      "intent": "Brand",
+      "prompt": "Google AI Overview引用卡片的AI摘要如何影響品牌曝光與信任？"
+    },
+    {
+      "intent": "Problem / Solution",
+      "prompt": "面對AI搜尋摘要錯誤描述品牌，行銷人可採取哪些補救措施？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "如何將AI代理登入功能安全整合進品牌的會員或CRM流程？"
+    },
+    {
+      "intent": "Informational",
+      "prompt": "中國AI模型出海與開源會對全球內容合規與授權帶來哪些新變化？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "AI影音工具Seedance 2.5 4K在短影音腳本與素材製作上有哪些應用場景？"
+    }
+  ],
+  "aeoEntities": [
+    "Anthropic",
+    "Agent Skills",
+    "Linux基金會",
+    "Google AI Overview",
+    "AEO（Answer Engine Optimization）",
+    "Profound",
+    "Bluefish AI",
+    "Ahrefs Brand Radar",
+    "MiniMax",
+    "DeepSeek",
+    "Kimi",
+    "Moonshot AI",
+    "Seedance",
+    "1Password",
+    "OpenAI",
+    "內容透明度"
+  ],
+  "citationClaims": [
+    {
+      "claim": "Anthropic已將AI代理技能標準Agent Skills捐贈給Linux基金會旗下Agentic AI Foundation，並由多家科技公司工程師共同維護，推動AI代理生態多元治理。",
+      "sources": [
+        {
+          "name": "AIBase AI News",
+          "publishedDate": "2026-10-23",
+          "url": "https://news.aibase.com/tw/news/31831"
+        },
+        {
+          "name": "iThome",
+          "publishedDate": "2026-10-23",
+          "url": "https://www.ithome.com.tw/news/179921"
+        }
+      ]
+    },
+    {
+      "claim": "Google正在AI Overview引用卡片中測試AI生成摘要，提升搜尋內容的透明度與品牌被引用的機會。",
+      "sources": [
+        {
+          "name": "Search Engine Roundtable",
+          "publishedDate": "2026-10-23",
+          "url": "https://www.seroundtable.com/google-ai-overview-citation-ai-summaries-42361.html"
+        }
+      ]
+    },
+    {
+      "claim": "MiniMax與DeepSeek已獲准依中國新規進行AI模型開源與海外授權，並完成相關登記，推動全球AI技術流通與合規。",
+      "sources": [
+        {
+          "name": "科技新報",
+          "publishedDate": "2026-10-23",
+          "url": "https://technews.tw/2026/10/23/deepseek-minimax-win-approval-for-global-use-state-media-says/"
+        },
+        {
+          "name": "AIBase AI News",
+          "publishedDate": "2026-10-23",
+          "url": "https://news.aibase.com/tw/news/31828"
+        }
+      ]
+    },
+    {
+      "claim": "AEO（Answer Engine Optimization）工具如Profound、Bluefish AI、Ahrefs Brand Radar，能協助行銷團隊追蹤品牌在AI生成答案中的可見度與引用狀況，並針對內容缺口進行優化。",
+      "sources": [
+        {
+          "name": "HubSpot Marketing Blog",
+          "publishedDate": "2026-10-23",
+          "url": "https://blog.hubspot.com/marketing/profound-vs-bluefish"
+        },
+        {
+          "name": "Semrush Blog",
+          "publishedDate": "2026-10-23",
+          "url": "https://www.semrush.com/blog/ai-search-strategy/"
+        }
+      ]
+    },
+    {
+      "claim": "Anthropic已將AI代理技能標準Agent Skills捐贈給Linux基金會旗下Agentic AI Foundation，並由多家科技公司工程師共同維護，推動AI代理生態多元治理。",
+      "sources": [
+        {
+          "name": "AIBase AI News",
+          "publishedDate": "2026-10-23",
+          "url": "https://news.aibase.com/tw/news/31831"
+        },
+        {
+          "name": "iThome",
+          "publishedDate": "2026-10-23",
+          "url": "https://www.ithome.com.tw/news/179921"
+        }
+      ]
+    }
+  ],
+  "strategyTakeaways": [
+    "AI代理標準進入社區治理，未來品牌需考慮AI代理如何解讀與執行內容，調整資料結構與權限設計。",
+    "Google搜尋AI摘要卡片提升內容透明度，品牌需優化FAQ、產品資訊與第三方引用，強化AI可讀性與信任證據。",
+    "AEO工具多元化，行銷團隊應同時追蹤AI引用、內容缺口與競品可見度，建立跨平台內容監測流程。",
+    "中國AI模型開源與全球授權加速，內容合規、技術流通與資料授權成為品牌國際化必備策略。"
+  ],
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek",
+    "Qwen",
+    "Alibaba",
+    "Tencent",
+    "ByteDance",
+    "Seedance",
+    "Kling",
+    "Runway",
+    "Pika",
+    "Veo",
+    "Dreamina",
+    "CapCut",
+    "Doubao",
+    "Zhipu",
+    "MiniMax",
+    "Xiaohongshu"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾",
+      "AI 影音 / 創意工具"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "涵蓋AI代理標準開放治理、搜尋內容透明化、中國AI模型出海與合規、AI模型監控資安等影響產業格局與行銷規則的重大變化。",
+      "items": [
+        {
+          "title": "AI代理技能標準開放推動生態多元治理",
+          "summary": "Anthropic將AI代理技能標準Agent Skills捐贈給Linux基金會旗下Agentic AI Foundation，並有OpenAI、Google等多家公司工程師共同維護，推動AI代理生態從單一公司主導轉向社區治理。此標準已被70多個AI代理平台採用，涵蓋ChatGPT、Copilot等主流工具。",
+          "analysis": [
+            "AI代理標準進入社區治理，代表AI代理生態將由多方共同制定規則，降低單一平台壟斷風險，促進技能互通與跨平台應用。這將影響AI代理如何存取、解讀與執行品牌內容，未來內容結構、權限設計與API介接需符合開放標準。",
+            "品牌與行銷團隊需重新評估AI代理如何讀取產品資訊、FAQ與用戶資料，調整內容格式與權限設定，確保AI代理能正確執行品牌任務。若忽略標準變化，品牌資訊可能被AI代理誤讀或排除，影響服務體驗與信任。"
+          ],
+          "citationClaim": "Anthropic已將AI代理技能標準Agent Skills捐贈給Linux基金會旗下Agentic AI Foundation，並由多家科技公司工程師共同維護，推動AI代理生態多元治理。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-10-23",
+              "url": "https://news.aibase.com/tw/news/31831"
+            },
+            {
+              "name": "iThome",
+              "publishedDate": "2026-10-23",
+              "url": "https://www.ithome.com.tw/news/179921"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 18
+          },
+          "tags": [
+            "AI代理",
+            "標準治理",
+            "社區生態",
+            "內容結構",
+            "API"
+          ],
+          "what": "過去AI代理技能標準主要由單一公司主導，品牌僅能依照各平台規則調整內容。此次Anthropic將Agent Skills標準捐贈給Linux基金會，並由多家工程師共同維護，代表AI代理生態將由社區共同制定規則。這將改變AI代理如何讀取、執行品牌內容，品牌需調整內容結構與權限設計以符合新標準。",
+          "soWhat": "品牌若忽略AI代理標準的開放治理，可能導致產品資訊、FAQ、用戶資料被AI代理誤讀或排除，影響服務體驗與信任。行銷團隊需主動追蹤標準變化，調整內容格式與API設計，確保AI代理能正確執行品牌任務，並在多平台生態下維持一致體驗。",
+          "nowWhat": "選定1個主要產品頁，將FAQ、規格、用戶權益等資訊結構化為標準格式（如JSON-LD或API回應），並測試在2個AI代理平台（如ChatGPT、Copilot）下的讀取與執行結果。記錄AI代理未能正確理解的3個內容欄位，逐一調整並重新驗證。"
+        },
+        {
+          "title": "跨國AI模型授權與開源推動全球合規與技術流通",
+          "summary": "中國AI企業DeepSeek與MiniMax已依新規完成開源與海外授權登記，獲准全球推廣。中國商務部、科技部正修訂AI技術出口目錄，對已開源、發表論文的技術給予彈性管理。這將加速AI模型國際流通，提升全球內容合規與授權複雜度。",
+          "analysis": [
+            "中國AI模型出海與開源政策鬆綁，意味著全球AI市場將迎來更多來自中國的開源模型與服務。這不僅加速技術流通，也讓內容合規、資料授權與AI訓練資料來源變得更複雜。品牌若需進軍全球市場，必須同步考量不同國家AI模型的授權與合規要求。",
+            "行銷團隊需關注AI模型來源、內容授權與資料合規，避免內容被未授權模型使用或違反地區性規範。若忽略這一變化，品牌內容可能被AI模型未經授權引用，或在不同市場面臨合規風險，影響國際化布局。"
+          ],
+          "citationClaim": "MiniMax與DeepSeek已獲准依中國新規進行AI模型開源與海外授權，並完成相關登記，推動全球AI技術流通與合規。",
+          "impactAngles": [
+            "國際事件與產業格局"
+          ],
+          "sources": [
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-10-23",
+              "url": "https://technews.tw/2026/10/23/deepseek-minimax-win-approval-for-global-use-state-media-says/"
+            },
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-10-23",
+              "url": "https://news.aibase.com/tw/news/31828"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 14
+          },
+          "tags": [
+            "AI模型",
+            "開源",
+            "授權",
+            "合規",
+            "中國AI"
+          ],
+          "what": "過去中國AI模型海外推廣受限於出口規範與授權流程。此次DeepSeek與MiniMax完成開源與海外授權登記，並獲官方批准，意味中國AI模型能更快進入國際市場。新規對已開源、發表論文的技術給予彈性管理，降低國際流通門檻，讓全球品牌與開發者能更容易取得並應用中國AI模型。",
+          "soWhat": "品牌與行銷人需重新檢視內容授權與AI模型來源，確保內容不被未授權模型擷取或生成。若要進軍中國或全球市場，需同步考慮當地AI合規要求與技術流通規則，否則可能面臨內容被濫用或合規風險。這也對內容策略、資料治理與跨國合作提出新挑戰。",
+          "nowWhat": "盤點現有內容授權與AI模型使用情境，針對2個主要市場（如中國、歐美）建立內容授權與合規清單。選定1項內容或數據，核查其在中國開源AI模型上的授權狀態，並與法務協作制定3項合規指引，確保未來內容流通安全。"
+        },
+        {
+          "title": "AI生成摘要卡片提升搜尋內容透明度與品牌曝光",
+          "summary": "Google正在AI Overview引用卡片中測試AI生成摘要，讓搜尋用戶可直接看到AI對內容的重點描述。這提升了內容透明度，也讓品牌在AI摘要中的被引用機會大幅提升，改變傳統SEO與品牌曝光策略。",
+          "analysis": [
+            "Google AI Overview引用卡片引入AI生成摘要，讓搜尋結果不僅顯示原始內容，還會以AI語言重述重點。這使內容透明度提升，使用者更易理解來源價值，同時品牌被AI引用的機會增加。SEO與內容策略需同步優化AI可讀性與信任證據，否則品牌主張可能被AI誤解或省略。",
+            "品牌需調整內容結構、FAQ、產品資訊與第三方引用，確保AI能準確抓取與重述品牌優勢。若忽略AI摘要邏輯，品牌可能在AI搜尋中失去曝光與信任，甚至被競品資訊取代。行銷團隊需主動追蹤AI摘要結果，持續優化內容呈現。"
+          ],
+          "citationClaim": "Google正在AI Overview引用卡片中測試AI生成摘要，提升搜尋內容的透明度與品牌被引用的機會。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "品牌端"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-10-23",
+              "url": "https://www.seroundtable.com/google-ai-overview-citation-ai-summaries-42361.html"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "Google",
+            "AI摘要",
+            "搜尋透明度",
+            "品牌曝光",
+            "AEO"
+          ],
+          "what": "傳統Google搜尋主要顯示原始內容與連結，品牌曝光依賴標題、描述與排名。AI Overview引用卡片引入AI生成摘要，讓搜尋用戶直接看到AI對內容的重點重述。這改變了內容被引用與解讀的方式，品牌需確保資訊被AI正確理解與呈現，否則主張易被簡化或誤解。",
+          "soWhat": "品牌若未優化內容結構與信任證據，可能在AI摘要中被競品取代或資訊失真，影響搜尋可見度與信任。行銷團隊需同步追蹤AI摘要結果，主動調整FAQ、產品資訊與第三方引用，強化AI可讀性與品牌主張的辨識度，維持在AI搜尋時代的曝光優勢。",
+          "nowWhat": "選定1則品牌FAQ或產品頁，輸入Google搜尋並觀察AI Overview摘要內容。將AI摘要與原始內容比對，記錄3處AI未正確重述或遺漏的重點，針對這些欄位優化內容結構與第三方引用，並再次測試AI摘要結果。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "聚焦AEO工具、AI影音創意工具、AI代理登入與內容缺口分析等，說明這些工具如何進入行銷與內容工作流。",
+      "items": [
+        {
+          "title": "AEO工具多元化：Profound、Bluefish AI、Ahrefs Brand Radar功能競爭",
+          "summary": "AEO（Answer Engine Optimization）工具如Profound、Bluefish AI、Ahrefs Brand Radar，協助行銷團隊追蹤品牌在AI生成答案中的可見度、引用與競品分析。各工具在引擎支援、數據追蹤與內容缺口分析上有不同強項，需依品牌需求選擇搭配。",
+          "analysis": [
+            "AEO工具不再僅限於傳統SEO數據，而是聚焦AI搜尋、摘要引用與多引擎可見度。Profound、Bluefish AI與Ahrefs Brand Radar分別強調引擎覆蓋、引用追蹤與內容缺口分析，讓行銷團隊能更精準掌握品牌在AI答案中的曝光與競爭狀態。",
+            "品牌若只依賴單一工具，可能無法全面監測AI搜尋生態下的可見度與內容缺口。行銷團隊應根據品牌主力市場與內容類型，靈活組合AEO工具，並建立跨平台內容監測與優化流程，確保品牌主張在AI時代持續被引用。"
+          ],
+          "citationClaim": "AEO（Answer Engine Optimization）工具如Profound、Bluefish AI、Ahrefs Brand Radar，能協助行銷團隊追蹤品牌在AI生成答案中的可見度與引用狀況，並針對內容缺口進行優化。",
+          "impactAngles": [
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "HubSpot Marketing Blog",
+              "publishedDate": "2026-10-23",
+              "url": "https://blog.hubspot.com/marketing/profound-vs-bluefish"
+            },
+            {
+              "name": "Semrush Blog",
+              "publishedDate": "2026-10-23",
+              "url": "https://www.semrush.com/blog/ai-search-strategy/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "AEO",
+            "AI搜尋",
+            "內容缺口",
+            "品牌可見度",
+            "工具比較"
+          ],
+          "what": "AEO工具從傳統SEO數據進化到AI搜尋可見度、引用追蹤與內容缺口分析。Profound、Bluefish AI、Ahrefs Brand Radar各有不同的引擎支援與數據維度，讓行銷團隊能針對AI生成答案中的品牌曝光、競品狀態與內容缺口進行精細管理。",
+          "soWhat": "若只依賴單一AEO工具，品牌可能在AI搜尋、摘要引用或競品分析上出現盲點。行銷團隊需根據市場重點與內容類型，靈活組合AEO工具，並建立跨平台監測與優化流程，才能確保品牌主張在AI時代持續被引用與辨識。",
+          "nowWhat": "選定1個AEO工具（如Profound），針對主要產品關鍵字輸入查詢，記錄品牌在AI答案中的曝光與引用情形。與1個競品比較，找出2個內容缺口，將缺口補齊後，於另一AEO工具（如Bluefish AI）再次驗證可見度變化。"
+        },
+        {
+          "title": "AI影音創意工具Seedance 2.5 4K進入短影音內容製作流程",
+          "summary": "火山引擎發佈Seedance 2.5 4K，支援480P樣片打磨後自動生成4K正片，優化短影音腳本、分鏡與素材製作流程。這讓行銷與內容團隊能更快產出高品質多版本短影音，提升社群內容測試與廣告素材多樣性。",
+          "analysis": [
+            "AI影音工具Seedance 2.5 4K將低解析度樣片自動升級為4K正片，降低內容製作門檻並加速腳本、分鏡到成品的轉換。這讓短影音內容能以更高品質、多版本快速進行A/B測試，強化社群互動與廣告投放效率。",
+            "行銷與內容團隊可將AI影音工具納入素材製作流程，從腳本發想、分鏡設計到多版本生成，縮短製作週期並提升內容多樣性。若忽略AI工具帶來的流程優化，品牌將在短影音競爭中失去速度與創意優勢。"
+          ],
+          "citationClaim": "火山引擎Seedance 2.5 4K支援低解析度樣片自動生成4K正片，優化短影音內容製作流程，提升多版本產出效率。",
+          "impactAngles": [
+            "AI 影音 / 創意工具",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "品牌端"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI Daily",
+              "publishedDate": "2026-10-23",
+              "url": "https://news.aibase.com/tw/daily/31845"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 5,
+            "trackedEntityRelevance": 2,
+            "total": 17
+          },
+          "tags": [
+            "Seedance",
+            "AI影音",
+            "短影音",
+            "內容製作",
+            "多版本"
+          ],
+          "what": "傳統短影音製作需手動從腳本到分鏡再到高畫質成品，流程繁瑣且耗時。Seedance 2.5 4K可自動將480P樣片升級為4K正片，讓內容團隊能以AI加速腳本、分鏡與多版本產出，提升社群內容測試與廣告素材多樣性。",
+          "soWhat": "若未導入AI影音工具，品牌在短影音競爭中將面臨製作速度慢、素材單一的劣勢。行銷與內容團隊應將AI影音工具納入流程，從腳本發想到多版本生成，縮短製作週期並提升內容多樣性與A/B測試效率。",
+          "nowWhat": "挑選1支現有短影音腳本，利用Seedance 2.5 4K製作2個不同分鏡的480P樣片，自動升級為4K正片。將成品上傳社群平台，進行A/B測試並記錄互動數據，作為下次腳本優化依據。"
+        },
+        {
+          "title": "AI代理登入功能擴大，1Password支援多家AI代理整合",
+          "summary": "1Password for Agents擴大AI代理登入支援，Meta Muse、SpaceX Grok Bot等多款AI代理將可直接登入網站執行任務，未來還將支援Claude Duet、ChatGPT Work等主流AI服務。用戶同意後，AI代理可安全執行登入任務，無需直接取得密碼。",
+          "analysis": [
+            "AI代理登入功能擴大，讓AI代理能安全執行網站登入與任務操作，降低用戶密碼外洩風險並提升自動化效率。1Password將支援多家AI代理，未來AI代理將更容易進入CRM、會員管理等行銷工作流，強化自動化與客戶體驗。",
+            "品牌與行銷團隊可將AI代理登入整合進CRM、會員或內容管理流程，提升自動化與安全性。若忽略AI代理登入趨勢，品牌將在自動化服務與用戶便利性上落後，影響用戶留存與體驗。"
+          ],
+          "citationClaim": "1Password for Agents擴大AI代理登入支援，Meta Muse、SpaceX Grok Bot等多款AI代理將可直接登入網站執行任務，未來還將支援Claude Duet、ChatGPT Work等主流AI服務。",
+          "impactAngles": [
+            "使用者端 / 深度工作者",
+            "一般社會大眾",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "iThome",
+              "publishedDate": "2026-10-23",
+              "url": "https://www.ithome.com.tw/news/179942"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 14
+          },
+          "tags": [
+            "1Password",
+            "AI代理",
+            "登入整合",
+            "CRM",
+            "自動化"
+          ],
+          "what": "傳統AI代理登入需用戶手動輸入密碼，安全性與便利性有限。1Password for Agents支援多家AI代理直接登入網站執行任務，未來將涵蓋主流AI服務，讓AI代理能安全執行CRM、會員與內容管理等自動化操作，提升品牌服務自動化與安全水準。",
+          "soWhat": "若未整合AI代理登入，品牌在自動化服務與用戶便利性上將落後競爭對手。行銷團隊應將AI代理登入納入CRM、會員或內容管理流程，提升自動化效率與用戶體驗，降低密碼外洩與安全風險。",
+          "nowWhat": "選定1個會員或CRM登入流程，測試1Password for Agents與Meta Muse或Grok Bot的整合效果。記錄AI代理登入成功率與用戶體驗，針對2個常見問題優化流程，並建立安全授權與審核機制。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "歸納AI搜尋、內容透明、AI模型國際流通與AEO策略等跨層級變化，協助行銷團隊前瞻佈局。",
+      "items": [
+        {
+          "title": "AI搜尋與內容透明度成為品牌競爭新戰場",
+          "summary": "Google AI Overview、AEO工具與AI代理標準治理同步推進，內容透明度、AI摘要引用與品牌可見度成為行銷決策新核心。品牌需同步優化內容結構、信任證據與AI可讀性，建立跨平台AEO監控與內容授權策略，才能在AI主導的搜尋與內容分發時代維持競爭力。",
+          "analysis": [
+            "AI搜尋與內容透明度正快速重塑品牌曝光規則，Google AI Overview、AEO工具與AI代理標準治理讓品牌必須思考AI如何解讀、引用與重述內容。這要求內容不僅能被人閱讀，更要被AI正確理解與呈現，否則品牌主張易被簡化或誤解。",
+            "行銷團隊應建立跨平台AEO監控、內容結構優化與授權治理流程，確保品牌資訊在AI搜尋、摘要與代理生態中持續被引用與信任。忽略AI可讀性與內容透明度，將直接影響搜尋曝光、信任與流量轉換。"
+          ],
+          "citationClaim": "Google AI Overview、AEO工具與AI代理標準治理同步推進，內容透明度、AI摘要引用與品牌可見度成為行銷決策新核心。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "數位行銷 / 內容 / 社群 / 廣告"
+          ],
+          "sources": [
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-10-23",
+              "url": "https://www.seroundtable.com/google-ai-overview-citation-ai-summaries-42361.html"
+            },
+            {
+              "name": "Semrush Blog",
+              "publishedDate": "2026-10-23",
+              "url": "https://www.semrush.com/blog/ai-search-strategy/"
+            },
+            {
+              "name": "HubSpot Marketing Blog",
+              "publishedDate": "2026-10-23",
+              "url": "https://blog.hubspot.com/marketing/profound-vs-bluefish"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 2,
+            "total": 18
+          },
+          "tags": [
+            "AI搜尋",
+            "內容透明度",
+            "AEO",
+            "品牌可見度",
+            "AI代理"
+          ],
+          "what": "AI搜尋與內容透明度的提升，代表品牌必須讓內容不僅能被人閱讀，更要被AI正確理解、引用與重述。Google AI Overview、AEO工具與AI代理標準治理同步推進，讓品牌可見度與信任證據成為競爭新核心，內容結構、FAQ、第三方引用都需優化以因應AI生態。",
+          "soWhat": "若品牌忽略AI可讀性與內容透明度，將在AI搜尋與摘要中失去曝光與信任，甚至被競品資訊取代。行銷團隊需建立跨平台AEO監控與內容授權策略，持續追蹤AI摘要結果，主動優化內容結構與信任證據，才能維持流量與品牌主張的影響力。",
+          "nowWhat": "選定1個品牌主力產品頁，利用AEO工具與Google搜尋觀察AI摘要與引用情形，記錄3個AI未正確重述或遺漏的重點，針對這些內容優化FAQ、結構化資料與第三方引用，並再次測試AI摘要結果，輸出1份優化前後的內容對照報告。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "從今日AI趨勢推論品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程六大面向的具體變化與應用。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI代理標準開放、AEO工具多元與AI搜尋內容透明度提升，要求品牌將AI可讀性、信任證據與內容授權納入核心策略。品牌應主動整理FAQ、產品資訊與第三方引用，並建立AI可讀的信任系統，確保主張在AI摘要、代理與多平台生態中持續被引用與辨識。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "AEO工具、AI摘要卡片與AI代理登入功能進入行銷工作流，數位行銷團隊應建立跨平台內容監測、A/B測試與自動化流程。建議從主要產品頁或短影音腳本切入，優化內容結構、追蹤AI引用並整合AI代理登入，提升曝光、互動與用戶體驗。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "AI搜尋與內容透明度提升，內容行銷需聚焦AI可讀性、FAQ優化與內容缺口補齊。建議定期用AEO工具檢查品牌在AI答案中的曝光與內容缺口，並優化結構化資料與第三方引用，確保主張被AI正確重述與引用。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "AI影音工具Seedance 2.5 4K等進入短影音製作流程，社群團隊可快速產出多版本內容進行A/B測試，提升互動率與素材多樣性。建議從腳本發想到分鏡設計，全面導入AI工具，縮短製作週期並強化內容創意。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "AI摘要引用與AEO工具讓品牌在搜尋與AI答案中的曝光更可量化。媒體廣告團隊應同步追蹤AI摘要結果，優化廣告素材結構與信任證據，並將AI影音工具納入多版本素材製作，提升廣告投放成效與品牌辨識度。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "AI代理登入、內容結構化與AEO監控要求團隊流程更自動化與跨部門協作。建議建立AEO專責小組，定期檢查AI摘要與代理執行結果，並與法務協作內容授權與合規，確保品牌在AI生態下的資訊安全與服務一致性。"
+        }
+      ]
+    }
+  ]
+}
