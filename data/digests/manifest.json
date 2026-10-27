@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-26",
+  "latest": "2026-10-27",
   "digests": [
+    {
+      "reportDate": "2026-10-27",
+      "coverageDate": "2026-10-26",
+      "title": "Bella's AI 趨勢日報｜2026/10/27",
+      "summary": "Anthropic正式提交IPO申請，強調其獨特治理架構與AI安全使命，與OpenAI宣布離線訓練頂尖模型以加強安全形成鮮明對比。Google持續擴展AI生成評論摘要與一鍵實驗功能，深化廣告智能化。MiniMax H3在國產AI視頻模型競賽中登頂，顯示中國模型競爭力提升。1Password推出AI代理登入新方案，提升代理人安全性。這些動態反映AI代理技術與安全治理成為行銷策略與工具選擇關鍵，品牌必須同步調整以因應AI生態快速變革。",
+      "path": "data/digests/2026-10-27.json"
+    },
     {
       "reportDate": "2026-10-26",
       "coverageDate": "2026-10-25",
