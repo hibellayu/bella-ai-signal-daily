@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-27",
+  "latest": "2026-10-28",
   "digests": [
+    {
+      "reportDate": "2026-10-28",
+      "coverageDate": "2026-10-27",
+      "title": "Bella's AI 趨勢日報｜2026/10/28",
+      "summary": "本日AI產業聚焦Anthropic申請IPO與大規模融資計畫，OpenAI發布低成本強化視覺與操作的GPT-6.1 Terra模型，以及AEO分析工具的實測評比。Meta與Nvidia持續擴大AI基礎設施投資，蘋果也將OpenAI技術導入創作工具。這些動態顯示AI生態系統正快速成熟，行銷人需重新評估品牌曝光、內容優化與工作流程整合策略。",
+      "path": "data/digests/2026-10-28.json"
+    },
     {
       "reportDate": "2026-10-27",
       "coverageDate": "2026-10-26",
