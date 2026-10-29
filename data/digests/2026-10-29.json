@@ -1,0 +1,546 @@
+{
+  "reportDate": "2026-10-29",
+  "coverageDate": "2026-10-28",
+  "generatedAt": "2026-10-29T09:52:28+08:00",
+  "headline": "AI 搜尋廣告、算力供應鏈與代理生態重塑行銷決策新格局",
+  "summary": "今日 AI 產業聚焦於搜尋廣告全球擴張、算力供應鏈多元化、AI 代理與資安治理，以及開發者平台開放。Google 推動 AI 搜尋廣告與 Connected Apps Platform，改變品牌流量入口與互動規則；OpenAI、AMD、NVIDIA 等巨頭調整算力採購與投資，推動平台競爭與成本結構重組。AI 代理滲透資安防線，驅動企業強化動態權限管理；開發者生態則因 Gemini API 與第三方代理開放而加速多元應用落地。這些變化將直接影響行銷團隊的數據策略、內容曝光、廣告投放與團隊協作流程。",
+  "answerSummary": "今日 AI 趨勢顯示，搜尋廣告與 AI 代理平台規則正快速變動，品牌需重新評估在 AI 搜尋與多代理生態下的曝光與互動策略。算力供應鏈多元化將帶來平台競爭與成本新變數，行銷團隊必須同步調整數據流、內容結構與廣告分發，並確保資安與權限治理能跟上 AI 代理滲透風險。開發者平台開放則為行銷應用帶來更多整合與自動化可能。",
+  "promptTargets": [
+    {
+      "intent": "Informational",
+      "prompt": "Google AI 搜尋廣告全球擴張對品牌曝光有什麼實質影響？"
+    },
+    {
+      "intent": "Commercial",
+      "prompt": "品牌該如何調整廣告預算以因應 AI 搜尋與多代理平台競爭？"
+    },
+    {
+      "intent": "Comparison",
+      "prompt": "OpenAI 採購 Google TPU 和傳統 NVIDIA GPU 在算力成本與效能上有何差異？"
+    },
+    {
+      "intent": "Brand",
+      "prompt": "AI 代理與資安事件頻發，品牌如何確保數據與內容安全？"
+    },
+    {
+      "intent": "Problem / Solution",
+      "prompt": "行銷團隊如何應對 AI 代理滲透日常辦公軟體帶來的資安風險？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "如何利用 Google Connected Apps Platform 擴展品牌服務進入 AI 搜尋生態？"
+    },
+    {
+      "intent": "Use Case",
+      "prompt": "AI 語音轉錄工具在內容行銷與會議紀錄自動化上有哪些實際應用？"
+    },
+    {
+      "intent": "Informational",
+      "prompt": "Gemini API 與第三方 AI 代理開放將如何影響行銷自動化與 MarTech 工具選型？"
+    }
+  ],
+  "aeoEntities": [
+    "Google",
+    "OpenAI",
+    "Meta",
+    "AMD",
+    "NVIDIA",
+    "Gemini",
+    "TPU",
+    "GPU",
+    "AI 代理",
+    "Connected Apps Platform",
+    "MarTech",
+    "資安治理",
+    "行銷自動化",
+    "AI 搜尋廣告",
+    "Anthropic",
+    "Android Studio"
+  ],
+  "citationClaims": [
+    {
+      "claim": "Google 正式將 AI 搜尋廣告全球擴展，並開放 Connected Apps Platform，讓開發者可將應用直接整合至 Gemini 與搜尋體驗，改變品牌與消費者互動入口。",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "publishedDate": "2026-10-28",
+          "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
+        },
+        {
+          "name": "Search Engine Roundtable",
+          "publishedDate": "2026-10-28",
+          "url": "https://www.seroundtable.com/google-connected-apps-platform-42408.html"
+        },
+        {
+          "name": "TechCrunch",
+          "publishedDate": "2026-10-28",
+          "url": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/"
+        }
+      ]
+    },
+    {
+      "claim": "OpenAI 計劃向 Google 採購 TPU 晶片，顯示 AI 算力供應鏈正從單一 NVIDIA 轉向多元平台，推動產業成本與競爭格局重組。",
+      "sources": [
+        {
+          "name": "AIBase AI News",
+          "publishedDate": "2026-10-28",
+          "url": "https://news.aibase.com/tw/news/31933"
+        },
+        {
+          "name": "iThome",
+          "publishedDate": "2026-10-28",
+          "url": "https://www.ithome.com.tw/news/180043"
+        }
+      ]
+    },
+    {
+      "claim": "AMD 與 NVIDIA 分別加碼投資 Meta，攜手部署 Gigawatt 級 AI 基礎設施並深化個人 AI 代理合作，強化平台生態與 AI 應用滲透。",
+      "sources": [
+        {
+          "name": "科技新報",
+          "publishedDate": "2026-10-28",
+          "url": "https://technews.tw/2026/10/28/amd-invests-1-billion-in-meta-equity-offering/"
+        },
+        {
+          "name": "INSIDE",
+          "publishedDate": "2026-10-28",
+          "url": "https://www.inside.com.tw/article/42748-nvidia-invest-3-billion-meta-equity-offering-97-5-billion-muse"
+        }
+      ]
+    },
+    {
+      "claim": "AI 代理滲透 Anthropic 辦公系統僅用 12 小時，顯示企業日常軟體成資安新破口，驅動動態權限管理與 AI 代理防護機制需求提升。",
+      "sources": [
+        {
+          "name": "AIBase AI News",
+          "publishedDate": "2026-10-28",
+          "url": "https://news.aibase.com/tw/news/31924"
+        },
+        {
+          "name": "科技新報",
+          "publishedDate": "2026-10-28",
+          "url": "https://infosecu.technews.tw/2026/10/28/cathedral-got-into-anthropic-in-12-hours/"
+        },
+        {
+          "name": "iThome",
+          "publishedDate": "2026-10-28",
+          "url": "https://www.ithome.com.tw/news/180048"
+        }
+      ]
+    },
+    {
+      "claim": "Google 開放 Android Studio 支援超過 40 款第三方 AI 代理，並推出 Gemini API，促使開發者能快速整合多家代理與 AI 能力。",
+      "sources": [
+        {
+          "name": "The Decoder",
+          "publishedDate": "2026-10-28",
+          "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/"
+        }
+      ]
+    }
+  ],
+  "strategyTakeaways": [
+    "AI 搜尋廣告與 Connected Apps Platform 的全球推進，將品牌流量入口從傳統搜尋結果轉向 AI 體驗與應用整合，行銷人需優先調整內容結構與互動設計。",
+    "算力採購多元化（TPU、GPU）與產業投資重組，預示平台競爭將直接影響 AI 成本結構與 MarTech 工具生態，品牌應同步評估供應鏈風險與平台依賴度。",
+    "AI 代理滲透資安事件頻發，團隊需強化動態權限管理與跨平台資安協作，避免日常辦公軟體成為品牌資料外洩破口。",
+    "開發者平台與第三方代理開放，帶動行銷自動化、內容分發與互動體驗多元化，品牌可從 API 整合與自動化腳本優化切入，提升跨平台行銷效率。"
+  ],
+  "sourcePolicy": "台灣媒體依台北時間前一日收集；國際媒體依來源網站發布日期，不做時區換算。",
+  "trackedEntities": [
+    "OpenAI",
+    "Google",
+    "Meta",
+    "Anthropic",
+    "Perplexity",
+    "Adobe",
+    "Canva",
+    "Midjourney",
+    "Suno",
+    "HubSpot",
+    "Semrush",
+    "Substack",
+    "Samsung",
+    "AMD",
+    "NVIDIA",
+    "Moonshot AI",
+    "Kimi",
+    "DeepSeek",
+    "Qwen",
+    "Alibaba",
+    "Tencent",
+    "ByteDance",
+    "Seedance",
+    "Kling",
+    "Runway",
+    "Pika",
+    "Veo",
+    "Dreamina",
+    "CapCut",
+    "Doubao",
+    "Zhipu",
+    "MiniMax",
+    "Xiaohongshu"
+  ],
+  "scoringPolicy": {
+    "priority": [
+      "產業重大性",
+      "數位行銷影響",
+      "內容 / 搜尋 / 社群 / 媒體廣告影響",
+      "工具可用性"
+    ],
+    "thresholds": {
+      "mustInclude": 13,
+      "candidate": "9-12",
+      "skip": "8 以下"
+    },
+    "impactFramework": [
+      "國際事件與產業格局",
+      "品牌端",
+      "使用者端 / 深度工作者",
+      "一般社會大眾",
+      "AI 影音 / 創意工具"
+    ]
+  },
+  "sections": [
+    {
+      "id": "major-events",
+      "title": "大事件",
+      "description": "聚焦於平台規則、產業競爭、算力供應與資安治理等對行銷決策具結構性影響的重大變化。",
+      "items": [
+        {
+          "title": "Google AI 搜尋廣告全球擴張與 Connected Apps Platform 上線，品牌流量入口與互動規則重塑",
+          "summary": "Google 宣布 AI 搜尋廣告全球擴張，並推出 Connected Apps Platform，讓開發者可將應用直接整合至 Gemini 與搜尋體驗。此舉不僅改變消費者搜尋與互動習慣，也讓品牌有機會以應用型態進入 AI 搜尋生態，重新定義內容曝光與轉換流程。",
+          "analysis": [
+            "Google AI 搜尋廣告的全球擴張，代表品牌曝光與流量入口正從傳統搜尋結果頁轉向 AI 體驗與多輪互動場景。Connected Apps Platform 讓開發者能將服務嵌入搜尋與 Gemini，平台生態從單純內容競爭轉為應用與服務競爭，消費者決策路徑也將被 AI 代理與應用深度重塑。",
+            "對行銷主管而言，這意味著內容結構、互動設計與廣告預算分配需同步調整。若品牌未能及時將服務或內容轉化為可被 AI 代理調用的應用，將在新一輪搜尋與互動生態中失去主動權。"
+          ],
+          "citationClaim": "Google 宣布 AI 搜尋廣告全球擴張，並開放 Connected Apps Platform，讓開發者可將應用直接整合至 Gemini 與搜尋體驗，改變品牌與消費者互動入口。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "數位行銷 / 內容 / 社群 / 廣告",
+            "品牌端"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-10-28",
+              "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
+            },
+            {
+              "name": "Search Engine Roundtable",
+              "publishedDate": "2026-10-28",
+              "url": "https://www.seroundtable.com/google-connected-apps-platform-42408.html"
+            },
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-10-28",
+              "url": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 5,
+            "contentSearchSocialAdsImpact": 5,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 21
+          },
+          "tags": [
+            "AI 搜尋",
+            "廣告規則",
+            "品牌入口",
+            "應用生態",
+            "Gemini"
+          ],
+          "what": "Google 將 AI 搜尋廣告從有限地區推向全球，並同步開放 Connected Apps Platform，允許開發者直接將應用與服務嵌入搜尋與 Gemini 體驗。這一變化從根本上改變品牌觸及消費者的入口，從單一內容競爭轉向應用與互動服務競爭，消費者決策旅程將更依賴 AI 代理與多輪互動。",
+          "soWhat": "品牌若只聚焦傳統 SEO 或內容曝光，將逐漸失去在 AI 搜尋與應用生態中的能見度與主動權。廣告預算、內容結構與互動設計需重新分配，並優先將核心服務轉化為可被 AI 調用的應用。未來品牌與消費者的互動將更依賴 AI 代理與多平台整合，行銷策略必須從單點曝光轉向全流程參與。",
+          "nowWhat": "選定 1-2 個品牌主力服務，利用 Connected Apps Platform 文件，設計並部署可被 Gemini 或搜尋 AI 調用的應用原型。每個應用需明確標示品牌主張、FAQ 與產品證據，並完成至少 1 次 AI 搜尋互動測試，觀察曝光與互動成效。"
+        },
+        {
+          "title": "OpenAI 採購 Google TPU，AMD 與 NVIDIA 加碼 Meta，AI 算力供應鏈多元化推動平台競爭",
+          "summary": "OpenAI 傳出將向 Google 採購自研 TPU 晶片，打破長期僅依賴 NVIDIA GPU 的格局。AMD、NVIDIA 也分別投資 Meta，攜手部署 Gigawatt 級 AI 基礎設施並深化個人 AI 代理合作。AI 算力供應鏈進一步多元化，推動平台競爭、成本結構與生態整合重組。",
+          "analysis": [
+            "AI 產業算力供應鏈正從單一 NVIDIA 主導轉向多元平台。OpenAI 採購 Google TPU，AMD 與 NVIDIA 投資 Meta，反映雲端平台、晶片供應商與內容平台間的競合關係升級。這將影響 AI 模型訓練與部署成本、平台依賴度與生態整合速度。",
+            "對品牌與行銷決策者而言，算力多元化將帶來平台選型、成本預測與 MarTech 工具生態的變數。品牌需評估自身內容與服務是否能靈活對接不同平台 API，降低單一供應鏈風險，並追蹤平台間的代理、內容分發與數據治理規則變化。"
+          ],
+          "citationClaim": "OpenAI 計劃向 Google 採購 TPU 晶片，顯示 AI 算力供應鏈正從單一 NVIDIA 轉向多元平台，推動產業成本與競爭格局重組。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-10-28",
+              "url": "https://news.aibase.com/tw/news/31933"
+            },
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-10-28",
+              "url": "https://technews.tw/2026/10/28/amd-invests-1-billion-in-meta-equity-offering/"
+            },
+            {
+              "name": "INSIDE",
+              "publishedDate": "2026-10-28",
+              "url": "https://www.inside.com.tw/article/42748-nvidia-invest-3-billion-meta-equity-offering-97-5-billion-muse"
+            },
+            {
+              "name": "iThome",
+              "publishedDate": "2026-10-28",
+              "url": "https://www.ithome.com.tw/news/180043"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 3,
+            "total": 15
+          },
+          "tags": [
+            "算力供應鏈",
+            "TPU",
+            "GPU",
+            "平台競爭",
+            "Meta"
+          ],
+          "what": "AI 算力供應鏈不再由單一 NVIDIA GPU 主導，OpenAI 開始採購 Google TPU，AMD 與 NVIDIA 也分別加碼投資 Meta，推動 Gigawatt 級 AI 基礎設施建置。這代表平台競爭、成本結構與生態整合進入新階段，未來 AI 能力與服務將更依賴多元供應鏈。",
+          "soWhat": "行銷與品牌決策者必須關注 AI 工具與平台的算力來源與合作關係，避免內容、數據或應用被單一平台鎖定。多元算力供應鏈將影響 MarTech 工具的可用性、成本與整合彈性，若品牌未能及時調整 API 對接與平台策略，將面臨成本上升或服務中斷風險。",
+          "nowWhat": "盤點現有 MarTech 工具與內容服務，標註其主要 AI 平台與算力依賴來源。針對 2-3 個核心應用，測試其在不同平台（如 Google TPU、NVIDIA GPU）上的 API 對接能力，並記錄整合流程與成本變化，建立多元供應鏈備案。"
+        },
+        {
+          "title": "AI 代理滲透企業資安防線，動態權限管理成新標準",
+          "summary": "AI 代理程式僅用 12 小時即突破 Anthropic 辦公系統，顯示日常辦公軟體已成資安新破口。微軟同步推出動態權限防護機制，強調即使代理未遭外部侵入，也可能因判斷錯誤或惡意輸入執行非預期操作。企業需將 AI 代理納入資安治理主流程，動態調整權限以防範內外部風險。",
+          "analysis": [
+            "AI 代理已能滲透企業日常辦公軟體，傳統資安防線難以防禦代理自動化滲透與橫向移動。微軟推動動態權限管理，將 AI 代理視為潛在高風險行動者，需即時調整其資料與系統存取權限，強化內外部資安協作。",
+            "行銷團隊與品牌資料管理者需重新檢視 AI 代理在內容生成、數據分析與 MarTech 工具中的操作權限。若缺乏動態權限控管，品牌資料、客戶名單或廣告素材將面臨外洩與誤用風險，影響信譽與法規合規。"
+          ],
+          "citationClaim": "AI 代理滲透 Anthropic 辦公系統僅用 12 小時，顯示企業日常軟體成資安新破口，驅動動態權限管理與 AI 代理防護機制需求提升。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者",
+            "一般社會大眾"
+          ],
+          "sources": [
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-10-28",
+              "url": "https://news.aibase.com/tw/news/31924"
+            },
+            {
+              "name": "科技新報",
+              "publishedDate": "2026-10-28",
+              "url": "https://infosecu.technews.tw/2026/10/28/cathedral-got-into-anthropic-in-12-hours/"
+            },
+            {
+              "name": "iThome",
+              "publishedDate": "2026-10-28",
+              "url": "https://www.ithome.com.tw/news/180048"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 3,
+            "contentSearchSocialAdsImpact": 2,
+            "toolUsability": 2,
+            "trackedEntityRelevance": 2,
+            "total": 14
+          },
+          "tags": [
+            "AI 代理",
+            "資安治理",
+            "動態權限",
+            "企業防護",
+            "MarTech"
+          ],
+          "what": "AI 代理可自動化滲透企業日常辦公軟體，傳統資安措施難以應對代理程式的動態存取與橫向移動。微軟提出動態權限管理，將 AI 代理納入資安治理主流程，並根據風險即時調整權限，降低資料外洩與誤用風險。",
+          "soWhat": "若行銷團隊與品牌資料管理者未能及時調整 AI 代理的存取權限，將面臨客戶資料、內容素材與廣告數據外洩的高風險。動態權限控管將成為 MarTech 工具與內容生成流程的標準配置，品牌需同步強化跨部門資安協作，避免單點失守造成連鎖損害。",
+          "nowWhat": "針對 1-2 個常用 MarTech 工具或內容生成平台，啟用動態權限管理功能，設定 AI 代理的最低必要權限。每月檢查一次代理存取紀錄，並建立異常行為自動通報機制，確保資料存取透明可追蹤。"
+        }
+      ]
+    },
+    {
+      "id": "tool-updates",
+      "title": "工具更新",
+      "description": "聚焦於 AI 代理、語音轉錄、開發者平台與行銷自動化等工具如何實際進入行銷與內容工作流。",
+      "items": [
+        {
+          "title": "Google 開放 Android Studio 支援第三方 AI 代理與 Gemini API，加速多元應用整合",
+          "summary": "Google 宣布 Android Studio 新增 \"Bring Your Own Agent\" 功能，支援超過 40 款第三方 AI 代理（含 Claude、Codex），並同步開放 Gemini API。這將使開發者能更靈活整合多家代理與 AI 能力，推動行銷自動化、內容生成與跨平台應用落地。",
+          "analysis": [
+            "Android Studio 支援第三方 AI 代理與 Gemini API，讓開發者可根據需求靈活選擇最佳代理與 AI 能力，降低平台綁定風險。MarTech 與內容行銷工具將能更快速整合新型代理，提升自動化與多平台分發效率。",
+            "行銷團隊可藉由 API 整合，將內容生成、數據分析與互動腳本自動化，並根據不同代理優化行銷流程。這有助於品牌在多平台生態下保持彈性、降低開發成本，並快速響應平台規則與用戶需求變化。"
+          ],
+          "citationClaim": "Google 開放 Android Studio 支援超過 40 款第三方 AI 代理，並推出 Gemini API，促使開發者能快速整合多家代理與 AI 能力。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "The Decoder",
+              "publishedDate": "2026-10-28",
+              "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/"
+            }
+          ],
+          "score": {
+            "industryImpact": 4,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 17
+          },
+          "tags": [
+            "Android Studio",
+            "AI 代理",
+            "Gemini API",
+            "開發者平台",
+            "MarTech"
+          ],
+          "what": "Google 將 Android Studio 開放給第三方 AI 代理與 Gemini API，讓開發者能根據實際需求整合多家代理與 AI 能力，降低平台綁定風險並加速應用落地。這將使 MarTech 與內容行銷工具更容易自動化與跨平台部署。",
+          "soWhat": "行銷人可藉由 API 整合，將內容生成、數據分析與互動腳本自動化，快速響應平台規則與用戶需求。若品牌未能及時整合新型代理與 API，將在多平台生態下失去彈性與競爭力，開發與維護成本也將大幅提升。",
+          "nowWhat": "選定 1 個內容生成或互動腳本場景，利用 Gemini API 或第三方代理，建立自動化腳本原型。測試其在 2 個不同平台上的運作效果，並記錄整合流程與回應速度，作為後續 MarTech 工具選型依據。"
+        },
+        {
+          "title": "NVIDIA 發布支援 40 種語言的免費語音轉錄模型，推動內容行銷與會議自動化",
+          "summary": "NVIDIA 釋出開源語音轉錄模型，可支援 40 種語言的錄音檔轉文字，雖暫不支援即時語音，但已為會議記錄、內容行銷、醫療轉錄等場景帶來高效自動化工具。此舉將降低多語種內容製作門檻，促進全球化行銷與知識管理流程優化。",
+          "analysis": [
+            "NVIDIA 開源語音轉錄模型，讓內容行銷、會議記錄與知識管理可自動化處理多語種錄音檔，提升內容產出效率並降低人力成本。雖目前僅支援錄音檔，未來若擴展至即時語音，將進一步改變行銷與協作流程。",
+            "行銷團隊可將轉錄工具嵌入內容產製、國際行銷與內部協作流程，快速產生多語種素材與會議紀錄。這有助於品牌擴展全球市場、提升知識沉澱效率，並優化內容分發與再利用策略。"
+          ],
+          "citationClaim": "NVIDIA 釋出免費語音轉錄模型，支援 40 種語言錄音檔轉文字，推動內容行銷與會議自動化。",
+          "impactAngles": [
+            "AI 影音 / 創意工具",
+            "一般社會大眾",
+            "使用者端 / 深度工作者"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-10-28",
+              "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+            }
+          ],
+          "score": {
+            "industryImpact": 3,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 3,
+            "toolUsability": 4,
+            "trackedEntityRelevance": 2,
+            "total": 16
+          },
+          "tags": [
+            "語音轉錄",
+            "NVIDIA",
+            "多語種內容",
+            "內容行銷",
+            "自動化"
+          ],
+          "what": "NVIDIA 推出支援 40 種語言的免費語音轉錄模型，讓內容行銷、會議記錄與知識管理可自動化處理多語種錄音檔，顯著提升內容產出與分發效率。雖目前僅支援錄音檔，未來若擴展至即時語音，將進一步改變行銷與協作流程。",
+          "soWhat": "行銷團隊可將轉錄工具嵌入內容產製與協作流程，快速產生多語種素材與會議紀錄，降低人力成本並提升全球市場擴展效率。若未能善用這類工具，品牌在國際行銷與知識管理上將失去自動化與內容再利用優勢。",
+          "nowWhat": "選擇 1-2 個多語種內容產製或會議記錄場景，導入 NVIDIA 語音轉錄模型，測試其在不同語言與內容類型下的準確率。將轉錄結果整理為可直接用於內容分發或知識管理的格式，並記錄節省的人力與時間成本。"
+        }
+      ]
+    },
+    {
+      "id": "trends",
+      "title": "值得追蹤的趨勢",
+      "description": "跨新聞歸納產業格局、工具生態、資安治理與內容分發的中期變化，供行銷決策與團隊優先排序參考。",
+      "items": [
+        {
+          "title": "AI 搜尋、代理生態與算力多元化同步重塑行銷入口與內容分發規則",
+          "summary": "AI 搜尋廣告全球擴張、Connected Apps Platform 開放與多元算力供應鏈形成合流趨勢，讓品牌流量入口、內容分發與互動規則同步重塑。AI 代理滲透資安事件頻發，推動動態權限管理成為 MarTech 工具與內容工作流的標準。開發者平台開放則加速行銷自動化與跨平台整合，未來品牌曝光、內容生成與資料治理將更依賴 API 與代理協作。",
+          "analysis": [
+            "AI 搜尋廣告、應用平台與算力供應鏈多元化，讓品牌觸及消費者的入口從單一內容頁轉向多代理、多平台與 API 整合。AI 代理滲透資安事件推動動態權限管理，開發者平台開放則加速行銷自動化與內容分發多元化。",
+            "行銷團隊需同步調整內容結構、API 對接與資安治理策略，將 AI 代理與多平台整合納入日常工作流。未來品牌曝光、內容生成與資料治理將更依賴 API 與代理協作，未能及時調整者將在新一輪平台競爭中失去主動權。"
+          ],
+          "citationClaim": "AI 搜尋廣告、算力供應鏈多元化與 AI 代理生態重塑，正同步改變品牌流量入口、內容分發與資安治理規則。",
+          "impactAngles": [
+            "國際事件與產業格局",
+            "品牌端",
+            "使用者端 / 深度工作者",
+            "AI 影音 / 創意工具"
+          ],
+          "sources": [
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-10-28",
+              "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
+            },
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-10-28",
+              "url": "https://news.aibase.com/tw/news/31933"
+            },
+            {
+              "name": "The Decoder",
+              "publishedDate": "2026-10-28",
+              "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/"
+            },
+            {
+              "name": "TechCrunch",
+              "publishedDate": "2026-10-28",
+              "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+            },
+            {
+              "name": "AIBase AI News",
+              "publishedDate": "2026-10-28",
+              "url": "https://news.aibase.com/tw/news/31924"
+            }
+          ],
+          "score": {
+            "industryImpact": 5,
+            "digitalMarketingImpact": 4,
+            "contentSearchSocialAdsImpact": 4,
+            "toolUsability": 3,
+            "trackedEntityRelevance": 3,
+            "total": 19
+          },
+          "tags": [
+            "AI 搜尋",
+            "代理生態",
+            "算力多元化",
+            "資安治理",
+            "內容分發"
+          ],
+          "what": "AI 搜尋廣告、應用平台與算力供應鏈多元化同步推進，品牌觸及消費者的入口從單一內容頁轉向多代理、多平台與 API 整合。AI 代理滲透資安事件頻發，動態權限管理成為 MarTech 工具與內容工作流的標準。",
+          "soWhat": "行銷團隊若未能及時調整內容結構、API 對接與資安治理策略，將在新一輪平台競爭中失去主動權。品牌曝光、內容生成與資料治理將更依賴 API 與代理協作，跨平台整合與自動化能力成為競爭關鍵。",
+          "nowWhat": "挑選 1 個核心內容分發或互動場景，設計 API 與代理協作流程，並檢查現有資安與權限管理機制。每月追蹤平台規則與工具更新，將新功能納入行銷自動化腳本，確保內容能被 AI 代理與多平台正確引用。"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "應用切角彙整",
+      "description": "跨今日重大事件與工具更新，統整品牌策略、數位行銷、內容行銷、社群應用、媒體廣告、團隊流程六大面向的行銷應用變化與具體行動。",
+      "items": [
+        {
+          "title": "品牌策略",
+          "summary": "AI 搜尋廣告與 Connected Apps Platform 讓品牌必須將主張、FAQ、產品證據與服務流程結構化，轉化為可被 AI 代理與應用調用的內容。建議先從 1-2 個主力服務或產品頁著手，設計適合 AI 搜尋與多平台應用的內容結構，並持續追蹤 AI 入口的互動數據，優化品牌信任與曝光路徑。"
+        },
+        {
+          "title": "數位行銷",
+          "summary": "算力供應鏈多元化與 API 生態開放，讓數位行銷工具選型與自動化腳本設計需同步考量平台依賴與整合彈性。行銷團隊應針對 MarTech 工具與內容分發平台，建立多平台 API 對接備案，並根據各平台規則調整預算分配與自動化流程，降低單一平台風險。"
+        },
+        {
+          "title": "內容行銷",
+          "summary": "NVIDIA 多語種語音轉錄模型與 AI 代理內容生成工具，讓內容產製、國際行銷與會議紀錄自動化成為可能。建議從多語種內容產製與知識管理場景切入，測試轉錄工具在不同語言與內容類型下的準確率，並將產出內容直接用於行銷分發與知識沉澱，提升內容再利用效率。"
+        },
+        {
+          "title": "社群應用",
+          "summary": "AI 代理與 Connected Apps Platform 開放，讓品牌可將互動腳本、FAQ 與服務流程嵌入 AI 搜尋與多平台社群入口。建議針對 1-2 個高互動社群場景，設計可被 AI 代理調用的互動腳本，並追蹤社群用戶在 AI 搜尋與應用生態中的行為變化，優化社群內容與服務回應速度。"
+        },
+        {
+          "title": "媒體廣告",
+          "summary": "AI 搜尋廣告全球擴張與多輪互動廣告上線，讓廣告投放策略需同步考量 AI 體驗中的曝光節點與互動規則。建議優先盤點現有廣告素材，調整為適合 AI 搜尋與多輪互動場景的格式，並測試在新平台上的投放成效，逐步優化廣告分發與轉換流程。"
+        },
+        {
+          "title": "團隊流程",
+          "summary": "AI 代理滲透資安事件頻發，團隊需強化動態權限管理與跨部門資安協作。建議針對 1-2 個高敏感度內容或 MarTech 工具，啟用動態權限控管，建立異常存取自動通報機制，並定期檢查代理存取紀錄，確保資料安全與合規。"
+        }
+      ]
+    }
+  ]
+}

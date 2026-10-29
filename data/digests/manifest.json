@@ -1,6 +1,13 @@
 {
-  "latest": "2026-10-28",
+  "latest": "2026-10-29",
   "digests": [
+    {
+      "reportDate": "2026-10-29",
+      "coverageDate": "2026-10-28",
+      "title": "Bella's AI 趨勢日報｜2026/10/29",
+      "summary": "今日 AI 產業聚焦於搜尋廣告全球擴張、算力供應鏈多元化、AI 代理與資安治理，以及開發者平台開放。Google 推動 AI 搜尋廣告與 Connected Apps Platform，改變品牌流量入口與互動規則；OpenAI、AMD、NVIDIA 等巨頭調整算力採購與投資，推動平台競爭與成本結構重組。AI 代理滲透資安防線，驅動企業強化動態權限管理；開發者生態則因 Gemini API 與第三方代理開放而加速多元應用落地。這些變化將直接影響行銷團隊的數據策略、內容曝光、廣告投放與團隊協作流程。",
+      "path": "data/digests/2026-10-29.json"
+    },
     {
       "reportDate": "2026-10-28",
       "coverageDate": "2026-10-27",
